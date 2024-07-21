@@ -53,26 +53,17 @@
                  rdfs:range :FashionStyle .
 
 
+###  http://www.semanticweb.org/YOUTH/hasHistoricalContext
+:hasHistoricalContext rdf:type owl:ObjectProperty ;
+                      rdfs:domain :CulturalSociety ;
+                      rdfs:range :HistoricalPeriod ;
+                      rdfs:comment "Connects a cultural society to its historical periods, representing the time frames during which it has developed or undergone significant changes." .
+
+
 ###  http://www.semanticweb.org/YOUTH/hasInternalPerspective
 :hasInternalPerspective rdf:type owl:ObjectProperty ;
                         rdfs:domain :Person ;
                         rdfs:range :InternalPerspective .
-
-
-###  http://www.semanticweb.org/YOUTH/hasMember
-:hasMember rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf :memberOf ;
-           rdfs:domain :YouthSubculture ;
-           rdfs:range :Person ;
-           owl:propertyDisjointWith :hasRitual ;
-           rdfs:comment "Links a YouthSubculture to a Person (indicating that the person is a member of the subculture)." .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :hasMember ;
-   owl:annotatedProperty owl:propertyDisjointWith ;
-   owl:annotatedTarget :hasRitual ;
-   rdfs:comment "Members and rituals are distinct concepts."
- ] .
 
 
 ###  http://www.semanticweb.org/YOUTH/hasMusicGenre
@@ -82,12 +73,36 @@
                rdfs:range :MusicGenre .
 
 
+###  http://www.semanticweb.org/YOUTH/hasParticipant
+:hasParticipant rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :participatesIn ;
+                rdfs:domain :DominantCultural ,
+                            :YouthSubculture ;
+                rdfs:range :Person ;
+                owl:propertyDisjointWith :hasRitual ;
+                rdfs:comment "Links a YouthSubculture to a Person (indicating that the person is a member of the subculture)." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :hasParticipant ;
+   owl:annotatedProperty owl:propertyDisjointWith ;
+   owl:annotatedTarget :hasRitual ;
+   rdfs:comment "Members and rituals are distinct concepts."
+ ] .
+
+
 ###  http://www.semanticweb.org/YOUTH/hasRitual
 :hasRitual rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :relatedTo ;
            rdfs:domain :YouthSubculture ;
            rdfs:range :Ritual ;
            rdfs:comment "Links a subculture to its typical rituals." .
+
+
+###  http://www.semanticweb.org/YOUTH/hasSlang
+:hasSlang rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :relatedTo ;
+          rdfs:domain :YouthSubculture ;
+          rdfs:range :Slang .
 
 
 ###  http://www.semanticweb.org/YOUTH/hasValue
@@ -106,12 +121,21 @@
  ] .
 
 
+###  http://www.semanticweb.org/YOUTH/includesSubculture
+:includesSubculture rdf:type owl:ObjectProperty ;
+                    rdfs:domain :CulturalSociety ;
+                    rdfs:range :YouthSubculture ;
+                    rdfs:comment "Connects a cultural society to the youth subcultures present within it. This property highlights the diverse subcultures that exist within the broader societal context." .
+
+
 ###  http://www.semanticweb.org/YOUTH/influences
 :influences rdf:type owl:ObjectProperty ;
-            rdfs:domain :ExternalPerspective ,
+            rdfs:domain :DominantCultural ,
+                        :ExternalPerspective ,
                         :InternalPerspective ,
                         :YouthSubculture ;
-            rdfs:range :ExternalPerspective ,
+            rdfs:range :DominantCultural ,
+                       :ExternalPerspective ,
                        :InternalPerspective ,
                        :YouthSubculture ;
             rdfs:comment "Represents broader influence relationships or influence relationships between subcultures." .
@@ -119,15 +143,9 @@
 
 ###  http://www.semanticweb.org/YOUTH/locatedIn
 :locatedIn rdf:type owl:ObjectProperty ;
-           rdfs:domain :Person ,
-                       :Ritual ,
+           rdfs:domain :Ritual ,
                        :YouthSubculture ;
            rdfs:range :Location .
-
-
-###  http://www.semanticweb.org/YOUTH/memberOf
-:memberOf rdf:type owl:ObjectProperty ;
-          rdfs:comment "Links a Person to a YouthSubculture (indicating that the person belongs to that subculture)." .
 
 
 ###  http://www.semanticweb.org/YOUTH/originatedIn
@@ -140,15 +158,16 @@
 ###  http://www.semanticweb.org/YOUTH/participatesIn
 :participatesIn rdf:type owl:ObjectProperty ;
                 rdfs:domain :Person ;
-                rdfs:range :SubGroup ,
+                rdfs:range :DominantCultural ,
                            :YouthSubculture ;
-                rdfs:comment "Links individuals to groups they are part of within the subculture." .
+                rdfs:comment "Links a Person to a YouthSubculture (indicating that the person belongs to that subculture)." .
 
 
 ###  http://www.semanticweb.org/YOUTH/relatedTo
 :relatedTo rdf:type owl:ObjectProperty ;
            rdfs:domain :YouthSubculture ;
            rdfs:range :Media ,
+                      :Ritual ,
                       :Style ;
            rdfs:comment """General property for linking various elements. 
 It links subcultures to relevant media, rituals or styles.""" .
@@ -163,6 +182,8 @@ It links subcultures to relevant media, rituals or styles.""" .
 ###  http://www.semanticweb.org/YOUTH/relatedToMainstreamMedia
 :relatedToMainstreamMedia rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :relatedTo ;
+                          rdfs:domain :DominantCultural ;
+                          rdfs:range :MainstreamMedia ;
                           rdfs:comment "Links subcultures to mainstream media representations." .
 
 
@@ -211,18 +232,20 @@ It links subcultures to relevant media, rituals or styles.""" .
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/YOUTH#CulturalSociety
-:CulturalSociety rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/YOUTH#DominantCultural
-:DominantCultural rdf:type owl:Class ;
-                  rdfs:subClassOf :CulturalSociety .
-
-
 ###  http://www.semanticweb.org/YOUTH/Activity
 :Activity rdf:type owl:Class ;
           rdfs:subClassOf :Ritual .
+
+
+###  http://www.semanticweb.org/YOUTH/CulturalSociety
+:CulturalSociety rdf:type owl:Class ;
+                 rdfs:comment "Represents the overarching social structure that encompasses various cultural and subcultural entities." .
+
+
+###  http://www.semanticweb.org/YOUTH/DominantCultural
+:DominantCultural rdf:type owl:Class ;
+                  rdfs:subClassOf :CulturalSociety ;
+                  rdfs:comment "Represents the prevailing cultural norms and values that are widely accepted and practiced within a society." .
 
 
 ###  http://www.semanticweb.org/YOUTH/Event
@@ -250,7 +273,7 @@ It links subcultures to relevant media, rituals or styles.""" .
 
 ###  http://www.semanticweb.org/YOUTH/HistoricalPeriod
 :HistoricalPeriod rdf:type owl:Class ;
-                  rdfs:comment "Represents the historical background or the time frame of a subculture." .
+                  rdfs:comment "Represents the historical background or the time frame during which a subculture emerged, developed, or experienced significant events." .
 
 
 ###  http://www.semanticweb.org/YOUTH/InternalPerspective
@@ -261,7 +284,7 @@ It links subcultures to relevant media, rituals or styles.""" .
 
 ###  http://www.semanticweb.org/YOUTH/Location
 :Location rdf:type owl:Class ;
-          rdfs:comment "Geographic context of subcultures." .
+          rdfs:comment "Represents the geographic context or physical setting where a subculture originates, thrives, or is predominantly practiced. This includes specific regions, cities, or areas that are significant to the subculture's identity and activities." .
 
 
 ###  http://www.semanticweb.org/YOUTH/MainstreamMedia
@@ -330,18 +353,18 @@ It links subcultures to relevant media, rituals or styles.""" .
 ###  http://www.semanticweb.org/YOUTH/SubGroup
 :SubGroup rdf:type owl:Class ;
           rdfs:subClassOf :YouthSubculture ;
-          rdfs:comment "Represents communities or groups within a subculture." .
+          rdfs:comment "Represents smaller groups or factions within a youth subculture, contributing to the diversity within the broader subculture." .
 
 
 ###  http://www.semanticweb.org/YOUTH/Value
 :Value rdf:type owl:Class ;
-       rdfs:comment "Represents the core values or principles of a subculture." .
+       rdfs:comment "Represents the fundamental principles and beliefs that underpin a subculture, guiding the behavior, attitudes, and norms of its members." .
 
 
 ###  http://www.semanticweb.org/YOUTH/YouthSubculture
 :YouthSubculture rdf:type owl:Class ;
                  rdfs:subClassOf :CulturalSociety ;
-                 rdfs:comment "Represents the subculture itself." .
+                 rdfs:comment "Represents specific subcultures formed by younger generations, characterized by distinct values, practices, and identities that differentiate them from the dominant culture." .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
