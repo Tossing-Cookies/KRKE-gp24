@@ -12,6 +12,36 @@
 #    Object Properties
 #################################################################
 
+###  http://www.semanticweb.org/YOUTH#comprises
+:comprises rdf:type owl:ObjectProperty ;
+           rdfs:domain :Ritual ,
+                       :Style ;
+           rdfs:range :Ritual ,
+                      :Style ;
+           rdfs:comment "This property links a ritual or style to its constituent components. It represents the idea that rituals include specific events and activities, while styles include specific elements such as slang, music genres, and fashion styles." .
+
+
+###  http://www.semanticweb.org/YOUTH#comprisesSubGroup
+:comprisesSubGroup rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :includesSubculture ;
+                   rdfs:domain :YouthSubculture ;
+                   rdfs:range :SubGroup ;
+                   rdfs:comment "This property links a youth subculture to the subgroups that are part of it. It emphasizes that a youth subculture is made up of various subgroups, each contributing to the overall structure and identity of the subculture." .
+
+
+###  http://www.semanticweb.org/YOUTH#influencesPerspective
+:influencesPerspective rdf:type owl:ObjectProperty ;
+                       rdfs:domain :PerspectiveChange ;
+                       rdfs:range :ExternalPerspective ,
+                                  :InternalPerspective ;
+                       rdfs:comment "This property links a perspective change to the specific external or internal perspectives it influences. It captures how shifts in perspective affect the views of subcultures both internally (self-perception) and externally (public perception)." .
+
+
+###  http://www.semanticweb.org/YOUTH#triggeredByEvent
+:triggeredByEvent rdf:type owl:ObjectProperty ;
+                  rdfs:comment "This property connects a perspective change to the events that trigger it. It represents how certain events, such as cultural phenomena, media portrayals, or significant societal incidents, can lead to changes in how a subculture is perceived by both insiders and outsiders." .
+
+
 ###  http://www.semanticweb.org/YOUTH/affectsCulturalPerspective
 :affectsCulturalPerspective rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf :influences ;
