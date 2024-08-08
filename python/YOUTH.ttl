@@ -13,69 +13,6 @@
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/YOUTH#belongsToYouthSubculture
-:belongsToYouthSubculture rdf:type owl:ObjectProperty ;
-                          rdfs:domain :SubGroup ;
-                          rdfs:range :YouthSubculture .
-
-
-###  http://www.semanticweb.org/YOUTH#comprises
-:comprises rdf:type owl:ObjectProperty ;
-           rdfs:domain :Ritual ,
-                       :Style ;
-           rdfs:range :Ritual ,
-                      :Style ;
-           rdfs:comment "This property links a ritual or style to its constituent components. It represents the idea that rituals include specific events and activities, while styles include specific elements such as slang, music genres, and fashion styles." .
-
-
-###  http://www.semanticweb.org/YOUTH#hasActivity
-:hasActivity rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf :hasRitual ;
-             rdfs:domain :YouthSubculture ;
-             rdfs:range :Activity .
-
-
-###  http://www.semanticweb.org/YOUTH#hasEvent
-:hasEvent rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf :hasRitual ;
-          rdfs:domain :YouthSubculture ;
-          rdfs:range :Event .
-
-
-###  http://www.semanticweb.org/YOUTH#hasSubGroup
-:hasSubGroup rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf :includesSubculture ;
-             rdfs:domain :YouthSubculture ;
-             rdfs:range :SubGroup ;
-             rdfs:comment "This property links a youth subculture to the subgroups that are part of it. It emphasizes that a youth subculture is made up of various subgroups, each contributing to the overall structure and identity of the subculture." .
-
-
-###  http://www.semanticweb.org/YOUTH#influencesPerspective
-:influencesPerspective rdf:type owl:ObjectProperty ;
-                       rdfs:domain :PerspectiveChange ;
-                       rdfs:range :ExternalPerspective ,
-                                  :InternalPerspective ;
-                       rdfs:comment "This property links a perspective change to the specific external or internal perspectives it influences. It captures how shifts in perspective affect the views of subcultures both internally (self-perception) and externally (public perception)." .
-
-
-###  http://www.semanticweb.org/YOUTH#occurredDuring
-:occurredDuring rdf:type owl:ObjectProperty ;
-                rdfs:domain :Event ;
-                rdfs:range :HistoricalPeriod .
-
-
-###  http://www.semanticweb.org/YOUTH#reflectsDominantCulture
-:reflectsDominantCulture rdf:type owl:ObjectProperty ;
-                         rdfs:domain :CulturalSociety ;
-                         rdfs:range :DominantCulture ;
-                         rdfs:comment "This property links a cultural society to the dominant culture that it reflects. It indicates that the cultural society embodies and manifests the values, norms, and practices of the dominant culture within its structure and functioning." .
-
-
-###  http://www.semanticweb.org/YOUTH#triggeredByEvent
-:triggeredByEvent rdf:type owl:ObjectProperty ;
-                  rdfs:comment "This property connects a perspective change to the events that trigger it. It represents how certain events, such as cultural phenomena, media portrayals, or significant societal incidents, can lead to changes in how a subculture is perceived by both insiders and outsiders." .
-
-
 ###  http://www.semanticweb.org/YOUTH/affectsCulturalPerspective
 :affectsCulturalPerspective rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf :influences ;
@@ -97,11 +34,40 @@
                     rdfs:comment "Represents how a subculture influences perspectives of individuals or other subcultures." .
 
 
+###  http://www.semanticweb.org/YOUTH/belongsToYouthSubculture
+:belongsToYouthSubculture rdf:type owl:ObjectProperty ;
+                          rdfs:domain :SubGroup ;
+                          rdfs:range :YouthSubculture .
+
+
+###  http://www.semanticweb.org/YOUTH/comprises
+:comprises rdf:type owl:ObjectProperty ;
+           rdfs:domain :Ritual ,
+                       :Style ;
+           rdfs:range :Ritual ,
+                      :Style ;
+           rdfs:comment "This property links a ritual or style to its constituent components. It represents the idea that rituals include specific events and activities, while styles include specific elements such as slang, music genres, and fashion styles." .
+
+
 ###  http://www.semanticweb.org/YOUTH/engagesIn
 :engagesIn rdf:type owl:ObjectProperty ;
            rdfs:domain :Person ;
            rdfs:range :Ritual ;
            rdfs:comment "Links individuals to activities they typically engage in." .
+
+
+###  http://www.semanticweb.org/YOUTH/hasActivity
+:hasActivity rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasRitual ;
+             rdfs:domain :YouthSubculture ;
+             rdfs:range :Activity .
+
+
+###  http://www.semanticweb.org/YOUTH/hasEvent
+:hasEvent rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :hasRitual ;
+          rdfs:domain :YouthSubculture ;
+          rdfs:range :Event .
 
 
 ###  http://www.semanticweb.org/YOUTH/hasExternalPerspective
@@ -169,6 +135,14 @@
           rdfs:range :Slang .
 
 
+###  http://www.semanticweb.org/YOUTH/hasSubGroup
+:hasSubGroup rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :includesSubculture ;
+             rdfs:domain :YouthSubculture ;
+             rdfs:range :SubGroup ;
+             rdfs:comment "This property links a youth subculture to the subgroups that are part of it. It emphasizes that a youth subculture is made up of various subgroups, each contributing to the overall structure and identity of the subculture." .
+
+
 ###  http://www.semanticweb.org/YOUTH/hasValue
 :hasValue rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :relatedTo ;
@@ -205,11 +179,25 @@
             rdfs:comment "Represents broader influence relationships or influence relationships between subcultures." .
 
 
+###  http://www.semanticweb.org/YOUTH/influencesPerspective
+:influencesPerspective rdf:type owl:ObjectProperty ;
+                       rdfs:domain :PerspectiveChange ;
+                       rdfs:range :ExternalPerspective ,
+                                  :InternalPerspective ;
+                       rdfs:comment "This property links a perspective change to the specific external or internal perspectives it influences. It captures how shifts in perspective affect the views of subcultures both internally (self-perception) and externally (public perception)." .
+
+
 ###  http://www.semanticweb.org/YOUTH/locatedIn
 :locatedIn rdf:type owl:ObjectProperty ;
            rdfs:domain :Ritual ,
                        :YouthSubculture ;
            rdfs:range :Location .
+
+
+###  http://www.semanticweb.org/YOUTH/occurredDuring
+:occurredDuring rdf:type owl:ObjectProperty ;
+                rdfs:domain :Event ;
+                rdfs:range :HistoricalPeriod .
 
 
 ###  http://www.semanticweb.org/YOUTH/originatedIn
@@ -225,6 +213,13 @@
                 rdfs:range :DominantCulture ,
                            :YouthSubculture ;
                 rdfs:comment "Links a Person to a YouthSubculture (indicating that the person belongs to that subculture)." .
+
+
+###  http://www.semanticweb.org/YOUTH/reflectsDominantCulture
+:reflectsDominantCulture rdf:type owl:ObjectProperty ;
+                         rdfs:domain :CulturalSociety ;
+                         rdfs:range :DominantCulture ;
+                         rdfs:comment "This property links a cultural society to the dominant culture that it reflects. It indicates that the cultural society embodies and manifests the values, norms, and practices of the dominant culture within its structure and functioning." .
 
 
 ###  http://www.semanticweb.org/YOUTH/relatedTo
@@ -262,6 +257,11 @@ It links subcultures to relevant media, rituals or styles.""" .
                       :InternalPerspective ;
           rdfs:range :PerspectiveInfluence ;
           rdfs:comment "Connects perspectives to influencing factors." .
+
+
+###  http://www.semanticweb.org/YOUTH/triggeredByEvent
+:triggeredByEvent rdf:type owl:ObjectProperty ;
+                  rdfs:comment "This property connects a perspective change to the events that trigger it. It represents how certain events, such as cultural phenomena, media portrayals, or significant societal incidents, can lead to changes in how a subculture is perceived by both insiders and outsiders." .
 
 
 ###  http://www.semanticweb.org/YOUTH/triggersStereotype
@@ -309,6 +309,7 @@ It links subcultures to relevant media, rituals or styles.""" .
 
 ###  http://www.semanticweb.org/YOUTH/CulturalSociety
 :CulturalSociety rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality> ;
                  rdfs:comment "Represents the overarching social structure that encompasses various cultural and subcultural entities." .
 
 
@@ -330,7 +331,7 @@ It links subcultures to relevant media, rituals or styles.""" .
 
 ###  http://www.semanticweb.org/YOUTH/ExternalPerspective
 :ExternalPerspective rdf:type owl:Class ;
-                     rdfs:subClassOf :Perspective ;
+                     rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> ;
                      rdfs:comment "Represents how subcultures are viewed by outsiders." .
 
 
@@ -348,7 +349,7 @@ It links subcultures to relevant media, rituals or styles.""" .
 
 ###  http://www.semanticweb.org/YOUTH/InternalPerspective
 :InternalPerspective rdf:type owl:Class ;
-                     rdfs:subClassOf :Perspective ;
+                     rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> ;
                      rdfs:comment "Represents self-views of subculture members." .
 
 
@@ -380,20 +381,16 @@ It links subcultures to relevant media, rituals or styles.""" .
         rdfs:comment "Individuals within the subcultures." .
 
 
-###  http://www.semanticweb.org/YOUTH/Perspective
-:Perspective rdf:type owl:Class .
-
-
 ###  http://www.semanticweb.org/YOUTH/PerspectiveChange
 :PerspectiveChange rdf:type owl:Class ;
-                   rdfs:subClassOf :Perspective ;
-                   rdfs:comment "Represents the evolution of perspectives (e.g. shift in public perception of Emo from 'depressing' to 'creative')." .
+                   rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> ;
+                   rdfs:comment "Represents the new understanding or re-interpretation of the subculture when viewed through a specific lens and influenced by an attitude and background knowledge (e.g. shift in public perception of Emo from 'depressing' to 'creative')." .
 
 
 ###  http://www.semanticweb.org/YOUTH/PerspectiveInfluence
 :PerspectiveInfluence rdf:type owl:Class ;
-                      rdfs:subClassOf :Perspective ;
-                      rdfs:comment "Factors influencing perspectives (e.g. media portrayal, societal attitudes)." .
+                      rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> ;
+                      rdfs:comment "Includes the factors that influences the perspectives, such as media portrayals, personal experiences, personal experiences, etc." .
 
 
 ###  http://www.semanticweb.org/YOUTH/Ritual
@@ -428,6 +425,7 @@ It links subcultures to relevant media, rituals or styles.""" .
 
 ###  http://www.semanticweb.org/YOUTH/Value
 :Value rdf:type owl:Class ;
+       rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> ;
        rdfs:comment "Represents the fundamental principles and beliefs that underpin a subculture, guiding the behavior, attitudes, and norms of its members." .
 
 
