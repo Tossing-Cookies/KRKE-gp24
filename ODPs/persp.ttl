@@ -1,0 +1,454 @@
+@prefix : <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://w3id.org/framester/schema/> .
+@base <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+
+<http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl> rdf:type owl:Ontology ;
+                                                                         rdfs:comment """An ontology for the perspectivisation frame: a type of events or situations, where a fact (a background) is reported within a certain storytelling (a lens), which creates a viewpoint (a cut), towards which the source (a conceptualiser)  holds a positive, negative, or neutral stance (an attitude).
+The result of perspectivisation is not only a linguistic or rhetorical artifice, because it typically involves a 'blending' of the entities playing two roles: the cut, and the lens.
+For example, in political talk, when e.g. a democrat says that taxes are investments, the democrat (conceptualiser) holds an attitude towards the current taxation policies (cut from a background), viewed through the generally positive value associated with investments (lens).
+The expected result from the example is that a new entity emerges: an 'investment-blended' meaning of taxes.
+A lot of public discussions, even in formal contexts, shows perspectivisation situations.""" ;
+                                                                         owl:versionInfo """1.0: 02-23-2021, by Aldo Gangemi
+2.0: 05-08-2024, by Aldo Gangemi, added Conceptual blending frame and D&S punning axioms for reasoning across descriptions/frames and situations/frame occurrences""" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/framester/schema/semanticRole
+schema:semanticRole rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/cp/owl/description.owl#isSatisfiedBy
+<http://www.ontologydesignpatterns.org/cp/owl/description.owl#isSatisfiedBy> rdf:type owl:ObjectProperty ;
+                                                                             owl:inverseOf <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies
+<http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor
+<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologydesignpatterns.org/ont/mdns/mdns.owl#nClassifiedBy
+<http://www.ontologydesignpatterns.org/ont/mdns/mdns.owl#nClassifiedBy> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude
+:Attitude rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> ;
+          rdfs:domain :Perspectivisation ;
+          rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background
+:Background rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> ;
+            rdfs:domain :Perspectivisation ;
+            rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser
+:Conceptualiser rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> ;
+                rdfs:domain :Perspectivisation ;
+                rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent> .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut
+:Cut rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> ;
+     rdfs:domain [ rdf:type owl:Class ;
+                   owl:unionOf ( :Background
+                                 :Perspectivisation
+                               )
+                 ] ;
+     rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality
+:Eventuality rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> ;
+             rdfs:domain :Perspectivisation ;
+             rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> ;
+             owl:propertyChainAxiom ( :Cut
+                                      [ owl:inverseOf :Cut
+                                      ]
+                                      :Lens
+                                    ) .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens
+:Lens rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> ;
+      rdfs:domain :Perspectivisation ;
+      rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#contrasts
+:contrasts rdf:type owl:ObjectProperty ,
+                    owl:SymmetricProperty ;
+           rdfs:domain :Cut ;
+           rdfs:range :Cut .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#creates
+:creates rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent> ;
+         rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> ;
+         owl:propertyChainAxiom ( [ owl:inverseOf :holds
+                                  ]
+                                  :toward
+                                ) .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#extractedFrom
+:extractedFrom rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> ;
+               rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> ;
+               owl:propertyChainAxiom ( [ owl:inverseOf :Eventuality
+                                        ]
+                                        :Background
+                                      ) ;
+               dc:creator "Aldo Gangemi" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#holds
+:holds rdf:type owl:ObjectProperty ;
+       rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent> ;
+       rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> ;
+       owl:propertyChainAxiom ( [ owl:inverseOf :Conceptualiser
+                                ]
+                                :Attitude
+                              ) ;
+       dc:creator "Aldo Gangemi" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedAs
+:perspectivisedAs rdf:type owl:ObjectProperty ;
+                  rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> ;
+                  rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> ;
+                  owl:propertyChainAxiom ( [ owl:inverseOf :Eventuality
+                                           ]
+                                           :Cut
+                                         ) .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#perspectivisedThrough
+:perspectivisedThrough rdf:type owl:ObjectProperty ;
+                       rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> ;
+                       rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> ;
+                       owl:propertyChainAxiom ( [ owl:inverseOf :Eventuality
+                                                ]
+                                                :Lens
+                                              ) ;
+                       dc:creator "Aldo Gangemi" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough
+:shotThrough rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> ;
+             rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> ;
+             owl:propertyChainAxiom ( [ owl:inverseOf :Cut
+                                      ]
+                                      :Lens
+                                    ) ;
+             dc:creator "Aldo Gangemi" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#toward
+:toward rdf:type owl:ObjectProperty ;
+        rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> ;
+        rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> ;
+        owl:propertyChainAxiom ( [ owl:inverseOf :Attitude
+                                 ]
+                                 :Cut
+                               ) .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent
+<http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent> rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description
+<http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description> rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation
+<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude
+:Attitude rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> ;
+                                owl:hasValue :Attitude
+                              ] ;
+          rdfs:subClassOf :PerspectivisationTheorySituation ;
+          owl:hasKey ( :Attitude
+                     ) .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background
+:Background rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> ;
+                                  owl:hasValue :Background
+                                ] ;
+            rdfs:subClassOf :PerspectivisationTheorySituation ;
+            owl:hasKey ( :Background
+                       ) .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable
+:Blendable rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://www.ontologydesignpatterns.org/ont/mdns/mdns.owl#nClassifiedBy> ;
+                                 owl:hasValue :Blendable
+                               ] ;
+           rdfs:subClassOf :Blending .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended
+:Blended rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.ontologydesignpatterns.org/ont/mdns/mdns.owl#nClassifiedBy> ;
+                               owl:hasValue :Blended
+                             ] ;
+         rdfs:subClassOf :Blending .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending
+:Blending rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://www.ontologydesignpatterns.org/ont/mdns/mdns.owl#nClassifiedBy> ;
+                                owl:hasValue :Blending
+                              ] ;
+          rdfs:subClassOf :BlendingTheorySituation .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#BlendingTheorySituation
+:BlendingTheorySituation rdf:type owl:Class ;
+                         rdfs:subClassOf schema:FrameOccurrence ;
+                         dc:creator "Aldo Gangemi" ;
+                         dc:date "2024-05-08T09:45:06Z"^^xsd:dateTime .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut
+:Cut rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> ;
+                           owl:hasValue :Cut
+                         ] ;
+     rdfs:subClassOf :PerspectivisationTheorySituation ;
+     owl:hasKey ( :Cut
+                ) .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality
+:Eventuality rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> ;
+                                   owl:hasValue :Eventuality
+                                 ] ;
+             rdfs:subClassOf :PerspectivisationTheorySituation ;
+             owl:hasKey ( :Eventuality
+                        ) .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens
+:Lens rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> ;
+                            owl:hasValue :Lens
+                          ] ;
+      rdfs:subClassOf :PerspectivisationTheorySituation ;
+      owl:hasKey ( :Lens
+                 ) .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation
+:Perspectivisation rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> ;
+                                         owl:hasValue :Perspectivisation
+                                       ] ;
+                   rdfs:subClassOf :PerspectivisationTheorySituation ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :Attitude ;
+                                     owl:someValuesFrom <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :Conceptualiser ;
+                                     owl:someValuesFrom <http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :Cut ;
+                                     owl:someValuesFrom <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :Eventuality ;
+                                     owl:someValuesFrom <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :Lens ;
+                                     owl:someValuesFrom <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :Background ;
+                                     owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                     owl:onClass <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation>
+                                   ] ;
+                   owl:hasKey ( :Attitude
+                                :Eventuality
+                                :Lens
+                              ) .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#PerspectivisationTheorySituation
+:PerspectivisationTheorySituation rdf:type owl:Class ;
+                                  rdfs:subClassOf schema:FrameOccurrence ;
+                                  dc:creator "Aldo Gangemi" ;
+                                  dc:date "2024-05-08T09:45:36Z"^^xsd:dateTime .
+
+
+###  https://w3id.org/framester/schema/ConceptualFrame
+schema:ConceptualFrame rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description> .
+
+
+###  https://w3id.org/framester/schema/FrameOccurrence
+schema:FrameOccurrence rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude
+:Attitude rdf:type owl:NamedIndividual ,
+                   schema:ConceptualFrame .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background
+:Background rdf:type owl:NamedIndividual ,
+                     schema:ConceptualFrame .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blendable
+:Blendable rdf:type owl:NamedIndividual ,
+                    schema:ConceptualFrame .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blended
+:Blended rdf:type owl:NamedIndividual ,
+                  schema:ConceptualFrame .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Blending
+:Blending rdf:type owl:NamedIndividual ,
+                   schema:ConceptualFrame .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser
+:Conceptualiser rdf:type owl:NamedIndividual ,
+                         schema:ConceptualFrame .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut
+:Cut rdf:type owl:NamedIndividual ,
+              schema:ConceptualFrame .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality
+:Eventuality rdf:type owl:NamedIndividual ,
+                      schema:ConceptualFrame .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens
+:Lens rdf:type owl:NamedIndividual ,
+               schema:ConceptualFrame .
+
+
+###  http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation
+:Perspectivisation rdf:type owl:NamedIndividual ,
+                            schema:ConceptualFrame .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:Attitude dc:creator "Aldo Gangemi" ;
+          rdfs:comment "The attitude of a conceptualiser towards an eventuality, perspectivised through the application of a lens, e.g., positive attitude towards taxation policies, reinforced by a positive value such as 'investment' in 'taxes are investiments'." .
+
+
+:Background dc:creator "Aldo Gangemi" ;
+            rdfs:comment "The background knowledge for an eventuality targeted by perspectivisation, e.g., fiscal knowledge behind current taxation policies in 'taxes are investiments'. In the example, only the background is expressed." .
+
+
+:Blendable dc:creator "Aldo Gangemi" ;
+           dc:date "2024-05-08T09:33:13Z"^^xsd:dateTime ,
+                   "2024-05-08T09:35:13Z"^^xsd:dateTime .
+
+
+:Blended dc:creator "Aldo Gangemi" ;
+         dc:date "2024-05-08T09:33:19Z"^^xsd:dateTime ,
+                 "2024-05-08T09:35:20Z"^^xsd:dateTime .
+
+
+:Blending dc:creator "Aldo Gangemi" ;
+          dc:date "2024-05-08T09:33:07Z"^^xsd:dateTime ,
+                  "2024-05-08T09:35:06Z"^^xsd:dateTime .
+
+
+:Cut dc:creator "Aldo Gangemi" ;
+     rdfs:comment "The cut emerging from perspectivising an eventuality through a lens, e.g. taxation policies reframed as investments in 'taxes are investiments'." .
+
+
+:Eventuality dc:creator "Aldo Gangemi" ;
+             rdfs:comment "The eventuality targeted by perspectivisation, explicitly or implicitly extracted from its background knowledge (e.g., current taxation policies in 'taxes are investiments')." .
+
+
+:Lens dc:creator "Aldo Gangemi" ;
+      rdfs:comment "The lens used by perspectivisation on an eventuality, e.g., 'investments' on current taxation policies." .
+
+
+:Perspectivisation dc:creator "Aldo Gangemi" ;
+                   rdfs:comment """A compositional frame for situations that provide a redescription of an eventuality by using a lens, with an attitude. It usually requires background knowledge for the eventuality (and possibly the lens), as well as one or more agents conceptualising it. 
+A 'cut' (in the cinematic sense) emerges from a perspectivisation, which composes an eventuality with a lens, as in the example 'taxes are investments', where current taxation policies (the eventuality) is cut by shooting through the investment lens.
+The OWL representation of this frame includes heavy punning: each aspect of a perspectivisation is in fact modeled as a semantic role (holding between perspectivisation situations and the things involved in them, as an individual (the frame projections), as well as classes (the intensional components of the frame), since almost all aspects are frames on their turn.""" ;
+                   schema:semanticRole :Attitude ,
+                                       :Background ,
+                                       :Conceptualiser ,
+                                       :Cut ,
+                                       :Eventuality ,
+                                       :Lens .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
