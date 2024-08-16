@@ -1,7 +1,5 @@
-#Lucrezia
-
-import pandas as pd
 import random
+import pandas as pd
 
 # Define the associations between different attributes
 associations = {
@@ -130,8 +128,8 @@ associations = {
 # Generate sample data
 def generate_data(num_entries):
     data = []
-    for i in range(num_entries):
-        person_id = f"Person_{i + 1}"
+    for _ in range(num_entries):
+        person_id = f"Person_{_ + 1}"
         subculture = random.choice(list(associations.keys()))
         attributes = associations[subculture]
         
@@ -150,13 +148,12 @@ def generate_data(num_entries):
             "HistoricalPeriod": attributes["HistoricalPeriod"]
         })
     
-    df = pd.DataFrame(data)
-    # Ensure 'Person' is the first column
-    df = df[['Person', 'YouthSubculture', 'FashionStyle', 'MusicGenre', 'Slang', 'Ritual', 'Activity', 'Event', 'Value', 'Media', 'Location', 'HistoricalPeriod']]
-    return df
+    return pd.DataFrame(data)
 
 # Generate the dataset with at least 100 entries
 df = generate_data(100)
 
 # Save the dataset to a CSV file
-df.to_csv('dataset_lu.csv', index=False)
+df.to_csv('youthsubcult_dataset.csv', index=False)
+
+print("Dataset created and saved as 'youthsubcult_dataset.csv'")

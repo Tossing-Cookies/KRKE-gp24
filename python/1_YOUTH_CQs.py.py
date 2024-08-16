@@ -1,13 +1,15 @@
 """
+Each query corresponds to one of the competency questions. 
+The queries are structured using SPARQL and executed against the RDF graph. 
+The results are printed for each question.
+
+
 NB. CHECK THE PREDICATES !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 """
 """
 
 FIRST LEVEL OF YOUTH SUBCULTURES ONTOLOGY
 
-In this script, each query corresponds to one of the competency questions. 
-The queries are structured using SPARQL and executed against the RDF graph. 
-The results are printed for each question.
 """
 
 import rdflib

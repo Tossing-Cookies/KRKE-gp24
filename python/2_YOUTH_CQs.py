@@ -1,15 +1,18 @@
 """
 
+This script parses the RDF data and executes the specified SPARQL queries, printing the results for each competency question. 
+
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 NB. CHECK THE PREDICATES 
-and  replace the PREFIX URI with the actual namespace used in the RDF ontology
+and  replace the PREFIX URI with the actual namespace used for the ontology
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 """
+
+
 """
 SECOND LEVEL OF YOUTH SUBCULTURES ONTOLOGY: PERSPECTIVE CQS
-
-This script parses the RDF data and executes the specified SPARQL queries, printing the results for each competency question. 
 
 """
 
