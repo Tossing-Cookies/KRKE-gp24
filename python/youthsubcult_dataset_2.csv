@@ -1,0 +1,101 @@
+Person,YouthSubculture,FashionStyle,MusicGenre,Slang,Ritual,Activity,Event,Value,Media,Location,HistoricalPeriod
+Person_1,Hip-Hop Culture,"Baggy, Urban",Hip-Hop,Dope,Hip-Hop Battle,Socializing,Hip-Hop Summit,Creativity,Hip-Hop Documentaries,Berlin,1980s
+Person_2,Punks,"Ripped, Leather",Punk Rock,Punk,Punk Concert,Attending Concerts,Punk Weekender,Rebellion,Punk Zine,New York,1970s
+Person_3,Punks,"Ripped, Leather",Punk Rock,Punk,Punk Concert,Attending Concerts,Punk Weekender,Rebellion,Punk Zine,New York,1970s
+Person_4,Ravers,"Bright, Neon",Electronic,Rave On,Rave Party,Dancing,Rave Extravaganza,Eclecticism,Rave Radio,Paris,1990s
+Person_5,Hip-Hop Culture,"Baggy, Urban",Hip-Hop,Dope,Hip-Hop Battle,Socializing,Hip-Hop Summit,Creativity,Hip-Hop Documentaries,Berlin,1980s
+Person_6,Hip-Hop Culture,"Baggy, Urban",Hip-Hop,Dope,Hip-Hop Battle,Socializing,Hip-Hop Summit,Creativity,Hip-Hop Documentaries,Berlin,1980s
+Person_7,Ravers,"Bright, Neon",Electronic,Rave On,Rave Party,Dancing,Rave Extravaganza,Eclecticism,Rave Radio,Paris,1990s
+Person_8,Gamers,Graphic Tees,Electronic,GG,Gaming Marathon,Gaming,Gaming Convention,Innovation,Gaming Streams,Chicago,2000s
+Person_9,Ravers,"Bright, Neon",Electronic,Rave On,Rave Party,Dancing,Rave Extravaganza,Eclecticism,Rave Radio,Paris,1990s
+Person_10,Mods,Mod Suits,Mod Revival,Mods,Mod Rally,Participating in Rallies,Mod Week,Tradition,Mod TV Shows,Manchester,1960s
+Person_11,Mods,Mod Suits,Mod Revival,Mods,Mod Rally,Participating in Rallies,Mod Week,Tradition,Mod TV Shows,Manchester,1960s
+Person_12,Hipsters,"Vintage, Indie",Indie Rock,Hipster,Vintage Fair,Fashion Shows,Hipster Art Walk,Authenticity,Hipster Podcasts,San Francisco,2010s
+Person_13,Mods,Mod Suits,Mod Revival,Mods,Mod Rally,Participating in Rallies,Mod Week,Tradition,Mod TV Shows,Manchester,1960s
+Person_14,Emo,"Black, Minimalist",Emo Rock,Emo,Emo Night,Listening to Music,Emo Festival,Emotion,Emo Vlogs,Tokyo,2000s
+Person_15,Gamers,Graphic Tees,Electronic,GG,Gaming Marathon,Gaming,Gaming Convention,Innovation,Gaming Streams,Chicago,2000s
+Person_16,Ravers,"Bright, Neon",Electronic,Rave On,Rave Party,Dancing,Rave Extravaganza,Eclecticism,Rave Radio,Paris,1990s
+Person_17,Rockers,Classic Rock,Classic Rock,Rock On,Participating in Rallies,Attending Concerts,Rock Parade,Self-Expression,Rock Biographies,Austin,1970s
+Person_18,Punks,"Ripped, Leather",Punk Rock,Punk,Punk Concert,Attending Concerts,Punk Weekender,Rebellion,Punk Zine,New York,1970s
+Person_19,Hipsters,"Vintage, Indie",Indie Rock,Hipster,Vintage Fair,Fashion Shows,Hipster Art Walk,Authenticity,Hipster Podcasts,San Francisco,2010s
+Person_20,Mods,Mod Suits,Mod Revival,Mods,Mod Rally,Participating in Rallies,Mod Week,Tradition,Mod TV Shows,Manchester,1960s
+Person_21,Rockers,Classic Rock,Classic Rock,Rock On,Participating in Rallies,Attending Concerts,Rock Parade,Self-Expression,Rock Biographies,Austin,1970s
+Person_22,Gamers,Graphic Tees,Electronic,GG,Gaming Marathon,Gaming,Gaming Convention,Innovation,Gaming Streams,Chicago,2000s
+Person_23,Mods,Mod Suits,Mod Revival,Mods,Mod Rally,Participating in Rallies,Mod Week,Tradition,Mod TV Shows,Manchester,1960s
+Person_24,Skaters,"Casual, Streetwear",Skate Punk,Skater,Skateboarding,Skateboarding,Skate Park Opening,Freedom,Skater Blog,Los Angeles,1990s
+Person_25,Emo,"Black, Minimalist",Emo Rock,Emo,Emo Night,Listening to Music,Emo Festival,Emotion,Emo Vlogs,Tokyo,2000s
+Person_26,Emo,"Black, Minimalist",Emo Rock,Emo,Emo Night,Listening to Music,Emo Festival,Emotion,Emo Vlogs,Tokyo,2000s
+Person_27,Mods,Mod Suits,Mod Revival,Mods,Mod Rally,Participating in Rallies,Mod Week,Tradition,Mod TV Shows,Manchester,1960s
+Person_28,Punks,"Ripped, Leather",Punk Rock,Punk,Punk Concert,Attending Concerts,Punk Weekender,Rebellion,Punk Zine,New York,1970s
+Person_29,Hip-Hop Culture,"Baggy, Urban",Hip-Hop,Dope,Hip-Hop Battle,Socializing,Hip-Hop Summit,Creativity,Hip-Hop Documentaries,Berlin,1980s
+Person_30,Ravers,"Bright, Neon",Electronic,Rave On,Rave Party,Dancing,Rave Extravaganza,Eclecticism,Rave Radio,Paris,1990s
+Person_31,Rockers,Classic Rock,Classic Rock,Rock On,Participating in Rallies,Attending Concerts,Rock Parade,Self-Expression,Rock Biographies,Austin,1970s
+Person_32,Punks,"Ripped, Leather",Punk Rock,Punk,Punk Concert,Attending Concerts,Punk Weekender,Rebellion,Punk Zine,New York,1970s
+Person_33,Skaters,"Casual, Streetwear",Skate Punk,Skater,Skateboarding,Skateboarding,Skate Park Opening,Freedom,Skater Blog,Los Angeles,1990s
+Person_34,Punks,"Ripped, Leather",Punk Rock,Punk,Punk Concert,Attending Concerts,Punk Weekender,Rebellion,Punk Zine,New York,1970s
+Person_35,Gamers,Graphic Tees,Electronic,GG,Gaming Marathon,Gaming,Gaming Convention,Innovation,Gaming Streams,Chicago,2000s
+Person_36,Mods,Mod Suits,Mod Revival,Mods,Mod Rally,Participating in Rallies,Mod Week,Tradition,Mod TV Shows,Manchester,1960s
+Person_37,Hipsters,"Vintage, Indie",Indie Rock,Hipster,Vintage Fair,Fashion Shows,Hipster Art Walk,Authenticity,Hipster Podcasts,San Francisco,2010s
+Person_38,Punks,"Ripped, Leather",Punk Rock,Punk,Punk Concert,Attending Concerts,Punk Weekender,Rebellion,Punk Zine,New York,1970s
+Person_39,Rockers,Classic Rock,Classic Rock,Rock On,Participating in Rallies,Attending Concerts,Rock Parade,Self-Expression,Rock Biographies,Austin,1970s
+Person_40,Emo,"Black, Minimalist",Emo Rock,Emo,Emo Night,Listening to Music,Emo Festival,Emotion,Emo Vlogs,Tokyo,2000s
+Person_41,Rockers,Classic Rock,Classic Rock,Rock On,Participating in Rallies,Attending Concerts,Rock Parade,Self-Expression,Rock Biographies,Austin,1970s
+Person_42,Hipsters,"Vintage, Indie",Indie Rock,Hipster,Vintage Fair,Fashion Shows,Hipster Art Walk,Authenticity,Hipster Podcasts,San Francisco,2010s
+Person_43,Gamers,Graphic Tees,Electronic,GG,Gaming Marathon,Gaming,Gaming Convention,Innovation,Gaming Streams,Chicago,2000s
+Person_44,Hip-Hop Culture,"Baggy, Urban",Hip-Hop,Dope,Hip-Hop Battle,Socializing,Hip-Hop Summit,Creativity,Hip-Hop Documentaries,Berlin,1980s
+Person_45,Gamers,Graphic Tees,Electronic,GG,Gaming Marathon,Gaming,Gaming Convention,Innovation,Gaming Streams,Chicago,2000s
+Person_46,Goths,"Dark, Victorian",Gothic Rock,Goth,Goth Night,Listening to Music,Goth Festival,Individualism,Goth Magazine,London,1980s
+Person_47,Emo,"Black, Minimalist",Emo Rock,Emo,Emo Night,Listening to Music,Emo Festival,Emotion,Emo Vlogs,Tokyo,2000s
+Person_48,Ravers,"Bright, Neon",Electronic,Rave On,Rave Party,Dancing,Rave Extravaganza,Eclecticism,Rave Radio,Paris,1990s
+Person_49,Punks,"Ripped, Leather",Punk Rock,Punk,Punk Concert,Attending Concerts,Punk Weekender,Rebellion,Punk Zine,New York,1970s
+Person_50,Hip-Hop Culture,"Baggy, Urban",Hip-Hop,Dope,Hip-Hop Battle,Socializing,Hip-Hop Summit,Creativity,Hip-Hop Documentaries,Berlin,1980s
+Person_51,Skaters,"Casual, Streetwear",Skate Punk,Skater,Skateboarding,Skateboarding,Skate Park Opening,Freedom,Skater Blog,Los Angeles,1990s
+Person_52,Ravers,"Bright, Neon",Electronic,Rave On,Rave Party,Dancing,Rave Extravaganza,Eclecticism,Rave Radio,Paris,1990s
+Person_53,Goths,"Dark, Victorian",Gothic Rock,Goth,Goth Night,Listening to Music,Goth Festival,Individualism,Goth Magazine,London,1980s
+Person_54,Skaters,"Casual, Streetwear",Skate Punk,Skater,Skateboarding,Skateboarding,Skate Park Opening,Freedom,Skater Blog,Los Angeles,1990s
+Person_55,Ravers,"Bright, Neon",Electronic,Rave On,Rave Party,Dancing,Rave Extravaganza,Eclecticism,Rave Radio,Paris,1990s
+Person_56,Rockers,Classic Rock,Classic Rock,Rock On,Participating in Rallies,Attending Concerts,Rock Parade,Self-Expression,Rock Biographies,Austin,1970s
+Person_57,Goths,"Dark, Victorian",Gothic Rock,Goth,Goth Night,Listening to Music,Goth Festival,Individualism,Goth Magazine,London,1980s
+Person_58,Mods,Mod Suits,Mod Revival,Mods,Mod Rally,Participating in Rallies,Mod Week,Tradition,Mod TV Shows,Manchester,1960s
+Person_59,Ravers,"Bright, Neon",Electronic,Rave On,Rave Party,Dancing,Rave Extravaganza,Eclecticism,Rave Radio,Paris,1990s
+Person_60,Goths,"Dark, Victorian",Gothic Rock,Goth,Goth Night,Listening to Music,Goth Festival,Individualism,Goth Magazine,London,1980s
+Person_61,Punks,"Ripped, Leather",Punk Rock,Punk,Punk Concert,Attending Concerts,Punk Weekender,Rebellion,Punk Zine,New York,1970s
+Person_62,Goths,"Dark, Victorian",Gothic Rock,Goth,Goth Night,Listening to Music,Goth Festival,Individualism,Goth Magazine,London,1980s
+Person_63,Gamers,Graphic Tees,Electronic,GG,Gaming Marathon,Gaming,Gaming Convention,Innovation,Gaming Streams,Chicago,2000s
+Person_64,Gamers,Graphic Tees,Electronic,GG,Gaming Marathon,Gaming,Gaming Convention,Innovation,Gaming Streams,Chicago,2000s
+Person_65,Hipsters,"Vintage, Indie",Indie Rock,Hipster,Vintage Fair,Fashion Shows,Hipster Art Walk,Authenticity,Hipster Podcasts,San Francisco,2010s
+Person_66,Mods,Mod Suits,Mod Revival,Mods,Mod Rally,Participating in Rallies,Mod Week,Tradition,Mod TV Shows,Manchester,1960s
+Person_67,Emo,"Black, Minimalist",Emo Rock,Emo,Emo Night,Listening to Music,Emo Festival,Emotion,Emo Vlogs,Tokyo,2000s
+Person_68,Goths,"Dark, Victorian",Gothic Rock,Goth,Goth Night,Listening to Music,Goth Festival,Individualism,Goth Magazine,London,1980s
+Person_69,Ravers,"Bright, Neon",Electronic,Rave On,Rave Party,Dancing,Rave Extravaganza,Eclecticism,Rave Radio,Paris,1990s
+Person_70,Gamers,Graphic Tees,Electronic,GG,Gaming Marathon,Gaming,Gaming Convention,Innovation,Gaming Streams,Chicago,2000s
+Person_71,Skaters,"Casual, Streetwear",Skate Punk,Skater,Skateboarding,Skateboarding,Skate Park Opening,Freedom,Skater Blog,Los Angeles,1990s
+Person_72,Emo,"Black, Minimalist",Emo Rock,Emo,Emo Night,Listening to Music,Emo Festival,Emotion,Emo Vlogs,Tokyo,2000s
+Person_73,Hipsters,"Vintage, Indie",Indie Rock,Hipster,Vintage Fair,Fashion Shows,Hipster Art Walk,Authenticity,Hipster Podcasts,San Francisco,2010s
+Person_74,Skaters,"Casual, Streetwear",Skate Punk,Skater,Skateboarding,Skateboarding,Skate Park Opening,Freedom,Skater Blog,Los Angeles,1990s
+Person_75,Skaters,"Casual, Streetwear",Skate Punk,Skater,Skateboarding,Skateboarding,Skate Park Opening,Freedom,Skater Blog,Los Angeles,1990s
+Person_76,Skaters,"Casual, Streetwear",Skate Punk,Skater,Skateboarding,Skateboarding,Skate Park Opening,Freedom,Skater Blog,Los Angeles,1990s
+Person_77,Hip-Hop Culture,"Baggy, Urban",Hip-Hop,Dope,Hip-Hop Battle,Socializing,Hip-Hop Summit,Creativity,Hip-Hop Documentaries,Berlin,1980s
+Person_78,Skaters,"Casual, Streetwear",Skate Punk,Skater,Skateboarding,Skateboarding,Skate Park Opening,Freedom,Skater Blog,Los Angeles,1990s
+Person_79,Goths,"Dark, Victorian",Gothic Rock,Goth,Goth Night,Listening to Music,Goth Festival,Individualism,Goth Magazine,London,1980s
+Person_80,Skaters,"Casual, Streetwear",Skate Punk,Skater,Skateboarding,Skateboarding,Skate Park Opening,Freedom,Skater Blog,Los Angeles,1990s
+Person_81,Hipsters,"Vintage, Indie",Indie Rock,Hipster,Vintage Fair,Fashion Shows,Hipster Art Walk,Authenticity,Hipster Podcasts,San Francisco,2010s
+Person_82,Gamers,Graphic Tees,Electronic,GG,Gaming Marathon,Gaming,Gaming Convention,Innovation,Gaming Streams,Chicago,2000s
+Person_83,Ravers,"Bright, Neon",Electronic,Rave On,Rave Party,Dancing,Rave Extravaganza,Eclecticism,Rave Radio,Paris,1990s
+Person_84,Ravers,"Bright, Neon",Electronic,Rave On,Rave Party,Dancing,Rave Extravaganza,Eclecticism,Rave Radio,Paris,1990s
+Person_85,Gamers,Graphic Tees,Electronic,GG,Gaming Marathon,Gaming,Gaming Convention,Innovation,Gaming Streams,Chicago,2000s
+Person_86,Hipsters,"Vintage, Indie",Indie Rock,Hipster,Vintage Fair,Fashion Shows,Hipster Art Walk,Authenticity,Hipster Podcasts,San Francisco,2010s
+Person_87,Ravers,"Bright, Neon",Electronic,Rave On,Rave Party,Dancing,Rave Extravaganza,Eclecticism,Rave Radio,Paris,1990s
+Person_88,Emo,"Black, Minimalist",Emo Rock,Emo,Emo Night,Listening to Music,Emo Festival,Emotion,Emo Vlogs,Tokyo,2000s
+Person_89,Gamers,Graphic Tees,Electronic,GG,Gaming Marathon,Gaming,Gaming Convention,Innovation,Gaming Streams,Chicago,2000s
+Person_90,Punks,"Ripped, Leather",Punk Rock,Punk,Punk Concert,Attending Concerts,Punk Weekender,Rebellion,Punk Zine,New York,1970s
+Person_91,Emo,"Black, Minimalist",Emo Rock,Emo,Emo Night,Listening to Music,Emo Festival,Emotion,Emo Vlogs,Tokyo,2000s
+Person_92,Goths,"Dark, Victorian",Gothic Rock,Goth,Goth Night,Listening to Music,Goth Festival,Individualism,Goth Magazine,London,1980s
+Person_93,Punks,"Ripped, Leather",Punk Rock,Punk,Punk Concert,Attending Concerts,Punk Weekender,Rebellion,Punk Zine,New York,1970s
+Person_94,Rockers,Classic Rock,Classic Rock,Rock On,Participating in Rallies,Attending Concerts,Rock Parade,Self-Expression,Rock Biographies,Austin,1970s
+Person_95,Gamers,Graphic Tees,Electronic,GG,Gaming Marathon,Gaming,Gaming Convention,Innovation,Gaming Streams,Chicago,2000s
+Person_96,Ravers,"Bright, Neon",Electronic,Rave On,Rave Party,Dancing,Rave Extravaganza,Eclecticism,Rave Radio,Paris,1990s
+Person_97,Ravers,"Bright, Neon",Electronic,Rave On,Rave Party,Dancing,Rave Extravaganza,Eclecticism,Rave Radio,Paris,1990s
+Person_98,Mods,Mod Suits,Mod Revival,Mods,Mod Rally,Participating in Rallies,Mod Week,Tradition,Mod TV Shows,Manchester,1960s
+Person_99,Skaters,"Casual, Streetwear",Skate Punk,Skater,Skateboarding,Skateboarding,Skate Park Opening,Freedom,Skater Blog,Los Angeles,1990s
+Person_100,Hip-Hop Culture,"Baggy, Urban",Hip-Hop,Dope,Hip-Hop Battle,Socializing,Hip-Hop Summit,Creativity,Hip-Hop Documentaries,Berlin,1980s
