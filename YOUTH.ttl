@@ -205,18 +205,18 @@ It links subcultures to relevant media, rituals or styles.""" .
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/YOUTH#hasName
-:hasName rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Person ;
-         rdfs:range rdfs:Literal ;
-         rdfs:comment "Indicates the name of the Person individual." .
-
-
 ###  http://www.semanticweb.org/YOUTH/hasContext
 :hasContext rdf:type owl:DatatypeProperty ;
             rdfs:domain :HistoricalPeriod ;
             rdfs:range xsd:string ;
             rdfs:comment "Describes the historical background in which a cultural group (e.g., DominatCulture, YouthSubculture) originated (e.g., 2000s-present: post-modern reaction to mainstream consumerism, gentrification)." .
+
+
+###  http://www.semanticweb.org/YOUTH/hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Person ;
+         rdfs:range rdfs:Literal ;
+         rdfs:comment "Indicates the name of the Person individual." .
 
 
 #################################################################
@@ -235,7 +235,8 @@ It links subcultures to relevant media, rituals or styles.""" .
 
 ###  http://www.semanticweb.org/YOUTH/ExpressionMedia
 :ExpressionMedia rdf:type owl:Class ;
-                 rdfs:subClassOf :Media .
+                 rdfs:subClassOf :Media ;
+                 rdfs:comment "Types of media or specific media forms consumed by the subculture (e.g., Rock Biographies, Punk Zine). This column indicates the media formats frequently used by the subculture." .
 
 
 ###  http://www.semanticweb.org/YOUTH/ExternalPerspective
@@ -480,7 +481,7 @@ _:genid22 owl:intersectionOf ( :Person
                                    owl:onProperty :relatedTo ;
                                    owl:someValuesFrom :Style
                                  ] ;
-                 rdfs:comment "Represents specific subcultures formed by younger generations, characterized by distinct values, practices, and identities that differentiate them from the dominant culture." .
+                 rdfs:comment "A group of people within a cultural society that represents a specific subculture formed by younger generations, characterized by distinct values, practices, and identities that differentiate them from the dominant culture." .
 
 
 #################################################################
