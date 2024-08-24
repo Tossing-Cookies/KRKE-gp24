@@ -1,6 +1,6 @@
 import pandas as pd
 
-# Define the associations between different attributes, including perspectives and stereotypes
+# Define the associations between different attributes
 associations = {
     "Goths": {
         "FashionStyle": "Black clothing, Dark make-up, Victorian",
@@ -196,7 +196,6 @@ associations = {
     }
 }
 
-
 # Generate sample data
 def generate_data(num_entries):
     data = []
@@ -228,7 +227,7 @@ def generate_data(num_entries):
     return pd.DataFrame(data)
 
 # Generate the dataset with the exact number of entries as subcultures
-df = generate_data(len(associations))  # Generate 10 entries
+df = generate_data(len(associations))
 
 # Save the dataset to a CSV file
 df.to_csv('youthsubcult_dataset.csv', index=False)
