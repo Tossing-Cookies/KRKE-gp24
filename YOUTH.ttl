@@ -344,7 +344,7 @@ _:genid13 owl:intersectionOf ( :Person
 ###  http://www.semanticweb.org/YOUTH/PerspectiveInfluence
 :PerspectiveInfluence rdf:type owl:Class ;
                       rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> ;
-                      rdfs:comment """Represents the factors that shape and affect both external and internal perspectives. This can include a variety of influences such as media portrayals, societal attitudes, personal experiences, and cultural trends, all of which contribute to the evolving perceptions of subcultures by both insiders and outsiders. Hall’s Encoding/Decoding theory is integrated into this analysis, allowing us to deconstruct the role of television as a primary source of information on the subject.
+                      rdfs:comment """Represents the factors that shape and affect both external and internal perspectives. This can include a variety of influences such as media portrayals, social institutions - like family, work, school, home -, personal experiences, and cultural trends, all of which contribute to the evolving perceptions of subcultures by both insiders and outsiders. Hall’s Encoding/Decoding theory is integrated into this analysis, allowing us to deconstruct the role of television as a primary source of information on the subject.
 
 See bibliography:
 Hall, Stuart. \"Encoding/Decoding in the Television Discourse.\" University of Birmingham: Centre for Contemporary Cultural Studies, 1973.
