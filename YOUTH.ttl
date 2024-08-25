@@ -374,7 +374,10 @@ Moore, Ryan. \"Alternative to What? Subcultural Capital and the Commercializatio
                               owl:someValuesFrom :YouthSubculture
                             ] ;
             owl:disjointWith :Value ;
-            rdfs:comment "Represents common stereotypes associated with subcultures. This class encompasses generalized beliefs and oversimplified notions that are commonly attributed to members of specific subcultures. These stereotypes often reflect societal perceptions and can influence how subcultures are understood and portrayed in mainstream discourse. By capturing stereotypes, this class helps to highlight and analyze the misrepresentations and biases that may affect the public's view of various subcultures, offering insights into how these groups are perceived versus their actual characteristics and values." .
+            rdfs:comment """Represents common stereotypes associated with subcultures, drawing on M. Cardwell's definition of a stereotype as \"a fixed, often simplistic generalization about a particular group or class of people. [...] These stereotypes are often negative and unflattering, and may underly prejudice and discrimination\". In our ontology, the Stereotype class encapsulates the generalized beliefs and oversimplified notions frequently attributed to members of specific subcultures. These stereotypes reflect societal perceptions and can shape mainstream discourse, influencing how subcultures are understood and portrayed. By capturing these stereotypes, the class facilitates the analysis of misrepresentations and biases that may skew public perception, offering insights into the disparity between societal views of subcultures and their actual characteristics and values.
+
+See also:
+Cardwell, Mike, Dictionary of Psychology, Chicago Fitzroy Dearborn, 1999: 292.""" .
 
 
 ###  http://www.semanticweb.org/YOUTH/Style
