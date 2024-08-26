@@ -1,4 +1,8 @@
+import os
 import pandas as pd
+
+# Determine the directory of the current script
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Define the associations between different attributes
 associations = {
@@ -321,5 +325,8 @@ def generate_data(num_entries):
 # Generate the dataset with the exact number of entries as subcultures
 df = generate_data(len(associations))
 
+# Define the path for the CSV file in the same directory as the script
+csv_file_path = os.path.join(script_dir, 'youthsubcult_dataset.csv')
+
 # Save the dataset to a CSV file
-df.to_csv('youthsubcult_dataset.csv', index=False)
+df.to_csv(csv_file_path, index=False)
