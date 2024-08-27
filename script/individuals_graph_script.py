@@ -26,8 +26,6 @@ def add_person(row):
     g.add((person_uri, YOUTH.musicGenre, Literal(row['MusicGenre'])))
     g.add((person_uri, YOUTH.ritual, Literal(row['Ritual'])))
     g.add((person_uri, YOUTH.value, Literal(row['Value'])))
-    g.add((person_uri, YOUTH.expressionMedia, Literal(row['ExpressionMedia'])))
-    g.add((person_uri, YOUTH.mainstreamMedia, Literal(row['MainstreamMedia'])))
     g.add((person_uri, YOUTH.location, Literal(row['Location'])))
     g.add((person_uri, YOUTH.historicalPeriod, Literal(row['HistoricalPeriod'])))
     g.add((person_uri, YOUTH.externalPerspective, Literal(row['ExternalPerspective'])))
