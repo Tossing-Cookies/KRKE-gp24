@@ -6,7 +6,7 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Define the paths to the input files
 ontology_file = os.path.join(script_dir, "..", "YOUTH.ttl")  # Root directory
-populated_file = os.path.join(script_dir, "populated_ontology.ttl") 
+populated_file = os.path.join(script_dir, "individuals_ontology.ttl") 
 
 # Load the ontology graph
 ontology_graph = Graph()

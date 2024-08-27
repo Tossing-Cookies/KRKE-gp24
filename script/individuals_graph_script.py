@@ -41,5 +41,5 @@ for _, row in df.iterrows():
     add_person(row)
 
 # Serialize the graph to a Turtle file
-with open("populated_ontology.ttl", "w", encoding="utf-8") as f:
+with open("individuals_ontology.ttl", "w", encoding="utf-8") as f:
     f.write(g.serialize(format="turtle"))
