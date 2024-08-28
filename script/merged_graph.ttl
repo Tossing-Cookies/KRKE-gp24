@@ -18,13 +18,11 @@ It is part of the end-of-course project of Knowledge Representation and Knowledg
     owl:imports <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl> .
 
 youth:Person_1 a youth:Person ;
-    youth:expressionMedia "Music Festivals, Peace Protests" ;
     youth:externalPerspective "Seen as peace-loving and counter-cultural" ;
     youth:fashionStyle "Colorful and eclectic clothing, including tie-dye shirts, bell-bottoms, and peace symbols. Accessories often include flower crowns, beads, and sandals." ;
     youth:historicalPeriod "1960s" ;
     youth:internalPerspective "Focus on free expression and communal living" ;
     youth:location "San Francisco, New York" ;
-    youth:mainstreamMedia "News Features, Documentaries" ;
     youth:musicGenre "Psychedelic Rock, Folk, Classic Rock" ;
     youth:perspectiveChange "From radical counterculture to a more widely accepted ethos of peace and environmentalism" ;
     youth:perspectiveInfluence "Social and political movements of the 1960s, including reaction against mainstream consumer culture and political climate" ;
@@ -35,13 +33,11 @@ youth:Person_1 a youth:Person ;
     foaf:name "Person_1" .
 
 youth:Person_10 a youth:Person ;
-    youth:expressionMedia "Emo Blogs, Music Videos" ;
     youth:externalPerspective "Seen as overly emotional and introverted" ;
     youth:fashionStyle "Dark, Skinny Jeans" ;
     youth:historicalPeriod "1990s-2000s" ;
     youth:internalPerspective "Focus on expressing deep emotions" ;
     youth:location "USA" ;
-    youth:mainstreamMedia "Music Channels, Magazines" ;
     youth:musicGenre "Emo, Pop-Punk, Melodic Hardcore" ;
     youth:perspectiveChange "Evolving from niche to influential in alternative music" ;
     youth:perspectiveInfluence "Music and personal experiences, including emergence from post-hardcore and punk influences" ;
@@ -52,13 +48,11 @@ youth:Person_10 a youth:Person ;
     foaf:name "Person_10" .
 
 youth:Person_11 a youth:Person ;
-    youth:expressionMedia "Online Blogs, Music Videos" ;
     youth:externalPerspective "Seen as chaotic" ;
     youth:fashionStyle "Dark, Skinny Jeans" ;
     youth:historicalPeriod "2000s" ;
     youth:internalPerspective "Focus on expressing deep emotions" ;
     youth:location "USA" ;
-    youth:mainstreamMedia "Music Channels, Magazines" ;
     youth:musicGenre "Emo, Pop-Punk, Melodic Hardcore" ;
     youth:perspectiveChange "Evolving from niche to influential in alternative music" ;
     youth:perspectiveInfluence "Music and personal experiences, including screamo's rise in the early 2000s" ;
@@ -69,13 +63,11 @@ youth:Person_11 a youth:Person ;
     foaf:name "Person_11" .
 
 youth:Person_12 a youth:Person ;
-    youth:expressionMedia "Rave Videos, EDM Blogs" ;
     youth:externalPerspective "Seen as hedonistic and wild" ;
     youth:fashionStyle "Bright, Neon" ;
     youth:historicalPeriod "1990s" ;
     youth:internalPerspective "Emphasis on music and dance experience" ;
     youth:location "Berlin" ;
-    youth:mainstreamMedia "Music Channels, Event Coverage" ;
     youth:musicGenre "Electronic Dance Music, Techno" ;
     youth:perspectiveChange "From underground to mainstream popularity" ;
     youth:perspectiveInfluence "Electronic music and drug culture, including the rise of electronic dance music and rave culture" ;
@@ -86,13 +78,11 @@ youth:Person_12 a youth:Person ;
     foaf:name "Person_12" .
 
 youth:Person_13 a youth:Person ;
-    youth:expressionMedia "Gaming Magazines, Online Forums" ;
     youth:externalPerspective "Seen as socially isolated" ;
     youth:fashionStyle "Casual, Gaming Merchandise" ;
     youth:historicalPeriod "2000s-present" ;
     youth:internalPerspective "Focus on skill and game strategy" ;
     youth:location "Global" ;
-    youth:mainstreamMedia "Gaming News, Reviews" ;
     youth:musicGenre "Varies" ;
     youth:perspectiveChange "From niche hobby to mainstream entertainment" ;
     youth:perspectiveInfluence "Gaming culture and technology, growth of online gaming and eSports" ;
@@ -103,13 +93,11 @@ youth:Person_13 a youth:Person ;
     foaf:name "Person_13" .
 
 youth:Person_14 a youth:Person ;
-    youth:expressionMedia "Indie Magazines, Blogs" ;
     youth:externalPerspective "Seen as trend-followers, trendsetters and elitist" ;
     youth:fashionStyle "Vintage, Indie, Artisan, Retro aesthetic" ;
     youth:historicalPeriod "2000s" ;
     youth:internalPerspective "Focus on being unique and non-mainstream" ;
     youth:location "Brooklyn" ;
-    youth:mainstreamMedia "Lifestyle Magazines, Documentaries" ;
     youth:musicGenre "Indie Rock, Alternative" ;
     youth:perspectiveChange "From niche to influential in fashion and culture" ;
     youth:perspectiveInfluence "Urban culture and social media, including the rise of indie culture and alternative lifestyle" ;
@@ -120,13 +108,11 @@ youth:Person_14 a youth:Person ;
     foaf:name "Person_14" .
 
 youth:Person_15 a youth:Person ;
-    youth:expressionMedia "Lifestyle Magazines, Blogs" ;
     youth:externalPerspective "Seen as deliberately unremarkable" ;
     youth:fashionStyle "Unremarkable, everyday clothing, often purposefully bland or nondescript" ;
     youth:historicalPeriod "Early 2010s" ;
     youth:internalPerspective "Focus on blending in and rejecting trends" ;
     youth:location "Global" ;
-    youth:mainstreamMedia "Documentaries, News Features" ;
     youth:musicGenre "Varied, typically mainstream or non-specific" ;
     youth:perspectiveChange "From a niche reaction to a recognized cultural statement" ;
     youth:perspectiveInfluence "Reaction to fashion industry trends, including a deliberate embrace of ordinary aesthetics" ;
@@ -137,13 +123,11 @@ youth:Person_15 a youth:Person ;
     foaf:name "Person_15" .
 
 youth:Person_16 a youth:Person ;
-    youth:expressionMedia "Lifestyle Blogs, Outdoor Magazines" ;
     youth:externalPerspective "Seen as rugged and outdoorsy" ;
     youth:fashionStyle "Flannel shirts, rugged jeans, and boots" ;
     youth:historicalPeriod "2010s" ;
     youth:internalPerspective "Focus on authenticity and craftsmanship" ;
     youth:location "Global" ;
-    youth:mainstreamMedia "Lifestyle Magazines, Documentaries" ;
     youth:musicGenre "Varied, often related to folk or indie genres" ;
     youth:perspectiveChange "From niche trend to broader acceptance in lifestyle fashion" ;
     youth:perspectiveInfluence "Urban-rural aesthetic blend, including a growing trend toward combining rugged and artisanal styles with mainstream fashion" ;
@@ -154,13 +138,11 @@ youth:Person_16 a youth:Person ;
     foaf:name "Person_16" .
 
 youth:Person_17 a youth:Person ;
-    youth:expressionMedia "Social Media Platforms, Music Videos" ;
     youth:externalPerspective "Seen as internet-savvy and aesthetic-focused" ;
     youth:fashionStyle "Eclectic mix of 90s grunge, emo, and alternative fashion; dyed hair, piercings, dark clothing" ;
     youth:historicalPeriod "Late 2010s" ;
     youth:internalPerspective "Focus on online presence and personal style" ;
     youth:location "Global" ;
-    youth:mainstreamMedia "Social Media Features" ;
     youth:musicGenre "Lo-fi, Emo Rap, Indie Pop" ;
     youth:perspectiveChange "From internet subculture to a broader cultural influence" ;
     youth:perspectiveInfluence "Social media trends and internet culture, including the rise of internet-based subcultures and aesthetics" ;
@@ -171,13 +153,11 @@ youth:Person_17 a youth:Person ;
     foaf:name "Person_17" .
 
 youth:Person_18 a youth:Person ;
-    youth:expressionMedia "Fan Clubs, Streaming Platforms" ;
     youth:externalPerspective "Seen as dedicated and enthusiastic fans" ;
     youth:fashionStyle "Fashion inspired by K-Pop idols, including bold and colorful outfits, trendy accessories, and elaborate hairstyles" ;
     youth:historicalPeriod "2010s-2020s" ;
     youth:internalPerspective "Focus on supporting artists and community building" ;
     youth:location "Global" ;
-    youth:mainstreamMedia "Music Channels, Documentaries" ;
     youth:musicGenre "K-Pop (Korean Pop Music)" ;
     youth:perspectiveChange "From niche interest to significant global cultural phenomenon" ;
     youth:perspectiveInfluence "K-Pop industry and global fan culture, including the rise of Korean pop music and international fan communities" ;
@@ -188,13 +168,11 @@ youth:Person_18 a youth:Person ;
     foaf:name "Person_18" .
 
 youth:Person_19 a youth:Person ;
-    youth:expressionMedia "Social Media Platforms" ;
     youth:externalPerspective "Seen as eco-conscious and relaxed" ;
     youth:fashionStyle "Comfortable, casual clothing like oversized t-shirts, scrunchies, and Hydro Flask water bottles" ;
     youth:historicalPeriod "Late 2010s" ;
     youth:internalPerspective "Focus on a minimalist, casual lifestyle" ;
     youth:location "Global" ;
-    youth:mainstreamMedia "Social Media Features" ;
     youth:musicGenre "Indie Pop, Lo-fi Beats" ;
     youth:perspectiveChange "From social media trend to a broader lifestyle movement" ;
     youth:perspectiveInfluence "Social media trends and environmentalism, including the influence of the VSCO app and its aesthetic" ;
@@ -205,13 +183,11 @@ youth:Person_19 a youth:Person ;
     foaf:name "Person_19" .
 
 youth:Person_2 a youth:Person ;
-    youth:expressionMedia "Mod Magazines, Music" ;
     youth:externalPerspective "Seen as fashionistas and sophisticated" ;
     youth:fashionStyle "Sharp Suits, Scooter Culture" ;
     youth:historicalPeriod "1960s" ;
     youth:internalPerspective "Focus on appearance and music taste" ;
     youth:location "London" ;
-    youth:mainstreamMedia "Documentaries, News Features" ;
     youth:musicGenre "Soul, R&B" ;
     youth:perspectiveChange "From youth subculture to retro revival" ;
     youth:perspectiveInfluence "Post-WWII British pop culture and music" ;
@@ -222,13 +198,11 @@ youth:Person_2 a youth:Person ;
     foaf:name "Person_2" .
 
 youth:Person_3 a youth:Person ;
-    youth:expressionMedia "Music Events, Cultural Activities" ;
     youth:externalPerspective "Seen as working-class and rebellious" ;
     youth:fashionStyle "Close-cropped or shaven heads, practical and durable clothing such as Dr. Martens boots, braces, high-rise straight-leg jeans" ;
     youth:historicalPeriod "Late 1960s" ;
     youth:internalPerspective "Focus on working-class pride and solidarity" ;
     youth:location "London" ;
-    youth:mainstreamMedia "News Features" ;
     youth:musicGenre "Oi!, Ska, Reggae" ;
     youth:perspectiveChange "From working-class solidarity to broader associations" ;
     youth:perspectiveInfluence "Social and economic conditions of the late 1960s, including emergence from working-class and Mod influences" ;
@@ -239,13 +213,11 @@ youth:Person_3 a youth:Person ;
     foaf:name "Person_3" .
 
 youth:Person_4 a youth:Person ;
-    youth:expressionMedia "Hip-Hop Videos, Blogs" ;
     youth:externalPerspective "Seen as urban and expressive" ;
     youth:fashionStyle "Streetwear, Urban, Baggy Clothes" ;
     youth:historicalPeriod "1970s-present" ;
     youth:internalPerspective "Focus on lyrical skill and dance" ;
     youth:location "New York" ;
-    youth:mainstreamMedia "Music Channels, Reality Shows" ;
     youth:musicGenre "Hip-Hop" ;
     youth:perspectiveChange "From street culture to global influence" ;
     youth:perspectiveInfluence "Urban environment and social issues" ;
@@ -256,13 +228,11 @@ youth:Person_4 a youth:Person ;
     foaf:name "Person_4" .
 
 youth:Person_5 a youth:Person ;
-    youth:expressionMedia "Punk Zines" ;
     youth:externalPerspective "Seen as rebellious and anti-establishment" ;
     youth:fashionStyle "Ripped, Leather" ;
     youth:historicalPeriod "1970s" ;
     youth:internalPerspective "Pride in challenging norms" ;
     youth:location "New York" ;
-    youth:mainstreamMedia "Music Documentaries, News Articles" ;
     youth:musicGenre "Punk Rock" ;
     youth:perspectiveChange "From fringe to influential in mainstream fashion" ;
     youth:perspectiveInfluence "Cultural rebellion and anti-authoritarianism, including political and social rebellion" ;
@@ -273,13 +243,11 @@ youth:Person_5 a youth:Person ;
     foaf:name "Person_5" .
 
 youth:Person_6 a youth:Person ;
-    youth:expressionMedia "Rock Magazines, Albums" ;
     youth:externalPerspective "Seen as rebellious and energetic" ;
     youth:fashionStyle "Leather, Denim" ;
     youth:historicalPeriod "1960s-1980s" ;
     youth:internalPerspective "Emphasis on musical talent and passion" ;
     youth:location "Los Angeles" ;
-    youth:mainstreamMedia "Music Channels" ;
     youth:musicGenre "Rock" ;
     youth:perspectiveChange "From rebellious youth culture to mainstream icons" ;
     youth:perspectiveInfluence "Rock music history and legends, including the evolution of classic rock and roll" ;
@@ -290,13 +258,11 @@ youth:Person_6 a youth:Person ;
     foaf:name "Person_6" .
 
 youth:Person_7 a youth:Person ;
-    youth:expressionMedia "Magazines, Albums" ;
     youth:externalPerspective "Seen as rebellious and energetic" ;
     youth:fashionStyle "Leather, Denim" ;
     youth:historicalPeriod "1970s-1980s" ;
     youth:internalPerspective "Emphasis on musical talent and passion" ;
     youth:location "USA, UK" ;
-    youth:mainstreamMedia "Music Channels" ;
     youth:musicGenre "Heavy Metal" ;
     youth:perspectiveChange "From rebellious youth culture to mainstream icons" ;
     youth:perspectiveInfluence "Rock music history and legends, including the rise of heavy metal in the 70s and 80s" ;
@@ -307,13 +273,11 @@ youth:Person_7 a youth:Person ;
     foaf:name "Person_7" .
 
 youth:Person_8 a youth:Person ;
-    youth:expressionMedia "Online blogs, Social Media" ;
     youth:externalPerspective "Seen as dark and mysterious" ;
     youth:fashionStyle "Black clothing, Dark make-up, Victorian" ;
     youth:historicalPeriod "1980s" ;
     youth:internalPerspective "Emphasize individual expression and aesthetics" ;
     youth:location "London" ;
-    youth:mainstreamMedia "TV" ;
     youth:musicGenre "Gothic Rock, Post-Punk" ;
     youth:perspectiveChange "Shift from misunderstood to celebrated for its style" ;
     youth:perspectiveInfluence "Post-punk era, media portrayals of dark aesthetics" ;
@@ -324,13 +288,11 @@ youth:Person_8 a youth:Person ;
     foaf:name "Person_8" .
 
 youth:Person_9 a youth:Person ;
-    youth:expressionMedia "Skateboarding Magazines, Videos" ;
     youth:externalPerspective "Seen as laid-back and rebellious" ;
     youth:fashionStyle "Casual, Baggy" ;
     youth:historicalPeriod "1990s" ;
     youth:internalPerspective "Focus on skill and personal style" ;
     youth:location "California" ;
-    youth:mainstreamMedia "Sports Channels, Lifestyle TV Shows" ;
     youth:musicGenre "Punk Rock, Hip-Hop" ;
     youth:perspectiveChange "From niche hobby to mainstream sport" ;
     youth:perspectiveInfluence "Influence of extreme sports culture, including the growth of skate culture" ;
@@ -346,17 +308,6 @@ youth:hasContext a owl:DatatypeProperty,
     rdfs:domain youth:HistoricalPeriod ;
     rdfs:range rdfs:Literal .
 
-youth:relatedToExpressionMedia a owl:ObjectProperty ;
-    rdfs:comment "Links subcultures to forms of expression media." ;
-    rdfs:domain youth:YouthSubculture ;
-    rdfs:range youth:ExpressionMedia ;
-    rdfs:subPropertyOf youth:relatedTo .
-
-youth:relatedToMainstreamMedia a owl:ObjectProperty ;
-    rdfs:comment "Links subcultures to mainstream media representations." ;
-    rdfs:range youth:MainstreamMedia ;
-    rdfs:subPropertyOf youth:relatedTo .
-
 owl:Thing dc:creator "Lucrezia Pograri",
         "Pietro Tisci" ;
     dc:date 2024 ;
@@ -367,14 +318,6 @@ It was developed as the end-of-the-course project of Knowledge Representation an
 For further information, visit the following address:
 https://krke24.gitbook.io/krke-project-2023-2024""" ;
     rdfs:seeAlso "https://krke24.gitbook.io/krke-project-2023-2024/methodology" .
-
-youth:ExpressionMedia a owl:Class ;
-    rdfs:comment "Types of media or specific media forms consumed by the subculture (e.g., Rock Biographies, Punk Zine). This column indicates the media formats frequently used by the subculture." ;
-    rdfs:subClassOf youth:Media .
-
-youth:MainstreamMedia a owl:Class ;
-    rdfs:comment "Represents mainstream media forms related to subcultures (e.g. TV programs, ducumentaries, etc.)" ;
-    rdfs:subClassOf youth:Media .
 
 youth:PerspectiveChange a owl:Class ;
     rdfs:comment "Represents the evolution or transformation of perspectives over time. This class captures shifts in how subcultures are viewed, whether by the public or by their own members. It includes changes in societal attitudes, evolving stereotypes, or shifts in self-perception within the subculture, highlighting how perspectives can develop and alter across different historical or cultural contexts." ;
@@ -416,6 +359,19 @@ youth:viewedAs a owl:ObjectProperty ;
     rdfs:range youth:ExternalPerspective ;
     rdfs:subPropertyOf youth:affectsPerspective .
 
+youth:FashionStyle a owl:Class ;
+    rdfs:comment "Represents the style of clothing and aesthetics associated with a subculture." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty youth:hasFashionStyle ;
+            owl:someValuesFrom youth:Style ],
+        youth:Style ;
+    owl:disjointWith youth:MusicGenre .
+
+youth:Ritual a owl:Class ;
+    rdfs:comment "Represents the activities that usually characterize a specific youth subculture." ;
+    rdfs:subClassOf youth:Style ;
+    owl:disjointWith youth:Value .
+
 youth:engagesIn a owl:AsymmetricProperty,
         owl:ObjectProperty ;
     rdfs:comment "Links individuals to rituals and activities they typically engage in." ;
@@ -425,20 +381,17 @@ youth:engagesIn a owl:AsymmetricProperty,
 youth:hasFashionStyle a owl:ObjectProperty ;
     rdfs:comment "Links a subculture to its fashion style(s)." ;
     rdfs:domain youth:YouthSubculture ;
-    rdfs:range youth:FashionStyle ;
-    rdfs:subPropertyOf youth:relatedTo .
+    rdfs:range youth:FashionStyle .
 
 youth:hasMusicGenre a owl:ObjectProperty ;
     rdfs:comment "Links a subculture to its associated music genre(s)." ;
     rdfs:domain youth:YouthSubculture ;
-    rdfs:range youth:MusicGenre ;
-    rdfs:subPropertyOf youth:relatedTo .
+    rdfs:range youth:MusicGenre .
 
 youth:hasValue a owl:ObjectProperty ;
     rdfs:comment "Links a subculture to its core values." ;
     rdfs:domain youth:YouthSubculture ;
     rdfs:range youth:Value ;
-    rdfs:subPropertyOf youth:relatedTo ;
     owl:propertyDisjointWith youth:triggersStereotype .
 
 youth:originatedIn a owl:FunctionalProperty,
@@ -453,30 +406,21 @@ youth:selfViewsAs a owl:ObjectProperty ;
     rdfs:range youth:InternalPerspective ;
     rdfs:subPropertyOf youth:affectsPerspective .
 
-youth:FashionStyle a owl:Class ;
-    rdfs:comment "Represents the style of clothing and aesthetics associated with a subculture." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty youth:hasFashionStyle ;
-            owl:someValuesFrom youth:Style ],
-        youth:Style ;
-    owl:disjointWith youth:MusicGenre .
-
 youth:HistoricalPeriod a owl:Class ;
     rdfs:comment "Represents the time frame (time-span) during which a subculture emerged, developed, or experienced significant influences." ;
     rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> ;
     owl:disjointWith youth:Location .
 
 youth:Location a owl:Class ;
-    rdfs:comment "Represents the geographic context or physical setting where a subculture originates, thrives, or is predominantly practiced. This includes specific regions, cities, or areas that are significant to the subculture's identity and activities." ;
+    rdfs:comment "This class defines the geographic context or physical setting where a subculture originates, encompassing specific regions, cities, or areas integral to its identity and activities. In the context of our project, \"location\" primarily refers to the geographical place (such as a city or state) where youth subcultures historically emerged. This meaning could be broadened to include more nuanced relationships, highlighting areas where these subcultures actively thrive or are predominantly practiced." ;
     rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> .
 
-youth:Media a owl:Class ;
-    rdfs:subClassOf persp:Background .
-
-youth:Ritual a owl:Class ;
-    rdfs:comment "Represents the activities that usually characterize a specific youth subculture." ;
-    rdfs:subClassOf youth:Style ;
-    owl:disjointWith youth:Value .
+youth:MusicGenre a owl:Class ;
+    rdfs:comment "Represents the type of music associated with a subculture." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty youth:hasMusicGenre ;
+            owl:someValuesFrom youth:Style ],
+        youth:Style .
 
 youth:Stereotype a owl:Class ;
     rdfs:comment """Represents common stereotypes associated with subcultures, drawing on M. Cardwell's definition of a stereotype as "a fixed, often simplistic generalization about a particular group or class of people. [...] These stereotypes are often negative and unflattering, and may underly prejudice and discrimination". In our ontology, the Stereotype class encapsulates the generalized beliefs and oversimplified notions frequently attributed to members of specific subcultures. These stereotypes reflect societal perceptions and can shape mainstream discourse, influencing how subcultures are understood and portrayed. By capturing these stereotypes, the class facilitates the analysis of misrepresentations and biases that may skew public perception, offering insights into the disparity between societal views of subcultures and their actual characteristics and values.
@@ -498,13 +442,6 @@ youth:participatesIn a owl:ObjectProperty ;
     rdfs:domain youth:Person ;
     rdfs:range youth:YouthSubculture .
 
-youth:MusicGenre a owl:Class ;
-    rdfs:comment "Represents the type of music associated with a subculture." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty youth:hasMusicGenre ;
-            owl:someValuesFrom youth:Style ],
-        youth:Style .
-
 youth:PerspectiveInfluence a owl:Class ;
     rdfs:comment """Represents the factors that shape and affect both external and internal perspectives. This can include a variety of influences such as media portrayals, social institutions - like family, work, school, home -, personal experiences, and cultural trends, all of which contribute to the evolving perceptions of subcultures by both insiders and outsiders. Hall’s Encoding/Decoding theory is integrated into this analysis, allowing us to deconstruct the role of television as a primary source of information on the subject.
 
@@ -524,6 +461,10 @@ youth:affectsPerspective a owl:ObjectProperty,
     rdfs:range youth:ExternalPerspective,
         youth:InternalPerspective .
 
+youth:Style a owl:Class ;
+    rdfs:comment "Represents the overall style associated with a subculture, which can be further divided into Fashion Style, Music Genre, Ritual." ;
+    owl:disjointWith youth:YouthSubculture .
+
 youth:influencedBy a owl:ObjectProperty ;
     rdfs:comment "Connects perspectives to the factors that influence them. This property shows how external and internal perspectives are affected by various influencing factors such as media representations, societal attitudes, and personal experiences. It models the relationship between perspectives and the elements that shape them." ;
     rdfs:domain youth:ExternalPerspective,
@@ -537,33 +478,18 @@ youth:triggersStereotype a owl:ObjectProperty ;
 
 youth:ExternalPerspective a owl:Class ;
     rdfs:comment "Represents the way in which subcultures are viewed from an external viewpoint. This is influenced by the general public's impressions, stereotypes, and media portrayals that shape the external image of a subculture." ;
-    rdfs:subClassOf [ a owl:Restriction ;
+    rdfs:subClassOf persp:Lens ;
+    owl:disjointWith youth:InternalPerspective ;
+    owl:equivalentClass [ a owl:Restriction ;
             owl:onProperty youth:influencedBy ;
-            owl:someValuesFrom youth:PerspectiveInfluence ],
-        persp:Lens ;
-    owl:disjointWith youth:InternalPerspective .
-
-youth:Style a owl:Class ;
-    rdfs:comment "Represents the overall style associated with a subculture, which can be further divided into Fashion Style, Music Genre, Ritual." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty youth:relatedTo ;
-            owl:someValuesFrom [ a owl:Class ;
-                    owl:unionOf ( youth:FashionStyle youth:MusicGenre ) ] ] ;
-    owl:disjointWith youth:YouthSubculture .
-
-youth:relatedTo a owl:ObjectProperty ;
-    rdfs:comment """General property for linking various elements. \r
-It links subcultures to relevant media, rituals or styles.""" ;
-    rdfs:domain youth:YouthSubculture ;
-    rdfs:range [ a owl:Class ;
-            owl:unionOf ( youth:Media youth:Ritual youth:Style ) ] .
+            owl:someValuesFrom youth:PerspectiveInfluence ] .
 
 youth:InternalPerspective a owl:Class ;
     rdfs:comment "Represents the self-perception and self-definition of members within a subculture. This includes how individuals within the subculture view themselves and their own identity, as well as how they interpret their place within the subculture. It reflects the internal self-concept and personal narratives that members use to describe their experiences and values." ;
-    rdfs:subClassOf [ a owl:Restriction ;
+    rdfs:subClassOf persp:Lens ;
+    owl:equivalentClass [ a owl:Restriction ;
             owl:onProperty youth:influencedBy ;
-            owl:someValuesFrom youth:PerspectiveInfluence ],
-        persp:Lens .
+            owl:someValuesFrom youth:PerspectiveInfluence ] .
 
 youth:YouthSubculture a owl:Class ;
     rdfs:comment """A group of people within a cultural society that represents a specific subculture formed by younger generations, characterized by distinct values, practices, and identities that differentiate them from the dominant culture.
@@ -581,12 +507,9 @@ Widdicombe, Sue. "Autobiography and Change: Rhetoric and Authenticity of 'Gothic
             owl:onProperty youth:originatedIn ;
             owl:someValuesFrom youth:HistoricalPeriod ],
         [ a owl:Restriction ;
-            owl:onProperty youth:relatedTo ;
-            owl:someValuesFrom youth:Style ],
-        [ a owl:Restriction ;
             owl:onProperty youth:viewedAs ;
             owl:someValuesFrom youth:ExternalPerspective ],
-        _:nb610399d53d34e32b6e51898f1027723b54,
+        _:n7137299947ab45edbdd9af2f8aca2f2eb45,
         persp:Eventuality ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( [ a owl:Restriction ;
@@ -619,7 +542,7 @@ youth:Person a owl:Class ;
             owl:onProperty youth:selfViewsAs ;
             owl:someValuesFrom youth:InternalPerspective ],
         <http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent> ;
-    owl:equivalentClass _:nb610399d53d34e32b6e51898f1027723b13 ;
+    owl:equivalentClass _:n7137299947ab45edbdd9af2f8aca2f2eb9 ;
     owl:hasKey ( youth:hasName ) .
 
 [] a owl:Axiom ;
@@ -638,7 +561,7 @@ youth:Person a owl:Class ;
     rdfs:comment "A chain that links a Person’s internal perspective to a YouthSubculture through participation." ;
     owl:annotatedProperty owl:equivalentClass ;
     owl:annotatedSource youth:Person ;
-    owl:annotatedTarget _:nb610399d53d34e32b6e51898f1027723b13 .
+    owl:annotatedTarget _:n7137299947ab45edbdd9af2f8aca2f2eb9 .
 
 [] a owl:Axiom ;
     rdfs:comment "Values and stereotypes have different implications." ;
@@ -656,23 +579,23 @@ youth:Person a owl:Class ;
     rdfs:comment "A youth subculture could potentially influence itself, but it's not necessarily always the case. Hence, the \"influences\" property is \"potentially reflexive\"." ;
     owl:annotatedProperty rdfs:subClassOf ;
     owl:annotatedSource youth:YouthSubculture ;
-    owl:annotatedTarget _:nb610399d53d34e32b6e51898f1027723b54 .
+    owl:annotatedTarget _:n7137299947ab45edbdd9af2f8aca2f2eb45 .
 
-_:nb610399d53d34e32b6e51898f1027723b20 a owl:Restriction ;
+_:n7137299947ab45edbdd9af2f8aca2f2eb16 a owl:Restriction ;
     owl:onProperty youth:participatesIn ;
     owl:someValuesFrom youth:YouthSubculture .
 
-_:nb610399d53d34e32b6e51898f1027723b21 a owl:Restriction ;
+_:n7137299947ab45edbdd9af2f8aca2f2eb17 a owl:Restriction ;
     owl:onProperty youth:selfViewsAs ;
     owl:someValuesFrom youth:InternalPerspective .
 
-_:nb610399d53d34e32b6e51898f1027723b22 rdf:first youth:Person ;
-    rdf:rest ( _:nb610399d53d34e32b6e51898f1027723b20 _:nb610399d53d34e32b6e51898f1027723b21 ) .
+_:n7137299947ab45edbdd9af2f8aca2f2eb18 rdf:first youth:Person ;
+    rdf:rest ( _:n7137299947ab45edbdd9af2f8aca2f2eb16 _:n7137299947ab45edbdd9af2f8aca2f2eb17 ) .
 
-_:nb610399d53d34e32b6e51898f1027723b13 a owl:Class ;
-    owl:intersectionOf _:nb610399d53d34e32b6e51898f1027723b22 .
-
-_:nb610399d53d34e32b6e51898f1027723b54 a owl:Restriction ;
+_:n7137299947ab45edbdd9af2f8aca2f2eb45 a owl:Restriction ;
     owl:hasSelf true ;
     owl:onProperty youth:influences .
+
+_:n7137299947ab45edbdd9af2f8aca2f2eb9 a owl:Class ;
+    owl:intersectionOf _:n7137299947ab45edbdd9af2f8aca2f2eb18 .
 
