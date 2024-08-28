@@ -55,7 +55,6 @@ youth:engagesIn rdf:type owl:ObjectProperty ,
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/hasFashionStyle
 youth:hasFashionStyle rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf youth:relatedTo ;
                       rdfs:domain youth:YouthSubculture ;
                       rdfs:range youth:FashionStyle ;
                       rdfs:comment "Links a subculture to its fashion style(s)." .
@@ -63,7 +62,6 @@ youth:hasFashionStyle rdf:type owl:ObjectProperty ;
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/hasMusicGenre
 youth:hasMusicGenre rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf youth:relatedTo ;
                     rdfs:domain youth:YouthSubculture ;
                     rdfs:range youth:MusicGenre ;
                     rdfs:comment "Links a subculture to its associated music genre(s)." .
@@ -79,7 +77,6 @@ youth:hasParticipant rdf:type owl:ObjectProperty ;
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/hasValue
 youth:hasValue rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf youth:relatedTo ;
                rdfs:domain youth:YouthSubculture ;
                rdfs:range youth:Value ;
                owl:propertyDisjointWith youth:triggersStereotype ;
@@ -138,13 +135,6 @@ youth:participatesIn rdf:type owl:ObjectProperty ;
                      rdfs:domain youth:Person ;
                      rdfs:range youth:YouthSubculture ;
                      rdfs:comment "Links a Person to a YouthSubculture (indicating that the person belongs to that subculture)." .
-
-
-###  http://www.semanticweb.org/ontologies/2024/YOUTH/relatedTo
-youth:relatedTo rdf:type owl:ObjectProperty ;
-                rdfs:domain youth:YouthSubculture ;
-                rdfs:comment """General property for linking various elements. 
-It links subcultures to relevant media, rituals or styles.""" .
 
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/selfViewsAs
@@ -236,7 +226,7 @@ youth:InternalPerspective rdf:type owl:Class ;
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/Location
 youth:Location rdf:type owl:Class ;
                rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> ;
-               rdfs:comment "Represents the geographic context or physical setting where a subculture originates, thrives, or is predominantly practiced. This includes specific regions, cities, or areas that are significant to the subculture's identity and activities." .
+               rdfs:comment "This class defines the geographic context or physical setting where a subculture originates, encompassing specific regions, cities, or areas integral to its identity and activities. In the context of our project, \"location\" primarily refers to the geographical place (such as a city or state) where youth subcultures historically emerged. This meaning could be broadened to include more nuanced relationships, highlighting areas where these subcultures actively thrive or are predominantly practiced." .
 
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/MusicGenre
@@ -353,14 +343,6 @@ Cardwell, Mike, Dictionary of Psychology, Chicago Fitzroy Dearborn, 1999: 292.""
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/Style
 youth:Style rdf:type owl:Class ;
-            rdfs:subClassOf [ rdf:type owl:Restriction ;
-                              owl:onProperty youth:relatedTo ;
-                              owl:someValuesFrom [ rdf:type owl:Class ;
-                                                   owl:unionOf ( youth:FashionStyle
-                                                                 youth:MusicGenre
-                                                               )
-                                                 ]
-                            ] ;
             owl:disjointWith youth:YouthSubculture ;
             rdfs:comment "Represents the overall style associated with a subculture, which can be further divided into Fashion Style, Music Genre, Ritual." .
 
@@ -406,14 +388,10 @@ youth:YouthSubculture rdf:type owl:Class ;
                                         owl:someValuesFrom youth:HistoricalPeriod
                                       ] ,
                                       [ rdf:type owl:Restriction ;
-                                        owl:onProperty youth:relatedTo ;
-                                        owl:someValuesFrom youth:Style
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
                                         owl:onProperty youth:viewedAs ;
                                         owl:someValuesFrom youth:ExternalPerspective
                                       ] ,
-                                      _:genid50 ;
+                                      _:genid45 ;
                       rdfs:comment """A group of people within a cultural society that represents a specific subculture formed by younger generations, characterized by distinct values, practices, and identities that differentiate them from the dominant culture.
 
 See bibliography:
@@ -423,14 +401,14 @@ Williams, Patrick J. \"Youth Subcultural Studies: Sociological Traditions and Co
 Widdicombe, Sue. \"Autobiography and Change: Rhetoric and Authenticity of 'Gothic' Style.\" In Repertoires and Readings of Texts in Action, edited by Erica Burman and Ian Parker, 94-113. London: Routledge, 1993.""" ;
                       rdfs:seeAlso "https://krke24.gitbook.io/krke-project-2023-2024" .
 
-_:genid50 rdf:type owl:Restriction ;
+_:genid45 rdf:type owl:Restriction ;
            owl:onProperty youth:influences ;
            owl:hasSelf "true"^^xsd:boolean .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource youth:YouthSubculture ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid50 ;
+   owl:annotatedTarget _:genid45 ;
    rdfs:comment "A youth subculture could potentially influence itself, but it's not necessarily always the case. Hence, the \"influences\" property is \"potentially reflexive\"."
  ] .
 

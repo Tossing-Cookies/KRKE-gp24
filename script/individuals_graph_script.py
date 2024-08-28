@@ -1,5 +1,6 @@
 import pandas as pd
 from rdflib import Graph, Namespace, URIRef, Literal, RDF, RDFS
+import os  # Import os to work with file paths
 
 # Define namespaces
 YOUTH = Namespace("http://www.semanticweb.org/ontologies/2024/YOUTH/")
@@ -12,8 +13,14 @@ g = Graph()
 g.bind("youth", YOUTH)
 g.bind("foaf", FOAF)
 
+# Determine the directory of the current script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the file path for the CSV file
+csv_path = os.path.join(script_dir, "youthsubcult_dataset.csv")
+
 # Load the CSV file into a pandas DataFrame
-df = pd.read_csv("./script/youthsubcult_dataset.csv")
+df = pd.read_csv(csv_path)
 
 # Define a function to add a person to the ontology
 def add_person(row):
@@ -38,6 +45,9 @@ def add_person(row):
 for _, row in df.iterrows():
     add_person(row)
 
+# Construct the file path for the output Turtle file
+output_path = os.path.join(script_dir, "individuals_graph.ttl")
+
 # Serialize the graph to a Turtle file
-with open("individuals_ontology.ttl", "w", encoding="utf-8") as f:
+with open(output_path, "w", encoding="utf-8") as f:
     f.write(g.serialize(format="turtle"))
