@@ -13,7 +13,7 @@ g.bind("youth", YOUTH)
 g.bind("foaf", FOAF)
 
 # Load the CSV file into a pandas DataFrame
-df = pd.read_csv("youthsubcult_dataset.csv")
+df = pd.read_csv("./script/youthsubcult_dataset.csv")
 
 # Define a function to add a person to the ontology
 def add_person(row):

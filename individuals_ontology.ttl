@@ -1,0 +1,288 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix youth: <http://www.semanticweb.org/ontologies/2024/YOUTH/> .
+
+youth:Person_1 a youth:Person ;
+    youth:externalPerspective "Seen as peace-loving and counter-cultural" ;
+    youth:fashionStyle "Colorful and eclectic clothing, including tie-dye shirts, bell-bottoms, and peace symbols. Accessories often include flower crowns, beads, and sandals." ;
+    youth:historicalPeriod "1960s" ;
+    youth:internalPerspective "Focus on free expression and communal living" ;
+    youth:location "San Francisco, New York" ;
+    youth:musicGenre "Psychedelic Rock, Folk, Classic Rock" ;
+    youth:perspectiveChange "From radical counterculture to a more widely accepted ethos of peace and environmentalism" ;
+    youth:perspectiveInfluence "Social and political movements of the 1960s, including reaction against mainstream consumer culture and political climate" ;
+    youth:ritual "Participating in music festivals, peace protests, communal living, engaging in spiritual practices" ;
+    youth:stereotype "Idealistic, free-spirited, anti-establishment" ;
+    youth:value "Peace, Love, Harmony, Environmentalism, Anti-materialism" ;
+    youth:youthSubculture "Hippies" ;
+    foaf:name "Person_1" .
+
+youth:Person_10 a youth:Person ;
+    youth:externalPerspective "Seen as overly emotional and introverted" ;
+    youth:fashionStyle "Dark, Skinny Jeans" ;
+    youth:historicalPeriod "1990s-2000s" ;
+    youth:internalPerspective "Focus on expressing deep emotions" ;
+    youth:location "USA" ;
+    youth:musicGenre "Emo, Pop-Punk, Melodic Hardcore" ;
+    youth:perspectiveChange "Evolving from niche to influential in alternative music" ;
+    youth:perspectiveInfluence "Music and personal experiences, including emergence from post-hardcore and punk influences" ;
+    youth:ritual "Alt-music events, Attending concerts" ;
+    youth:stereotype "Melancholic, introverted" ;
+    youth:value "Emotional expression" ;
+    youth:youthSubculture "Emo" ;
+    foaf:name "Person_10" .
+
+youth:Person_11 a youth:Person ;
+    youth:externalPerspective "Seen as chaotic" ;
+    youth:fashionStyle "Dark, Skinny Jeans" ;
+    youth:historicalPeriod "2000s" ;
+    youth:internalPerspective "Focus on expressing deep emotions" ;
+    youth:location "USA" ;
+    youth:musicGenre "Emo, Pop-Punk, Melodic Hardcore" ;
+    youth:perspectiveChange "Evolving from niche to influential in alternative music" ;
+    youth:perspectiveInfluence "Music and personal experiences, including screamo's rise in the early 2000s" ;
+    youth:ritual "Alt-music events, Attending concerts" ;
+    youth:stereotype "Aggressive, introverted" ;
+    youth:value "Emotional expression" ;
+    youth:youthSubculture "Screamo" ;
+    foaf:name "Person_11" .
+
+youth:Person_12 a youth:Person ;
+    youth:externalPerspective "Seen as hedonistic and wild" ;
+    youth:fashionStyle "Bright, Neon" ;
+    youth:historicalPeriod "1990s" ;
+    youth:internalPerspective "Emphasis on music and dance experience" ;
+    youth:location "Berlin" ;
+    youth:musicGenre "Electronic Dance Music, Techno" ;
+    youth:perspectiveChange "From underground to mainstream popularity" ;
+    youth:perspectiveInfluence "Electronic music and drug culture, including the rise of electronic dance music and rave culture" ;
+    youth:ritual "Rave Parties, Dancing, attending festivals" ;
+    youth:stereotype "Party-goers, drug users" ;
+    youth:value "Escapism, Euphoria, community-oriented" ;
+    youth:youthSubculture "Ravers" ;
+    foaf:name "Person_12" .
+
+youth:Person_13 a youth:Person ;
+    youth:externalPerspective "Seen as socially isolated" ;
+    youth:fashionStyle "Casual, Gaming Merchandise" ;
+    youth:historicalPeriod "2000s-present" ;
+    youth:internalPerspective "Focus on skill and game strategy" ;
+    youth:location "Global" ;
+    youth:musicGenre "Varies" ;
+    youth:perspectiveChange "From niche hobby to mainstream entertainment" ;
+    youth:perspectiveInfluence "Gaming culture and technology, growth of online gaming and eSports" ;
+    youth:ritual "Playing video games, gaming sessions, attending gaming or technology conventions" ;
+    youth:stereotype "Introverted, obsessive, anti-social" ;
+    youth:value "Competition, immersion, relaxation, fun" ;
+    youth:youthSubculture "Gamers" ;
+    foaf:name "Person_13" .
+
+youth:Person_14 a youth:Person ;
+    youth:externalPerspective "Seen as trend-followers, trendsetters and elitist" ;
+    youth:fashionStyle "Vintage, Indie, Artisan, Retro aesthetic" ;
+    youth:historicalPeriod "2000s" ;
+    youth:internalPerspective "Focus on being unique and non-mainstream" ;
+    youth:location "Brooklyn" ;
+    youth:musicGenre "Indie Rock, Alternative" ;
+    youth:perspectiveChange "From niche to influential in fashion and culture" ;
+    youth:perspectiveInfluence "Urban culture and social media, including the rise of indie culture and alternative lifestyle" ;
+    youth:ritual "Coffee Shop Hangouts, Art Shows, Exploring Vintage Shops" ;
+    youth:stereotype "Pretentious and overly concerned with trends, superficiality" ;
+    youth:value "Authenticity, Creativity, Individualism, Nostalgia" ;
+    youth:youthSubculture "Hipsters" ;
+    foaf:name "Person_14" .
+
+youth:Person_15 a youth:Person ;
+    youth:externalPerspective "Seen as deliberately unremarkable" ;
+    youth:fashionStyle "Unremarkable, everyday clothing, often purposefully bland or nondescript" ;
+    youth:historicalPeriod "Early 2010s" ;
+    youth:internalPerspective "Focus on blending in and rejecting trends" ;
+    youth:location "Global" ;
+    youth:musicGenre "Varied, typically mainstream or non-specific" ;
+    youth:perspectiveChange "From a niche reaction to a recognized cultural statement" ;
+    youth:perspectiveInfluence "Reaction to fashion industry trends, including a deliberate embrace of ordinary aesthetics" ;
+    youth:ritual "Everyday activities with a focus on blending in rather than standing out" ;
+    youth:stereotype "Unremarkable, bland, anti-fashion" ;
+    youth:value "Embracing ordinary and anti-fashion aesthetics, rejecting trends and pretension" ;
+    youth:youthSubculture "Normcore" ;
+    foaf:name "Person_15" .
+
+youth:Person_16 a youth:Person ;
+    youth:externalPerspective "Seen as rugged and outdoorsy" ;
+    youth:fashionStyle "Flannel shirts, rugged jeans, and boots" ;
+    youth:historicalPeriod "2010s" ;
+    youth:internalPerspective "Focus on authenticity and craftsmanship" ;
+    youth:location "Global" ;
+    youth:musicGenre "Varied, often related to folk or indie genres" ;
+    youth:perspectiveChange "From niche trend to broader acceptance in lifestyle fashion" ;
+    youth:perspectiveInfluence "Urban-rural aesthetic blend, including a growing trend toward combining rugged and artisanal styles with mainstream fashion" ;
+    youth:ritual "Engaging in outdoor activities, displaying a rugged, artisanal lifestyle" ;
+    youth:stereotype "Rugged, outdoorsy, artisanal" ;
+    youth:value "Authenticity, masculinity, and a connection to nature" ;
+    youth:youthSubculture "Lumberjack" ;
+    foaf:name "Person_16" .
+
+youth:Person_17 a youth:Person ;
+    youth:externalPerspective "Seen as internet-savvy and aesthetic-focused" ;
+    youth:fashionStyle "Eclectic mix of 90s grunge, emo, and alternative fashion; dyed hair, piercings, dark clothing" ;
+    youth:historicalPeriod "Late 2010s" ;
+    youth:internalPerspective "Focus on online presence and personal style" ;
+    youth:location "Global" ;
+    youth:musicGenre "Lo-fi, Emo Rap, Indie Pop" ;
+    youth:perspectiveChange "From internet subculture to a broader cultural influence" ;
+    youth:perspectiveInfluence "Social media trends and internet culture, including the rise of internet-based subcultures and aesthetics" ;
+    youth:ritual "Socializing and creating content on platforms like TikTok, Instagram, and YouTube" ;
+    youth:stereotype "Fashion-forward, internet-obsessed" ;
+    youth:value "Individuality, online identity, aesthetics" ;
+    youth:youthSubculture "E-Boys/E-Girls" ;
+    foaf:name "Person_17" .
+
+youth:Person_18 a youth:Person ;
+    youth:externalPerspective "Seen as dedicated and enthusiastic fans" ;
+    youth:fashionStyle "Fashion inspired by K-Pop idols, including bold and colorful outfits, trendy accessories, and elaborate hairstyles" ;
+    youth:historicalPeriod "2010s-2020s" ;
+    youth:internalPerspective "Focus on supporting artists and community building" ;
+    youth:location "Global" ;
+    youth:musicGenre "K-Pop (Korean Pop Music)" ;
+    youth:perspectiveChange "From niche interest to significant global cultural phenomenon" ;
+    youth:perspectiveInfluence "K-Pop industry and global fan culture, including the rise of Korean pop music and international fan communities" ;
+    youth:ritual "Attending concerts, participating in fan clubs, streaming music, engaging in fan activities online" ;
+    youth:stereotype "Devoted, enthusiastic, sometimes excessive" ;
+    youth:value "Dedication to K-Pop artists, appreciation for the genre’s music and choreography, community engagement" ;
+    youth:youthSubculture "K-Pop Stans" ;
+    foaf:name "Person_18" .
+
+youth:Person_19 a youth:Person ;
+    youth:externalPerspective "Seen as eco-conscious and relaxed" ;
+    youth:fashionStyle "Comfortable, casual clothing like oversized t-shirts, scrunchies, and Hydro Flask water bottles" ;
+    youth:historicalPeriod "Late 2010s" ;
+    youth:internalPerspective "Focus on a minimalist, casual lifestyle" ;
+    youth:location "Global" ;
+    youth:musicGenre "Indie Pop, Lo-fi Beats" ;
+    youth:perspectiveChange "From social media trend to a broader lifestyle movement" ;
+    youth:perspectiveInfluence "Social media trends and environmentalism, including the influence of the VSCO app and its aesthetic" ;
+    youth:ritual "Sharing content on Instagram and TikTok, promoting eco-friendly products, engaging in casual, laid-back lifestyles" ;
+    youth:stereotype "Eco-friendly, casual, trendy" ;
+    youth:value "Environmentalism, minimalist aesthetic, self-care" ;
+    youth:youthSubculture "VSCO Girls" ;
+    foaf:name "Person_19" .
+
+youth:Person_2 a youth:Person ;
+    youth:externalPerspective "Seen as fashionistas and sophisticated" ;
+    youth:fashionStyle "Sharp Suits, Scooter Culture" ;
+    youth:historicalPeriod "1960s" ;
+    youth:internalPerspective "Focus on appearance and music taste" ;
+    youth:location "London" ;
+    youth:musicGenre "Soul, R&B" ;
+    youth:perspectiveChange "From youth subculture to retro revival" ;
+    youth:perspectiveInfluence "Post-WWII British pop culture and music" ;
+    youth:ritual "Rallies, widing scooters" ;
+    youth:stereotype "Stylish, superficial, elitist" ;
+    youth:value "Style and sophistication" ;
+    youth:youthSubculture "Mods" ;
+    foaf:name "Person_2" .
+
+youth:Person_3 a youth:Person ;
+    youth:externalPerspective "Seen as working-class and rebellious" ;
+    youth:fashionStyle "Close-cropped or shaven heads, practical and durable clothing such as Dr. Martens boots, braces, high-rise straight-leg jeans" ;
+    youth:historicalPeriod "Late 1960s" ;
+    youth:internalPerspective "Focus on working-class pride and solidarity" ;
+    youth:location "London" ;
+    youth:musicGenre "Oi!, Ska, Reggae" ;
+    youth:perspectiveChange "From working-class solidarity to broader associations" ;
+    youth:perspectiveInfluence "Social and economic conditions of the late 1960s, including emergence from working-class and Mod influences" ;
+    youth:ritual "Attending music events, dancehalls, engaging in street-level solidarity" ;
+    youth:stereotype "Tough, working-class, politically charged" ;
+    youth:value "Working-class pride, Solidarity" ;
+    youth:youthSubculture "Skinheads" ;
+    foaf:name "Person_3" .
+
+youth:Person_4 a youth:Person ;
+    youth:externalPerspective "Seen as urban and expressive" ;
+    youth:fashionStyle "Streetwear, Urban, Baggy Clothes" ;
+    youth:historicalPeriod "1970s-present" ;
+    youth:internalPerspective "Focus on lyrical skill and dance" ;
+    youth:location "New York" ;
+    youth:musicGenre "Hip-Hop" ;
+    youth:perspectiveChange "From street culture to global influence" ;
+    youth:perspectiveInfluence "Urban environment and social issues" ;
+    youth:ritual "Breakdancing, Rapping, Freestyle Battles" ;
+    youth:stereotype "Street-smart and aggressive" ;
+    youth:value "Creativity and self-expression" ;
+    youth:youthSubculture "Hip-Hop" ;
+    foaf:name "Person_4" .
+
+youth:Person_5 a youth:Person ;
+    youth:externalPerspective "Seen as rebellious and anti-establishment" ;
+    youth:fashionStyle "Ripped, Leather" ;
+    youth:historicalPeriod "1970s" ;
+    youth:internalPerspective "Pride in challenging norms" ;
+    youth:location "New York" ;
+    youth:musicGenre "Punk Rock" ;
+    youth:perspectiveChange "From fringe to influential in mainstream fashion" ;
+    youth:perspectiveInfluence "Cultural rebellion and anti-authoritarianism, including political and social rebellion" ;
+    youth:ritual "Attending concerts, protesting, DIY activities, riots" ;
+    youth:stereotype "Troublemakers, violent, anti-social" ;
+    youth:value "Rebellion, Activism, DIY ethic, Anarchism" ;
+    youth:youthSubculture "Punks" ;
+    foaf:name "Person_5" .
+
+youth:Person_6 a youth:Person ;
+    youth:externalPerspective "Seen as rebellious and energetic" ;
+    youth:fashionStyle "Leather, Denim" ;
+    youth:historicalPeriod "1960s-1980s" ;
+    youth:internalPerspective "Emphasis on musical talent and passion" ;
+    youth:location "Los Angeles" ;
+    youth:musicGenre "Rock" ;
+    youth:perspectiveChange "From rebellious youth culture to mainstream icons" ;
+    youth:perspectiveInfluence "Rock music history and legends, including the evolution of classic rock and roll" ;
+    youth:ritual "Rock Concerts, Playing instruments" ;
+    youth:stereotype "Loud, wild, rebellious" ;
+    youth:value "Passion, Rebellion" ;
+    youth:youthSubculture "Rockers" ;
+    foaf:name "Person_6" .
+
+youth:Person_7 a youth:Person ;
+    youth:externalPerspective "Seen as rebellious and energetic" ;
+    youth:fashionStyle "Leather, Denim" ;
+    youth:historicalPeriod "1970s-1980s" ;
+    youth:internalPerspective "Emphasis on musical talent and passion" ;
+    youth:location "USA, UK" ;
+    youth:musicGenre "Heavy Metal" ;
+    youth:perspectiveChange "From rebellious youth culture to mainstream icons" ;
+    youth:perspectiveInfluence "Rock music history and legends, including the rise of heavy metal in the 70s and 80s" ;
+    youth:ritual "Metal Concerts, Playing instruments" ;
+    youth:stereotype "Extreme, aggressive, unruly, extravagant" ;
+    youth:value "Rebellion" ;
+    youth:youthSubculture "Metalheads" ;
+    foaf:name "Person_7" .
+
+youth:Person_8 a youth:Person ;
+    youth:externalPerspective "Seen as dark and mysterious" ;
+    youth:fashionStyle "Black clothing, Dark make-up, Victorian" ;
+    youth:historicalPeriod "1980s" ;
+    youth:internalPerspective "Emphasize individual expression and aesthetics" ;
+    youth:location "London" ;
+    youth:musicGenre "Gothic Rock, Post-Punk" ;
+    youth:perspectiveChange "Shift from misunderstood to celebrated for its style" ;
+    youth:perspectiveInfluence "Post-punk era, media portrayals of dark aesthetics" ;
+    youth:ritual "Attending concerts, Alternative nightlife" ;
+    youth:stereotype "Depressed, morose, detached, brooding" ;
+    youth:value "Individualism" ;
+    youth:youthSubculture "Goths" ;
+    foaf:name "Person_8" .
+
+youth:Person_9 a youth:Person ;
+    youth:externalPerspective "Seen as laid-back and rebellious" ;
+    youth:fashionStyle "Casual, Baggy" ;
+    youth:historicalPeriod "1990s" ;
+    youth:internalPerspective "Focus on skill and personal style" ;
+    youth:location "California" ;
+    youth:musicGenre "Punk Rock, Hip-Hop" ;
+    youth:perspectiveChange "From niche hobby to mainstream sport" ;
+    youth:perspectiveInfluence "Influence of extreme sports culture, including the growth of skate culture" ;
+    youth:ritual "Skateboarding, Skate skills developing" ;
+    youth:stereotype "Risk-taking, troublemakers, anti-establishment" ;
+    youth:value "Freedom, community-oriented, creativity, athletics" ;
+    youth:youthSubculture "Skaters" ;
+    foaf:name "Person_9" .
+
