@@ -22,16 +22,33 @@ It is part of the end-of-course project of Knowledge Representation and Knowledg
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/ontologies/2024/YOUTH/affectsPerspective
-youth:affectsPerspective rdf:type owl:ObjectProperty ,
-                                  owl:TransitiveProperty ;
-                         rdfs:domain youth:PerspectiveChange ;
-                         rdfs:range youth:ExternalPerspective ,
-                                    youth:InternalPerspective ;
-                         rdfs:comment "This property links a perspective change to the specific external or internal perspectives it affects. It captures how shifts in perspective affect the views of subcultures both internally (self-perception) and externally (public perception)." .
+###  http://www.semanticweb.org/ontologies/2024/YOUTH#expressedVia
+:expressedVia rdf:type owl:ObjectProperty ;
+              rdfs:domain :NegativeAttitude .
+
+
+###  http://www.semanticweb.org/ontologies/2024/YOUTH#fromViewpointToAttitude
+:fromViewpointToAttitude rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf youth:influences ;
+                         rdfs:comment """cogliere una potenziale positive/negative attitude verso youth subculture da parte di un external viewpoint
+
+ex query:
+persone over x years have a positive attitude towards x youth subcultures""" .
+
+
+###  http://www.semanticweb.org/ontologies/2024/YOUTH/affectedByViewpoint
+youth:affectedByViewpoint rdf:type owl:ObjectProperty ,
+                                   owl:TransitiveProperty ;
+                          rdfs:domain youth:PerspectiveChange ;
+                          rdfs:range [ rdf:type owl:Class ;
+                                       owl:unionOf ( youth:ExternalViewpoint
+                                                     youth:InternalViewpoint
+                                                   )
+                                     ] ;
+                          rdfs:comment "This property links a perspective change to the specific external or internal perspectives it affects. It captures how shifts in perspective affect the views of subcultures both internally (self-perception) and externally (public perception)." .
 
 [ rdf:type owl:Axiom ;
-   owl:annotatedSource youth:affectsPerspective ;
+   owl:annotatedSource youth:affectedByViewpoint ;
    owl:annotatedProperty rdfs:comment ;
    owl:annotatedTarget "This property links a perspective change to the specific external or internal perspectives it affects. It captures how shifts in perspective affect the views of subcultures both internally (self-perception) and externally (public perception)." ;
    rdfs:comment "Transitive property: if a change in perspective influences another, and that one influences a third, then the first one indirectly influences the third."
@@ -92,8 +109,8 @@ youth:hasValue rdf:type owl:ObjectProperty ;
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/influencedBy
 youth:influencedBy rdf:type owl:ObjectProperty ;
-                   rdfs:domain youth:ExternalPerspective ,
-                               youth:InternalPerspective ;
+                   rdfs:domain youth:ExternalViewpoint ,
+                               youth:InternalViewpoint ;
                    rdfs:range youth:PerspectiveInfluence ;
                    rdfs:comment "Connects perspectives to the factors that influence them. This property shows how external and internal perspectives are affected by various influencing factors such as media representations, societal attitudes, and personal experiences. It models the relationship between perspectives and the elements that shape them." .
 
@@ -139,9 +156,8 @@ youth:participatesIn rdf:type owl:ObjectProperty ;
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/selfViewsAs
 youth:selfViewsAs rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf youth:affectsPerspective ;
                   rdfs:domain youth:Person ;
-                  rdfs:range youth:InternalPerspective ;
+                  rdfs:range youth:InternalViewpoint ;
                   rdfs:comment "Links individuals to their internal viewpoint within a youth subculture. This property represents how members of a subculture perceive themselves and their identity, capturing personal self-views and self-descriptions that reflect their own understanding and experience within the subculture." .
 
 
@@ -154,15 +170,19 @@ youth:triggersStereotype rdf:type owl:ObjectProperty ;
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/viewedAs
 youth:viewedAs rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf youth:affectsPerspective ;
                rdfs:domain youth:YouthSubculture ;
-               rdfs:range youth:ExternalPerspective ;
+               rdfs:range youth:ExternalViewpoint ;
                rdfs:comment "Links a youth subculture to its external viewpoint. This property connects subcultures to the way they are perceived by outsiders. It helps to model the public image and external characterization of a subculture." .
 
 
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://www.semanticweb.org/ontologies/2024/YOUTH#belongsToGeneration
+:belongsToGeneration rdf:type owl:DatatypeProperty ;
+                     rdfs:range rdfs:Literal .
+
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/hasContext
 youth:hasContext rdf:type owl:DatatypeProperty ,
@@ -184,15 +204,42 @@ youth:hasName rdf:type owl:DatatypeProperty ,
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/ontologies/2024/YOUTH/ExternalPerspective
-youth:ExternalPerspective rdf:type owl:Class ;
-                          owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                owl:onProperty youth:influencedBy ;
-                                                owl:someValuesFrom youth:PerspectiveInfluence
-                                              ] ;
-                          rdfs:subClassOf persp:Lens ;
-                          owl:disjointWith youth:InternalPerspective ;
-                          rdfs:comment "Represents the way in which subcultures are viewed from an external viewpoint. This is influenced by the general public's impressions, stereotypes, and media portrayals that shape the external image of a subculture." .
+###  http://www.semanticweb.org/ontologies/2024/YOUTH#NegativeAttitude
+:NegativeAttitude rdf:type owl:Class ;
+                  rdfs:subClassOf persp:Attitude ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :expressedVia ;
+                                    owl:someValuesFrom youth:Stereotype
+                                  ] .
+
+
+###  http://www.semanticweb.org/ontologies/2024/YOUTH#NeutralAttitude
+:NeutralAttitude rdf:type owl:Class ;
+                 rdfs:subClassOf persp:Attitude .
+
+
+###  http://www.semanticweb.org/ontologies/2024/YOUTH#PositiveAttitude
+:PositiveAttitude rdf:type owl:Class ;
+                  rdfs:subClassOf persp:Attitude ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :expressedVia ;
+                                    owl:someValuesFrom youth:Value
+                                  ] .
+
+
+###  http://www.semanticweb.org/ontologies/2024/YOUTH/ExternalViewpoint
+youth:ExternalViewpoint rdf:type owl:Class ;
+                        rdfs:subClassOf persp:Lens ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty youth:influencedBy ;
+                                          owl:someValuesFrom persp:Attitude
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty youth:influencedBy ;
+                                          owl:someValuesFrom youth:PerspectiveInfluence
+                                        ] ;
+                        owl:disjointWith youth:InternalViewpoint ;
+                        rdfs:comment "Represents the way in which subcultures are viewed from an external viewpoint. This is influenced by the general public's impressions, stereotypes, and media portrayals that shape the external image of a subculture." .
 
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/FashionStyle
@@ -213,14 +260,18 @@ youth:HistoricalPeriod rdf:type owl:Class ;
                        rdfs:comment "Represents the time frame (time-span) during which a subculture emerged, developed, or experienced significant influences." .
 
 
-###  http://www.semanticweb.org/ontologies/2024/YOUTH/InternalPerspective
-youth:InternalPerspective rdf:type owl:Class ;
-                          owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                owl:onProperty youth:influencedBy ;
-                                                owl:someValuesFrom youth:PerspectiveInfluence
-                                              ] ;
-                          rdfs:subClassOf persp:Lens ;
-                          rdfs:comment "Represents the self-perception and self-definition of members within a subculture. This includes how individuals within the subculture view themselves and their own identity, as well as how they interpret their place within the subculture. It reflects the internal self-concept and personal narratives that members use to describe their experiences and values." .
+###  http://www.semanticweb.org/ontologies/2024/YOUTH/InternalViewpoint
+youth:InternalViewpoint rdf:type owl:Class ;
+                        rdfs:subClassOf persp:Lens ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty youth:influencedBy ;
+                                          owl:someValuesFrom persp:Attitude
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty youth:influencedBy ;
+                                          owl:someValuesFrom youth:PerspectiveInfluence
+                                        ] ;
+                        rdfs:comment "Represents the self-perception and self-definition of members within a subculture. This includes how individuals within the subculture view themselves and their own identity, as well as how they interpret their place within the subculture. It reflects the internal self-concept and personal narratives that members use to describe their experiences and values." .
 
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/Location
@@ -241,15 +292,15 @@ youth:MusicGenre rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/Person
 youth:Person rdf:type owl:Class ;
-             owl:equivalentClass _:genid9 ;
+             owl:equivalentClass _:genid16 ;
              rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent> ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty youth:influencedBy ;
-                               owl:someValuesFrom youth:ExternalPerspective
+                               owl:someValuesFrom youth:ExternalViewpoint
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty youth:influencedBy ;
-                               owl:someValuesFrom youth:InternalPerspective
+                               owl:someValuesFrom youth:InternalViewpoint
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty youth:influencedBy ;
@@ -261,28 +312,28 @@ youth:Person rdf:type owl:Class ;
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty youth:selfViewsAs ;
-                               owl:someValuesFrom youth:InternalPerspective
+                               owl:someValuesFrom youth:InternalViewpoint
                              ] ;
              owl:hasKey ( youth:hasName
                         ) ;
              rdfs:comment "Individuals within the subcultures." .
 
-_:genid9 owl:intersectionOf ( youth:Person
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty youth:participatesIn ;
-                                 owl:someValuesFrom youth:YouthSubculture
-                               ]
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty youth:selfViewsAs ;
-                                 owl:someValuesFrom youth:InternalPerspective
-                               ]
-                             ) ;
-          rdf:type owl:Class .
+_:genid16 owl:intersectionOf ( youth:Person
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty youth:participatesIn ;
+                                  owl:someValuesFrom youth:YouthSubculture
+                                ]
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty youth:selfViewsAs ;
+                                  owl:someValuesFrom youth:InternalViewpoint
+                                ]
+                              ) ;
+           rdf:type owl:Class .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource youth:Person ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid9 ;
+   owl:annotatedTarget _:genid16 ;
    rdfs:comment "A chain that links a Person’s internal perspective to a YouthSubculture through participation."
  ] .
 
@@ -291,10 +342,10 @@ _:genid9 owl:intersectionOf ( youth:Person
 youth:PerspectiveChange rdf:type owl:Class ;
                         rdfs:subClassOf persp:Cut ,
                                         [ rdf:type owl:Restriction ;
-                                          owl:onProperty youth:affectsPerspective ;
+                                          owl:onProperty youth:affectedByViewpoint ;
                                           owl:someValuesFrom [ rdf:type owl:Class ;
-                                                               owl:unionOf ( youth:ExternalPerspective
-                                                                             youth:InternalPerspective
+                                                               owl:unionOf ( youth:ExternalViewpoint
+                                                                             youth:InternalViewpoint
                                                                            )
                                                              ]
                                         ] ;
@@ -321,16 +372,7 @@ youth:Ritual rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/Stereotype
 youth:Stereotype rdf:type owl:Class ;
-                 owl:equivalentClass [ owl:intersectionOf ( youth:Stereotype
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty youth:triggersStereotype ;
-                                                              owl:someValuesFrom youth:YouthSubculture
-                                                            ]
-                                                          ) ;
-                                       rdf:type owl:Class
-                                     ] ;
-                 rdfs:subClassOf persp:Attitude ,
-                                 [ rdf:type owl:Restriction ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
                                    owl:onProperty youth:triggersStereotype ;
                                    owl:someValuesFrom youth:YouthSubculture
                                  ] ;
@@ -349,36 +391,35 @@ youth:Style rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/Value
 youth:Value rdf:type owl:Class ;
-            rdfs:subClassOf persp:Attitude ;
             rdfs:comment "Represents the fundamental principles and beliefs that underpin a subculture, guiding the behavior, attitudes, and norms of its members." .
 
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/YouthSubculture
 youth:YouthSubculture rdf:type owl:Class ;
-                      owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                   owl:onProperty youth:engagesIn ;
-                                                                   owl:someValuesFrom youth:Ritual
-                                                                 ]
-                                                                 [ rdf:type owl:Restriction ;
-                                                                   owl:onProperty youth:hasFashionStyle ;
-                                                                   owl:someValuesFrom youth:FashionStyle
-                                                                 ]
-                                                                 [ rdf:type owl:Restriction ;
-                                                                   owl:onProperty youth:hasMusicGenre ;
-                                                                   owl:someValuesFrom youth:MusicGenre
-                                                                 ]
-                                                                 [ rdf:type owl:Restriction ;
-                                                                   owl:onProperty youth:hasParticipant ;
-                                                                   owl:someValuesFrom youth:Person
-                                                                 ]
-                                                                 [ rdf:type owl:Restriction ;
-                                                                   owl:onProperty youth:hasValue ;
-                                                                   owl:someValuesFrom youth:Value
-                                                                 ]
-                                                               ) ;
-                                            rdf:type owl:Class
-                                          ] ;
                       rdfs:subClassOf persp:Eventuality ,
+                                      [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                               owl:onProperty youth:engagesIn ;
+                                                               owl:someValuesFrom youth:Ritual
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty youth:hasFashionStyle ;
+                                                               owl:someValuesFrom youth:FashionStyle
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty youth:hasMusicGenre ;
+                                                               owl:someValuesFrom youth:MusicGenre
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty youth:hasParticipant ;
+                                                               owl:someValuesFrom youth:Person
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty youth:hasValue ;
+                                                               owl:someValuesFrom youth:Value
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty youth:locatedIn ;
                                         owl:someValuesFrom youth:Location
@@ -389,9 +430,9 @@ youth:YouthSubculture rdf:type owl:Class ;
                                       ] ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty youth:viewedAs ;
-                                        owl:someValuesFrom youth:ExternalPerspective
+                                        owl:someValuesFrom youth:ExternalViewpoint
                                       ] ,
-                                      _:genid45 ;
+                                      _:genid48 ;
                       rdfs:comment """A group of people within a cultural society that represents a specific subculture formed by younger generations, characterized by distinct values, practices, and identities that differentiate them from the dominant culture.
 
 See bibliography:
@@ -401,14 +442,14 @@ Williams, Patrick J. \"Youth Subcultural Studies: Sociological Traditions and Co
 Widdicombe, Sue. \"Autobiography and Change: Rhetoric and Authenticity of 'Gothic' Style.\" In Repertoires and Readings of Texts in Action, edited by Erica Burman and Ian Parker, 94-113. London: Routledge, 1993.""" ;
                       rdfs:seeAlso "https://krke24.gitbook.io/krke-project-2023-2024" .
 
-_:genid45 rdf:type owl:Restriction ;
+_:genid48 rdf:type owl:Restriction ;
            owl:onProperty youth:influences ;
            owl:hasSelf "true"^^xsd:boolean .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource youth:YouthSubculture ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid45 ;
+   owl:annotatedTarget _:genid48 ;
    rdfs:comment "A youth subculture could potentially influence itself, but it's not necessarily always the case. Hence, the \"influences\" property is \"potentially reflexive\"."
  ] .
 
