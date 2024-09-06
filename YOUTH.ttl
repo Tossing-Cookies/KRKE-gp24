@@ -82,6 +82,22 @@ Example query: \"Individuals over x years of age have a positive attitude toward
               rdfs:range youth:Person .
 
 
+###  http://www.semanticweb.org/ontologies/2024/YOUTH#isExpressedVia
+:isExpressedVia rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( youth:Stereotype
+                                            youth:Value
+                                          )
+                            ] ;
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:unionOf ( :NegativeAttitude
+                                           :NeutralAttitude
+                                           :PositiveAttitude
+                                         )
+                           ] .
+
+
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH#isViewpointOf
 :isViewpointOf rdf:type owl:ObjectProperty ;
                owl:inverseOf youth:hasViewpoint ;
@@ -416,6 +432,15 @@ youth:Ritual rdf:type owl:Class ;
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/Stereotype
 youth:Stereotype rdf:type owl:Class ;
                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :isExpressedVia ;
+                                   owl:someValuesFrom [ rdf:type owl:Class ;
+                                                        owl:unionOf ( :NegativeAttitude
+                                                                      :NeutralAttitude
+                                                                      :PositiveAttitude
+                                                                    )
+                                                      ]
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
                                    owl:onProperty youth:triggersStereotype ;
                                    owl:someValuesFrom youth:YouthSubculture
                                  ] ;
@@ -434,6 +459,15 @@ youth:Style rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/Value
 youth:Value rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :isExpressedVia ;
+                              owl:someValuesFrom [ rdf:type owl:Class ;
+                                                   owl:unionOf ( :NegativeAttitude
+                                                                 :NeutralAttitude
+                                                                 :PositiveAttitude
+                                                               )
+                                                 ]
+                            ] ;
             rdfs:comment "Represents the fundamental principles and beliefs that underpin a subculture, guiding the behavior, attitudes, and norms of its members." .
 
 
@@ -471,7 +505,7 @@ youth:YouthSubculture rdf:type owl:Class ;
                                         owl:onProperty youth:viewedAs ;
                                         owl:someValuesFrom youth:ExternalViewpoint
                                       ] ,
-                                      _:genid76 ;
+                                      _:genid93 ;
                       rdfs:comment """A group of people within a cultural society that represents a specific community formed by younger generations, characterized by distinct values, practices, and identities that differentiate them from the dominant culture.
 
 See bibliography:
@@ -481,14 +515,14 @@ Williams, Patrick J. \"Youth Subcultural Studies: Sociological Traditions and Co
 Widdicombe, Sue. \"Autobiography and Change: Rhetoric and Authenticity of 'Gothic' Style.\" In Repertoires and Readings of Texts in Action, edited by Erica Burman and Ian Parker, 94-113. London: Routledge, 1993.""" ;
                       rdfs:seeAlso "https://krke24.gitbook.io/krke-project-2023-2024" .
 
-_:genid76 rdf:type owl:Restriction ;
+_:genid93 rdf:type owl:Restriction ;
            owl:onProperty youth:influences ;
            owl:hasSelf "true"^^xsd:boolean .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource youth:YouthSubculture ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid76 ;
+   owl:annotatedTarget _:genid93 ;
    rdfs:comment "A youth subculture could potentially influence itself, but it's not necessarily always the case. Hence, the \"influences\" property is \"potentially reflexive\"."
  ] .
 
