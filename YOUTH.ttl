@@ -38,17 +38,21 @@ It is part of the end-of-course project of Knowledge Representation and Knowledg
               rdfs:comment "Links the classes Stereotype and Value to the classes PositiveAttitude, NegativeAttitude, and NeutralAttitude. It indicates that attitudes (positive, negative, or neutral) towards a subculture are shaped by the stereotypes associated with it and the values it upholds." .
 
 
-###  http://www.semanticweb.org/ontologies/2024/YOUTH#fromExternalViewpointToAttitude
-:fromExternalViewpointToAttitude rdf:type owl:ObjectProperty ;
-                                 rdfs:subPropertyOf owl:topObjectProperty ;
-                                 rdfs:domain youth:ExternalViewpoint ;
-                                 rdfs:range [ rdf:type owl:Class ;
-                                              owl:unionOf ( :NegativeAttitude
-                                                            :NeutralAttitude
-                                                            :PositiveAttitude
-                                                          )
-                                            ] ;
-                                 rdfs:comment """This property captures the potential positive or negative attitude an individual with an external viewpoint has towards a youth subculture.
+###  http://www.semanticweb.org/ontologies/2024/YOUTH#fromViewpointToAttitude
+:fromViewpointToAttitude rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain [ rdf:type owl:Class ;
+                                       owl:unionOf ( youth:ExternalViewpoint
+                                                     youth:InternalViewpoint
+                                                   )
+                                     ] ;
+                         rdfs:range [ rdf:type owl:Class ;
+                                      owl:unionOf ( :NegativeAttitude
+                                                    :NeutralAttitude
+                                                    :PositiveAttitude
+                                                  )
+                                    ] ;
+                         rdfs:comment """This property captures the potential neutral, positive or negative attitude an individual with an external or internal viewpoint has towards a youth subculture.
 
 Example query: \"Individuals over x years of age have a positive attitude towards x youth subcultures.\"""" .
 
@@ -303,7 +307,7 @@ youth:hasName rdf:type owl:DatatypeProperty ,
 youth:ExternalViewpoint rdf:type owl:Class ;
                         rdfs:subClassOf persp:Lens ,
                                         [ rdf:type owl:Restriction ;
-                                          owl:onProperty :fromExternalViewpointToAttitude ;
+                                          owl:onProperty :fromViewpointToAttitude ;
                                           owl:someValuesFrom [ rdf:type owl:Class ;
                                                                owl:unionOf ( :NegativeAttitude
                                                                              :NeutralAttitude
@@ -359,7 +363,7 @@ youth:MusicGenre rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/Person
 youth:Person rdf:type owl:Class ;
-             rdfs:subClassOf _:genid53 ,
+             rdfs:subClassOf _:genid56 ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasAttitude ;
                                owl:someValuesFrom [ rdf:type owl:Class ;
@@ -377,32 +381,32 @@ youth:Person rdf:type owl:Class ;
                                                                 )
                                                   ]
                              ] ,
-                             _:genid65 ;
+                             _:genid68 ;
              owl:hasKey ( youth:hasName
                         ) ;
              rdfs:comment "Members within the youth subcultures." .
 
-_:genid53 rdf:type owl:Class ;
+_:genid56 rdf:type owl:Class ;
            owl:complementOf [ rdf:type owl:Restriction ;
                               owl:onProperty youth:participatesIn ;
                               owl:someValuesFrom youth:YouthSubculture
                             ] .
 
-_:genid65 rdf:type owl:Restriction ;
+_:genid68 rdf:type owl:Restriction ;
            owl:onProperty youth:participatesIn ;
            owl:someValuesFrom youth:YouthSubculture .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource youth:Person ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid53 ;
+   owl:annotatedTarget _:genid56 ;
    rdfs:comment "This expression defines a class of individuals who are members of the class Person and do not have any participatesIn relationship with an instance of YouthSubculture. These are people who do not participate in any youth subculture."
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource youth:Person ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid65 ;
+   owl:annotatedTarget _:genid68 ;
    rdfs:comment "This expression defines a class of individuals who are members of the class Person and have at least one participatesIn relationship with an instance of YouthSubculture. These are people who participate in at least one youth subculture."
  ] .
 
@@ -515,7 +519,7 @@ youth:YouthSubculture rdf:type owl:Class ;
                                         owl:onProperty youth:viewedAs ;
                                         owl:someValuesFrom youth:ExternalViewpoint
                                       ] ,
-                                      _:genid94 ;
+                                      _:genid97 ;
                       rdfs:comment """A group of people within a cultural society that represents a specific community formed by younger generations, characterized by distinct values, practices, and identities that differentiate them from the dominant culture.
 
 See bibliography:
@@ -525,14 +529,14 @@ Williams, Patrick J. \"Youth Subcultural Studies: Sociological Traditions and Co
 Widdicombe, Sue. \"Autobiography and Change: Rhetoric and Authenticity of 'Gothic' Style.\" In Repertoires and Readings of Texts in Action, edited by Erica Burman and Ian Parker, 94-113. London: Routledge, 1993.""" ;
                       rdfs:seeAlso "https://krke24.gitbook.io/krke-project-2023-2024" .
 
-_:genid94 rdf:type owl:Restriction ;
+_:genid97 rdf:type owl:Restriction ;
            owl:onProperty youth:influences ;
            owl:hasSelf "true"^^xsd:boolean .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource youth:YouthSubculture ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid94 ;
+   owl:annotatedTarget _:genid97 ;
    rdfs:comment "A youth subculture could potentially influence itself, but it's not necessarily always the case. Hence, the \"influences\" property is \"potentially reflexive\"."
  ] .
 
