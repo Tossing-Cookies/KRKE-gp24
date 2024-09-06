@@ -321,11 +321,7 @@ youth:ExternalViewpoint rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/FashionStyle
 youth:FashionStyle rdf:type owl:Class ;
-                   rdfs:subClassOf youth:Style ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty youth:hasFashionStyle ;
-                                     owl:someValuesFrom youth:Style
-                                   ] ;
+                   rdfs:subClassOf youth:Style ;
                    owl:disjointWith youth:MusicGenre ;
                    rdfs:comment "Represents the style of clothing and aesthetics associated with a subculture." .
 
@@ -357,17 +353,14 @@ youth:Location rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/MusicGenre
 youth:MusicGenre rdf:type owl:Class ;
-                 rdfs:subClassOf youth:Style ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty youth:hasMusicGenre ;
-                                   owl:someValuesFrom youth:Style
-                                 ] ;
+                 rdfs:subClassOf youth:Style ;
                  rdfs:comment "Represents the type of music associated with a subculture." .
 
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/Person
 youth:Person rdf:type owl:Class ;
-             rdfs:subClassOf [ rdf:type owl:Restriction ;
+             rdfs:subClassOf _:genid53 ,
+                             [ rdf:type owl:Restriction ;
                                owl:onProperty :hasAttitude ;
                                owl:someValuesFrom [ rdf:type owl:Class ;
                                                     owl:unionOf ( :NegativeAttitude
@@ -384,13 +377,34 @@ youth:Person rdf:type owl:Class ;
                                                                 )
                                                   ]
                              ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty youth:participatesIn ;
-                               owl:someValuesFrom youth:YouthSubculture
-                             ] ;
+                             _:genid65 ;
              owl:hasKey ( youth:hasName
                         ) ;
              rdfs:comment "Members within the youth subcultures." .
+
+_:genid53 rdf:type owl:Class ;
+           owl:complementOf [ rdf:type owl:Restriction ;
+                              owl:onProperty youth:participatesIn ;
+                              owl:someValuesFrom youth:YouthSubculture
+                            ] .
+
+_:genid65 rdf:type owl:Restriction ;
+           owl:onProperty youth:participatesIn ;
+           owl:someValuesFrom youth:YouthSubculture .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource youth:Person ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget _:genid53 ;
+   rdfs:comment "This expression defines a class of individuals who are members of the class Person and do not have any participatesIn relationship with an instance of YouthSubculture. These are people who do not participate in any youth subculture."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource youth:Person ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget _:genid65 ;
+   rdfs:comment "This expression defines a class of individuals who are members of the class Person and have at least one participatesIn relationship with an instance of YouthSubculture. These are people who participate in at least one youth subculture."
+ ] .
 
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/PerspectiveInfluence
@@ -420,11 +434,7 @@ youth:PerspectiveShift rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/Ritual
 youth:Ritual rdf:type owl:Class ;
-             rdfs:subClassOf youth:Style ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasRitual ;
-                               owl:someValuesFrom youth:Style
-                             ] ;
+             rdfs:subClassOf youth:Style ;
              owl:disjointWith youth:Value ;
              rdfs:comment "Represents the activities that usually characterize a specific youth subculture." .
 
@@ -505,7 +515,7 @@ youth:YouthSubculture rdf:type owl:Class ;
                                         owl:onProperty youth:viewedAs ;
                                         owl:someValuesFrom youth:ExternalViewpoint
                                       ] ,
-                                      _:genid93 ;
+                                      _:genid94 ;
                       rdfs:comment """A group of people within a cultural society that represents a specific community formed by younger generations, characterized by distinct values, practices, and identities that differentiate them from the dominant culture.
 
 See bibliography:
@@ -515,14 +525,14 @@ Williams, Patrick J. \"Youth Subcultural Studies: Sociological Traditions and Co
 Widdicombe, Sue. \"Autobiography and Change: Rhetoric and Authenticity of 'Gothic' Style.\" In Repertoires and Readings of Texts in Action, edited by Erica Burman and Ian Parker, 94-113. London: Routledge, 1993.""" ;
                       rdfs:seeAlso "https://krke24.gitbook.io/krke-project-2023-2024" .
 
-_:genid93 rdf:type owl:Restriction ;
+_:genid94 rdf:type owl:Restriction ;
            owl:onProperty youth:influences ;
            owl:hasSelf "true"^^xsd:boolean .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource youth:YouthSubculture ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid93 ;
+   owl:annotatedTarget _:genid94 ;
    rdfs:comment "A youth subculture could potentially influence itself, but it's not necessarily always the case. Hence, the \"influences\" property is \"potentially reflexive\"."
  ] .
 
