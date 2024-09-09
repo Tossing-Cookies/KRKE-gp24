@@ -247,6 +247,7 @@ youth:viewedAs rdf:type owl:ObjectProperty ;
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH#belongsToGeneration
 :belongsToGeneration rdf:type owl:DatatypeProperty ,
                               owl:FunctionalProperty ;
+                     rdfs:domain youth:Person ;
                      rdfs:range rdfs:Literal .
 
 
