@@ -13,15 +13,50 @@ df = pd.read_csv(csv_path)
 
 # Define namespaces
 YOUTH = Namespace("http://www.semanticweb.org/ontologies/2024/YOUTH/")
-
+OWL = Namespace("https://www.w3.org/TR/owl-ref/")
 # Create a new RDF graph
 g = Graph()
 
 # Bind namespaces for easier usage
 g.bind("youth", YOUTH)
+g.bind("OWL", OWL)
 
 # Define a function to add a person to the ontology
 def add_triple(df):
+
+    g.add((YOUTH.affects,  RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.contrasts, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.creates, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.determines, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.expressedVia, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.extractedFrom, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.hasAttitude, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.hasFashionStyle, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.hasMusicGenre, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.hasParticipant, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.hasRitual, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.vhasValue, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.hasViewpoint, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.holds, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.influencedBy, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.influences, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.isAttitudeOf, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.isCharacterisedBy, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.isExpressedVia, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.isSatisfiedBy, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.isSettingFor, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.isViewpointOf, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.locatedIn, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.ClassifiedBy, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.originatedIn, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.participatesIn, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.perspectivisedAs, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.perspectivisedThrough, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.satisfies, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.shotThrough, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.toward, RDF.type, OWL.ObjectProperty))
+    g.add((YOUTH.triggersStereotype, RDF.type, OWL.ObjectProperty))
+
     for index , row in df.iterrows():
 
         for col_name, value in row.items():
