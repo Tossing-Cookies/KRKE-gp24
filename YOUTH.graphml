@@ -17,7 +17,7 @@
     <node id="n0">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="51.52125732506602" width="174.37223959374802" x="347.302161453126" y="4458.431518380201"/>
+          <y:Geometry height="51.52125732506602" width="174.37223959374802" x="347.302161453126" y="4488.431518380201"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="165.890625" x="4.240807296873982" xml:space="preserve" y="13.959847412533236">youth:YouthSubculture</y:NodeLabel>
@@ -28,7 +28,7 @@
     <node id="n1">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="48.3842940854679" width="135.8889334034855" x="636.5438145482573" y="3605.0"/>
+          <y:Geometry height="48.3842940854679" width="135.8889334034855" x="516.5438145482573" y="3605.0"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="123.1796875" x="6.354622951742726" xml:space="preserve" y="12.391365792734177">youth:Participant</y:NodeLabel>
@@ -39,7 +39,7 @@
     <node id="n2">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="43.0" width="126.0949682107173" x="641.4407971446414" y="3802.692147042734"/>
+          <y:Geometry height="43.0" width="126.0949682107173" x="521.4407971446414" y="3802.692147042734"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="78.6953125" x="23.69982785535865" xml:space="preserve" y="9.69921875">rdfs:Literal</y:NodeLabel>
@@ -50,7 +50,7 @@
     <node id="n3">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="43.0" width="126.0949682107173" x="2081.4407971446412" y="3952.692147042734"/>
+          <y:Geometry height="43.0" width="126.0949682107173" x="1991.4407971446412" y="3982.692147042734"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="78.6953125" x="23.699827855358762" xml:space="preserve" y="9.69921875">rdfs:Literal</y:NodeLabel>
@@ -61,7 +61,7 @@
     <node id="n4">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="35.61917040921162" width="128.38512337762728" x="55.29571956118636" y="4466.382561838129"/>
+          <y:Geometry height="35.61917040921162" width="128.38512337762728" x="55.29571956118636" y="4496.382561838129"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="108.078125" x="10.15349918881364" xml:space="preserve" y="6.008803954606265">youth:Location</y:NodeLabel>
@@ -72,7 +72,7 @@
     <node id="n5">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="63.77016211160344" width="306.00698720432104" x="41.48478764783948" y="4617.307065986933"/>
+          <y:Geometry height="63.77016211160344" width="306.00698720432104" x="41.48478764783948" y="4647.307065986933"/>
           <y:Fill color="#FFFF99" transparent="false"/>
           <y:BorderStyle color="#000000" type="dotted" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="62.8046875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="296.5546875" x="4.726149852160518" xml:space="preserve" y="0.48273730580149277">(hasFashionStyle some FashionStyle) 
@@ -85,7 +85,7 @@ and (hasRitual some Ritual)</y:NodeLabel>
     <node id="n6">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="35.61917040921162" width="165.23928427045286" x="591.8686391147736" y="4601.382561838129"/>
+          <y:Geometry height="35.61917040921162" width="165.23928427045286" x="591.8686391147736" y="4631.382561838129"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="159.625" x="2.8071421352263997" xml:space="preserve" y="6.008803954606265">youth:HistoricalPeriod</y:NodeLabel>
@@ -96,7 +96,7 @@ and (hasRitual some Ritual)</y:NodeLabel>
     <node id="n7">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="57.753156251550536" width="95.72137728019618" x="1346.627592609902" y="4035.315568916959"/>
+          <y:Geometry height="57.753156251550536" width="95.72137728019618" x="1346.627592609902" y="4065.315568916959"/>
           <y:Fill color="#FFFF99" transparent="false"/>
           <y:BorderStyle color="#000000" type="dotted" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="88.4921875" x="3.614594890098033" xml:space="preserve" y="17.075796875775268">owl:unionOf</y:NodeLabel>
@@ -107,7 +107,7 @@ and (hasRitual some Ritual)</y:NodeLabel>
     <node id="n8">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="22.2421875" width="20.0" x="4120.0" y="3605.0"/>
+          <y:Geometry height="22.2421875" width="20.0" x="4030.0" y="3605.0"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
           <y:Shape type="rectangle"/>
@@ -117,7 +117,7 @@ and (hasRitual some Ritual)</y:NodeLabel>
     <node id="n9">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="43.0" width="126.0949682107173" x="1646.4407971446412" y="4042.692147042734"/>
+          <y:Geometry height="43.0" width="126.0949682107173" x="1646.4407971446412" y="4072.692147042734"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="78.6953125" x="23.699827855358762" xml:space="preserve" y="9.69921875">rdfs:Literal</y:NodeLabel>
@@ -128,7 +128,7 @@ and (hasRitual some Ritual)</y:NodeLabel>
     <node id="n10">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="45.19629629629628" width="145.37192473234978" x="1036.8023188838251" y="4146.593998894587"/>
+          <y:Geometry height="45.19629629629628" width="145.37192473234978" x="1036.8023188838251" y="4176.593998894587"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="140.078125" x="2.646899866174863" xml:space="preserve" y="10.797366898148539">youth:FashionStyle</y:NodeLabel>
@@ -139,7 +139,7 @@ and (hasRitual some Ritual)</y:NodeLabel>
     <node id="n11">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="49.981481481481524" width="145.37192473234967" x="661.8023188838251" y="3889.2014063019933"/>
+          <y:Geometry height="49.981481481481524" width="145.37192473234967" x="661.8023188838251" y="3919.2014063019933"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="133.8359375" x="5.767993616174863" xml:space="preserve" y="13.189959490740875">youth:MusicGenre</y:NodeLabel>
@@ -150,7 +150,7 @@ and (hasRitual some Ritual)</y:NodeLabel>
     <node id="n12">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="46.392592592592564" width="96.32377658420154" x="896.3263929578992" y="4040.995850746438"/>
+          <y:Geometry height="46.392592592592564" width="96.32377658420154" x="896.3263929578992" y="4070.995850746438"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="88.4921875" x="3.915794542100798" xml:space="preserve" y="11.395515046296168">youth:Ritual</y:NodeLabel>
@@ -161,7 +161,7 @@ and (hasRitual some Ritual)</y:NodeLabel>
     <node id="n13">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="49.981481481481524" width="109.48303584346087" x="889.7467633282696" y="4279.201406301993"/>
+          <y:Geometry height="49.981481481481524" width="109.48303584346087" x="889.7467633282696" y="4309.201406301993"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="83.15625" x="13.163392921730406" xml:space="preserve" y="13.189959490740875">youth:Style</y:NodeLabel>
@@ -172,7 +172,7 @@ and (hasRitual some Ritual)</y:NodeLabel>
     <node id="n14">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="44.0" width="108.44970251012779" x="380.26342999493613" y="4627.192147042734"/>
+          <y:Geometry height="44.0" width="108.44970251012779" x="380.26342999493613" y="4657.192147042734"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="83.15625" x="12.646726255063868" xml:space="preserve" y="10.19921875">youth:Ethic</y:NodeLabel>
@@ -183,7 +183,7 @@ and (hasRitual some Ritual)</y:NodeLabel>
     <node id="n15">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="52.14814814814815" width="128.8200728804979" x="610.078244809751" y="4728.11807296866"/>
+          <y:Geometry height="52.14814814814815" width="128.8200728804979" x="610.078244809751" y="4758.11807296866"/>
           <y:Fill color="#FF99CC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="117.8203125" x="5.499880190248973" xml:space="preserve" y="14.273292824073906">dul:TimeInterval</y:NodeLabel>
@@ -567,7 +567,7 @@ youth:NeutralAttitude</y:NodeLabel>
     <node id="n49">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="22.2421875" width="31.4345703125" x="4043.0" y="3605.0"/>
+          <y:Geometry height="22.2421875" width="31.4345703125" x="3953.0" y="3605.0"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
           <y:Shape type="rectangle"/>
@@ -577,7 +577,7 @@ youth:NeutralAttitude</y:NodeLabel>
     <node id="n50">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="22.2421875" width="207.83128065395096" x="3789.0" y="3605.0"/>
+          <y:Geometry height="22.2421875" width="207.83128065395096" x="3699.0" y="3605.0"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
           <y:Shape type="rectangle"/>
@@ -590,7 +590,7 @@ youth:NeutralAttitude</y:NodeLabel>
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="319.38427734375" width="432.4453125" x="3071.3070159230247" y="3567.62353515625"/>
+              <y:Geometry height="319.38427734375" width="432.4453125" x="2981.3070159230247" y="3567.62353515625"/>
               <y:Fill color="#FFFFFF" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#B7B69E" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="bold" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="432.4453125" x="0.0" xml:space="preserve" y="0.0">Prefixes   </y:NodeLabel>
@@ -618,7 +618,7 @@ youth:NeutralAttitude</y:NodeLabel>
         <node id="n51::n0">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="22.2421875" width="31.4345703125" x="3099.50537109375" y="3849.765625"/>
+              <y:Geometry height="22.2421875" width="31.4345703125" x="3009.50537109375" y="3849.765625"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle hasColor="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="102.0078125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="bl" textColor="#000000" verticalTextPosition="bottom" visible="true" width="52.90625" x="0.0" xml:space="preserve" y="-79.765625">youth:
@@ -633,7 +633,7 @@ frame:</y:NodeLabel>
         <node id="n51::n1">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="22.2421875" width="207.83128065395096" x="3086.3070159230247" y="3684.765625"/>
+              <y:Geometry height="22.2421875" width="207.83128065395096" x="2996.3070159230247" y="3684.765625"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle hasColor="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="102.0078125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="bl" textColor="#000000" verticalTextPosition="bottom" visible="true" width="402.4453125" x="0.0" xml:space="preserve" y="-79.765625">http://www.semanticweb.org/ontologies/2024/YOUTH/
@@ -650,7 +650,7 @@ http://etna.istc.cnr.it/framester2/data/framestercore/</y:NodeLabel>
     <node id="n52">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="22.2421875" width="207.83128065395096" x="3535.0" y="3605.0"/>
+          <y:Geometry height="22.2421875" width="207.83128065395096" x="3445.0" y="3605.0"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
           <y:Shape type="rectangle"/>
@@ -663,7 +663,7 @@ http://etna.istc.cnr.it/framester2/data/framestercore/</y:NodeLabel>
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="319.38427734375" width="538.28125" x="2404.2249846730247" y="3567.62353515625"/>
+              <y:Geometry height="368.98583984375" width="538.28125" x="2314.2249846730247" y="3567.62353515625"/>
               <y:Fill color="#FFFFFF" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#B7B69E" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="bold" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="538.28125" x="0.0" xml:space="preserve" y="0.0">Prefixes   </y:NodeLabel>
@@ -691,14 +691,15 @@ http://etna.istc.cnr.it/framester2/data/framestercore/</y:NodeLabel>
         <node id="n53::n0">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="22.2421875" width="31.4345703125" x="2432.42333984375" y="3849.765625"/>
+              <y:Geometry height="22.2421875" width="31.4345703125" x="2342.42333984375" y="3899.3671875"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="102.0078125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="bl" textColor="#000000" verticalTextPosition="bottom" visible="true" width="52.8984375" x="0.0" xml:space="preserve" y="-79.765625">youth:
+              <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="121.609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="bl" textColor="#000000" verticalTextPosition="bottom" visible="true" width="52.90625" x="0.0" xml:space="preserve" y="-99.3671875">youth:
 persp:
 dul:
 rdfs:
-owl:</y:NodeLabel>
+owl:
+frame:</y:NodeLabel>
               <y:Shape type="rectangle"/>
             </y:ShapeNode>
           </data>
@@ -706,14 +707,15 @@ owl:</y:NodeLabel>
         <node id="n53::n1">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="22.2421875" width="207.83128065395096" x="2419.2249846730247" y="3684.765625"/>
+              <y:Geometry height="22.2421875" width="207.83128065395096" x="2329.2249846730247" y="3704.3671875"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="102.0078125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="bl" textColor="#000000" verticalTextPosition="bottom" visible="true" width="508.28125" x="0.0" xml:space="preserve" y="-79.765625">http://www.semanticweb.org/ontologies/2024/YOUTH/
+              <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="121.609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="bl" textColor="#000000" verticalTextPosition="bottom" visible="true" width="508.28125" x="0.0" xml:space="preserve" y="-99.3671875">http://www.semanticweb.org/ontologies/2024/YOUTH/
 http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#
 http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#
 http://www.w3.org/2000/01/rdf-schema#
-http://www.w3.org/2002/07/owl#</y:NodeLabel>
+http://www.w3.org/2002/07/owl#
+http://etna.istc.cnr.it/framester2/data/framestercore/</y:NodeLabel>
               <y:Shape type="rectangle"/>
             </y:ShapeNode>
           </data>
@@ -723,7 +725,7 @@ http://www.w3.org/2002/07/owl#</y:NodeLabel>
     <node id="n54">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="52.14814814814815" width="128.8200728804979" x="1765.0782448097511" y="3948.1180729686603"/>
+          <y:Geometry height="52.14814814814815" width="128.8200728804979" x="1675.0782448097511" y="3978.1180729686603"/>
           <y:Fill color="#FF99CC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="99.1640625" x="14.82800519024886" xml:space="preserve" y="14.273292824073906">frame:People</y:NodeLabel>
@@ -734,7 +736,7 @@ http://www.w3.org/2002/07/owl#</y:NodeLabel>
     <node id="n55">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="53.34903721544106" width="167.33230655998415" x="1565.8221279700078" y="3707.5176284350136"/>
+          <y:Geometry height="53.34903721544106" width="167.33230655998415" x="1520.8221279700078" y="3707.5176284350136"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="148.078125" x="9.627090779992159" xml:space="preserve" y="14.873737357720529">youth:NotParticipant</y:NodeLabel>
@@ -745,28 +747,6 @@ http://www.w3.org/2002/07/owl#</y:NodeLabel>
     <node id="n56">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="42.34508562334213" width="327.7175161289109" x="1485.6295231855445" y="3848.019604231063"/>
-          <y:Fill color="#FFFF99" transparent="false"/>
-          <y:BorderStyle color="#000000" type="dotted" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="302.828125" x="12.444695564455515" xml:space="preserve" y="9.371761561671065">not (participatesIn some YouthSubculture)</y:NodeLabel>
-          <y:Shape type="roundrectangle"/>
-        </y:ShapeNode>
-      </data>
-    </node>
-    <node id="n57">
-      <data key="d6">
-        <y:ShapeNode>
-          <y:Geometry height="42.34508562334213" width="327.7175161289109" x="270.62952318554454" y="3803.019604231063"/>
-          <y:Fill color="#FFFF99" transparent="false"/>
-          <y:BorderStyle color="#000000" type="dotted" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="265.484375" x="31.116570564455458" xml:space="preserve" y="9.371761561671065">participatesIn some YouthSubculture</y:NodeLabel>
-          <y:Shape type="roundrectangle"/>
-        </y:ShapeNode>
-      </data>
-    </node>
-    <node id="n58">
-      <data key="d6">
-        <y:ShapeNode>
           <y:Geometry height="43.0" width="126.0949682107173" x="4736.952515894642" y="1320.0"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
@@ -775,7 +755,7 @@ http://www.w3.org/2002/07/owl#</y:NodeLabel>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n59">
+    <node id="n57">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="52.14814814814815" width="128.8200728804979" x="1885.5899635597511" y="1315.425925925926"/>
@@ -786,7 +766,7 @@ http://www.w3.org/2002/07/owl#</y:NodeLabel>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n60">
+    <node id="n58">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="53.34903721544106" width="167.33230655998415" x="2256.333846720008" y="969.8254813922795"/>
@@ -797,7 +777,7 @@ http://www.w3.org/2002/07/owl#</y:NodeLabel>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n61">
+    <node id="n59">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="83.75223229000858" width="205.46784501779996" x="1982.2660774911" y="1164.6238838549957"/>
@@ -810,7 +790,7 @@ youth:YouthSubculture)</y:NodeLabel>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n62">
+    <node id="n60">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="91.63930784556442" width="205.46784501779973" x="152.26607749110013" y="1025.680346077218"/>
@@ -823,7 +803,7 @@ youth:YouthSubculture</y:NodeLabel>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n63">
+    <node id="n61">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="81.46360888888876" width="192.75265850439007" x="1853.623670747805" y="1465.7681955555554"/>
@@ -836,7 +816,7 @@ persp:Conceptualiser</y:NodeLabel>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n64">
+    <node id="n62">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="81.46360888888876" width="192.75265850439007" x="1583.623670747805" y="2815.7681955555554"/>
@@ -849,7 +829,7 @@ youth:NegativeAttitude</y:NodeLabel>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n65">
+    <node id="n63">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="81.46360888888876" width="192.75265850439007" x="1538.623670747805" y="2260.7681955555554"/>
@@ -862,7 +842,7 @@ youth:NeutralAttitude</y:NodeLabel>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n66">
+    <node id="n64">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="81.46360888888876" width="192.75265850439007" x="2783.623670747805" y="2050.7681955555554"/>
@@ -875,7 +855,7 @@ youth:PositiveAttitude</y:NodeLabel>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n67">
+    <node id="n65">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="81.46360888888876" width="192.75265850439007" x="1178.623670747805" y="3190.7681955555554"/>
@@ -888,7 +868,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n68">
+    <node id="n66">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="81.46360888888876" width="192.75265850439007" x="2453.623670747805" y="1705.7681955555556"/>
@@ -901,7 +881,7 @@ youth:ExternalViewpoint</y:NodeLabel>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n69">
+    <node id="n67">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="85.4071466666669" width="362.8177251710566" x="4318.591137414472" y="3473.796426666667"/>
@@ -914,7 +894,7 @@ or youth:PositiveAttitude)</y:NodeLabel>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n70">
+    <node id="n68">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="77.52007111111106" width="210.99152072661207" x="2234.504239636694" y="1167.7399644444445"/>
@@ -927,7 +907,7 @@ youth:ExternalViewpoint</y:NodeLabel>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n71">
+    <node id="n69">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="77.52007111111106" width="210.99152072661207" x="404.50423963669397" y="1032.7399644444445"/>
@@ -940,20 +920,46 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:ShapeNode>
       </data>
     </node>
+    <node id="n70">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="83.75223229000858" width="205.46784501779996" x="1501.7543587411" y="3842.31603089773"/>
+          <y:Fill color="#FFFF99" transparent="false"/>
+          <y:BorderStyle color="#000000" type="dotted" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="62.8046875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="179.2109375" x="13.128453758899923" xml:space="preserve" y="10.47377239500429">not (youth:participatesIn 
+owl:someValuesFrom 
+youth:YouthSubculture)</y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n71">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="83.75223229000858" width="205.46784501779996" x="256.7543587411" y="3782.31603089773"/>
+          <y:Fill color="#FFFF99" transparent="false"/>
+          <y:BorderStyle color="#000000" type="dotted" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="62.8046875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="165.890625" x="19.78861000889998" xml:space="preserve" y="10.47377239500429">youth:participatesIn 
+owl:someValuesFrom 
+youth:YouthSubculture</y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
     <edge id="e0" source="n0" target="n1">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-30.0" sy="-25.76062866253301" tx="-45.0" ty="24.19214704273395">
-            <y:Point x="404.48828125" y="4424.192147042734"/>
-            <y:Point x="74.48828125" y="4424.192147042734"/>
+            <y:Point x="404.48828125" y="4454.192147042734"/>
+            <y:Point x="74.48828125" y="4454.192147042734"/>
             <y:Point x="74.48828125" y="3674.192147042734"/>
-            <y:Point x="659.48828125" y="3674.192147042734"/>
+            <y:Point x="539.48828125" y="3674.192147042734"/>
           </y:Path>
           <y:LineStyle color="#000080" type="line" width="1.0"/>
           <y:Arrows source="circle" target="delta"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000080" verticalTextPosition="bottom" visible="true" width="148.9765625" x="-404.48828125" xml:space="preserve" y="-421.0065834260158">youth:hasParticipant<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000080" verticalTextPosition="bottom" visible="true" width="148.9765625" x="-404.48828125" xml:space="preserve" y="-436.0065834260158">youth:hasParticipant<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
@@ -964,14 +970,14 @@ youth:InternalViewpoint</y:NodeLabel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-30.0" sy="24.19214704273395" tx="-15.0" ty="-25.76062866253301">
-            <y:Point x="674.48828125" y="3689.192147042734"/>
+            <y:Point x="554.48828125" y="3689.192147042734"/>
             <y:Point x="239.48828125" y="3689.192147042734"/>
-            <y:Point x="239.48828125" y="4409.192147042734"/>
-            <y:Point x="419.48828125" y="4409.192147042734"/>
+            <y:Point x="239.48828125" y="4439.192147042734"/>
+            <y:Point x="419.48828125" y="4439.192147042734"/>
           </y:Path>
           <y:LineStyle color="#000080" type="line" width="1.0"/>
           <y:Arrows source="circle" target="delta"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000080" verticalTextPosition="bottom" visible="true" width="142.75" x="-506.375" xml:space="preserve" y="384.0070884489842">youth:participatesIn<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000080" verticalTextPosition="bottom" visible="true" width="142.75" x="-386.375" xml:space="preserve" y="399.0070884489842">youth:participatesIn<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
@@ -1021,8 +1027,8 @@ youth:InternalViewpoint</y:NodeLabel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-15.0" sy="25.76062866253301" tx="0.0" ty="-31.88508105580172">
-            <y:Point x="419.48828125" y="4559.192147042734"/>
-            <y:Point x="194.48828125" y="4559.192147042734"/>
+            <y:Point x="419.48828125" y="4589.192147042734"/>
+            <y:Point x="194.48828125" y="4589.192147042734"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -1037,8 +1043,8 @@ youth:InternalViewpoint</y:NodeLabel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="15.0" sy="25.76062866253301" tx="0.0" ty="-17.80958520460581">
-            <y:Point x="449.48828125" y="4559.192147042734"/>
-            <y:Point x="674.48828125" y="4559.192147042734"/>
+            <y:Point x="449.48828125" y="4589.192147042734"/>
+            <y:Point x="674.48828125" y="4589.192147042734"/>
           </y:Path>
           <y:LineStyle color="#000080" type="line" width="1.0"/>
           <y:Arrows source="circle" target="delta"/>
@@ -1066,9 +1072,9 @@ youth:InternalViewpoint</y:NodeLabel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-82.6196421352264" sy="-0.0" tx="0.0" ty="28.876578125775268">
-            <y:Point x="539.48828125" y="4619.192147042734"/>
-            <y:Point x="539.48828125" y="4799.192147042734"/>
-            <y:Point x="1394.48828125" y="4799.192147042734"/>
+            <y:Point x="539.48828125" y="4649.192147042734"/>
+            <y:Point x="539.48828125" y="4829.192147042734"/>
+            <y:Point x="1394.48828125" y="4829.192147042734"/>
           </y:Path>
           <y:LineStyle color="#000000" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="none"/>
@@ -1085,9 +1091,9 @@ youth:InternalViewpoint</y:NodeLabel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="30.0" sy="-25.76062866253301" tx="72.68596236617486" ty="15.0">
-            <y:Point x="464.48828125" y="4409.192147042734"/>
-            <y:Point x="1199.48828125" y="4409.192147042734"/>
-            <y:Point x="1199.48828125" y="4184.192147042734"/>
+            <y:Point x="464.48828125" y="4439.192147042734"/>
+            <y:Point x="1199.48828125" y="4439.192147042734"/>
+            <y:Point x="1199.48828125" y="4214.192147042734"/>
           </y:Path>
           <y:LineStyle color="#000080" type="line" width="1.0"/>
           <y:Arrows source="circle" target="delta"/>
@@ -1102,7 +1108,7 @@ youth:InternalViewpoint</y:NodeLabel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="-25.76062866253301" tx="-72.68596236617486" ty="-0.0">
-            <y:Point x="434.48828125" y="3914.192147042734"/>
+            <y:Point x="434.48828125" y="3944.192147042734"/>
           </y:Path>
           <y:LineStyle color="#000080" type="line" width="1.0"/>
           <y:Arrows source="circle" target="delta"/>
@@ -1117,8 +1123,8 @@ youth:InternalViewpoint</y:NodeLabel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="87.18611979687398" sy="-0.0" tx="48.161888292100684" ty="15.0">
-            <y:Point x="1259.48828125" y="4484.192147042734"/>
-            <y:Point x="1259.48828125" y="4079.192147042734"/>
+            <y:Point x="1259.48828125" y="4514.192147042734"/>
+            <y:Point x="1259.48828125" y="4109.192147042734"/>
           </y:Path>
           <y:LineStyle color="#000080" type="line" width="1.0"/>
           <y:Arrows source="circle" target="delta"/>
@@ -1133,8 +1139,8 @@ youth:InternalViewpoint</y:NodeLabel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="22.598148148148084" tx="15.0" ty="-24.990740740740762">
-            <y:Point x="1109.48828125" y="4229.192147042734"/>
-            <y:Point x="959.48828125" y="4229.192147042734"/>
+            <y:Point x="1109.48828125" y="4259.192147042734"/>
+            <y:Point x="959.48828125" y="4259.192147042734"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -1149,8 +1155,8 @@ youth:InternalViewpoint</y:NodeLabel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="24.990740740740762" tx="-15.0" ty="-24.990740740740762">
-            <y:Point x="734.48828125" y="4169.192147042734"/>
-            <y:Point x="929.48828125" y="4169.192147042734"/>
+            <y:Point x="734.48828125" y="4199.192147042734"/>
+            <y:Point x="929.48828125" y="4199.192147042734"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -1167,7 +1173,7 @@ youth:InternalViewpoint</y:NodeLabel>
           <y:Path sx="0.0" sy="23.196296296296282" tx="0.0" ty="-24.990740740740762"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="117.8125" x="-58.90625" xml:space="preserve" y="84.10571583613637">rdfs:subClassOf<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="117.8125" x="-58.90625" xml:space="preserve" y="84.10547169551137">rdfs:subClassOf<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
@@ -1178,8 +1184,8 @@ youth:InternalViewpoint</y:NodeLabel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="24.990740740740762" tx="15.0" ty="-25.76062866253301">
-            <y:Point x="944.48828125" y="4379.192147042734"/>
-            <y:Point x="449.48828125" y="4379.192147042734"/>
+            <y:Point x="944.48828125" y="4409.192147042734"/>
+            <y:Point x="449.48828125" y="4409.192147042734"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -1194,7 +1200,7 @@ youth:InternalViewpoint</y:NodeLabel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="72.68596236617486" sy="-0.0" tx="-15.0" ty="28.876578125775268">
-            <y:Point x="1379.48828125" y="4169.192147042734"/>
+            <y:Point x="1379.48828125" y="4199.192147042734"/>
           </y:Path>
           <y:LineStyle color="#000000" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="none"/>
@@ -1211,7 +1217,7 @@ youth:InternalViewpoint</y:NodeLabel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="72.68596236617486" sy="-0.0" tx="0.0" ty="-28.876578125775268">
-            <y:Point x="1394.48828125" y="3914.192147042734"/>
+            <y:Point x="1394.48828125" y="3944.192147042734"/>
           </y:Path>
           <y:LineStyle color="#000000" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="none"/>
@@ -1294,7 +1300,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e23" source="n59" target="n18">
+    <edge id="e23" source="n57" target="n18">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
@@ -1682,7 +1688,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e48" source="n59" target="n38">
+    <edge id="e48" source="n57" target="n38">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
@@ -1762,7 +1768,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e53" source="n38" target="n59">
+    <edge id="e53" source="n38" target="n57">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
@@ -1813,7 +1819,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e56" source="n59" target="n35">
+    <edge id="e56" source="n57" target="n35">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
@@ -2234,12 +2240,12 @@ youth:InternalViewpoint</y:NodeLabel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="15.0" sy="24.19214704273395" tx="0.0" ty="-26.07407407407402">
-            <y:Point x="719.48828125" y="3689.192147042734"/>
-            <y:Point x="1829.48828125" y="3689.192147042734"/>
+            <y:Point x="599.48828125" y="3689.192147042734"/>
+            <y:Point x="1739.48828125" y="3689.192147042734"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="117.8125" x="496.09375" xml:space="preserve" y="24.007088448984177">rdfs:subClassOf<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="117.8125" x="511.09375" xml:space="preserve" y="24.007088448984177">rdfs:subClassOf<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
@@ -2250,48 +2256,48 @@ youth:InternalViewpoint</y:NodeLabel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-15.0" sy="26.67451860772053" tx="-15.0" ty="-26.07407407407402">
-            <y:Point x="1634.48828125" y="3779.192147042734"/>
+            <y:Point x="1589.48828125" y="3779.192147042734"/>
             <y:Point x="1409.48828125" y="3779.192147042734"/>
-            <y:Point x="1409.48828125" y="3914.192147042734"/>
-            <y:Point x="1814.48828125" y="3914.192147042734"/>
+            <y:Point x="1409.48828125" y="3944.192147042734"/>
+            <y:Point x="1724.48828125" y="3944.192147042734"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="113.3671875" x="-79.18359375" xml:space="preserve" y="141.52466657398418">rdfssubClassOf<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="113.3671875" x="-79.18359375" xml:space="preserve" y="171.52466657398418">rdfssubClassOf<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e84" source="n1" target="n57">
+    <edge id="e84" source="n1" target="n71">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="-15.0" sy="24.19214704273395" tx="0.0" ty="-21.172542811671065">
-            <y:Point x="689.48828125" y="3719.192147042734"/>
-            <y:Point x="434.48828125" y="3719.192147042734"/>
+          <y:Path sx="-15.0" sy="24.19214704273395" tx="0.0" ty="-41.87611614500429">
+            <y:Point x="569.48828125" y="3719.192147042734"/>
+            <y:Point x="359.48828125" y="3719.192147042734"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="117.8125" x="-186.40625" xml:space="preserve" y="54.00708844898418">rdfs:subClassOf<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="117.8125" x="-163.90625" xml:space="preserve" y="54.00708844898418">rdfs:subClassOf<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e85" source="n55" target="n56">
+    <edge id="e85" source="n55" target="n70">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="26.67451860772053" tx="0.0" ty="-21.172542811671065"/>
+          <y:Path sx="0.0" sy="26.67451860772053" tx="0.0" ty="-41.87611614500429"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="117.8125" x="-58.90625" xml:space="preserve" y="31.775654472008682">rdfs:subClassOf<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="117.8125" x="-58.90625" xml:space="preserve" y="28.923867805342525">rdfs:subClassOf<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e86" source="n60" target="n59">
+    <edge id="e86" source="n58" target="n57">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
@@ -2307,7 +2313,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e87" source="n60" target="n61">
+    <edge id="e87" source="n58" target="n59">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
@@ -2323,7 +2329,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e88" source="n17" target="n59">
+    <edge id="e88" source="n17" target="n57">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
@@ -2341,7 +2347,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e89" source="n59" target="n58">
+    <edge id="e89" source="n57" target="n56">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
@@ -2354,7 +2360,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e90" source="n17" target="n62">
+    <edge id="e90" source="n17" target="n60">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
@@ -2370,7 +2376,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e91" source="n59" target="n63">
+    <edge id="e91" source="n57" target="n61">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
@@ -2383,7 +2389,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e92" source="n34" target="n64">
+    <edge id="e92" source="n34" target="n62">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
@@ -2399,7 +2405,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e93" source="n35" target="n65">
+    <edge id="e93" source="n35" target="n63">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
@@ -2412,7 +2418,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e94" source="n32" target="n66">
+    <edge id="e94" source="n32" target="n64">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
@@ -2425,7 +2431,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e95" source="n38" target="n68">
+    <edge id="e95" source="n38" target="n66">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
@@ -2441,7 +2447,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e96" source="n37" target="n67">
+    <edge id="e96" source="n37" target="n65">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
@@ -2457,7 +2463,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e97" source="n60" target="n69">
+    <edge id="e97" source="n58" target="n67">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
@@ -2473,7 +2479,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e98" source="n60" target="n70">
+    <edge id="e98" source="n58" target="n68">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
@@ -2486,7 +2492,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e99" source="n17" target="n71">
+    <edge id="e99" source="n17" target="n69">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
@@ -2502,7 +2508,7 @@ youth:InternalViewpoint</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e100" source="n17" target="n69">
+    <edge id="e100" source="n17" target="n67">
       <data key="d8" xml:space="preserve"/>
       <data key="d9" xml:space="preserve"><![CDATA[UMLrelatesTo]]></data>
       <data key="d10">
