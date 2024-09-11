@@ -570,6 +570,35 @@ _:genid116 rdf:type owl:Restriction ;
 
 
 #################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2024/YOUTH/External
+youth:External rdf:type owl:NamedIndividual ,
+                        youth:ExternalViewpoint .
+
+
+###  http://www.semanticweb.org/ontologies/2024/YOUTH/Internal
+youth:Internal rdf:type owl:NamedIndividual ,
+                        youth:InternalViewpoint .
+
+
+###  http://www.semanticweb.org/ontologies/2024/YOUTH/Negative
+youth:Negative rdf:type owl:NamedIndividual ,
+                        youth:NegativeAttitude .
+
+
+###  http://www.semanticweb.org/ontologies/2024/YOUTH/Neutral
+youth:Neutral rdf:type owl:NamedIndividual ,
+                       youth:NeutralAttitude .
+
+
+###  http://www.semanticweb.org/ontologies/2024/YOUTH/Positive
+youth:Positive rdf:type owl:NamedIndividual ,
+                        youth:PositiveAttitude .
+
+
+#################################################################
 #    Annotations
 #################################################################
 
