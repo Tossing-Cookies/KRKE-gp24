@@ -6,7 +6,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix persp: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
 @prefix youth: <http://www.semanticweb.org/ontologies/2024/YOUTH/> .
-@base <http://www.semanticweb.org/ontologies/2024/YOUTH> .
+@base <http://www.semanticweb.org/ontologies/2024/YOUTH#> .
 
 <http://www.semanticweb.org/ontologies/2024/YOUTH> rdf:type owl:Ontology ;
                                                     owl:imports <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl> ;
@@ -267,11 +267,21 @@ youth:viewedAs rdf:type owl:ObjectProperty ;
                      rdfs:range rdfs:Literal .
 
 
-###  http://www.semanticweb.org/ontologies/2024/YOUTH/hasContext
-youth:hasContext rdf:type owl:DatatypeProperty ;
-                 rdfs:domain youth:HistoricalPeriod ;
+###  http://www.semanticweb.org/ontologies/2024/YOUTH/hasContent
+youth:hasContent rdf:type owl:DatatypeProperty ;
+                 rdfs:domain [ rdf:type owl:Class ;
+                               owl:unionOf ( youth:FashionStyle
+                                             youth:HistoricalPeriod
+                                             youth:MusicGenre
+                                             youth:PerspectiveInfluence
+                                             youth:PerspectiveShift
+                                             youth:Ritual
+                                             youth:Stereotype
+                                             youth:Value
+                                           )
+                             ] ;
                  rdfs:range rdfs:Literal ;
-                 rdfs:comment "Describes the historical background in which a youth subculture originated." .
+                 rdfs:comment "Describes the content of instances from different classes." .
 
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/hasName
@@ -369,7 +379,7 @@ youth:NeutralAttitude rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/Person
 youth:Person rdf:type owl:Class ;
-             rdfs:subClassOf _:genid65 ,
+             rdfs:subClassOf _:genid74 ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty youth:hasAttitude ;
                                owl:someValuesFrom [ rdf:type owl:Class ;
@@ -387,32 +397,32 @@ youth:Person rdf:type owl:Class ;
                                                                 )
                                                   ]
                              ] ,
-                             _:genid77 ;
+                             _:genid86 ;
              owl:hasKey ( youth:hasName
                         ) ;
              rdfs:comment "Members within the youth subcultures." .
 
-_:genid65 rdf:type owl:Class ;
+_:genid74 rdf:type owl:Class ;
            owl:complementOf [ rdf:type owl:Restriction ;
                               owl:onProperty youth:participatesIn ;
                               owl:someValuesFrom youth:YouthSubculture
                             ] .
 
-_:genid77 rdf:type owl:Restriction ;
+_:genid86 rdf:type owl:Restriction ;
            owl:onProperty youth:participatesIn ;
            owl:someValuesFrom youth:YouthSubculture .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource youth:Person ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid65 ;
+   owl:annotatedTarget _:genid74 ;
    rdfs:comment "The set of individuals who are members of the class Person and do not have any participatesIn relationship with an instance of YouthSubculture. These are people who do not participate in any youth subculture."
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource youth:Person ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid77 ;
+   owl:annotatedTarget _:genid86 ;
    rdfs:comment "The set of individuals who are members of the class Person and have at least one participatesIn relationship with an instance of YouthSubculture. These are people who participate in at least one youth subculture."
  ] .
 
@@ -537,7 +547,7 @@ youth:YouthSubculture rdf:type owl:Class ;
                                         owl:onProperty youth:viewedAs ;
                                         owl:someValuesFrom youth:ExternalViewpoint
                                       ] ,
-                                      _:genid107 ;
+                                      _:genid116 ;
                       rdfs:comment """A group of people within a cultural society that represents a specific community formed by younger generations, characterized by distinct values, practices, and identities that differentiate them from the dominant culture.
 
 See bibliography:
@@ -547,14 +557,14 @@ Williams, Patrick J. \"Youth Subcultural Studies: Sociological Traditions and Co
 Widdicombe, Sue. \"Autobiography and Change: Rhetoric and Authenticity of 'Gothic' Style.\" In Repertoires and Readings of Texts in Action, edited by Erica Burman and Ian Parker, 94-113. London: Routledge, 1993.""" ;
                       rdfs:seeAlso "https://krke24.gitbook.io/krke-project-2023-2024" .
 
-_:genid107 rdf:type owl:Restriction ;
+_:genid116 rdf:type owl:Restriction ;
             owl:onProperty youth:affects ;
             owl:hasSelf "true"^^xsd:boolean .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource youth:YouthSubculture ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid107 ;
+   owl:annotatedTarget _:genid116 ;
    rdfs:comment "A youth subculture could potentially influence itself, but it's not necessarily always the case. Hence, the \"influences\" property is \"potentially reflexive\"."
  ] .
 
