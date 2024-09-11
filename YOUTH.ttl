@@ -307,6 +307,10 @@ youth:hasName rdf:type owl:DatatypeProperty ,
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/ExternalViewpoint
 youth:ExternalViewpoint rdf:type owl:Class ;
+                        owl:equivalentClass [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> ;
+                                              owl:hasValue youth:ExternalViewpoint
+                                            ] ;
                         rdfs:subClassOf persp:Lens ,
                                         [ rdf:type owl:Restriction ;
                                           owl:onProperty youth:determines ;
@@ -317,8 +321,7 @@ youth:ExternalViewpoint rdf:type owl:Class ;
                                                                            )
                                                              ]
                                         ] ;
-                        owl:disjointWith youth:InternalViewpoint ;
-                        rdfs:comment "Represents the way in which subcultures are viewed from an external viewpoint. This is influenced by the general public's impressions, stereotypes, and media portrayals that shape the external image of a subculture." .
+                        owl:disjointWith youth:InternalViewpoint .
 
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/FashionStyle
@@ -358,6 +361,10 @@ Moore, Ryan. \"Alternative to What? Subcultural Capital and the Commercializatio
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/InternalViewpoint
 youth:InternalViewpoint rdf:type owl:Class ;
+                        owl:equivalentClass [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> ;
+                                              owl:hasValue youth:InternalViewpoint
+                                            ] ;
                         rdfs:subClassOf persp:Lens ,
                                         [ rdf:type owl:Restriction ;
                                           owl:onProperty youth:determines ;
@@ -366,8 +373,7 @@ youth:InternalViewpoint rdf:type owl:Class ;
                                                                              youth:PositiveAttitude
                                                                            )
                                                              ]
-                                        ] ;
-                        rdfs:comment "Represents the self-perception and self-definition of members within a subculture. This includes how individuals within the subculture view themselves and their own identity, as well as how they interpret their place within the subculture. It reflects the internal self-concept and personal narratives that members use to describe their experiences and values." .
+                                        ] .
 
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/Location
@@ -573,7 +579,7 @@ youth:YouthSubculture rdf:type owl:Class ;
                                         owl:onProperty youth:triggersStereotype ;
                                         owl:someValuesFrom youth:Stereotype
                                       ] ,
-                                      _:genid137 ;
+                                      _:genid139 ;
                       rdfs:comment """A group of people within a cultural society that represents a specific community formed by younger generations, characterized by distinct values, practices, and identities that differentiate them from the dominant culture.
 
 See bibliography:
@@ -583,14 +589,14 @@ Williams, Patrick J. \"Youth Subcultural Studies: Sociological Traditions and Co
 Widdicombe, Sue. \"Autobiography and Change: Rhetoric and Authenticity of 'Gothic' Style.\" In Repertoires and Readings of Texts in Action, edited by Erica Burman and Ian Parker, 94-113. London: Routledge, 1993.""" ;
                       rdfs:seeAlso "https://krke24.gitbook.io/krke-project-2023-2024" .
 
-_:genid137 rdf:type owl:Restriction ;
+_:genid139 rdf:type owl:Restriction ;
             owl:onProperty youth:affects ;
             owl:hasSelf "true"^^xsd:boolean .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource youth:YouthSubculture ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid137 ;
+   owl:annotatedTarget _:genid139 ;
    rdfs:comment "A youth subculture could potentially influence itself, but it's not necessarily always the case. Hence, the \"influences\" property is \"potentially reflexive\"."
  ] .
 
@@ -599,14 +605,12 @@ _:genid137 rdf:type owl:Restriction ;
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/ontologies/2024/YOUTH/External
-youth:External rdf:type owl:NamedIndividual ,
-                        youth:ExternalViewpoint .
+###  http://www.semanticweb.org/ontologies/2024/YOUTH/ExternalViewpoint
+youth:ExternalViewpoint rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/ontologies/2024/YOUTH/Internal
-youth:Internal rdf:type owl:NamedIndividual ,
-                        youth:InternalViewpoint .
+###  http://www.semanticweb.org/ontologies/2024/YOUTH/InternalViewpoint
+youth:InternalViewpoint rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/NegativeAttitude
@@ -627,6 +631,12 @@ youth:PositiveAttitude rdf:type owl:NamedIndividual ,
 #################################################################
 #    Annotations
 #################################################################
+
+youth:ExternalViewpoint rdfs:comment "Represents the way in which subcultures are viewed from an external viewpoint. This is influenced by the general public's impressions, stereotypes, and media portrayals that shape the external image of a subculture." .
+
+
+youth:InternalViewpoint rdfs:comment "Represents the self-perception and self-definition of members within a subculture. This includes how individuals within the subculture view themselves and their own identity, as well as how they interpret their place within the subculture. It reflects the internal self-concept and personal narratives that members use to describe their experiences and values." .
+
 
 youth:NegativeAttitude rdfs:comment "Attitude in this context refers to the evaluative stance or disposition that is held toward a youth subculture, whether by its members or by outsiders. Depending on whether a particular attitude aligns more closely with the values or stereotypes associated with a subculture, it will take on a positive, negative, or neutral connotation." .
 
