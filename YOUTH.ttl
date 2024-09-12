@@ -106,6 +106,12 @@ youth:hasParticipant rdf:type owl:ObjectProperty ;
                      rdfs:comment "Links a youth subculture to a person (indicating that the person is a member of the subculture)." .
 
 
+###  http://www.semanticweb.org/ontologies/2024/YOUTH/hasPerceptionOf
+youth:hasPerceptionOf rdf:type owl:ObjectProperty ;
+                      rdfs:domain youth:NotParticipant ;
+                      rdfs:range youth:YouthSubculture .
+
+
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/hasRitual
 youth:hasRitual rdf:type owl:ObjectProperty ;
                 rdfs:domain youth:YouthSubculture ;

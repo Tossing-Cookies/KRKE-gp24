@@ -51,7 +51,9 @@ youth:hasName a owl:DatatypeProperty,
             owl:unionOf ( youth:NotParticipant youth:Participant ) ] ;
     rdfs:range rdfs:Literal .
 
-youth:hasPerceptionOf a owl:ObjectProperty .
+youth:hasPerceptionOf a owl:ObjectProperty ;
+    rdfs:domain youth:NotParticipant ;
+    rdfs:range youth:YouthSubculture .
 
 youth:influencedBy a owl:ObjectProperty ;
     rdfs:comment "Connects viewpoints to the factors that influence them. This property shows how external and internal viepoints are affected by various influencing factors such as media representations, societal attitudes, and personal experiences. It models the relationship between perspectives and the elements that shape them." ;
@@ -2546,17 +2548,6 @@ Moore, Ryan. "Alternative to What? Subcultural Capital and the Commercialization
         persp:Background ;
     owl:disjointWith youth:PerspectiveShift .
 
-youth:NotParticipant a owl:Class ;
-    rdfs:comment "Members outside youth subcultures." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty youth:hasAttitude ;
-            owl:someValuesFrom [ a owl:Class ;
-                    owl:unionOf ( youth:NegativeAttitude youth:NeutralAttitude youth:PositiveAttitude ) ] ],
-        [ a owl:Restriction ;
-            owl:onProperty youth:hasViewpoint ;
-            owl:someValuesFrom youth:ExternalViewpoint ],
-        <http://etna.istc.cnr.it/framester2/data/framestercore/People> .
-
 youth:Style a owl:Class ;
     rdfs:comment "Represents the overall style associated with a subculture, which can be further divided into Fashion Style, Music Genre, Ritual." ;
     owl:disjointWith youth:YouthSubculture .
@@ -2572,6 +2563,17 @@ youth:triggersStereotype a owl:ObjectProperty ;
     rdfs:comment "Links a stereotype to the subcultures that it affects or challenges. This property identifies how certain stereotypes are associated with subcultures and how these stereotypes may influence or be related to the subculture’s public image. It highlights the stereotypes that subcultures confront or embody." ;
     rdfs:domain youth:YouthSubculture ;
     rdfs:range youth:Stereotype .
+
+youth:NotParticipant a owl:Class ;
+    rdfs:comment "Members outside youth subcultures." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty youth:hasAttitude ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:unionOf ( youth:NegativeAttitude youth:NeutralAttitude youth:PositiveAttitude ) ] ],
+        [ a owl:Restriction ;
+            owl:onProperty youth:hasViewpoint ;
+            owl:someValuesFrom youth:ExternalViewpoint ],
+        <http://etna.istc.cnr.it/framester2/data/framestercore/People> .
 
 <http://etna.istc.cnr.it/framester2/data/framestercore/People> a owl:Class ;
     rdfs:comment "http://etna.istc.cnr.it/framester2/data/framestercore/" ;
