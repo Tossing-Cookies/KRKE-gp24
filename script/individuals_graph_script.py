@@ -139,7 +139,9 @@ def add_triple(df):
                 g.add((con_uri, YOUTH.hasContent, Literal(row["PerspectiveShift"])))
                 
 
-    output_path = os.path.join(script_dir, "individuals_graph.ttl")
+output_path = os.path.join(script_dir, "individuals_graph.ttl")
     # Serialize the graph to a Turtle file
-    with open("individuals_graph.ttl", "w", encoding="utf-8") as f:
+with open(output_path, "w", encoding="utf-8") as f:
                 f.write(g.serialize(format="turtle"))
+
+
