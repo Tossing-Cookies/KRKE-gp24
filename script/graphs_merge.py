@@ -20,7 +20,7 @@ populated_graph.parse(populated_file, format="turtle")
 ontology_graph += populated_graph
 
 # Define the path for the output file
-merged_file = os.path.join(script_dir, "merged_graph.ttl")
+merged_file = os.path.join(script_dir, "knowledge_graph.ttl")
 
 # Serialize the merged graph to the output file
 with open(merged_file, "w", encoding="utf-8") as f:

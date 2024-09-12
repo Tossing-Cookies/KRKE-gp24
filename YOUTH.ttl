@@ -240,7 +240,7 @@ youth:triggersStereotype rdf:type owl:ObjectProperty ;
 #################################################################
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/belongsToGeneration
-:belongsToGeneration rdf:type owl:DatatypeProperty ,
+youth:belongsToGeneration rdf:type owl:DatatypeProperty ,
                               owl:FunctionalProperty ;
                      rdfs:domain youth:Participant ;
                      rdfs:range rdfs:Literal .

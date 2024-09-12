@@ -1,4 +1,3 @@
-@prefix : <http://www.semanticweb.org/ontologies/2024/YOUTH#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix persp: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
@@ -17,19 +16,24 @@ It is part of the end-of-course project of Knowledge Representation and Knowledg
     rdfs:seeAlso "https://krke24.gitbook.io/krke-project-2023-2024" ;
     owl:imports <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl> .
 
-:belongsToGeneration a owl:DatatypeProperty,
-        owl:FunctionalProperty ;
-    rdfs:domain youth:Participant ;
-    rdfs:range rdfs:Literal .
-
 youth:ClassifiedBy a owl:ObjectProperty .
+
+youth:Person_11 a youth:NotParticipant ;
+    youth:belongsToGeneration "Generation Z" ;
+    youth:hasAttitude youth:PositiveAttitude ;
+    youth:hasViewpoint youth:ExternalViewpoint ;
+    youth:hasname "Giovannina" .
 
 youth:PerspectiveInfluence_1 a youth:PerspectiveInfluence ;
     youth:hasContent "Social and political movements of the 1960s, including reaction against mainstream consumer culture and political climate" ;
     youth:influences youth:PositiveAttitude .
 
 youth:PerspectiveInfluence_10 a youth:PerspectiveInfluence ;
-    youth:hasContent "Music and personal experiences, including emergence from post-hardcore and punk influences" ;
+    youth:hasContent "Music and Participantal experiences, including emergence from post-hardcore and punk influences" ;
+    youth:influences youth:PositiveAttitude .
+
+youth:PerspectiveInfluence_11 a youth:PerspectiveInfluence ;
+    youth:hasContent "Music and Participantal experiences, including emergence from post-hardcore and punk influences" ;
     youth:influences youth:PositiveAttitude .
 
 youth:PerspectiveInfluence_2 a youth:PerspectiveInfluence ;
@@ -63,6 +67,11 @@ youth:PerspectiveInfluence_8 a youth:PerspectiveInfluence ;
 youth:PerspectiveInfluence_9 a youth:PerspectiveInfluence ;
     youth:hasContent "Influence of extreme sports culture, including the growth of skate culture" ;
     youth:influences youth:PositiveAttitude .
+
+youth:belongsToGeneration a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain youth:Participant ;
+    rdfs:range rdfs:Literal .
 
 youth:contrasts a owl:ObjectProperty .
 
@@ -123,21 +132,13 @@ https://krke24.gitbook.io/krke-project-2023-2024""" ;
     rdfs:comment "Any Region in a dimensional space that aims at representing time." ;
     rdfs:isDefinedBy "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl" .
 
-youth:Emo a youth:YouthSubculture ;
-    youth:hasFashionStyle youth:FashionStyle_10 ;
-    youth:hasMusicGenre youth:MusicGenre_10 ;
-    youth:hasParticipant youth:Person_10 ;
-    youth:hasRitual youth:Ritual_10 ;
-    youth:hasValue youth:Value_10 ;
-    youth:locatedIn youth:Location_10 ;
-    youth:originatesIn youth:HistoricalPeriod_10 ;
-    youth:triggersStereotype youth:Steretype_10 ;
-    youth:viewdAs youth:InternalViewpoint .
-
 youth:FashionStyle_1 a youth:FashionStyle ;
     youth:hasContent "Colorful and eclectic clothing, including tie-dye shirts, bell-bottoms, and peace symbols. Accessories often include flower crowns, beads, and sandals." .
 
 youth:FashionStyle_10 a youth:FashionStyle ;
+    youth:hasContent "Dark, Skinny Jeans" .
+
+youth:FashionStyle_11 a youth:FashionStyle ;
     youth:hasContent "Dark, Skinny Jeans" .
 
 youth:FashionStyle_2 a youth:FashionStyle ;
@@ -172,7 +173,7 @@ youth:Goths a youth:YouthSubculture ;
     youth:hasValue youth:Value_8 ;
     youth:locatedIn youth:Location_8 ;
     youth:originatesIn youth:HistoricalPeriod_8 ;
-    youth:triggersStereotype youth:Steretype_8 ;
+    youth:triggersStereotype youth:Stereotype_8 ;
     youth:viewdAs youth:InternalViewpoint .
 
 youth:Hip-Hop a youth:YouthSubculture ;
@@ -183,7 +184,7 @@ youth:Hip-Hop a youth:YouthSubculture ;
     youth:hasValue youth:Value_4 ;
     youth:locatedIn youth:Location_4 ;
     youth:originatesIn youth:HistoricalPeriod_4 ;
-    youth:triggersStereotype youth:Steretype_4 ;
+    youth:triggersStereotype youth:Stereotype_4 ;
     youth:viewdAs youth:InternalViewpoint .
 
 youth:Hippies a youth:YouthSubculture ;
@@ -194,13 +195,16 @@ youth:Hippies a youth:YouthSubculture ;
     youth:hasValue youth:Value_1 ;
     youth:locatedIn youth:Location_1 ;
     youth:originatesIn youth:HistoricalPeriod_1 ;
-    youth:triggersStereotype youth:Steretype_1 ;
+    youth:triggersStereotype youth:Stereotype_1 ;
     youth:viewdAs youth:InternalViewpoint .
 
 youth:HistoricalPeriod_1 a youth:HistoricalPeriod ;
     youth:hasContent "1960s" .
 
 youth:HistoricalPeriod_10 a youth:HistoricalPeriod ;
+    youth:hasContent "1990s-2000s" .
+
+youth:HistoricalPeriod_11 a youth:HistoricalPeriod ;
     youth:hasContent "1990s-2000s" .
 
 youth:HistoricalPeriod_2 a youth:HistoricalPeriod ;
@@ -231,6 +235,9 @@ youth:Location_1 a youth:Location ;
     youth:hasContent "San Francisco, New York" .
 
 youth:Location_10 a youth:Location ;
+    youth:hasContent "USA" .
+
+youth:Location_11 a youth:Location ;
     youth:hasContent "USA" .
 
 youth:Location_2 a youth:Location ;
@@ -265,7 +272,7 @@ youth:Metalheads a youth:YouthSubculture ;
     youth:hasValue youth:Value_7 ;
     youth:locatedIn youth:Location_7 ;
     youth:originatesIn youth:HistoricalPeriod_7 ;
-    youth:triggersStereotype youth:Steretype_7 ;
+    youth:triggersStereotype youth:Stereotype_7 ;
     youth:viewdAs youth:InternalViewpoint .
 
 youth:Mods a youth:YouthSubculture ;
@@ -276,13 +283,16 @@ youth:Mods a youth:YouthSubculture ;
     youth:hasValue youth:Value_2 ;
     youth:locatedIn youth:Location_2 ;
     youth:originatesIn youth:HistoricalPeriod_2 ;
-    youth:triggersStereotype youth:Steretype_2 ;
+    youth:triggersStereotype youth:Stereotype_2 ;
     youth:viewdAs youth:InternalViewpoint .
 
 youth:MusicGenre_1 a youth:MusicGenre ;
     youth:hasContent "Psychedelic Rock, Folk, Classic Rock" .
 
 youth:MusicGenre_10 a youth:MusicGenre ;
+    youth:hasContent "Emo, Pop-Punk, Melodic Hardcore" .
+
+youth:MusicGenre_11 a youth:MusicGenre ;
     youth:hasContent "Emo, Pop-Punk, Melodic Hardcore" .
 
 youth:MusicGenre_2 a youth:MusicGenre ;
@@ -313,6 +323,9 @@ youth:PerspectiveShift_1 a youth:PerspectiveShift ;
     youth:hasContent "From radical counterculture to a more widely accepted ethos of peace and environmentalism" .
 
 youth:PerspectiveShift_10 a youth:PerspectiveShift ;
+    youth:hasContent "Evolving from niche to influential in alternative music" .
+
+youth:PerspectiveShift_11 a youth:PerspectiveShift ;
     youth:hasContent "Evolving from niche to influential in alternative music" .
 
 youth:PerspectiveShift_2 a youth:PerspectiveShift ;
@@ -347,13 +360,16 @@ youth:Punks a youth:YouthSubculture ;
     youth:hasValue youth:Value_5 ;
     youth:locatedIn youth:Location_5 ;
     youth:originatesIn youth:HistoricalPeriod_5 ;
-    youth:triggersStereotype youth:Steretype_5 ;
+    youth:triggersStereotype youth:Stereotype_5 ;
     youth:viewdAs youth:InternalViewpoint .
 
 youth:Ritual_1 a youth:Ritual ;
     youth:hasContent "Participating in music festivals, peace protests, communal living, engaging in spiritual practices" .
 
 youth:Ritual_10 a youth:Ritual ;
+    youth:hasContent "Alt-music events, Attending concerts" .
+
+youth:Ritual_11 a youth:Ritual ;
     youth:hasContent "Alt-music events, Attending concerts" .
 
 youth:Ritual_2 a youth:Ritual ;
@@ -388,7 +404,7 @@ youth:Rockers a youth:YouthSubculture ;
     youth:hasValue youth:Value_6 ;
     youth:locatedIn youth:Location_6 ;
     youth:originatesIn youth:HistoricalPeriod_6 ;
-    youth:triggersStereotype youth:Steretype_6 ;
+    youth:triggersStereotype youth:Stereotype_6 ;
     youth:viewdAs youth:InternalViewpoint .
 
 youth:Skaters a youth:YouthSubculture ;
@@ -399,7 +415,7 @@ youth:Skaters a youth:YouthSubculture ;
     youth:hasValue youth:Value_9 ;
     youth:locatedIn youth:Location_9 ;
     youth:originatesIn youth:HistoricalPeriod_9 ;
-    youth:triggersStereotype youth:Steretype_9 ;
+    youth:triggersStereotype youth:Stereotype_9 ;
     youth:viewdAs youth:InternalViewpoint .
 
 youth:Skinheads a youth:YouthSubculture ;
@@ -410,48 +426,8 @@ youth:Skinheads a youth:YouthSubculture ;
     youth:hasValue youth:Value_3 ;
     youth:locatedIn youth:Location_3 ;
     youth:originatesIn youth:HistoricalPeriod_3 ;
-    youth:triggersStereotype youth:Steretype_3 ;
+    youth:triggersStereotype youth:Stereotype_3 ;
     youth:viewdAs youth:InternalViewpoint .
-
-youth:Stereotype_1 a youth:Stereotype ;
-    youth:hasContent "Idealistic, free-spirited, anti-establishment" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Stereotype_10 a youth:Stereotype ;
-    youth:hasContent "Melancholic, introverted" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Stereotype_2 a youth:Stereotype ;
-    youth:hasContent "Stylish, superficial, elitist" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Stereotype_3 a youth:Stereotype ;
-    youth:hasContent "Tough, working-class, politically charged" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Stereotype_4 a youth:Stereotype ;
-    youth:hasContent "criminal behavior violence, and rebellion" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Stereotype_5 a youth:Stereotype ;
-    youth:hasContent "Troublemakers, violent, anti-social" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Stereotype_6 a youth:Stereotype ;
-    youth:hasContent "Loud, wild, rebellious" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Stereotype_7 a youth:Stereotype ;
-    youth:hasContent "Extreme, aggressive, unruly, extravagant" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Stereotype_8 a youth:Stereotype ;
-    youth:hasContent "Depressed, morose, detached, brooding" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Stereotype_9 a youth:Stereotype ;
-    youth:hasContent "Risk-taking, troublemakers, anti-establishment" ;
-    youth:isExpressedVia youth:PositiveAttitude .
 
 youth:hasEthic a owl:ObjectProperty ;
     rdfs:comment "Links a subculture to its core values." ;
@@ -501,90 +477,143 @@ youth:locatedIn a owl:ObjectProperty ;
     rdfs:domain youth:YouthSubculture ;
     rdfs:range youth:Location .
 
-youth:NotParticipant a owl:Class ;
-    rdfs:comment "Members outside youth subcultures." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty youth:hasViewpoint ;
-            owl:someValuesFrom youth:ExternalViewpoint ],
-        [ a owl:Class ;
-            owl:complementOf [ a owl:Restriction ;
-                    owl:onProperty youth:participatesIn ;
-                    owl:someValuesFrom youth:YouthSubculture ] ],
-        [ a owl:Restriction ;
-            owl:onProperty youth:hasAttitude ;
-            owl:someValuesFrom [ a owl:Class ;
-                    owl:unionOf ( youth:NegativeAttitude youth:NeutralAttitude youth:PositiveAttitude ) ] ],
-        <http://etna.istc.cnr.it/framester2/data/framestercore/People> .
+youth: a youth:NotParticipant,
+        youth:Participant ;
+    youth:belongsToGeneration "Baby Boomers",
+        "Generation Alpha",
+        "Generation X",
+        "Generation Z",
+        "Millennials",
+        "The Silent Generation" ;
+    youth:hasAttitude youth:PositiveAttitude ;
+    youth:hasViewpoint youth:ExternalViewpoint,
+        youth:InternalViewpoint ;
+    youth:hasname "Giovannina" ;
+    youth:participatesIn youth:Emo .
 
-youth:Person_1 a youth:Person ;
+youth:Emo a youth:YouthSubculture ;
+    youth:hasFashionStyle youth:FashionStyle_10,
+        youth:FashionStyle_11 ;
+    youth:hasMusicGenre youth:MusicGenre_10,
+        youth:MusicGenre_11 ;
+    youth:hasParticipant youth:,
+        youth:Person_10 ;
+    youth:hasRitual youth:Ritual_10,
+        youth:Ritual_11 ;
+    youth:hasValue youth:Value_10,
+        youth:Value_11 ;
+    youth:locatedIn youth:Location_10,
+        youth:Location_11 ;
+    youth:originatesIn youth:HistoricalPeriod_10,
+        youth:HistoricalPeriod_11 ;
+    youth:triggersStereotype youth:Stereotype_10,
+        youth:Stereotype_11 ;
+    youth:viewdAs youth:ExternalViewpoint,
+        youth:InternalViewpoint .
+
+youth:Person_1 a youth:Participant ;
     youth:belongsToGeneration "The Silent Generation" ;
     youth:hasAttitude youth:PositiveAttitude ;
     youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
     youth:participatesIn youth:Hippies .
 
-youth:Person_10 a youth:Person ;
+youth:Person_10 a youth:Participant ;
     youth:belongsToGeneration "Millennials" ;
     youth:hasAttitude youth:PositiveAttitude ;
     youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
     youth:participatesIn youth:Emo .
 
-youth:Person_2 a youth:Person ;
+youth:Person_2 a youth:Participant ;
     youth:belongsToGeneration "Baby Boomers" ;
     youth:hasAttitude youth:PositiveAttitude ;
     youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
     youth:participatesIn youth:Mods .
 
-youth:Person_3 a youth:Person ;
+youth:Person_3 a youth:Participant ;
     youth:belongsToGeneration "Generation X" ;
     youth:hasAttitude youth:PositiveAttitude ;
     youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
     youth:participatesIn youth:Skinheads .
 
-youth:Person_4 a youth:Person ;
+youth:Person_4 a youth:Participant ;
     youth:belongsToGeneration "Millennials" ;
     youth:hasAttitude youth:PositiveAttitude ;
     youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
     youth:participatesIn youth:Hip-Hop .
 
-youth:Person_5 a youth:Person ;
+youth:Person_5 a youth:Participant ;
     youth:belongsToGeneration "Baby Boomers" ;
     youth:hasAttitude youth:PositiveAttitude ;
     youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
     youth:participatesIn youth:Punks .
 
-youth:Person_6 a youth:Person ;
+youth:Person_6 a youth:Participant ;
     youth:belongsToGeneration "Generation Z" ;
     youth:hasAttitude youth:PositiveAttitude ;
     youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
     youth:participatesIn youth:Rockers .
 
-youth:Person_7 a youth:Person ;
+youth:Person_7 a youth:Participant ;
     youth:belongsToGeneration "The Silent Generation" ;
     youth:hasAttitude youth:PositiveAttitude ;
     youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
     youth:participatesIn youth:Metalheads .
 
-youth:Person_8 a youth:Person ;
+youth:Person_8 a youth:Participant ;
     youth:belongsToGeneration "Generation Alpha" ;
     youth:hasAttitude youth:PositiveAttitude ;
     youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
     youth:participatesIn youth:Goths .
 
-youth:Person_9 a youth:Person ;
+youth:Person_9 a youth:Participant ;
     youth:belongsToGeneration "Generation Z" ;
     youth:hasAttitude youth:PositiveAttitude ;
     youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
     youth:participatesIn youth:Skaters .
+
+youth:Stereotype_1 a youth:Stereotype ;
+    youth:hasContent "Idealistic, free-spirited, anti-establishment" ;
+    youth:isExpressedVia youth:PositiveAttitude .
+
+youth:Stereotype_10 a youth:Stereotype ;
+    youth:hasContent "Melancholic, introverted" ;
+    youth:isExpressedVia youth:PositiveAttitude .
+
+youth:Stereotype_11 a youth:Stereotype ;
+    youth:hasContent "Melancholic, introverted" ;
+    youth:isExpressedVia youth:PositiveAttitude .
+
+youth:Stereotype_2 a youth:Stereotype ;
+    youth:hasContent "Stylish, superficial, elitist" ;
+    youth:isExpressedVia youth:PositiveAttitude .
+
+youth:Stereotype_3 a youth:Stereotype ;
+    youth:hasContent "Tough, working-class, politically charged" ;
+    youth:isExpressedVia youth:PositiveAttitude .
+
+youth:Stereotype_4 a youth:Stereotype ;
+    youth:hasContent "criminal behavior violence, and rebellion" ;
+    youth:isExpressedVia youth:PositiveAttitude .
+
+youth:Stereotype_5 a youth:Stereotype ;
+    youth:hasContent "Troublemakers, violent, anti-social" ;
+    youth:isExpressedVia youth:PositiveAttitude .
+
+youth:Stereotype_6 a youth:Stereotype ;
+    youth:hasContent "Loud, wild, rebellious" ;
+    youth:isExpressedVia youth:PositiveAttitude .
+
+youth:Stereotype_7 a youth:Stereotype ;
+    youth:hasContent "Extreme, aggressive, unruly, extravagant" ;
+    youth:isExpressedVia youth:PositiveAttitude .
+
+youth:Stereotype_8 a youth:Stereotype ;
+    youth:hasContent "Depressed, morose, detached, brooding" ;
+    youth:isExpressedVia youth:PositiveAttitude .
+
+youth:Stereotype_9 a youth:Stereotype ;
+    youth:hasContent "Risk-taking, troublemakers, anti-establishment" ;
+    youth:isExpressedVia youth:PositiveAttitude .
 
 youth:Value_1 a youth:Value ;
     youth:hasContent youth:FashionStyle1 ;
@@ -592,6 +621,10 @@ youth:Value_1 a youth:Value ;
 
 youth:Value_10 a youth:Value ;
     youth:hasContent youth:FashionStyle10 ;
+    youth:isExpressedVia youth:PositiveAttitude .
+
+youth:Value_11 a youth:Value ;
+    youth:hasContent youth:FashionStyle11 ;
     youth:isExpressedVia youth:PositiveAttitude .
 
 youth:Value_2 a youth:Value ;
@@ -701,6 +734,21 @@ youth:triggersStereotype a owl:ObjectProperty ;
     rdfs:domain youth:YouthSubculture ;
     rdfs:range youth:Stereotype .
 
+youth:NotParticipant a owl:Class ;
+    rdfs:comment "Members outside youth subcultures." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty youth:hasViewpoint ;
+            owl:someValuesFrom youth:ExternalViewpoint ],
+        [ a owl:Class ;
+            owl:complementOf [ a owl:Restriction ;
+                    owl:onProperty youth:participatesIn ;
+                    owl:someValuesFrom youth:YouthSubculture ] ],
+        [ a owl:Restriction ;
+            owl:onProperty youth:hasAttitude ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:unionOf ( youth:NegativeAttitude youth:NeutralAttitude youth:PositiveAttitude ) ] ],
+        <http://etna.istc.cnr.it/framester2/data/framestercore/People> .
+
 <http://etna.istc.cnr.it/framester2/data/framestercore/People> a owl:Class ;
     rdfs:comment "http://etna.istc.cnr.it/framester2/data/framestercore/" ;
     rdfs:isDefinedBy "This pattern is applied to model the involvement of people within subcultures, distinguishing between participants and non-participants." ;
@@ -717,22 +765,11 @@ youth:Ethic a owl:Class ;
     owl:disjointWith youth:Ritual,
         youth:Stereotype .
 
-youth:Participant a owl:Class ;
-    rdfs:comment "Members within the youth subcultures." ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty youth:hasAttitude ;
-            owl:someValuesFrom [ a owl:Class ;
-                    owl:unionOf ( youth:NegativeAttitude youth:NeutralAttitude youth:PositiveAttitude ) ] ],
-        [ a owl:Restriction ;
-            owl:onProperty youth:hasViewpoint ;
-            owl:someValuesFrom youth:InternalViewpoint ],
-        [ a owl:Restriction ;
-            owl:onProperty youth:participatesIn ;
-            owl:someValuesFrom youth:YouthSubculture ],
-        <http://etna.istc.cnr.it/framester2/data/framestercore/People> .
-
-youth:ExternalViewpoint a owl:Class,
+youth:ExternalViewpoint a youth:Viewpoint,
+        owl:Class,
         owl:NamedIndividual ;
+    youth:characterisedBy youth:PositiveAttitude ;
+    youth:determinesShift youth:PerspectiveShift_11 ;
     rdfs:comment "Represents the way in which subcultures are viewed from an external viewpoint. This is influenced by the general public's impressions, stereotypes, and media portrayals that shape the external image of a subculture." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty youth:determines ;
@@ -771,10 +808,6 @@ youth:MusicGenre a owl:Class ;
     rdfs:comment "Represents the type of music associated with a subculture." ;
     rdfs:subClassOf youth:Style .
 
-youth:Ritual a owl:Class ;
-    rdfs:comment "Represents the activities that usually characterize a specific youth subculture." ;
-    rdfs:subClassOf youth:Style .
-
 youth:NeutralAttitude a youth:NeutralAttitude,
         owl:Class,
         owl:NamedIndividual ;
@@ -788,6 +821,10 @@ youth:NeutralAttitude a youth:NeutralAttitude,
             owl:hasValue youth:NeutralAttitude ;
             owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> ] .
 
+youth:Ritual a owl:Class ;
+    rdfs:comment "Represents the activities that usually characterize a specific youth subculture." ;
+    rdfs:subClassOf youth:Style .
+
 youth:NegativeAttitude a youth:NegativeAttitude,
         owl:Class,
         owl:NamedIndividual ;
@@ -799,6 +836,20 @@ youth:NegativeAttitude a youth:NegativeAttitude,
     owl:equivalentClass [ a owl:Restriction ;
             owl:hasValue youth:NegativeAttitude ;
             owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> ] .
+
+youth:Participant a owl:Class ;
+    rdfs:comment "Members within the youth subcultures." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty youth:hasAttitude ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:unionOf ( youth:NegativeAttitude youth:NeutralAttitude youth:PositiveAttitude ) ] ],
+        [ a owl:Restriction ;
+            owl:onProperty youth:hasViewpoint ;
+            owl:someValuesFrom youth:InternalViewpoint ],
+        [ a owl:Restriction ;
+            owl:onProperty youth:participatesIn ;
+            owl:someValuesFrom youth:YouthSubculture ],
+        <http://etna.istc.cnr.it/framester2/data/framestercore/People> .
 
 youth:Stereotype a owl:Class ;
     rdfs:comment """Represents common stereotypes associated with subcultures, drawing on M. Cardwell's definition of a stereotype as "a fixed, often simplistic generalization about a particular group or class of people. [...] These stereotypes are often negative and unflattering, and may underly prejudice and discrimination". In our ontology, the Stereotype class encapsulates the generalized beliefs and oversimplified notions frequently attributed to members of specific subcultures. These stereotypes reflect societal perceptions and can shape mainstream discourse, influencing how subcultures are understood and portrayed. By capturing these stereotypes, the class facilitates the analysis of misrepresentations and biases that may skew public perception, offering insights into the disparity between societal views of subcultures and their actual characteristics and values.\r
@@ -871,6 +922,7 @@ youth:PositiveAttitude a youth:Attitude,
         owl:NamedIndividual ;
     youth:expressedVia youth:Stereotype_1,
         youth:Stereotype_10,
+        youth:Stereotype_11,
         youth:Stereotype_2,
         youth:Stereotype_3,
         youth:Stereotype_4,
@@ -881,6 +933,7 @@ youth:PositiveAttitude a youth:Attitude,
         youth:Stereotype_9,
         youth:Value_1,
         youth:Value_10,
+        youth:Value_11,
         youth:Value_2,
         youth:Value_3,
         youth:Value_4,
@@ -891,6 +944,7 @@ youth:PositiveAttitude a youth:Attitude,
         youth:Value_9 ;
     youth:influencedBy youth:PerspectiveInfuece_1,
         youth:PerspectiveInfuece_10,
+        youth:PerspectiveInfuece_11,
         youth:PerspectiveInfuece_2,
         youth:PerspectiveInfuece_3,
         youth:PerspectiveInfuece_4,
@@ -899,7 +953,8 @@ youth:PositiveAttitude a youth:Attitude,
         youth:PerspectiveInfuece_7,
         youth:PerspectiveInfuece_8,
         youth:PerspectiveInfuece_9 ;
-    youth:isAttitudeOf youth:Person_1,
+    youth:isAttitudeOf youth:,
+        youth:Person_1,
         youth:Person_10,
         youth:Person_2,
         youth:Person_3,
