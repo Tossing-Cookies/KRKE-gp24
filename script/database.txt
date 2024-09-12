@@ -1,0 +1,3 @@
+java -server -Xmx1g -jar blazegraph.jar
+
+curl -X POST --data-binary "@knowledge_graph.ttl" -H "Content-Type: text/turtle" "http://192.168.1.60:9999/blazegraph/namespace/knowledge_graph/sparql?query=LOAD"

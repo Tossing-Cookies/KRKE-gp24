@@ -51,14 +51,13 @@ def add_triple(df):
                     g.add((dir_uri, YOUTH.hasFashionStyle, YOUTH[f"FashionStyle_{index+1}"])) 
                     g.add((dir_uri, YOUTH.hasMusicGenre , YOUTH[f"MusicGenre_{index+1}"])) 
                     g.add((dir_uri, YOUTH.hasRitual, YOUTH[f"Ritual_{index+1}"])) 
-                    g.add((dir_uri, YOUTH.hasValue, YOUTH[f"Value_{index+1}"]))
+                    g.add((dir_uri, YOUTH.hasMoralValue, YOUTH[f"MoralValue_{index+1}"]))
                     g.add((dir_uri, YOUTH.originatesIn, YOUTH[f"HistoricalPeriod_{index+1}"])) 
-                    g.add((dir_uri, YOUTH.triggersStereotype, YOUTH[f"Stereotype_{index+1}"])) 
-                    g.add((dir_uri, YOUTH.viewdAs, YOUTH[row['Viewpoint']])) #da sistemare
+                    g.add((dir_uri, YOUTH.triggersStereotype, YOUTH[f"Stereotype_{index+1}"]))
 
                 elif col_name == "Viewpoint": 
                     g.add((dir_uri, RDF.type, YOUTH.Viewpoint))
-                    g.add((dir_uri, YOUTH.characterisedBy, YOUTH[row['Attitude']]))
+                    g.add((dir_uri, YOUTH.isCharacterisedBy, YOUTH[row['Attitude']]))
                     g.add((dir_uri, YOUTH.determinesShift, YOUTH[f"PerspectiveShift_{index+1}"]))
 
                 elif col_name == "Location":
@@ -68,20 +67,20 @@ def add_triple(df):
                 elif col_name == "Attitude" and row['Participant'] != "": 
                     g.add((dir_uri, RDF.type, YOUTH.Attitude))
                     g.add((dir_uri, YOUTH.expressedVia, YOUTH[f"Stereotype_{index+1}"]))
-                    g.add((dir_uri, YOUTH.expressedVia, YOUTH[f"Value_{index+1}"]))
+                    g.add((dir_uri, YOUTH.expressedVia, YOUTH[f"MoralValue_{index+1}"]))
                     g.add((dir_uri, YOUTH.influencedBy, YOUTH[f"PerspectiveInfuece_{index+1}"]))
                     g.add((dir_uri, YOUTH.isAttitudeOf, YOUTH[row['Participant']]))
 
                 elif col_name == "Attitude" and row['NotParticipant'] != "": 
                     g.add((dir_uri, RDF.type, YOUTH.Attitude))
                     g.add((dir_uri, YOUTH.expressedVia, YOUTH[f"Stereotype_{index+1}"]))
-                    g.add((dir_uri, YOUTH.expressedVia, YOUTH[f"Value_{index+1}"]))
+                    g.add((dir_uri, YOUTH.expressedVia, YOUTH[f"MoralValue_{index+1}"]))
                     g.add((dir_uri, YOUTH.influencedBy, YOUTH[f"PerspectiveInfuece_{index+1}"]))
                     g.add((dir_uri, YOUTH.isAttitudeOf, YOUTH[row['NotParticipant']]))
                     
-                elif col_name == "Value":
-                    g.add((con_uri, RDF.type, YOUTH.Value))
-                    g.add((con_uri, YOUTH.hasContent, YOUTH[f"FashionStyle{index+1}"])) 
+                elif col_name == "MoralValue":
+                    g.add((con_uri, RDF.type, YOUTH.MoralValue))
+                    g.add((con_uri, YOUTH.hasContent, Literal(row["MoralValue"]))) 
                     g.add((con_uri, YOUTH.isExpressedVia, YOUTH[row["Attitude"]]))
                 
                 elif col_name == "HistoricalPeriod":
@@ -100,9 +99,9 @@ def add_triple(df):
                     g.add((con_uri, RDF.type, YOUTH.Ritual))
                     g.add((con_uri, YOUTH.hasContent, Literal(row["Ritual"])))
                 
-                elif col_name == "PerspectiveInfluence": 
+                elif col_name == "Influence": 
                     g.add((con_uri, RDF.type, YOUTH.PerspectiveInfluence))
-                    g.add((con_uri, YOUTH.hasContent, Literal(row["PerspectiveInfluence"])))
+                    g.add((con_uri, YOUTH.hasContent, Literal(row["Influence"])))
                     g.add((con_uri, YOUTH.influences, YOUTH[row["Attitude"]]))
 
                 elif col_name == "Stereotype": 
@@ -124,7 +123,7 @@ def add_triple(df):
         g.add((YOUTH.hasMusicGenre, RDF.type, OWL.ObjectProperty))
         g.add((YOUTH.hasParticipant, RDF.type, OWL.ObjectProperty))
         g.add((YOUTH.hasRitual, RDF.type, OWL.ObjectProperty))
-        g.add((YOUTH.vhasValue, RDF.type, OWL.ObjectProperty))
+        g.add((YOUTH.vhasMoralValue, RDF.type, OWL.ObjectProperty))
         g.add((YOUTH.hasViewpoint, RDF.type, OWL.ObjectProperty))
         g.add((YOUTH.holds, RDF.type, OWL.ObjectProperty))
         g.add((YOUTH.influencedBy, RDF.type, OWL.ObjectProperty))

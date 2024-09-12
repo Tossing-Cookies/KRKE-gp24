@@ -25,13 +25,17 @@ def execute_query(query):
         print(row)
 
 # General Understanding
-# 1. What are the main youth subcultures represented in the ontology?
+# 1. What are the main youth subcultures and their characteristics represented in the ontology?
 query1 = """
-PREFIX ex: <http://example.org/youth/>
-SELECT DISTINCT ?subculture
+SELECT ?subculture ?fashionStyle ?musicGenre ?ritual ?location ?historicalPeriod ?stereotype
 WHERE {
-    ?subculture a ex:YouthSubculture .
-}
+  ?subculture a youth:YouthSubculture .
+  OPTIONAL { ?subculture youth:hasFashionStyle ?fashionStyle . }
+  OPTIONAL { ?subculture youth:hasMusicGenre ?musicGenre . }
+  OPTIONAL { ?subculture youth:hasRitual ?ritual . }
+  OPTIONAL { ?subculture youth:locatedIn ?location . }
+  OPTIONAL { ?subculture youth:originatedIn ?historicalPeriod . }
+  OPTIONAL { ?subculture youth:triggersStereotype ?stereotype . }
 """
 print("Main youth subcultures:")
 execute_query(query1)

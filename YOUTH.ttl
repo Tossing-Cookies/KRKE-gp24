@@ -1,3 +1,4 @@
+@prefix : <http://www.semanticweb.org/owl/owlapi/turtle#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -5,7 +6,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix persp: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
 @prefix youth: <http://www.semanticweb.org/ontologies/2024/YOUTH/> .
-@base <http://www.semanticweb.org/ontologies/2024/YOUTH> .
+@base <http://www.semanticweb.org/owl/owlapi/turtle#> .
 
 <http://www.semanticweb.org/ontologies/2024/YOUTH> rdf:type owl:Ontology ;
                                                     owl:imports <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl> ;
@@ -49,7 +50,7 @@ youth:expressedVia rdf:type owl:ObjectProperty ;
                                              )
                                ] ;
                    rdfs:range [ rdf:type owl:Class ;
-                                owl:unionOf ( youth:Ethic
+                                owl:unionOf ( youth:MoralValue
                                               youth:Stereotype
                                             )
                               ] ;
@@ -68,26 +69,26 @@ youth:hasAttitude rdf:type owl:ObjectProperty ;
                              ] .
 
 
-###  http://www.semanticweb.org/ontologies/2024/YOUTH/hasEthic
-youth:hasEthic rdf:type owl:ObjectProperty ;
-               rdfs:domain youth:YouthSubculture ;
-               rdfs:range youth:Ethic ;
-               owl:propertyDisjointWith youth:triggersStereotype ;
-               rdfs:comment "Links a subculture to its core values." .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource youth:hasEthic ;
-   owl:annotatedProperty owl:propertyDisjointWith ;
-   owl:annotatedTarget youth:triggersStereotype ;
-   rdfs:comment "Values and stereotypes have different implications."
- ] .
-
-
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/hasFashionStyle
 youth:hasFashionStyle rdf:type owl:ObjectProperty ;
                       rdfs:domain youth:YouthSubculture ;
                       rdfs:range youth:FashionStyle ;
                       rdfs:comment "Links a subculture to its fashion style(s)." .
+
+
+###  http://www.semanticweb.org/ontologies/2024/YOUTH/hasMoralValue
+youth:hasMoralValue rdf:type owl:ObjectProperty ;
+                    rdfs:domain youth:YouthSubculture ;
+                    rdfs:range youth:MoralValue ;
+                    owl:propertyDisjointWith youth:triggersStereotype ;
+                    rdfs:comment "Links a subculture to its core values." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource youth:hasMoralValue ;
+   owl:annotatedProperty owl:propertyDisjointWith ;
+   owl:annotatedTarget youth:triggersStereotype ;
+   rdfs:comment "Values and stereotypes have different implications."
+ ] .
 
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/hasMusicGenre
@@ -177,7 +178,7 @@ youth:isCharacterisedBy rdf:type owl:ObjectProperty ;
 youth:isExpressedVia rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf owl:topObjectProperty ;
                      rdfs:domain [ rdf:type owl:Class ;
-                                   owl:unionOf ( youth:Ethic
+                                   owl:unionOf ( youth:MoralValue
                                                  youth:Stereotype
                                                )
                                  ] ;
@@ -241,18 +242,19 @@ youth:triggersStereotype rdf:type owl:ObjectProperty ;
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/belongsToGeneration
 youth:belongsToGeneration rdf:type owl:DatatypeProperty ,
-                              owl:FunctionalProperty ;
-                     rdfs:domain youth:Participant ;
-                     rdfs:range rdfs:Literal .
+                                   owl:FunctionalProperty ;
+                          rdfs:domain youth:Participant ;
+                          rdfs:range rdfs:Literal .
 
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/hasContent
 youth:hasContent rdf:type owl:DatatypeProperty ;
                  rdfs:domain [ rdf:type owl:Class ;
-                               owl:unionOf ( youth:Ethic
-                                             youth:FashionStyle
+                               owl:unionOf ( youth:FashionStyle
                                              youth:HistoricalPeriod
                                              youth:Influence
+                                             youth:Location
+                                             youth:MoralValue
                                              youth:MusicGenre
                                              youth:PerspectiveShift
                                              youth:Ritual
@@ -293,22 +295,6 @@ youth:hasName rdf:type owl:DatatypeProperty ,
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> rdf:type owl:Class ;
                                                                      rdfs:comment "Any Region in a dimensional space that aims at representing time." ;
                                                                      rdfs:isDefinedBy "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl" .
-
-
-###  http://www.semanticweb.org/ontologies/2024/YOUTH/Ethic
-youth:Ethic rdf:type owl:Class ;
-            rdfs:subClassOf [ rdf:type owl:Restriction ;
-                              owl:onProperty youth:isExpressedVia ;
-                              owl:someValuesFrom [ rdf:type owl:Class ;
-                                                   owl:unionOf ( youth:NegativeAttitude
-                                                                 youth:NeutralAttitude
-                                                                 youth:PositiveAttitude
-                                                               )
-                                                 ]
-                            ] ;
-            owl:disjointWith youth:Ritual ,
-                             youth:Stereotype ;
-            rdfs:comment "Represents the fundamental principles and beliefs that underpin a subculture, guiding the behavior, attitudes, and norms of its members." .
 
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/ExternalViewpoint
@@ -388,6 +374,22 @@ youth:Location rdf:type owl:Class ;
                rdfs:comment "This class defines the geographic context or physical setting where a subculture originates, encompassing specific regions, cities, or areas integral to its identity and activities. In the context of our project, \"location\" primarily refers to the geographical place (such as a city or state) where youth subcultures historically emerged. This meaning could be broadened to include more nuanced relationships, highlighting areas where these subcultures actively thrive or are predominantly practiced." .
 
 
+###  http://www.semanticweb.org/ontologies/2024/YOUTH/MoralValue
+youth:MoralValue rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty youth:isExpressedVia ;
+                                   owl:someValuesFrom [ rdf:type owl:Class ;
+                                                        owl:unionOf ( youth:NegativeAttitude
+                                                                      youth:NeutralAttitude
+                                                                      youth:PositiveAttitude
+                                                                    )
+                                                      ]
+                                 ] ;
+                 owl:disjointWith youth:Ritual ,
+                                  youth:Stereotype ;
+                 rdfs:comment "Represents the fundamental principles and beliefs that underpin a subculture, guiding the behavior, attitudes, and norms of its members." .
+
+
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/MusicGenre
 youth:MusicGenre rdf:type owl:Class ;
                  rdfs:subClassOf youth:Style ;
@@ -417,7 +419,7 @@ youth:NeutralAttitude rdf:type owl:Class ;
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty youth:expressedVia ;
                                         owl:someValuesFrom [ rdf:type owl:Class ;
-                                                             owl:unionOf ( youth:Ethic
+                                                             owl:unionOf ( youth:MoralValue
                                                                            youth:Stereotype
                                                                          )
                                                            ]
@@ -495,7 +497,7 @@ youth:PositiveAttitude rdf:type owl:Class ;
                        rdfs:subClassOf persp:Attitude ,
                                        [ rdf:type owl:Restriction ;
                                          owl:onProperty youth:expressedVia ;
-                                         owl:someValuesFrom youth:Ethic
+                                         owl:someValuesFrom youth:MoralValue
                                        ] .
 
 
