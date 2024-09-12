@@ -52,7 +52,7 @@ def add_triple(df):
                 g.add((dir_uri, YOUTH.hasMusicGenre , YOUTH[f"MusicGenre_{index+1}"])) 
                 g.add((dir_uri, YOUTH.hasRitual, YOUTH[f"Ritual_{index+1}"])) 
                 g.add((dir_uri, YOUTH.hasMoralValue, YOUTH[f"MoralValue_{index+1}"]))
-                g.add((dir_uri, YOUTH.originatesIn, YOUTH[f"HistoricalPeriod_{index+1}"])) 
+                g.add((dir_uri, YOUTH.originatedIn, YOUTH[f"HistoricalPeriod_{index+1}"])) 
                 g.add((dir_uri, YOUTH.triggersStereotype, YOUTH[f"Stereotype_{index+1}"]))
 
             elif col_name == "Viewpoint": 
