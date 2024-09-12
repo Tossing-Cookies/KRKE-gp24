@@ -109,7 +109,7 @@ youth:Emo a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_10 ;
     youth:hasRitual youth:Ritual_10 ;
     youth:hasValue youth:Value_10 ;
-    youth:locatedIn "USA" ;
+    youth:locatedIn youth:Location_10 ;
     youth:originatesIn youth:HistoricalPeriod_10 ;
     youth:triggersStereotype youth:Steretype_10 ;
     youth:viewdAs youth:InternalViewpoint .
@@ -150,7 +150,7 @@ youth:Goths a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_8 ;
     youth:hasRitual youth:Ritual_8 ;
     youth:hasValue youth:Value_8 ;
-    youth:locatedIn "London" ;
+    youth:locatedIn youth:Location_8 ;
     youth:originatesIn youth:HistoricalPeriod_8 ;
     youth:triggersStereotype youth:Steretype_8 ;
     youth:viewdAs youth:InternalViewpoint .
@@ -161,7 +161,7 @@ youth:Hip-Hop a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_4 ;
     youth:hasRitual youth:Ritual_4 ;
     youth:hasValue youth:Value_4 ;
-    youth:locatedIn "New York" ;
+    youth:locatedIn youth:Location_4 ;
     youth:originatesIn youth:HistoricalPeriod_4 ;
     youth:triggersStereotype youth:Steretype_4 ;
     youth:viewdAs youth:InternalViewpoint .
@@ -172,7 +172,7 @@ youth:Hippies a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_1 ;
     youth:hasRitual youth:Ritual_1 ;
     youth:hasValue youth:Value_1 ;
-    youth:locatedIn "San Francisco, New York" ;
+    youth:locatedIn youth:Location_1 ;
     youth:originatesIn youth:HistoricalPeriod_1 ;
     youth:triggersStereotype youth:Steretype_1 ;
     youth:viewdAs youth:InternalViewpoint .
@@ -207,13 +207,43 @@ youth:HistoricalPeriod_8 a youth:HistoricalPeriod ;
 youth:HistoricalPeriod_9 a youth:HistoricalPeriod ;
     youth:hasContent "1990s" .
 
+youth:Location_1 a youth:Location ;
+    youth:hasContent "San Francisco, New York" .
+
+youth:Location_10 a youth:Location ;
+    youth:hasContent "USA" .
+
+youth:Location_2 a youth:Location ;
+    youth:hasContent "London" .
+
+youth:Location_3 a youth:Location ;
+    youth:hasContent "London" .
+
+youth:Location_4 a youth:Location ;
+    youth:hasContent "New York" .
+
+youth:Location_5 a youth:Location ;
+    youth:hasContent "New York" .
+
+youth:Location_6 a youth:Location ;
+    youth:hasContent "Los Angeles" .
+
+youth:Location_7 a youth:Location ;
+    youth:hasContent "USA, UK" .
+
+youth:Location_8 a youth:Location ;
+    youth:hasContent "London" .
+
+youth:Location_9 a youth:Location ;
+    youth:hasContent "California" .
+
 youth:Metalheads a youth:YouthSubculture ;
     youth:hasFashionStyle youth:FashionStyle_7 ;
     youth:hasMusicGenre youth:MusicGenre_7 ;
     youth:hasParticipant youth:Person_7 ;
     youth:hasRitual youth:Ritual_7 ;
     youth:hasValue youth:Value_7 ;
-    youth:locatedIn "USA, UK" ;
+    youth:locatedIn youth:Location_7 ;
     youth:originatesIn youth:HistoricalPeriod_7 ;
     youth:triggersStereotype youth:Steretype_7 ;
     youth:viewdAs youth:InternalViewpoint .
@@ -224,7 +254,7 @@ youth:Mods a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_2 ;
     youth:hasRitual youth:Ritual_2 ;
     youth:hasValue youth:Value_2 ;
-    youth:locatedIn "London" ;
+    youth:locatedIn youth:Location_2 ;
     youth:originatesIn youth:HistoricalPeriod_2 ;
     youth:triggersStereotype youth:Steretype_2 ;
     youth:viewdAs youth:InternalViewpoint .
@@ -295,7 +325,7 @@ youth:Punks a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_5 ;
     youth:hasRitual youth:Ritual_5 ;
     youth:hasValue youth:Value_5 ;
-    youth:locatedIn "New York" ;
+    youth:locatedIn youth:Location_5 ;
     youth:originatesIn youth:HistoricalPeriod_5 ;
     youth:triggersStereotype youth:Steretype_5 ;
     youth:viewdAs youth:InternalViewpoint .
@@ -336,7 +366,7 @@ youth:Rockers a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_6 ;
     youth:hasRitual youth:Ritual_6 ;
     youth:hasValue youth:Value_6 ;
-    youth:locatedIn "Los Angeles" ;
+    youth:locatedIn youth:Location_6 ;
     youth:originatesIn youth:HistoricalPeriod_6 ;
     youth:triggersStereotype youth:Steretype_6 ;
     youth:viewdAs youth:InternalViewpoint .
@@ -347,7 +377,7 @@ youth:Skaters a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_9 ;
     youth:hasRitual youth:Ritual_9 ;
     youth:hasValue youth:Value_9 ;
-    youth:locatedIn "California" ;
+    youth:locatedIn youth:Location_9 ;
     youth:originatesIn youth:HistoricalPeriod_9 ;
     youth:triggersStereotype youth:Steretype_9 ;
     youth:viewdAs youth:InternalViewpoint .
@@ -358,7 +388,7 @@ youth:Skinheads a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_3 ;
     youth:hasRitual youth:Ritual_3 ;
     youth:hasValue youth:Value_3 ;
-    youth:locatedIn "London" ;
+    youth:locatedIn youth:Location_3 ;
     youth:originatesIn youth:HistoricalPeriod_3 ;
     youth:triggersStereotype youth:Steretype_3 ;
     youth:viewdAs youth:InternalViewpoint .

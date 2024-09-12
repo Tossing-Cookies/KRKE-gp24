@@ -41,7 +41,7 @@ def add_triple(df):
             elif col_name == "YouthSubculture":
                 g.add((dir_uri, RDF.type, YOUTH.YouthSubculture))
                 g.add((dir_uri, YOUTH.hasParticipant, YOUTH[row['Person']]))
-                g.add((dir_uri, YOUTH.locatedIn, Literal(row['Location']))) 
+                g.add((dir_uri, YOUTH.locatedIn, YOUTH[f"Location_{index+1}"])) 
                 g.add((dir_uri, YOUTH.hasFashionStyle, YOUTH[f"FashionStyle_{index+1}"])) 
                 g.add((dir_uri, YOUTH.hasMusicGenre , YOUTH[f"MusicGenre_{index+1}"])) 
                 g.add((dir_uri, YOUTH.hasRitual, YOUTH[f"Ritual_{index+1}"])) 
@@ -54,7 +54,11 @@ def add_triple(df):
                 g.add((dir_uri, RDF.type, YOUTH.Viewpoint))
                 g.add((dir_uri, YOUTH.characterisedBy, YOUTH[row['Attitude']]))
                 g.add((dir_uri, YOUTH.determinesShift, YOUTH[f"PerspectiveShift_{index+1}"]))
-            
+
+            elif col_name == "Location":
+                g.add((con_uri, RDF.type, YOUTH.Location))
+                g.add((con_uri, YOUTH.hasContent, Literal(row["Location"])))
+                 
             elif col_name == "Attitude": 
                 g.add((dir_uri, RDF.type, YOUTH.Attitude))
                 g.add((dir_uri, YOUTH.expressedVia, YOUTH[f"Stereotype_{index+1}"]))
