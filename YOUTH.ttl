@@ -445,11 +445,7 @@ youth:NotParticipant rdf:type owl:Class ;
                                      ] ,
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty youth:hasViewpoint ;
-                                       owl:someValuesFrom [ rdf:type owl:Class ;
-                                                            owl:unionOf ( youth:ExternalViewpoint
-                                                                          youth:InternalViewpoint
-                                                                        )
-                                                          ]
+                                       owl:someValuesFrom youth:ExternalViewpoint
                                      ] ;
                      rdfs:comment "Members outside youth subcultures." .
 
@@ -468,11 +464,7 @@ youth:Participant rdf:type owl:Class ;
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty youth:hasViewpoint ;
-                                    owl:someValuesFrom [ rdf:type owl:Class ;
-                                                         owl:unionOf ( youth:ExternalViewpoint
-                                                                       youth:InternalViewpoint
-                                                                     )
-                                                       ]
+                                    owl:someValuesFrom youth:InternalViewpoint
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty youth:participatesIn ;
