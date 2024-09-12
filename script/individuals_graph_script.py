@@ -82,8 +82,7 @@ def add_triple(df):
                 g.add((dir_uri, YOUTH.hasMusicGenre , YOUTH[f"MusicGenre_{index+1}"])) 
                 g.add((dir_uri, YOUTH.hasRitual, YOUTH[f"Ritual_{index+1}"])) 
                 g.add((dir_uri, YOUTH.hasValue, YOUTH[f"Value_{index+1}"]))
-                #g.add((uri, YOUTH.Affects, uri))
-                g.add((dir_uri, YOUTH.Affects, YOUTH[row['Person']])) 
+                g.add((dir_uri, YOUTH.Affects, YOUTH[row['Person']])) # io lo toglierei definitivamente
                 g.add((dir_uri, YOUTH.originatesIn, YOUTH[f"HistoricalPeriod_{index+1}"])) 
                 g.add((dir_uri, YOUTH.triggersStereotype, YOUTH[f"Steretype_{index+1}"])) 
                 g.add((dir_uri, YOUTH.viewdAs, YOUTH[row['Viewpoint']])) #da sistemare
@@ -105,8 +104,6 @@ def add_triple(df):
                 g.add((con_uri, YOUTH.hasContent, YOUTH[f"FashionStyle{index+1}"])) 
                 g.add((con_uri, YOUTH.isExpressedVia, YOUTH[row["Attitude"]]))
             
-            #elif col_name == "Location": 
-            #    g.add(literal_uri, RDF.type, Literal(row['Location']))
 
             elif col_name == "HistoricalPeriod":
                 g.add((con_uri, RDF.type, YOUTH.HistoricalPeriod))
