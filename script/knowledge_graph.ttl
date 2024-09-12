@@ -104,7 +104,7 @@ youth:Alternative_Fashion_Enthusiasts a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_37 ;
     youth:hasRitual youth:Ritual_37 ;
     youth:locatedIn youth:Location_37 ;
-    youth:originatesIn youth:HistoricalPeriod_37 ;
+    youth:originatedIn youth:HistoricalPeriod_37 ;
     youth:triggersStereotype youth:Stereotype_37 .
 
 youth:Augmented_Reality_Enthusiasts a youth:YouthSubculture ;
@@ -114,7 +114,7 @@ youth:Augmented_Reality_Enthusiasts a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_50 ;
     youth:hasRitual youth:Ritual_50 ;
     youth:locatedIn youth:Location_50 ;
-    youth:originatesIn youth:HistoricalPeriod_50 ;
+    youth:originatedIn youth:HistoricalPeriod_50 ;
     youth:triggersStereotype youth:Stereotype_50 .
 
 youth:Bookstagrammers a youth:YouthSubculture ;
@@ -124,7 +124,7 @@ youth:Bookstagrammers a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_44 ;
     youth:hasRitual youth:Ritual_44 ;
     youth:locatedIn youth:Location_44 ;
-    youth:originatesIn youth:HistoricalPeriod_44 ;
+    youth:originatedIn youth:HistoricalPeriod_44 ;
     youth:triggersStereotype youth:Stereotype_44 .
 
 youth:Cosplay_Enthusiasts a youth:YouthSubculture ;
@@ -134,7 +134,7 @@ youth:Cosplay_Enthusiasts a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_21 ;
     youth:hasRitual youth:Ritual_21 ;
     youth:locatedIn youth:Location_21 ;
-    youth:originatesIn youth:HistoricalPeriod_21 ;
+    youth:originatedIn youth:HistoricalPeriod_21 ;
     youth:triggersStereotype youth:Stereotype_21 .
 
 youth:DIY_Crafters a youth:YouthSubculture ;
@@ -144,7 +144,7 @@ youth:DIY_Crafters a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_30 ;
     youth:hasRitual youth:Ritual_30 ;
     youth:locatedIn youth:Location_30 ;
-    youth:originatesIn youth:HistoricalPeriod_30 ;
+    youth:originatedIn youth:HistoricalPeriod_30 ;
     youth:triggersStereotype youth:Stereotype_30 .
 
 youth:Digital_Artists a youth:YouthSubculture ;
@@ -154,7 +154,7 @@ youth:Digital_Artists a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_48 ;
     youth:hasRitual youth:Ritual_48 ;
     youth:locatedIn youth:Location_48 ;
-    youth:originatesIn youth:HistoricalPeriod_48 ;
+    youth:originatedIn youth:HistoricalPeriod_48 ;
     youth:triggersStereotype youth:Stereotype_48 .
 
 youth:Digital_Nomads a youth:YouthSubculture ;
@@ -164,7 +164,7 @@ youth:Digital_Nomads a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_34 ;
     youth:hasRitual youth:Ritual_34 ;
     youth:locatedIn youth:Location_34 ;
-    youth:originatesIn youth:HistoricalPeriod_34 ;
+    youth:originatedIn youth:HistoricalPeriod_34 ;
     youth:triggersStereotype youth:Stereotype_34 .
 
 <http://www.semanticweb.org/ontologies/2024/YOUTH/E-Boys/E-Girls> a youth:YouthSubculture ;
@@ -174,7 +174,7 @@ youth:Digital_Nomads a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_17 ;
     youth:hasRitual youth:Ritual_17 ;
     youth:locatedIn youth:Location_17 ;
-    youth:originatesIn youth:HistoricalPeriod_17 ;
+    youth:originatedIn youth:HistoricalPeriod_17 ;
     youth:triggersStereotype youth:Stereotype_17 .
 
 youth:Eco-Warriors a youth:YouthSubculture ;
@@ -184,7 +184,7 @@ youth:Eco-Warriors a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_27 ;
     youth:hasRitual youth:Ritual_27 ;
     youth:locatedIn youth:Location_27 ;
-    youth:originatesIn youth:HistoricalPeriod_27 ;
+    youth:originatedIn youth:HistoricalPeriod_27 ;
     youth:triggersStereotype youth:Stereotype_27 .
 
 youth:FashionStyle_1 a youth:FashionStyle ;
@@ -347,7 +347,7 @@ youth:Freelancers a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_39 ;
     youth:hasRitual youth:Ritual_39 ;
     youth:locatedIn youth:Location_39 ;
-    youth:originatesIn youth:HistoricalPeriod_39 ;
+    youth:originatedIn youth:HistoricalPeriod_39 ;
     youth:triggersStereotype youth:Stereotype_39 .
 
 youth:Gamers a youth:YouthSubculture ;
@@ -357,7 +357,7 @@ youth:Gamers a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_13 ;
     youth:hasRitual youth:Ritual_13 ;
     youth:locatedIn youth:Location_13 ;
-    youth:originatesIn youth:HistoricalPeriod_13 ;
+    youth:originatedIn youth:HistoricalPeriod_13 ;
     youth:triggersStereotype youth:Stereotype_13 .
 
 youth:Gothic_Lolita a youth:YouthSubculture ;
@@ -367,7 +367,7 @@ youth:Gothic_Lolita a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_24 ;
     youth:hasRitual youth:Ritual_24 ;
     youth:locatedIn youth:Location_24 ;
-    youth:originatesIn youth:HistoricalPeriod_24 ;
+    youth:originatedIn youth:HistoricalPeriod_24 ;
     youth:triggersStereotype youth:Stereotype_24 .
 
 youth:Goths a youth:YouthSubculture ;
@@ -377,7 +377,7 @@ youth:Goths a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_8 ;
     youth:hasRitual youth:Ritual_8 ;
     youth:locatedIn youth:Location_8 ;
-    youth:originatesIn youth:HistoricalPeriod_8 ;
+    youth:originatedIn youth:HistoricalPeriod_8 ;
     youth:triggersStereotype youth:Stereotype_8 .
 
 <http://www.semanticweb.org/ontologies/2024/YOUTH/Health_&_Wellness_Enthusiasts> a youth:YouthSubculture ;
@@ -387,7 +387,7 @@ youth:Goths a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_43 ;
     youth:hasRitual youth:Ritual_43 ;
     youth:locatedIn youth:Location_43 ;
-    youth:originatesIn youth:HistoricalPeriod_43 ;
+    youth:originatedIn youth:HistoricalPeriod_43 ;
     youth:triggersStereotype youth:Stereotype_43 .
 
 youth:Hip-Hop a youth:YouthSubculture ;
@@ -397,7 +397,7 @@ youth:Hip-Hop a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_4 ;
     youth:hasRitual youth:Ritual_4 ;
     youth:locatedIn youth:Location_4 ;
-    youth:originatesIn youth:HistoricalPeriod_4 ;
+    youth:originatedIn youth:HistoricalPeriod_4 ;
     youth:triggersStereotype youth:Stereotype_4 .
 
 youth:Hippies a youth:YouthSubculture ;
@@ -407,7 +407,7 @@ youth:Hippies a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_1 ;
     youth:hasRitual youth:Ritual_1 ;
     youth:locatedIn youth:Location_1 ;
-    youth:originatesIn youth:HistoricalPeriod_1 ;
+    youth:originatedIn youth:HistoricalPeriod_1 ;
     youth:triggersStereotype youth:Stereotype_1 .
 
 youth:Hipsters a youth:YouthSubculture ;
@@ -417,7 +417,7 @@ youth:Hipsters a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_14 ;
     youth:hasRitual youth:Ritual_14 ;
     youth:locatedIn youth:Location_14 ;
-    youth:originatesIn youth:HistoricalPeriod_14 ;
+    youth:originatedIn youth:HistoricalPeriod_14 ;
     youth:triggersStereotype youth:Stereotype_14 .
 
 youth:HistoricalPeriod_1 a youth:HistoricalPeriod ;
@@ -580,7 +580,7 @@ youth:Indie_Kids a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_22 ;
     youth:hasRitual youth:Ritual_22 ;
     youth:locatedIn youth:Location_22 ;
-    youth:originatesIn youth:HistoricalPeriod_22 ;
+    youth:originatedIn youth:HistoricalPeriod_22 ;
     youth:triggersStereotype youth:Stereotype_22 .
 
 youth:Influence_1 a youth:PerspectiveInfluence ;
@@ -798,7 +798,7 @@ youth:K-Pop_Stans a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_18 ;
     youth:hasRitual youth:Ritual_18 ;
     youth:locatedIn youth:Location_18 ;
-    youth:originatesIn youth:HistoricalPeriod_18 ;
+    youth:originatedIn youth:HistoricalPeriod_18 ;
     youth:triggersStereotype youth:Stereotype_18 .
 
 youth:Location_1 a youth:Location ;
@@ -961,7 +961,7 @@ youth:Lofi_Hip-Hop_Fans a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_26 ;
     youth:hasRitual youth:Ritual_26 ;
     youth:locatedIn youth:Location_26 ;
-    youth:originatesIn youth:HistoricalPeriod_26 ;
+    youth:originatedIn youth:HistoricalPeriod_26 ;
     youth:triggersStereotype youth:Stereotype_26 .
 
 youth:Lumberjack a youth:YouthSubculture ;
@@ -971,7 +971,7 @@ youth:Lumberjack a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_16 ;
     youth:hasRitual youth:Ritual_16 ;
     youth:locatedIn youth:Location_16 ;
-    youth:originatesIn youth:HistoricalPeriod_16 ;
+    youth:originatedIn youth:HistoricalPeriod_16 ;
     youth:triggersStereotype youth:Stereotype_16 .
 
 youth:Metalheads a youth:YouthSubculture ;
@@ -981,7 +981,7 @@ youth:Metalheads a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_7 ;
     youth:hasRitual youth:Ritual_7 ;
     youth:locatedIn youth:Location_7 ;
-    youth:originatesIn youth:HistoricalPeriod_7 ;
+    youth:originatedIn youth:HistoricalPeriod_7 ;
     youth:triggersStereotype youth:Stereotype_7 .
 
 youth:Minimalist_Travelers a youth:YouthSubculture ;
@@ -991,7 +991,7 @@ youth:Minimalist_Travelers a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_46 ;
     youth:hasRitual youth:Ritual_46 ;
     youth:locatedIn youth:Location_46 ;
-    youth:originatesIn youth:HistoricalPeriod_46 ;
+    youth:originatedIn youth:HistoricalPeriod_46 ;
     youth:triggersStereotype youth:Stereotype_46 .
 
 youth:Minimalists a youth:YouthSubculture ;
@@ -1001,7 +1001,7 @@ youth:Minimalists a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_23 ;
     youth:hasRitual youth:Ritual_23 ;
     youth:locatedIn youth:Location_23 ;
-    youth:originatesIn youth:HistoricalPeriod_23 ;
+    youth:originatedIn youth:HistoricalPeriod_23 ;
     youth:triggersStereotype youth:Stereotype_23 .
 
 youth:Mods a youth:YouthSubculture ;
@@ -1011,7 +1011,7 @@ youth:Mods a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_2 ;
     youth:hasRitual youth:Ritual_2 ;
     youth:locatedIn youth:Location_2 ;
-    youth:originatesIn youth:HistoricalPeriod_2 ;
+    youth:originatedIn youth:HistoricalPeriod_2 ;
     youth:triggersStereotype youth:Stereotype_2 .
 
 youth:MoralValue_51 a youth:MoralValue ;
@@ -1178,7 +1178,7 @@ youth:Normcore a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_15 ;
     youth:hasRitual youth:Ritual_15 ;
     youth:locatedIn youth:Location_15 ;
-    youth:originatesIn youth:HistoricalPeriod_15 ;
+    youth:originatedIn youth:HistoricalPeriod_15 ;
     youth:triggersStereotype youth:Stereotype_15 .
 
 youth:Party_Goers a youth:YouthSubculture ;
@@ -1188,7 +1188,7 @@ youth:Party_Goers a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_40 ;
     youth:hasRitual youth:Ritual_40 ;
     youth:locatedIn youth:Location_40 ;
-    youth:originatesIn youth:HistoricalPeriod_40 ;
+    youth:originatedIn youth:HistoricalPeriod_40 ;
     youth:triggersStereotype youth:Stereotype_40 .
 
 youth:Person_51 a youth:NotParticipant ;
@@ -1360,7 +1360,7 @@ youth:Pet_Influencers a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_45 ;
     youth:hasRitual youth:Ritual_45 ;
     youth:locatedIn youth:Location_45 ;
-    youth:originatesIn youth:HistoricalPeriod_45 ;
+    youth:originatedIn youth:HistoricalPeriod_45 ;
     youth:triggersStereotype youth:Stereotype_45 .
 
 youth:Punks a youth:YouthSubculture ;
@@ -1370,7 +1370,7 @@ youth:Punks a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_5 ;
     youth:hasRitual youth:Ritual_5 ;
     youth:locatedIn youth:Location_5 ;
-    youth:originatesIn youth:HistoricalPeriod_5 ;
+    youth:originatedIn youth:HistoricalPeriod_5 ;
     youth:triggersStereotype youth:Stereotype_5 .
 
 youth:Renaissance_Fair_Enthusiasts a youth:YouthSubculture ;
@@ -1380,7 +1380,7 @@ youth:Renaissance_Fair_Enthusiasts a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_31 ;
     youth:hasRitual youth:Ritual_31 ;
     youth:locatedIn youth:Location_31 ;
-    youth:originatesIn youth:HistoricalPeriod_31 ;
+    youth:originatedIn youth:HistoricalPeriod_31 ;
     youth:triggersStereotype youth:Stereotype_31 .
 
 youth:Retro_Gamers a youth:YouthSubculture ;
@@ -1390,7 +1390,7 @@ youth:Retro_Gamers a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_38 ;
     youth:hasRitual youth:Ritual_38 ;
     youth:locatedIn youth:Location_38 ;
-    youth:originatesIn youth:HistoricalPeriod_38 ;
+    youth:originatedIn youth:HistoricalPeriod_38 ;
     youth:triggersStereotype youth:Stereotype_38 .
 
 youth:Ritual_1 a youth:Ritual ;
@@ -1553,7 +1553,7 @@ youth:Rockabilly a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_35 ;
     youth:hasRitual youth:Ritual_35 ;
     youth:locatedIn youth:Location_35 ;
-    youth:originatesIn youth:HistoricalPeriod_35 ;
+    youth:originatedIn youth:HistoricalPeriod_35 ;
     youth:triggersStereotype youth:Stereotype_35 .
 
 youth:Screamo a youth:YouthSubculture ;
@@ -1563,7 +1563,7 @@ youth:Screamo a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_11 ;
     youth:hasRitual youth:Ritual_11 ;
     youth:locatedIn youth:Location_11 ;
-    youth:originatesIn youth:HistoricalPeriod_11 ;
+    youth:originatedIn youth:HistoricalPeriod_11 ;
     youth:triggersStereotype youth:Stereotype_11 .
 
 youth:Skaters a youth:YouthSubculture ;
@@ -1573,7 +1573,7 @@ youth:Skaters a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_9 ;
     youth:hasRitual youth:Ritual_9 ;
     youth:locatedIn youth:Location_9 ;
-    youth:originatesIn youth:HistoricalPeriod_9 ;
+    youth:originatedIn youth:HistoricalPeriod_9 ;
     youth:triggersStereotype youth:Stereotype_9 .
 
 youth:Skinheads a youth:YouthSubculture ;
@@ -1583,7 +1583,7 @@ youth:Skinheads a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_3 ;
     youth:hasRitual youth:Ritual_3 ;
     youth:locatedIn youth:Location_3 ;
-    youth:originatesIn youth:HistoricalPeriod_3 ;
+    youth:originatedIn youth:HistoricalPeriod_3 ;
     youth:triggersStereotype youth:Stereotype_3 .
 
 youth:Sneakerheads a youth:YouthSubculture ;
@@ -1593,7 +1593,7 @@ youth:Sneakerheads a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_25 ;
     youth:hasRitual youth:Ritual_25 ;
     youth:locatedIn youth:Location_25 ;
-    youth:originatesIn youth:HistoricalPeriod_25 ;
+    youth:originatedIn youth:HistoricalPeriod_25 ;
     youth:triggersStereotype youth:Stereotype_25 .
 
 youth:Social_Justice_Activists a youth:YouthSubculture ;
@@ -1603,7 +1603,7 @@ youth:Social_Justice_Activists a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_36 ;
     youth:hasRitual youth:Ritual_36 ;
     youth:locatedIn youth:Location_36 ;
-    youth:originatesIn youth:HistoricalPeriod_36 ;
+    youth:originatedIn youth:HistoricalPeriod_36 ;
     youth:triggersStereotype youth:Stereotype_36 .
 
 youth:Social_Media_Influencers a youth:YouthSubculture ;
@@ -1613,7 +1613,7 @@ youth:Social_Media_Influencers a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_47 ;
     youth:hasRitual youth:Ritual_47 ;
     youth:locatedIn youth:Location_47 ;
-    youth:originatesIn youth:HistoricalPeriod_47 ;
+    youth:originatedIn youth:HistoricalPeriod_47 ;
     youth:triggersStereotype youth:Stereotype_47 .
 
 youth:Stereotype_51 a youth:Stereotype ;
@@ -1627,7 +1627,7 @@ youth:Superhero_Fans a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_42 ;
     youth:hasRitual youth:Ritual_42 ;
     youth:locatedIn youth:Location_42 ;
-    youth:originatesIn youth:HistoricalPeriod_42 ;
+    youth:originatedIn youth:HistoricalPeriod_42 ;
     youth:triggersStereotype youth:Stereotype_42 .
 
 youth:Surfers a youth:YouthSubculture ;
@@ -1637,7 +1637,7 @@ youth:Surfers a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_28 ;
     youth:hasRitual youth:Ritual_28 ;
     youth:locatedIn youth:Location_28 ;
-    youth:originatesIn youth:HistoricalPeriod_28 ;
+    youth:originatedIn youth:HistoricalPeriod_28 ;
     youth:triggersStereotype youth:Stereotype_28 .
 
 youth:Tech_Enthusiasts a youth:YouthSubculture ;
@@ -1647,7 +1647,7 @@ youth:Tech_Enthusiasts a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_29 ;
     youth:hasRitual youth:Ritual_29 ;
     youth:locatedIn youth:Location_29 ;
-    youth:originatesIn youth:HistoricalPeriod_29 ;
+    youth:originatedIn youth:HistoricalPeriod_29 ;
     youth:triggersStereotype youth:Stereotype_29 .
 
 youth:TikTokers a youth:YouthSubculture ;
@@ -1657,7 +1657,7 @@ youth:TikTokers a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_33 ;
     youth:hasRitual youth:Ritual_33 ;
     youth:locatedIn youth:Location_33 ;
-    youth:originatesIn youth:HistoricalPeriod_33 ;
+    youth:originatedIn youth:HistoricalPeriod_33 ;
     youth:triggersStereotype youth:Stereotype_33 .
 
 youth:VSCO_Girls a youth:YouthSubculture ;
@@ -1667,7 +1667,7 @@ youth:VSCO_Girls a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_19 ;
     youth:hasRitual youth:Ritual_19 ;
     youth:locatedIn youth:Location_19 ;
-    youth:originatesIn youth:HistoricalPeriod_19 ;
+    youth:originatedIn youth:HistoricalPeriod_19 ;
     youth:triggersStereotype youth:Stereotype_19 .
 
 youth:Vapers a youth:YouthSubculture ;
@@ -1677,7 +1677,7 @@ youth:Vapers a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_41 ;
     youth:hasRitual youth:Ritual_41 ;
     youth:locatedIn youth:Location_41 ;
-    youth:originatesIn youth:HistoricalPeriod_41 ;
+    youth:originatedIn youth:HistoricalPeriod_41 ;
     youth:triggersStereotype youth:Stereotype_41 .
 
 <http://www.semanticweb.org/ontologies/2024/YOUTH/Vegetarians/Vegans> a youth:YouthSubculture ;
@@ -1687,7 +1687,7 @@ youth:Vapers a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_32 ;
     youth:hasRitual youth:Ritual_32 ;
     youth:locatedIn youth:Location_32 ;
-    youth:originatesIn youth:HistoricalPeriod_32 ;
+    youth:originatedIn youth:HistoricalPeriod_32 ;
     youth:triggersStereotype youth:Stereotype_32 .
 
 youth:Vloggers a youth:YouthSubculture ;
@@ -1697,7 +1697,7 @@ youth:Vloggers a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_49 ;
     youth:hasRitual youth:Ritual_49 ;
     youth:locatedIn youth:Location_49 ;
-    youth:originatesIn youth:HistoricalPeriod_49 ;
+    youth:originatedIn youth:HistoricalPeriod_49 ;
     youth:triggersStereotype youth:Stereotype_49 .
 
 youth:hasFashionStyle a owl:ObjectProperty ;
@@ -1755,7 +1755,7 @@ youth:vRockers a youth:YouthSubculture ;
     youth:hasParticipant youth:Person_6 ;
     youth:hasRitual youth:Ritual_6 ;
     youth:locatedIn youth:Location_6 ;
-    youth:originatesIn youth:HistoricalPeriod_6 ;
+    youth:originatedIn youth:HistoricalPeriod_6 ;
     youth:triggersStereotype youth:Stereotype_6 .
 
 youth:MoralValue_1 a youth:MoralValue ;
@@ -2269,7 +2269,7 @@ youth:Ravers a youth:YouthSubculture ;
         youth:Ritual_20 ;
     youth:locatedIn youth:Location_12,
         youth:Location_20 ;
-    youth:originatesIn youth:HistoricalPeriod_12,
+    youth:originatedIn youth:HistoricalPeriod_12,
         youth:HistoricalPeriod_20 ;
     youth:triggersStereotype youth:Stereotype_12,
         youth:Stereotype_20 .
@@ -2614,7 +2614,7 @@ youth:Emo a youth:Attitude,
     youth:isAttitudeOf youth:Person_12,
         youth:Person_51 ;
     youth:locatedIn youth:Location_10 ;
-    youth:originatesIn youth:HistoricalPeriod_10 ;
+    youth:originatedIn youth:HistoricalPeriod_10 ;
     youth:triggersStereotype youth:Stereotype_10 .
 
 youth:NeutralAttitude a youth:NeutralAttitude,
@@ -2760,7 +2760,7 @@ youth:InternalViewpoint a youth:Viewpoint,
     youth:hasRitual youth:Ritual_52 ;
     youth:isCharacterisedBy youth:PositiveAttitude ;
     youth:locatedIn youth:Location_52 ;
-    youth:originatesIn youth:HistoricalPeriod_52 ;
+    youth:originatedIn youth:HistoricalPeriod_52 ;
     youth:triggersStereotype youth:Stereotype_52 ;
     rdfs:comment "Represents the self-perception and self-definition of members within a subculture. This includes how individuals within the subculture view themselves and their own identity, as well as how they interpret their place within the subculture. It reflects the internal self-concept and personal narratives that members use to describe their experiences and values." ;
     rdfs:subClassOf [ a owl:Restriction ;
