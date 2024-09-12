@@ -38,12 +38,6 @@ youth:belongsToGeneration a owl:DatatypeProperty,
     rdfs:domain youth:Participant ;
     rdfs:range rdfs:Literal .
 
-youth:contrasts a owl:ObjectProperty .
-
-youth:creates a owl:ObjectProperty .
-
-youth:extractedFrom a owl:ObjectProperty .
-
 youth:hasContent a owl:DatatypeProperty ;
     rdfs:comment "Describes the content of instances from different classes." ;
     rdfs:domain [ a owl:Class ;
@@ -57,7 +51,7 @@ youth:hasName a owl:DatatypeProperty,
             owl:unionOf ( youth:NotParticipant youth:Participant ) ] ;
     rdfs:range rdfs:Literal .
 
-youth:holds a owl:ObjectProperty .
+youth:hasPerceptionOf a owl:ObjectProperty .
 
 youth:influencedBy a owl:ObjectProperty ;
     rdfs:comment "Connects viewpoints to the factors that influence them. This property shows how external and internal viepoints are affected by various influencing factors such as media representations, societal attitudes, and personal experiences. It models the relationship between perspectives and the elements that shape them." ;
@@ -65,22 +59,6 @@ youth:influencedBy a owl:ObjectProperty ;
             owl:unionOf ( youth:NegativeAttitude youth:NeutralAttitude youth:PositiveAttitude ) ] ;
     rdfs:range youth:Influence ;
     owl:inverseOf youth:influences .
-
-youth:isSatisfiedBy a owl:ObjectProperty .
-
-youth:isSettingFor a owl:ObjectProperty .
-
-youth:perspectivisedAs a owl:ObjectProperty .
-
-youth:perspectivisedThrough a owl:ObjectProperty .
-
-youth:satisfies a owl:ObjectProperty .
-
-youth:shotThrough a owl:ObjectProperty .
-
-youth:toward a owl:ObjectProperty .
-
-youth:vhasMoralValue a owl:ObjectProperty .
 
 owl:Thing dc:creator "Lucrezia Pograri",
         "Pietro Tisci" ;
@@ -769,11 +747,11 @@ youth:Influence_50 a youth:PerspectiveInfluence ;
 
 youth:Influence_51 a youth:PerspectiveInfluence ;
     youth:hasContent "Music and Participantal experiences" ;
-    youth:influences youth:Emo .
+    youth:influences youth:PositiveAttitude .
 
 youth:Influence_52 a youth:PerspectiveInfluence ;
     youth:hasContent "Personal reasons" ;
-    youth:influences youth:Emo .
+    youth:influences youth:NegativeAttitude .
 
 youth:Influence_6 a youth:PerspectiveInfluence ;
     youth:hasContent "Rock music history and legends, including the evolution of classic rock and roll" ;
@@ -1016,7 +994,7 @@ youth:Mods a youth:YouthSubculture ;
 
 youth:MoralValue_51 a youth:MoralValue ;
     youth:hasContent "Emotional expression" ;
-    youth:isExpressedVia youth:Emo .
+    youth:isExpressedVia youth:PositiveAttitude .
 
 youth:MusicGenre_1 a youth:MusicGenre ;
     youth:hasContent "Psychedelic Rock, Folk, Classic Rock" .
@@ -1193,8 +1171,9 @@ youth:Party_Goers a youth:YouthSubculture ;
 
 youth:Person_51 a youth:NotParticipant ;
     youth:belongsToGeneration "Baby Boomers" ;
-    youth:hasAttitude youth:Emo ;
-    youth:hasViewpoint youth:PositiveAttitude ;
+    youth:hasAttitude youth:PositiveAttitude ;
+    youth:hasPerceptionOf youth:Emo ;
+    youth:hasViewpoint youth:ExternalViewpoint ;
     youth:hasname "Giovannina" .
 
 youth:PerspectiveShift_1 a youth:PerspectiveShift ;
@@ -1618,7 +1597,7 @@ youth:Social_Media_Influencers a youth:YouthSubculture ;
 
 youth:Stereotype_51 a youth:Stereotype ;
     youth:hasContent "Melancholic, introverted" ;
-    youth:isExpressedVia youth:Emo .
+    youth:isExpressedVia youth:PositiveAttitude .
 
 youth:Superhero_Fans a youth:YouthSubculture ;
     youth:hasFashionStyle youth:FashionStyle_42 ;
@@ -1944,7 +1923,7 @@ youth:MoralValue_50 a youth:MoralValue ;
 
 youth:MoralValue_52 a youth:MoralValue ;
     youth:hasContent "Emotional expression" ;
-    youth:isExpressedVia youth:Emo .
+    youth:isExpressedVia youth:NegativeAttitude .
 
 youth:MoralValue_6 a youth:MoralValue ;
     youth:hasContent "Passion, Rebellion" ;
@@ -1979,6 +1958,12 @@ youth:Person_11 a youth:Participant ;
     youth:hasAttitude youth:PositiveAttitude ;
     youth:hasViewpoint youth:InternalViewpoint ;
     youth:participatesIn youth:Screamo .
+
+youth:Person_12 a youth:Participant ;
+    youth:belongsToGeneration "Millennials" ;
+    youth:hasAttitude youth:PositiveAttitude ;
+    youth:hasViewpoint youth:InternalViewpoint ;
+    youth:participatesIn youth:Ravers .
 
 youth:Person_13 a youth:Participant ;
     youth:belongsToGeneration "Generation X" ;
@@ -2232,6 +2217,12 @@ youth:Person_50 a youth:Participant ;
     youth:hasViewpoint youth:InternalViewpoint ;
     youth:participatesIn youth:Augmented_Reality_Enthusiasts .
 
+youth:Person_52 a youth:Participant ;
+    youth:belongsToGeneration "Generation Z" ;
+    youth:hasAttitude youth:NegativeAttitude ;
+    youth:hasViewpoint youth:InternalViewpoint ;
+    youth:participatesIn youth:Emo .
+
 youth:Person_6 a youth:Participant ;
     youth:belongsToGeneration "Generation Z" ;
     youth:hasAttitude youth:PositiveAttitude ;
@@ -2460,7 +2451,7 @@ youth:Stereotype_50 a youth:Stereotype ;
 
 youth:Stereotype_52 a youth:Stereotype ;
     youth:hasContent "Melancholic, introverted" ;
-    youth:isExpressedVia youth:Emo .
+    youth:isExpressedVia youth:NegativeAttitude .
 
 youth:Stereotype_6 a youth:Stereotype ;
     youth:hasContent "Loud, wild, rebellious" ;
@@ -2519,6 +2510,24 @@ youth:originatedIn a owl:FunctionalProperty,
     rdfs:domain youth:YouthSubculture ;
     rdfs:range youth:HistoricalPeriod .
 
+youth:Emo a youth:YouthSubculture ;
+    youth:hasFashionStyle youth:FashionStyle_10,
+        youth:FashionStyle_52 ;
+    youth:hasMoralValue youth:MoralValue_10,
+        youth:MoralValue_52 ;
+    youth:hasMusicGenre youth:MusicGenre_10,
+        youth:MusicGenre_52 ;
+    youth:hasParticipant youth:Person_10,
+        youth:Person_52 ;
+    youth:hasRitual youth:Ritual_10,
+        youth:Ritual_52 ;
+    youth:locatedIn youth:Location_10,
+        youth:Location_52 ;
+    youth:originatedIn youth:HistoricalPeriod_10,
+        youth:HistoricalPeriod_52 ;
+    youth:triggersStereotype youth:Stereotype_10,
+        youth:Stereotype_52 .
+
 youth:Influence a owl:Class ;
     rdfs:comment """Represents the factors that shape and affect both external and internal viewpoint. This can include a variety of influences such as media portrayals, social institutions - like family, work, school, home -, personal experiences, education level, and cultural trends, all of which contribute to the evolving perceptions of subcultures by both insiders and outsiders. Hall’s Encoding/Decoding theory is integrated into this analysis, allowing us to deconstruct the role of television as a primary source of information on the subject.\r
 \r
@@ -2568,16 +2577,6 @@ youth:triggersStereotype a owl:ObjectProperty ;
     rdfs:domain youth:YouthSubculture ;
     rdfs:range youth:Stereotype .
 
-youth:Person_12 a youth:Participant ;
-    youth:belongsToGeneration "Generation Z",
-        "Millennials" ;
-    youth:hasAttitude youth:Emo,
-        youth:PositiveAttitude ;
-    youth:hasViewpoint youth:InternalViewpoint,
-        youth:NegativeAttitude ;
-    youth:participatesIn youth:InternalViewpoint,
-        youth:Ravers .
-
 <http://etna.istc.cnr.it/framester2/data/framestercore/People> a owl:Class ;
     rdfs:comment "http://etna.istc.cnr.it/framester2/data/framestercore/" ;
     rdfs:isDefinedBy "This pattern is applied to model the involvement of people within subcultures, distinguishing between participants and non-participants." ;
@@ -2585,8 +2584,11 @@ youth:Person_12 a youth:Participant ;
             owl:hasValue persp:Conceptualiser ;
             owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> ] .
 
-youth:ExternalViewpoint a owl:Class,
+youth:ExternalViewpoint a youth:Viewpoint,
+        owl:Class,
         owl:NamedIndividual ;
+    youth:determinesShift youth:PerspectiveShift_51 ;
+    youth:isCharacterisedBy youth:PositiveAttitude ;
     rdfs:comment "Represents the way in which subcultures are viewed from an external viewpoint. This is influenced by the general public's impressions, stereotypes, and media portrayals that shape the external image of a subculture." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty youth:determines ;
@@ -2597,25 +2599,6 @@ youth:ExternalViewpoint a owl:Class,
     owl:equivalentClass [ a owl:Restriction ;
             owl:hasValue youth:ExternalViewpoint ;
             owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> ] .
-
-youth:Emo a youth:Attitude,
-        youth:YouthSubculture ;
-    youth:expressedVia youth:MoralValue_51,
-        youth:MoralValue_52,
-        youth:Stereotype_51,
-        youth:Stereotype_52 ;
-    youth:hasFashionStyle youth:FashionStyle_10 ;
-    youth:hasMoralValue youth:MoralValue_10 ;
-    youth:hasMusicGenre youth:MusicGenre_10 ;
-    youth:hasParticipant youth:Person_10 ;
-    youth:hasRitual youth:Ritual_10 ;
-    youth:influencedBy youth:Influence_51,
-        youth:Influence_52 ;
-    youth:isAttitudeOf youth:Person_12,
-        youth:Person_51 ;
-    youth:locatedIn youth:Location_10 ;
-    youth:originatedIn youth:HistoricalPeriod_10 ;
-    youth:triggersStereotype youth:Stereotype_10 .
 
 youth:NeutralAttitude a youth:NeutralAttitude,
         owl:Class,
@@ -2630,12 +2613,14 @@ youth:NeutralAttitude a youth:NeutralAttitude,
             owl:hasValue youth:NeutralAttitude ;
             owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> ] .
 
-youth:NegativeAttitude a youth:NegativeAttitude,
-        youth:Viewpoint,
+youth:NegativeAttitude a youth:Attitude,
+        youth:NegativeAttitude,
         owl:Class,
         owl:NamedIndividual ;
-    youth:determinesShift youth:PerspectiveShift_52 ;
-    youth:isCharacterisedBy youth:Emo ;
+    youth:expressedVia youth:MoralValue_52,
+        youth:Stereotype_52 ;
+    youth:influencedBy youth:Influence_52 ;
+    youth:isAttitudeOf youth:Person_52 ;
     rdfs:comment "Attitude in this context refers to the evaluative stance or disposition that is held toward a youth subculture, whether by its members or by outsiders. Depending on whether a particular attitude aligns more closely with the values or stereotypes associated with a subculture, it will take on a positive, negative, or neutral connotation." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty youth:expressedVia ;
@@ -2672,6 +2657,10 @@ youth:MusicGenre a owl:Class ;
     rdfs:comment "Represents the type of music associated with a subculture." ;
     rdfs:subClassOf youth:Style .
 
+youth:Ritual a owl:Class ;
+    rdfs:comment "Represents the activities that usually characterize a specific youth subculture." ;
+    rdfs:subClassOf youth:Style .
+
 youth:Participant a owl:Class ;
     rdfs:comment "Members within the youth subcultures." ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -2686,10 +2675,6 @@ youth:Participant a owl:Class ;
             owl:someValuesFrom youth:YouthSubculture ],
         <http://etna.istc.cnr.it/framester2/data/framestercore/People> .
 
-youth:Ritual a owl:Class ;
-    rdfs:comment "Represents the activities that usually characterize a specific youth subculture." ;
-    rdfs:subClassOf youth:Style .
-
 youth:MoralValue a owl:Class ;
     rdfs:comment "Represents the fundamental principles and beliefs that underpin a subculture, guiding the behavior, attitudes, and norms of its members." ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -2700,7 +2685,6 @@ youth:MoralValue a owl:Class ;
         youth:Stereotype .
 
 youth:InternalViewpoint a youth:Viewpoint,
-        youth:YouthSubculture,
         owl:Class,
         owl:NamedIndividual ;
     youth:determinesShift youth:PerspectiveShift_1,
@@ -2749,19 +2733,13 @@ youth:InternalViewpoint a youth:Viewpoint,
         youth:PerspectiveShift_49,
         youth:PerspectiveShift_5,
         youth:PerspectiveShift_50,
+        youth:PerspectiveShift_52,
         youth:PerspectiveShift_6,
         youth:PerspectiveShift_7,
         youth:PerspectiveShift_8,
         youth:PerspectiveShift_9 ;
-    youth:hasFashionStyle youth:FashionStyle_52 ;
-    youth:hasMoralValue youth:MoralValue_52 ;
-    youth:hasMusicGenre youth:MusicGenre_52 ;
-    youth:hasParticipant youth:Person_12 ;
-    youth:hasRitual youth:Ritual_52 ;
-    youth:isCharacterisedBy youth:PositiveAttitude ;
-    youth:locatedIn youth:Location_52 ;
-    youth:originatedIn youth:HistoricalPeriod_52 ;
-    youth:triggersStereotype youth:Stereotype_52 ;
+    youth:isCharacterisedBy youth:NegativeAttitude,
+        youth:PositiveAttitude ;
     rdfs:comment "Represents the self-perception and self-definition of members within a subculture. This includes how individuals within the subculture view themselves and their own identity, as well as how they interpret their place within the subculture. It reflects the internal self-concept and personal narratives that members use to describe their experiences and values." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty youth:determines ;
@@ -2815,10 +2793,8 @@ Widdicombe, Sue. "Autobiography and Change: Rhetoric and Authenticity of 'Gothic
 
 youth:PositiveAttitude a youth:Attitude,
         youth:PositiveAttitude,
-        youth:Viewpoint,
         owl:Class,
         owl:NamedIndividual ;
-    youth:determinesShift youth:PerspectiveShift_51 ;
     youth:expressedVia youth:MoralValue_1,
         youth:MoralValue_10,
         youth:MoralValue_11,
@@ -2865,6 +2841,7 @@ youth:PositiveAttitude a youth:Attitude,
         youth:MoralValue_49,
         youth:MoralValue_5,
         youth:MoralValue_50,
+        youth:MoralValue_51,
         youth:MoralValue_6,
         youth:MoralValue_7,
         youth:MoralValue_8,
@@ -2915,6 +2892,7 @@ youth:PositiveAttitude a youth:Attitude,
         youth:Stereotype_49,
         youth:Stereotype_5,
         youth:Stereotype_50,
+        youth:Stereotype_51,
         youth:Stereotype_6,
         youth:Stereotype_7,
         youth:Stereotype_8,
@@ -2965,6 +2943,7 @@ youth:PositiveAttitude a youth:Attitude,
         youth:Influence_49,
         youth:Influence_5,
         youth:Influence_50,
+        youth:Influence_51,
         youth:Influence_6,
         youth:Influence_7,
         youth:Influence_8,
@@ -3015,11 +2994,11 @@ youth:PositiveAttitude a youth:Attitude,
         youth:Person_49,
         youth:Person_5,
         youth:Person_50,
+        youth:Person_51,
         youth:Person_6,
         youth:Person_7,
         youth:Person_8,
         youth:Person_9 ;
-    youth:isCharacterisedBy youth:Emo ;
     rdfs:comment "Attitude in this context refers to the evaluative stance or disposition that is held toward a youth subculture, whether by its members or by outsiders. Depending on whether a particular attitude aligns more closely with the values or stereotypes associated with a subculture, it will take on a positive, negative, or neutral connotation." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty youth:expressedVia ;

@@ -18,29 +18,25 @@ YOUTH:MusicGenre_51 a YOUTH:MusicGenre ;
 YOUTH:Ritual_51 a YOUTH:Ritual ;
     YOUTH:hasContent "Alt-music events, Attending concerts" .
 
-YOUTH:contrasts a OWL:ObjectProperty .
-
-YOUTH:creates a OWL:ObjectProperty .
-
 YOUTH:determines a OWL:ObjectProperty .
 
 YOUTH:expressedVia a OWL:ObjectProperty .
-
-YOUTH:extractedFrom a OWL:ObjectProperty .
 
 YOUTH:hasAttitude a OWL:ObjectProperty .
 
 YOUTH:hasFashionStyle a OWL:ObjectProperty .
 
+YOUTH:hasMoralValue a OWL:ObjectProperty .
+
 YOUTH:hasMusicGenre a OWL:ObjectProperty .
 
 YOUTH:hasParticipant a OWL:ObjectProperty .
 
+YOUTH:hasPerceptionOf a OWL:ObjectProperty .
+
 YOUTH:hasRitual a OWL:ObjectProperty .
 
 YOUTH:hasViewpoint a OWL:ObjectProperty .
-
-YOUTH:holds a OWL:ObjectProperty .
 
 YOUTH:influencedBy a OWL:ObjectProperty .
 
@@ -52,10 +48,6 @@ YOUTH:isCharacterisedBy a OWL:ObjectProperty .
 
 YOUTH:isExpressedVia a OWL:ObjectProperty .
 
-YOUTH:isSatisfiedBy a OWL:ObjectProperty .
-
-YOUTH:isSettingFor a OWL:ObjectProperty .
-
 YOUTH:isViewpointOf a OWL:ObjectProperty .
 
 YOUTH:locatedIn a OWL:ObjectProperty .
@@ -64,19 +56,7 @@ YOUTH:originatedIn a OWL:ObjectProperty .
 
 YOUTH:participatesIn a OWL:ObjectProperty .
 
-YOUTH:perspectivisedAs a OWL:ObjectProperty .
-
-YOUTH:perspectivisedThrough a OWL:ObjectProperty .
-
-YOUTH:satisfies a OWL:ObjectProperty .
-
-YOUTH:shotThrough a OWL:ObjectProperty .
-
-YOUTH:toward a OWL:ObjectProperty .
-
 YOUTH:triggersStereotype a OWL:ObjectProperty .
-
-YOUTH:vhasMoralValue a OWL:ObjectProperty .
 
 YOUTH:Alternative_Fashion_Enthusiasts a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_37 ;
@@ -167,6 +147,10 @@ YOUTH:Eco-Warriors a YOUTH:YouthSubculture ;
     YOUTH:locatedIn YOUTH:Location_27 ;
     YOUTH:originatedIn YOUTH:HistoricalPeriod_27 ;
     YOUTH:triggersStereotype YOUTH:Stereotype_27 .
+
+YOUTH:ExternalViewpoint a YOUTH:Viewpoint ;
+    YOUTH:determinesShift YOUTH:PerspectiveShift_51 ;
+    YOUTH:isCharacterisedBy YOUTH:PositiveAttitude .
 
 YOUTH:FashionStyle_1 a YOUTH:FashionStyle ;
     YOUTH:hasContent "Colorful and eclectic clothing, including tie-dye shirts, bell-bottoms, and peace symbols. Accessories often include flower crowns, beads, and sandals." .
@@ -750,11 +734,11 @@ YOUTH:Influence_50 a YOUTH:PerspectiveInfluence ;
 
 YOUTH:Influence_51 a YOUTH:PerspectiveInfluence ;
     YOUTH:hasContent "Music and Participantal experiences" ;
-    YOUTH:influences YOUTH:Emo .
+    YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_52 a YOUTH:PerspectiveInfluence ;
     YOUTH:hasContent "Personal reasons" ;
-    YOUTH:influences YOUTH:Emo .
+    YOUTH:influences YOUTH:NegativeAttitude .
 
 YOUTH:Influence_6 a YOUTH:PerspectiveInfluence ;
     YOUTH:hasContent "Rock music history and legends, including the evolution of classic rock and roll" ;
@@ -997,7 +981,7 @@ YOUTH:Mods a YOUTH:YouthSubculture ;
 
 YOUTH:MoralValue_51 a YOUTH:MoralValue ;
     YOUTH:hasContent "Emotional expression" ;
-    YOUTH:isExpressedVia YOUTH:Emo .
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
 
 YOUTH:MusicGenre_1 a YOUTH:MusicGenre ;
     YOUTH:hasContent "Psychedelic Rock, Folk, Classic Rock" .
@@ -1152,10 +1136,6 @@ YOUTH:MusicGenre_8 a YOUTH:MusicGenre ;
 YOUTH:MusicGenre_9 a YOUTH:MusicGenre ;
     YOUTH:hasContent "Punk Rock, Hip-Hop" .
 
-YOUTH:NegativeAttitude a YOUTH:Viewpoint ;
-    YOUTH:determinesShift YOUTH:PerspectiveShift_52 ;
-    YOUTH:isCharacterisedBy YOUTH:Emo .
-
 YOUTH:Normcore a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_15 ;
     YOUTH:hasMoralValue YOUTH:MoralValue_15 ;
@@ -1178,8 +1158,9 @@ YOUTH:Party_Goers a YOUTH:YouthSubculture ;
 
 YOUTH:Person_51 a YOUTH:NotParticipant ;
     YOUTH:belongsToGeneration "Baby Boomers" ;
-    YOUTH:hasAttitude YOUTH:Emo ;
-    YOUTH:hasViewpoint YOUTH:PositiveAttitude ;
+    YOUTH:hasAttitude YOUTH:PositiveAttitude ;
+    YOUTH:hasPerceptionOf YOUTH:Emo ;
+    YOUTH:hasViewpoint YOUTH:ExternalViewpoint ;
     YOUTH:hasname "Giovannina" .
 
 YOUTH:PerspectiveShift_1 a YOUTH:PerspectiveShift ;
@@ -1603,7 +1584,7 @@ YOUTH:Social_Media_Influencers a YOUTH:YouthSubculture ;
 
 YOUTH:Stereotype_51 a YOUTH:Stereotype ;
     YOUTH:hasContent "Melancholic, introverted" ;
-    YOUTH:isExpressedVia YOUTH:Emo .
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
 
 YOUTH:Superhero_Fans a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_42 ;
@@ -1881,7 +1862,7 @@ YOUTH:MoralValue_50 a YOUTH:MoralValue ;
 
 YOUTH:MoralValue_52 a YOUTH:MoralValue ;
     YOUTH:hasContent "Emotional expression" ;
-    YOUTH:isExpressedVia YOUTH:Emo .
+    YOUTH:isExpressedVia YOUTH:NegativeAttitude .
 
 YOUTH:MoralValue_6 a YOUTH:MoralValue ;
     YOUTH:hasContent "Passion, Rebellion" ;
@@ -1916,6 +1897,12 @@ YOUTH:Person_11 a YOUTH:Participant ;
     YOUTH:hasAttitude YOUTH:PositiveAttitude ;
     YOUTH:hasViewpoint YOUTH:InternalViewpoint ;
     YOUTH:participatesIn YOUTH:Screamo .
+
+YOUTH:Person_12 a YOUTH:Participant ;
+    YOUTH:belongsToGeneration "Millennials" ;
+    YOUTH:hasAttitude YOUTH:PositiveAttitude ;
+    YOUTH:hasViewpoint YOUTH:InternalViewpoint ;
+    YOUTH:participatesIn YOUTH:Ravers .
 
 YOUTH:Person_13 a YOUTH:Participant ;
     YOUTH:belongsToGeneration "Generation X" ;
@@ -2169,6 +2156,12 @@ YOUTH:Person_50 a YOUTH:Participant ;
     YOUTH:hasViewpoint YOUTH:InternalViewpoint ;
     YOUTH:participatesIn YOUTH:Augmented_Reality_Enthusiasts .
 
+YOUTH:Person_52 a YOUTH:Participant ;
+    YOUTH:belongsToGeneration "Generation Z" ;
+    YOUTH:hasAttitude YOUTH:NegativeAttitude ;
+    YOUTH:hasViewpoint YOUTH:InternalViewpoint ;
+    YOUTH:participatesIn YOUTH:Emo .
+
 YOUTH:Person_6 a YOUTH:Participant ;
     YOUTH:belongsToGeneration "Generation Z" ;
     YOUTH:hasAttitude YOUTH:PositiveAttitude ;
@@ -2397,7 +2390,7 @@ YOUTH:Stereotype_50 a YOUTH:Stereotype ;
 
 YOUTH:Stereotype_52 a YOUTH:Stereotype ;
     YOUTH:hasContent "Melancholic, introverted" ;
-    YOUTH:isExpressedVia YOUTH:Emo .
+    YOUTH:isExpressedVia YOUTH:NegativeAttitude .
 
 YOUTH:Stereotype_6 a YOUTH:Stereotype ;
     YOUTH:hasContent "Loud, wild, rebellious" ;
@@ -2415,37 +2408,31 @@ YOUTH:Stereotype_9 a YOUTH:Stereotype ;
     YOUTH:hasContent "Risk-taking, troublemakers, anti-establishment" ;
     YOUTH:isExpressedVia YOUTH:PositiveAttitude .
 
-YOUTH:Person_12 a YOUTH:Participant ;
-    YOUTH:belongsToGeneration "Generation Z",
-        "Millennials" ;
-    YOUTH:hasAttitude YOUTH:Emo,
-        YOUTH:PositiveAttitude ;
-    YOUTH:hasViewpoint YOUTH:InternalViewpoint,
-        YOUTH:NegativeAttitude ;
-    YOUTH:participatesIn YOUTH:InternalViewpoint,
-        YOUTH:Ravers .
+YOUTH:Emo a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_10,
+        YOUTH:FashionStyle_52 ;
+    YOUTH:hasMoralValue YOUTH:MoralValue_10,
+        YOUTH:MoralValue_52 ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_10,
+        YOUTH:MusicGenre_52 ;
+    YOUTH:hasParticipant YOUTH:Person_10,
+        YOUTH:Person_52 ;
+    YOUTH:hasRitual YOUTH:Ritual_10,
+        YOUTH:Ritual_52 ;
+    YOUTH:locatedIn YOUTH:Location_10,
+        YOUTH:Location_52 ;
+    YOUTH:originatedIn YOUTH:HistoricalPeriod_10,
+        YOUTH:HistoricalPeriod_52 ;
+    YOUTH:triggersStereotype YOUTH:Stereotype_10,
+        YOUTH:Stereotype_52 .
 
-YOUTH:Emo a YOUTH:Attitude,
-        YOUTH:YouthSubculture ;
-    YOUTH:expressedVia YOUTH:MoralValue_51,
-        YOUTH:MoralValue_52,
-        YOUTH:Stereotype_51,
+YOUTH:NegativeAttitude a YOUTH:Attitude ;
+    YOUTH:expressedVia YOUTH:MoralValue_52,
         YOUTH:Stereotype_52 ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_10 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_10 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_10 ;
-    YOUTH:hasParticipant YOUTH:Person_10 ;
-    YOUTH:hasRitual YOUTH:Ritual_10 ;
-    YOUTH:influencedBy YOUTH:Influence_51,
-        YOUTH:Influence_52 ;
-    YOUTH:isAttitudeOf YOUTH:Person_12,
-        YOUTH:Person_51 ;
-    YOUTH:locatedIn YOUTH:Location_10 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_10 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_10 .
+    YOUTH:influencedBy YOUTH:Influence_52 ;
+    YOUTH:isAttitudeOf YOUTH:Person_52 .
 
-YOUTH:InternalViewpoint a YOUTH:Viewpoint,
-        YOUTH:YouthSubculture ;
+YOUTH:InternalViewpoint a YOUTH:Viewpoint ;
     YOUTH:determinesShift YOUTH:PerspectiveShift_1,
         YOUTH:PerspectiveShift_10,
         YOUTH:PerspectiveShift_11,
@@ -2492,23 +2479,15 @@ YOUTH:InternalViewpoint a YOUTH:Viewpoint,
         YOUTH:PerspectiveShift_49,
         YOUTH:PerspectiveShift_5,
         YOUTH:PerspectiveShift_50,
+        YOUTH:PerspectiveShift_52,
         YOUTH:PerspectiveShift_6,
         YOUTH:PerspectiveShift_7,
         YOUTH:PerspectiveShift_8,
         YOUTH:PerspectiveShift_9 ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_52 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_52 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_52 ;
-    YOUTH:hasParticipant YOUTH:Person_12 ;
-    YOUTH:hasRitual YOUTH:Ritual_52 ;
-    YOUTH:isCharacterisedBy YOUTH:PositiveAttitude ;
-    YOUTH:locatedIn YOUTH:Location_52 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_52 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_52 .
+    YOUTH:isCharacterisedBy YOUTH:NegativeAttitude,
+        YOUTH:PositiveAttitude .
 
-YOUTH:PositiveAttitude a YOUTH:Attitude,
-        YOUTH:Viewpoint ;
-    YOUTH:determinesShift YOUTH:PerspectiveShift_51 ;
+YOUTH:PositiveAttitude a YOUTH:Attitude ;
     YOUTH:expressedVia YOUTH:MoralValue_1,
         YOUTH:MoralValue_10,
         YOUTH:MoralValue_11,
@@ -2555,6 +2534,7 @@ YOUTH:PositiveAttitude a YOUTH:Attitude,
         YOUTH:MoralValue_49,
         YOUTH:MoralValue_5,
         YOUTH:MoralValue_50,
+        YOUTH:MoralValue_51,
         YOUTH:MoralValue_6,
         YOUTH:MoralValue_7,
         YOUTH:MoralValue_8,
@@ -2605,6 +2585,7 @@ YOUTH:PositiveAttitude a YOUTH:Attitude,
         YOUTH:Stereotype_49,
         YOUTH:Stereotype_5,
         YOUTH:Stereotype_50,
+        YOUTH:Stereotype_51,
         YOUTH:Stereotype_6,
         YOUTH:Stereotype_7,
         YOUTH:Stereotype_8,
@@ -2655,6 +2636,7 @@ YOUTH:PositiveAttitude a YOUTH:Attitude,
         YOUTH:Influence_49,
         YOUTH:Influence_5,
         YOUTH:Influence_50,
+        YOUTH:Influence_51,
         YOUTH:Influence_6,
         YOUTH:Influence_7,
         YOUTH:Influence_8,
@@ -2705,9 +2687,9 @@ YOUTH:PositiveAttitude a YOUTH:Attitude,
         YOUTH:Person_49,
         YOUTH:Person_5,
         YOUTH:Person_50,
+        YOUTH:Person_51,
         YOUTH:Person_6,
         YOUTH:Person_7,
         YOUTH:Person_8,
-        YOUTH:Person_9 ;
-    YOUTH:isCharacterisedBy YOUTH:Emo .
+        YOUTH:Person_9 .
 
