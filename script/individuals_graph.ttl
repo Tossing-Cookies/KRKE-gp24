@@ -1,600 +1,657 @@
 @prefix OWL: <http://www.w3.org/2002/07/owl#> .
-@prefix youth: <http://www.semanticweb.org/ontologies/2024/YOUTH/> .
+@prefix YOUTH: <http://www.semanticweb.org/ontologies/2024/YOUTH/> .
 
-youth:ClassifiedBy a OWL:ObjectProperty .
+YOUTH:ClassifiedBy a OWL:ObjectProperty .
 
-youth:PerspectiveInfluence_1 a youth:PerspectiveInfluence ;
-    youth:hasContent "Social and political movements of the 1960s, including reaction against mainstream consumer culture and political climate" ;
-    youth:influences youth:PositiveAttitude .
+YOUTH:Person_11 a YOUTH:NotParticipant ;
+    YOUTH:belongsToGeneration "Generation Z" ;
+    YOUTH:hasAttitude YOUTH:PositiveAttitude ;
+    YOUTH:hasViewpoint YOUTH:ExternalViewpoint ;
+    YOUTH:hasname "Giovannina" .
 
-youth:PerspectiveInfluence_10 a youth:PerspectiveInfluence ;
-    youth:hasContent "Music and personal experiences, including emergence from post-hardcore and punk influences" ;
-    youth:influences youth:PositiveAttitude .
+YOUTH:PerspectiveInfluence_1 a YOUTH:PerspectiveInfluence ;
+    YOUTH:hasContent "Social and political movements of the 1960s, including reaction against mainstream consumer culture and political climate" ;
+    YOUTH:influences YOUTH:PositiveAttitude .
 
-youth:PerspectiveInfluence_2 a youth:PerspectiveInfluence ;
-    youth:hasContent "Post-WWII British pop culture and music" ;
-    youth:influences youth:PositiveAttitude .
+YOUTH:PerspectiveInfluence_10 a YOUTH:PerspectiveInfluence ;
+    YOUTH:hasContent "Music and Participantal experiences, including emergence from post-hardcore and punk influences" ;
+    YOUTH:influences YOUTH:PositiveAttitude .
 
-youth:PerspectiveInfluence_3 a youth:PerspectiveInfluence ;
-    youth:hasContent "Social and economic conditions of the late 1960s, including emergence from working-class and Mod influences" ;
-    youth:influences youth:PositiveAttitude .
+YOUTH:PerspectiveInfluence_11 a YOUTH:PerspectiveInfluence ;
+    YOUTH:hasContent "Music and Participantal experiences, including emergence from post-hardcore and punk influences" ;
+    YOUTH:influences YOUTH:PositiveAttitude .
 
-youth:PerspectiveInfluence_4 a youth:PerspectiveInfluence ;
-    youth:hasContent "Urban environment and social issues" ;
-    youth:influences youth:PositiveAttitude .
+YOUTH:PerspectiveInfluence_2 a YOUTH:PerspectiveInfluence ;
+    YOUTH:hasContent "Post-WWII British pop culture and music" ;
+    YOUTH:influences YOUTH:PositiveAttitude .
 
-youth:PerspectiveInfluence_5 a youth:PerspectiveInfluence ;
-    youth:hasContent "Cultural rebellion and anti-authoritarianism, including political and social rebellion" ;
-    youth:influences youth:PositiveAttitude .
+YOUTH:PerspectiveInfluence_3 a YOUTH:PerspectiveInfluence ;
+    YOUTH:hasContent "Social and economic conditions of the late 1960s, including emergence from working-class and Mod influences" ;
+    YOUTH:influences YOUTH:PositiveAttitude .
 
-youth:PerspectiveInfluence_6 a youth:PerspectiveInfluence ;
-    youth:hasContent "Rock music history and legends, including the evolution of classic rock and roll" ;
-    youth:influences youth:PositiveAttitude .
+YOUTH:PerspectiveInfluence_4 a YOUTH:PerspectiveInfluence ;
+    YOUTH:hasContent "Urban environment and social issues" ;
+    YOUTH:influences YOUTH:PositiveAttitude .
 
-youth:PerspectiveInfluence_7 a youth:PerspectiveInfluence ;
-    youth:hasContent "Rock music history and legends, including the rise of heavy metal in the 70s and 80s" ;
-    youth:influences youth:PositiveAttitude .
+YOUTH:PerspectiveInfluence_5 a YOUTH:PerspectiveInfluence ;
+    YOUTH:hasContent "Cultural rebellion and anti-authoritarianism, including political and social rebellion" ;
+    YOUTH:influences YOUTH:PositiveAttitude .
 
-youth:PerspectiveInfluence_8 a youth:PerspectiveInfluence ;
-    youth:hasContent "Post-punk era, media portrayals of dark aesthetics" ;
-    youth:influences youth:PositiveAttitude .
+YOUTH:PerspectiveInfluence_6 a YOUTH:PerspectiveInfluence ;
+    YOUTH:hasContent "Rock music history and legends, including the evolution of classic rock and roll" ;
+    YOUTH:influences YOUTH:PositiveAttitude .
 
-youth:PerspectiveInfluence_9 a youth:PerspectiveInfluence ;
-    youth:hasContent "Influence of extreme sports culture, including the growth of skate culture" ;
-    youth:influences youth:PositiveAttitude .
+YOUTH:PerspectiveInfluence_7 a YOUTH:PerspectiveInfluence ;
+    YOUTH:hasContent "Rock music history and legends, including the rise of heavy metal in the 70s and 80s" ;
+    YOUTH:influences YOUTH:PositiveAttitude .
 
-youth:contrasts a OWL:ObjectProperty .
+YOUTH:PerspectiveInfluence_8 a YOUTH:PerspectiveInfluence ;
+    YOUTH:hasContent "Post-punk era, media portrayals of dark aesthetics" ;
+    YOUTH:influences YOUTH:PositiveAttitude .
 
-youth:creates a OWL:ObjectProperty .
+YOUTH:PerspectiveInfluence_9 a YOUTH:PerspectiveInfluence ;
+    YOUTH:hasContent "Influence of extreme sports culture, including the growth of skate culture" ;
+    YOUTH:influences YOUTH:PositiveAttitude .
 
-youth:determines a OWL:ObjectProperty .
+YOUTH:contrasts a OWL:ObjectProperty .
 
-youth:expressedVia a OWL:ObjectProperty .
+YOUTH:creates a OWL:ObjectProperty .
 
-youth:extractedFrom a OWL:ObjectProperty .
+YOUTH:determines a OWL:ObjectProperty .
 
-youth:hasAttitude a OWL:ObjectProperty .
+YOUTH:expressedVia a OWL:ObjectProperty .
 
-youth:hasFashionStyle a OWL:ObjectProperty .
+YOUTH:extractedFrom a OWL:ObjectProperty .
 
-youth:hasMusicGenre a OWL:ObjectProperty .
+YOUTH:hasAttitude a OWL:ObjectProperty .
 
-youth:hasParticipant a OWL:ObjectProperty .
+YOUTH:hasFashionStyle a OWL:ObjectProperty .
 
-youth:hasRitual a OWL:ObjectProperty .
+YOUTH:hasMusicGenre a OWL:ObjectProperty .
 
-youth:hasViewpoint a OWL:ObjectProperty .
+YOUTH:hasParticipant a OWL:ObjectProperty .
 
-youth:holds a OWL:ObjectProperty .
+YOUTH:hasRitual a OWL:ObjectProperty .
 
-youth:influencedBy a OWL:ObjectProperty .
+YOUTH:hasViewpoint a OWL:ObjectProperty .
 
-youth:influences a OWL:ObjectProperty .
+YOUTH:holds a OWL:ObjectProperty .
 
-youth:isAttitudeOf a OWL:ObjectProperty .
+YOUTH:influencedBy a OWL:ObjectProperty .
 
-youth:isCharacterisedBy a OWL:ObjectProperty .
+YOUTH:influences a OWL:ObjectProperty .
 
-youth:isExpressedVia a OWL:ObjectProperty .
+YOUTH:isAttitudeOf a OWL:ObjectProperty .
 
-youth:isSatisfiedBy a OWL:ObjectProperty .
+YOUTH:isCharacterisedBy a OWL:ObjectProperty .
 
-youth:isSettingFor a OWL:ObjectProperty .
+YOUTH:isExpressedVia a OWL:ObjectProperty .
 
-youth:isViewpointOf a OWL:ObjectProperty .
+YOUTH:isSatisfiedBy a OWL:ObjectProperty .
 
-youth:locatedIn a OWL:ObjectProperty .
+YOUTH:isSettingFor a OWL:ObjectProperty .
 
-youth:originatedIn a OWL:ObjectProperty .
+YOUTH:isViewpointOf a OWL:ObjectProperty .
 
-youth:participatesIn a OWL:ObjectProperty .
+YOUTH:locatedIn a OWL:ObjectProperty .
 
-youth:perspectivisedAs a OWL:ObjectProperty .
+YOUTH:originatedIn a OWL:ObjectProperty .
 
-youth:perspectivisedThrough a OWL:ObjectProperty .
+YOUTH:participatesIn a OWL:ObjectProperty .
 
-youth:satisfies a OWL:ObjectProperty .
+YOUTH:perspectivisedAs a OWL:ObjectProperty .
 
-youth:shotThrough a OWL:ObjectProperty .
+YOUTH:perspectivisedThrough a OWL:ObjectProperty .
 
-youth:toward a OWL:ObjectProperty .
+YOUTH:satisfies a OWL:ObjectProperty .
 
-youth:triggersStereotype a OWL:ObjectProperty .
-
-youth:vhasValue a OWL:ObjectProperty .
-
-youth:Emo a youth:YouthSubculture ;
-    youth:hasFashionStyle youth:FashionStyle_10 ;
-    youth:hasMusicGenre youth:MusicGenre_10 ;
-    youth:hasParticipant youth:Person_10 ;
-    youth:hasRitual youth:Ritual_10 ;
-    youth:hasValue youth:Value_10 ;
-    youth:locatedIn youth:Location_10 ;
-    youth:originatesIn youth:HistoricalPeriod_10 ;
-    youth:triggersStereotype youth:Steretype_10 ;
-    youth:viewdAs youth:InternalViewpoint .
-
-youth:FashionStyle_1 a youth:FashionStyle ;
-    youth:hasContent "Colorful and eclectic clothing, including tie-dye shirts, bell-bottoms, and peace symbols. Accessories often include flower crowns, beads, and sandals." .
-
-youth:FashionStyle_10 a youth:FashionStyle ;
-    youth:hasContent "Dark, Skinny Jeans" .
+YOUTH:shotThrough a OWL:ObjectProperty .
 
-youth:FashionStyle_2 a youth:FashionStyle ;
-    youth:hasContent "Sharp Suits, Scooter Culture" .
+YOUTH:toward a OWL:ObjectProperty .
 
-youth:FashionStyle_3 a youth:FashionStyle ;
-    youth:hasContent "Close-cropped or shaven heads, practical and durable clothing such as Dr. Martens boots, braces, high-rise straight-leg jeans" .
+YOUTH:triggersStereotype a OWL:ObjectProperty .
 
-youth:FashionStyle_4 a youth:FashionStyle ;
-    youth:hasContent "Streetwear, Urban, Baggy Clothes" .
+YOUTH:vhasValue a OWL:ObjectProperty .
 
-youth:FashionStyle_5 a youth:FashionStyle ;
-    youth:hasContent "Ripped, Leather" .
+YOUTH:FashionStyle_1 a YOUTH:FashionStyle ;
+    YOUTH:hasContent "Colorful and eclectic clothing, including tie-dye shirts, bell-bottoms, and peace symbols. Accessories often include flower crowns, beads, and sandals." .
 
-youth:FashionStyle_6 a youth:FashionStyle ;
-    youth:hasContent "Leather, Denim" .
+YOUTH:FashionStyle_10 a YOUTH:FashionStyle ;
+    YOUTH:hasContent "Dark, Skinny Jeans" .
 
-youth:FashionStyle_7 a youth:FashionStyle ;
-    youth:hasContent "Leather, Denim" .
+YOUTH:FashionStyle_11 a YOUTH:FashionStyle ;
+    YOUTH:hasContent "Dark, Skinny Jeans" .
 
-youth:FashionStyle_8 a youth:FashionStyle ;
-    youth:hasContent "Black clothing, Dark make-up, Victorian" .
+YOUTH:FashionStyle_2 a YOUTH:FashionStyle ;
+    YOUTH:hasContent "Sharp Suits, Scooter Culture" .
 
-youth:FashionStyle_9 a youth:FashionStyle ;
-    youth:hasContent "Casual, Baggy" .
+YOUTH:FashionStyle_3 a YOUTH:FashionStyle ;
+    YOUTH:hasContent "Close-cropped or shaven heads, practical and durable clothing such as Dr. Martens boots, braces, high-rise straight-leg jeans" .
 
-youth:Goths a youth:YouthSubculture ;
-    youth:hasFashionStyle youth:FashionStyle_8 ;
-    youth:hasMusicGenre youth:MusicGenre_8 ;
-    youth:hasParticipant youth:Person_8 ;
-    youth:hasRitual youth:Ritual_8 ;
-    youth:hasValue youth:Value_8 ;
-    youth:locatedIn youth:Location_8 ;
-    youth:originatesIn youth:HistoricalPeriod_8 ;
-    youth:triggersStereotype youth:Steretype_8 ;
-    youth:viewdAs youth:InternalViewpoint .
-
-youth:Hip-Hop a youth:YouthSubculture ;
-    youth:hasFashionStyle youth:FashionStyle_4 ;
-    youth:hasMusicGenre youth:MusicGenre_4 ;
-    youth:hasParticipant youth:Person_4 ;
-    youth:hasRitual youth:Ritual_4 ;
-    youth:hasValue youth:Value_4 ;
-    youth:locatedIn youth:Location_4 ;
-    youth:originatesIn youth:HistoricalPeriod_4 ;
-    youth:triggersStereotype youth:Steretype_4 ;
-    youth:viewdAs youth:InternalViewpoint .
-
-youth:Hippies a youth:YouthSubculture ;
-    youth:hasFashionStyle youth:FashionStyle_1 ;
-    youth:hasMusicGenre youth:MusicGenre_1 ;
-    youth:hasParticipant youth:Person_1 ;
-    youth:hasRitual youth:Ritual_1 ;
-    youth:hasValue youth:Value_1 ;
-    youth:locatedIn youth:Location_1 ;
-    youth:originatesIn youth:HistoricalPeriod_1 ;
-    youth:triggersStereotype youth:Steretype_1 ;
-    youth:viewdAs youth:InternalViewpoint .
-
-youth:HistoricalPeriod_1 a youth:HistoricalPeriod ;
-    youth:hasContent "1960s" .
-
-youth:HistoricalPeriod_10 a youth:HistoricalPeriod ;
-    youth:hasContent "1990s-2000s" .
-
-youth:HistoricalPeriod_2 a youth:HistoricalPeriod ;
-    youth:hasContent "1960s" .
-
-youth:HistoricalPeriod_3 a youth:HistoricalPeriod ;
-    youth:hasContent "Late 1960s" .
-
-youth:HistoricalPeriod_4 a youth:HistoricalPeriod ;
-    youth:hasContent "1970s-present" .
+YOUTH:FashionStyle_4 a YOUTH:FashionStyle ;
+    YOUTH:hasContent "Streetwear, Urban, Baggy Clothes" .
 
-youth:HistoricalPeriod_5 a youth:HistoricalPeriod ;
-    youth:hasContent "1970s" .
+YOUTH:FashionStyle_5 a YOUTH:FashionStyle ;
+    YOUTH:hasContent "Ripped, Leather" .
 
-youth:HistoricalPeriod_6 a youth:HistoricalPeriod ;
-    youth:hasContent "1960s-1980s" .
+YOUTH:FashionStyle_6 a YOUTH:FashionStyle ;
+    YOUTH:hasContent "Leather, Denim" .
 
-youth:HistoricalPeriod_7 a youth:HistoricalPeriod ;
-    youth:hasContent "1970s-1980s" .
+YOUTH:FashionStyle_7 a YOUTH:FashionStyle ;
+    YOUTH:hasContent "Leather, Denim" .
 
-youth:HistoricalPeriod_8 a youth:HistoricalPeriod ;
-    youth:hasContent "1980s" .
+YOUTH:FashionStyle_8 a YOUTH:FashionStyle ;
+    YOUTH:hasContent "Black clothing, Dark make-up, Victorian" .
 
-youth:HistoricalPeriod_9 a youth:HistoricalPeriod ;
-    youth:hasContent "1990s" .
+YOUTH:FashionStyle_9 a YOUTH:FashionStyle ;
+    YOUTH:hasContent "Casual, Baggy" .
 
-youth:Location_1 a youth:Location ;
-    youth:hasContent "San Francisco, New York" .
+YOUTH:Goths a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_8 ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_8 ;
+    YOUTH:hasParticipant YOUTH:Person_8 ;
+    YOUTH:hasRitual YOUTH:Ritual_8 ;
+    YOUTH:hasValue YOUTH:Value_8 ;
+    YOUTH:locatedIn YOUTH:Location_8 ;
+    YOUTH:originatesIn YOUTH:HistoricalPeriod_8 ;
+    YOUTH:triggersStereotype YOUTH:Stereotype_8 ;
+    YOUTH:viewdAs YOUTH:InternalViewpoint .
 
-youth:Location_10 a youth:Location ;
-    youth:hasContent "USA" .
+YOUTH:Hip-Hop a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_4 ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_4 ;
+    YOUTH:hasParticipant YOUTH:Person_4 ;
+    YOUTH:hasRitual YOUTH:Ritual_4 ;
+    YOUTH:hasValue YOUTH:Value_4 ;
+    YOUTH:locatedIn YOUTH:Location_4 ;
+    YOUTH:originatesIn YOUTH:HistoricalPeriod_4 ;
+    YOUTH:triggersStereotype YOUTH:Stereotype_4 ;
+    YOUTH:viewdAs YOUTH:InternalViewpoint .
 
-youth:Location_2 a youth:Location ;
-    youth:hasContent "London" .
+YOUTH:Hippies a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_1 ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_1 ;
+    YOUTH:hasParticipant YOUTH:Person_1 ;
+    YOUTH:hasRitual YOUTH:Ritual_1 ;
+    YOUTH:hasValue YOUTH:Value_1 ;
+    YOUTH:locatedIn YOUTH:Location_1 ;
+    YOUTH:originatesIn YOUTH:HistoricalPeriod_1 ;
+    YOUTH:triggersStereotype YOUTH:Stereotype_1 ;
+    YOUTH:viewdAs YOUTH:InternalViewpoint .
 
-youth:Location_3 a youth:Location ;
-    youth:hasContent "London" .
+YOUTH:HistoricalPeriod_1 a YOUTH:HistoricalPeriod ;
+    YOUTH:hasContent "1960s" .
 
-youth:Location_4 a youth:Location ;
-    youth:hasContent "New York" .
+YOUTH:HistoricalPeriod_10 a YOUTH:HistoricalPeriod ;
+    YOUTH:hasContent "1990s-2000s" .
 
-youth:Location_5 a youth:Location ;
-    youth:hasContent "New York" .
+YOUTH:HistoricalPeriod_11 a YOUTH:HistoricalPeriod ;
+    YOUTH:hasContent "1990s-2000s" .
 
-youth:Location_6 a youth:Location ;
-    youth:hasContent "Los Angeles" .
+YOUTH:HistoricalPeriod_2 a YOUTH:HistoricalPeriod ;
+    YOUTH:hasContent "1960s" .
 
-youth:Location_7 a youth:Location ;
-    youth:hasContent "USA, UK" .
+YOUTH:HistoricalPeriod_3 a YOUTH:HistoricalPeriod ;
+    YOUTH:hasContent "Late 1960s" .
 
-youth:Location_8 a youth:Location ;
-    youth:hasContent "London" .
+YOUTH:HistoricalPeriod_4 a YOUTH:HistoricalPeriod ;
+    YOUTH:hasContent "1970s-present" .
 
-youth:Location_9 a youth:Location ;
-    youth:hasContent "California" .
+YOUTH:HistoricalPeriod_5 a YOUTH:HistoricalPeriod ;
+    YOUTH:hasContent "1970s" .
 
-youth:Metalheads a youth:YouthSubculture ;
-    youth:hasFashionStyle youth:FashionStyle_7 ;
-    youth:hasMusicGenre youth:MusicGenre_7 ;
-    youth:hasParticipant youth:Person_7 ;
-    youth:hasRitual youth:Ritual_7 ;
-    youth:hasValue youth:Value_7 ;
-    youth:locatedIn youth:Location_7 ;
-    youth:originatesIn youth:HistoricalPeriod_7 ;
-    youth:triggersStereotype youth:Steretype_7 ;
-    youth:viewdAs youth:InternalViewpoint .
+YOUTH:HistoricalPeriod_6 a YOUTH:HistoricalPeriod ;
+    YOUTH:hasContent "1960s-1980s" .
 
-youth:Mods a youth:YouthSubculture ;
-    youth:hasFashionStyle youth:FashionStyle_2 ;
-    youth:hasMusicGenre youth:MusicGenre_2 ;
-    youth:hasParticipant youth:Person_2 ;
-    youth:hasRitual youth:Ritual_2 ;
-    youth:hasValue youth:Value_2 ;
-    youth:locatedIn youth:Location_2 ;
-    youth:originatesIn youth:HistoricalPeriod_2 ;
-    youth:triggersStereotype youth:Steretype_2 ;
-    youth:viewdAs youth:InternalViewpoint .
+YOUTH:HistoricalPeriod_7 a YOUTH:HistoricalPeriod ;
+    YOUTH:hasContent "1970s-1980s" .
 
-youth:MusicGenre_1 a youth:MusicGenre ;
-    youth:hasContent "Psychedelic Rock, Folk, Classic Rock" .
+YOUTH:HistoricalPeriod_8 a YOUTH:HistoricalPeriod ;
+    YOUTH:hasContent "1980s" .
 
-youth:MusicGenre_10 a youth:MusicGenre ;
-    youth:hasContent "Emo, Pop-Punk, Melodic Hardcore" .
+YOUTH:HistoricalPeriod_9 a YOUTH:HistoricalPeriod ;
+    YOUTH:hasContent "1990s" .
 
-youth:MusicGenre_2 a youth:MusicGenre ;
-    youth:hasContent "Soul, R&B" .
+YOUTH:Location_1 a YOUTH:Location ;
+    YOUTH:hasContent "San Francisco, New York" .
 
-youth:MusicGenre_3 a youth:MusicGenre ;
-    youth:hasContent "Oi!, Ska, Reggae" .
+YOUTH:Location_10 a YOUTH:Location ;
+    YOUTH:hasContent "USA" .
 
-youth:MusicGenre_4 a youth:MusicGenre ;
-    youth:hasContent "Hip-Hop" .
+YOUTH:Location_11 a YOUTH:Location ;
+    YOUTH:hasContent "USA" .
 
-youth:MusicGenre_5 a youth:MusicGenre ;
-    youth:hasContent "Punk Rock" .
+YOUTH:Location_2 a YOUTH:Location ;
+    YOUTH:hasContent "London" .
 
-youth:MusicGenre_6 a youth:MusicGenre ;
-    youth:hasContent "Rock" .
+YOUTH:Location_3 a YOUTH:Location ;
+    YOUTH:hasContent "London" .
 
-youth:MusicGenre_7 a youth:MusicGenre ;
-    youth:hasContent "Heavy Metal" .
+YOUTH:Location_4 a YOUTH:Location ;
+    YOUTH:hasContent "New York" .
 
-youth:MusicGenre_8 a youth:MusicGenre ;
-    youth:hasContent "Gothic Rock, Post-Punk" .
-
-youth:MusicGenre_9 a youth:MusicGenre ;
-    youth:hasContent "Punk Rock, Hip-Hop" .
-
-youth:PerspectiveShift_1 a youth:PerspectiveShift ;
-    youth:hasContent "From radical counterculture to a more widely accepted ethos of peace and environmentalism" .
-
-youth:PerspectiveShift_10 a youth:PerspectiveShift ;
-    youth:hasContent "Evolving from niche to influential in alternative music" .
-
-youth:PerspectiveShift_2 a youth:PerspectiveShift ;
-    youth:hasContent "From youth subculture to retro revival" .
-
-youth:PerspectiveShift_3 a youth:PerspectiveShift ;
-    youth:hasContent "From working-class solidarity to broader associations" .
-
-youth:PerspectiveShift_4 a youth:PerspectiveShift ;
-    youth:hasContent "From street culture to global influence" .
-
-youth:PerspectiveShift_5 a youth:PerspectiveShift ;
-    youth:hasContent "From fringe to influential in mainstream fashion" .
-
-youth:PerspectiveShift_6 a youth:PerspectiveShift ;
-    youth:hasContent "From rebellious youth culture to mainstream icons" .
-
-youth:PerspectiveShift_7 a youth:PerspectiveShift ;
-    youth:hasContent "From rebellious youth culture to mainstream icons" .
-
-youth:PerspectiveShift_8 a youth:PerspectiveShift ;
-    youth:hasContent "Shift from misunderstood to celebrated for its style" .
-
-youth:PerspectiveShift_9 a youth:PerspectiveShift ;
-    youth:hasContent "From niche hobby to mainstream sport" .
-
-youth:Punks a youth:YouthSubculture ;
-    youth:hasFashionStyle youth:FashionStyle_5 ;
-    youth:hasMusicGenre youth:MusicGenre_5 ;
-    youth:hasParticipant youth:Person_5 ;
-    youth:hasRitual youth:Ritual_5 ;
-    youth:hasValue youth:Value_5 ;
-    youth:locatedIn youth:Location_5 ;
-    youth:originatesIn youth:HistoricalPeriod_5 ;
-    youth:triggersStereotype youth:Steretype_5 ;
-    youth:viewdAs youth:InternalViewpoint .
-
-youth:Ritual_1 a youth:Ritual ;
-    youth:hasContent "Participating in music festivals, peace protests, communal living, engaging in spiritual practices" .
-
-youth:Ritual_10 a youth:Ritual ;
-    youth:hasContent "Alt-music events, Attending concerts" .
-
-youth:Ritual_2 a youth:Ritual ;
-    youth:hasContent "Rallies, widing scooters" .
-
-youth:Ritual_3 a youth:Ritual ;
-    youth:hasContent "Attending music events, dancehalls, engaging in street-level solidarity" .
-
-youth:Ritual_4 a youth:Ritual ;
-    youth:hasContent "Breakdancing, Rapping, Freestyle Battles" .
-
-youth:Ritual_5 a youth:Ritual ;
-    youth:hasContent "Attending concerts, protesting, DIY activities, riots" .
-
-youth:Ritual_6 a youth:Ritual ;
-    youth:hasContent "Rock Concerts, Playing instruments" .
-
-youth:Ritual_7 a youth:Ritual ;
-    youth:hasContent "Metal Concerts, Playing instruments" .
-
-youth:Ritual_8 a youth:Ritual ;
-    youth:hasContent "Attending concerts, Alternative nightlife" .
-
-youth:Ritual_9 a youth:Ritual ;
-    youth:hasContent "Skateboarding, Skate skills developing" .
-
-youth:Rockers a youth:YouthSubculture ;
-    youth:hasFashionStyle youth:FashionStyle_6 ;
-    youth:hasMusicGenre youth:MusicGenre_6 ;
-    youth:hasParticipant youth:Person_6 ;
-    youth:hasRitual youth:Ritual_6 ;
-    youth:hasValue youth:Value_6 ;
-    youth:locatedIn youth:Location_6 ;
-    youth:originatesIn youth:HistoricalPeriod_6 ;
-    youth:triggersStereotype youth:Steretype_6 ;
-    youth:viewdAs youth:InternalViewpoint .
-
-youth:Skaters a youth:YouthSubculture ;
-    youth:hasFashionStyle youth:FashionStyle_9 ;
-    youth:hasMusicGenre youth:MusicGenre_9 ;
-    youth:hasParticipant youth:Person_9 ;
-    youth:hasRitual youth:Ritual_9 ;
-    youth:hasValue youth:Value_9 ;
-    youth:locatedIn youth:Location_9 ;
-    youth:originatesIn youth:HistoricalPeriod_9 ;
-    youth:triggersStereotype youth:Steretype_9 ;
-    youth:viewdAs youth:InternalViewpoint .
-
-youth:Skinheads a youth:YouthSubculture ;
-    youth:hasFashionStyle youth:FashionStyle_3 ;
-    youth:hasMusicGenre youth:MusicGenre_3 ;
-    youth:hasParticipant youth:Person_3 ;
-    youth:hasRitual youth:Ritual_3 ;
-    youth:hasValue youth:Value_3 ;
-    youth:locatedIn youth:Location_3 ;
-    youth:originatesIn youth:HistoricalPeriod_3 ;
-    youth:triggersStereotype youth:Steretype_3 ;
-    youth:viewdAs youth:InternalViewpoint .
-
-youth:Stereotype_1 a youth:Stereotype ;
-    youth:hasContent "Idealistic, free-spirited, anti-establishment" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Stereotype_10 a youth:Stereotype ;
-    youth:hasContent "Melancholic, introverted" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Stereotype_2 a youth:Stereotype ;
-    youth:hasContent "Stylish, superficial, elitist" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Stereotype_3 a youth:Stereotype ;
-    youth:hasContent "Tough, working-class, politically charged" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Stereotype_4 a youth:Stereotype ;
-    youth:hasContent "criminal behavior violence, and rebellion" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Stereotype_5 a youth:Stereotype ;
-    youth:hasContent "Troublemakers, violent, anti-social" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Stereotype_6 a youth:Stereotype ;
-    youth:hasContent "Loud, wild, rebellious" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Stereotype_7 a youth:Stereotype ;
-    youth:hasContent "Extreme, aggressive, unruly, extravagant" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Stereotype_8 a youth:Stereotype ;
-    youth:hasContent "Depressed, morose, detached, brooding" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Stereotype_9 a youth:Stereotype ;
-    youth:hasContent "Risk-taking, troublemakers, anti-establishment" ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Person_1 a youth:Person ;
-    youth:belongsToGeneration "The Silent Generation" ;
-    youth:hasAttitude youth:PositiveAttitude ;
-    youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
-    youth:participatesIn youth:Hippies .
-
-youth:Person_10 a youth:Person ;
-    youth:belongsToGeneration "Millennials" ;
-    youth:hasAttitude youth:PositiveAttitude ;
-    youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
-    youth:participatesIn youth:Emo .
-
-youth:Person_2 a youth:Person ;
-    youth:belongsToGeneration "Baby Boomers" ;
-    youth:hasAttitude youth:PositiveAttitude ;
-    youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
-    youth:participatesIn youth:Mods .
-
-youth:Person_3 a youth:Person ;
-    youth:belongsToGeneration "Generation X" ;
-    youth:hasAttitude youth:PositiveAttitude ;
-    youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
-    youth:participatesIn youth:Skinheads .
-
-youth:Person_4 a youth:Person ;
-    youth:belongsToGeneration "Millennials" ;
-    youth:hasAttitude youth:PositiveAttitude ;
-    youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
-    youth:participatesIn youth:Hip-Hop .
-
-youth:Person_5 a youth:Person ;
-    youth:belongsToGeneration "Baby Boomers" ;
-    youth:hasAttitude youth:PositiveAttitude ;
-    youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
-    youth:participatesIn youth:Punks .
-
-youth:Person_6 a youth:Person ;
-    youth:belongsToGeneration "Generation Z" ;
-    youth:hasAttitude youth:PositiveAttitude ;
-    youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
-    youth:participatesIn youth:Rockers .
-
-youth:Person_7 a youth:Person ;
-    youth:belongsToGeneration "The Silent Generation" ;
-    youth:hasAttitude youth:PositiveAttitude ;
-    youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
-    youth:participatesIn youth:Metalheads .
-
-youth:Person_8 a youth:Person ;
-    youth:belongsToGeneration "Generation Alpha" ;
-    youth:hasAttitude youth:PositiveAttitude ;
-    youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
-    youth:participatesIn youth:Goths .
-
-youth:Person_9 a youth:Person ;
-    youth:belongsToGeneration "Generation Z" ;
-    youth:hasAttitude youth:PositiveAttitude ;
-    youth:hasViewpoint youth:InternalViewpoint ;
-    youth:hasname "Mario" ;
-    youth:participatesIn youth:Skaters .
-
-youth:Value_1 a youth:Value ;
-    youth:hasContent youth:FashionStyle1 ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Value_10 a youth:Value ;
-    youth:hasContent youth:FashionStyle10 ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Value_2 a youth:Value ;
-    youth:hasContent youth:FashionStyle2 ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Value_3 a youth:Value ;
-    youth:hasContent youth:FashionStyle3 ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Value_4 a youth:Value ;
-    youth:hasContent youth:FashionStyle4 ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Value_5 a youth:Value ;
-    youth:hasContent youth:FashionStyle5 ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Value_6 a youth:Value ;
-    youth:hasContent youth:FashionStyle6 ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Value_7 a youth:Value ;
-    youth:hasContent youth:FashionStyle7 ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Value_8 a youth:Value ;
-    youth:hasContent youth:FashionStyle8 ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:Value_9 a youth:Value ;
-    youth:hasContent youth:FashionStyle9 ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:InternalViewpoint a youth:Viewpoint ;
-    youth:characterisedBy youth:PositiveAttitude ;
-    youth:determinesShift youth:PerspectiveShift_1,
-        youth:PerspectiveShift_10,
-        youth:PerspectiveShift_2,
-        youth:PerspectiveShift_3,
-        youth:PerspectiveShift_4,
-        youth:PerspectiveShift_5,
-        youth:PerspectiveShift_6,
-        youth:PerspectiveShift_7,
-        youth:PerspectiveShift_8,
-        youth:PerspectiveShift_9 .
-
-youth:PositiveAttitude a youth:Attitude ;
-    youth:expressedVia youth:Stereotype_1,
-        youth:Stereotype_10,
-        youth:Stereotype_2,
-        youth:Stereotype_3,
-        youth:Stereotype_4,
-        youth:Stereotype_5,
-        youth:Stereotype_6,
-        youth:Stereotype_7,
-        youth:Stereotype_8,
-        youth:Stereotype_9,
-        youth:Value_1,
-        youth:Value_10,
-        youth:Value_2,
-        youth:Value_3,
-        youth:Value_4,
-        youth:Value_5,
-        youth:Value_6,
-        youth:Value_7,
-        youth:Value_8,
-        youth:Value_9 ;
-    youth:influencedBy youth:PerspectiveInfuece_1,
-        youth:PerspectiveInfuece_10,
-        youth:PerspectiveInfuece_2,
-        youth:PerspectiveInfuece_3,
-        youth:PerspectiveInfuece_4,
-        youth:PerspectiveInfuece_5,
-        youth:PerspectiveInfuece_6,
-        youth:PerspectiveInfuece_7,
-        youth:PerspectiveInfuece_8,
-        youth:PerspectiveInfuece_9 ;
-    youth:isAttitudeOf youth:Person_1,
-        youth:Person_10,
-        youth:Person_2,
-        youth:Person_3,
-        youth:Person_4,
-        youth:Person_5,
-        youth:Person_6,
-        youth:Person_7,
-        youth:Person_8,
-        youth:Person_9 .
+YOUTH:Location_5 a YOUTH:Location ;
+    YOUTH:hasContent "New York" .
+
+YOUTH:Location_6 a YOUTH:Location ;
+    YOUTH:hasContent "Los Angeles" .
+
+YOUTH:Location_7 a YOUTH:Location ;
+    YOUTH:hasContent "USA, UK" .
+
+YOUTH:Location_8 a YOUTH:Location ;
+    YOUTH:hasContent "London" .
+
+YOUTH:Location_9 a YOUTH:Location ;
+    YOUTH:hasContent "California" .
+
+YOUTH:Metalheads a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_7 ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_7 ;
+    YOUTH:hasParticipant YOUTH:Person_7 ;
+    YOUTH:hasRitual YOUTH:Ritual_7 ;
+    YOUTH:hasValue YOUTH:Value_7 ;
+    YOUTH:locatedIn YOUTH:Location_7 ;
+    YOUTH:originatesIn YOUTH:HistoricalPeriod_7 ;
+    YOUTH:triggersStereotype YOUTH:Stereotype_7 ;
+    YOUTH:viewdAs YOUTH:InternalViewpoint .
+
+YOUTH:Mods a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_2 ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_2 ;
+    YOUTH:hasParticipant YOUTH:Person_2 ;
+    YOUTH:hasRitual YOUTH:Ritual_2 ;
+    YOUTH:hasValue YOUTH:Value_2 ;
+    YOUTH:locatedIn YOUTH:Location_2 ;
+    YOUTH:originatesIn YOUTH:HistoricalPeriod_2 ;
+    YOUTH:triggersStereotype YOUTH:Stereotype_2 ;
+    YOUTH:viewdAs YOUTH:InternalViewpoint .
+
+YOUTH:MusicGenre_1 a YOUTH:MusicGenre ;
+    YOUTH:hasContent "Psychedelic Rock, Folk, Classic Rock" .
+
+YOUTH:MusicGenre_10 a YOUTH:MusicGenre ;
+    YOUTH:hasContent "Emo, Pop-Punk, Melodic Hardcore" .
+
+YOUTH:MusicGenre_11 a YOUTH:MusicGenre ;
+    YOUTH:hasContent "Emo, Pop-Punk, Melodic Hardcore" .
+
+YOUTH:MusicGenre_2 a YOUTH:MusicGenre ;
+    YOUTH:hasContent "Soul, R&B" .
+
+YOUTH:MusicGenre_3 a YOUTH:MusicGenre ;
+    YOUTH:hasContent "Oi!, Ska, Reggae" .
+
+YOUTH:MusicGenre_4 a YOUTH:MusicGenre ;
+    YOUTH:hasContent "Hip-Hop" .
+
+YOUTH:MusicGenre_5 a YOUTH:MusicGenre ;
+    YOUTH:hasContent "Punk Rock" .
+
+YOUTH:MusicGenre_6 a YOUTH:MusicGenre ;
+    YOUTH:hasContent "Rock" .
+
+YOUTH:MusicGenre_7 a YOUTH:MusicGenre ;
+    YOUTH:hasContent "Heavy Metal" .
+
+YOUTH:MusicGenre_8 a YOUTH:MusicGenre ;
+    YOUTH:hasContent "Gothic Rock, Post-Punk" .
+
+YOUTH:MusicGenre_9 a YOUTH:MusicGenre ;
+    YOUTH:hasContent "Punk Rock, Hip-Hop" .
+
+YOUTH:PerspectiveShift_1 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From radical counterculture to a more widely accepted ethos of peace and environmentalism" .
+
+YOUTH:PerspectiveShift_10 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "Evolving from niche to influential in alternative music" .
+
+YOUTH:PerspectiveShift_11 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "Evolving from niche to influential in alternative music" .
+
+YOUTH:PerspectiveShift_2 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From youth subculture to retro revival" .
+
+YOUTH:PerspectiveShift_3 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From working-class solidarity to broader associations" .
+
+YOUTH:PerspectiveShift_4 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From street culture to global influence" .
+
+YOUTH:PerspectiveShift_5 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From fringe to influential in mainstream fashion" .
+
+YOUTH:PerspectiveShift_6 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From rebellious youth culture to mainstream icons" .
+
+YOUTH:PerspectiveShift_7 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From rebellious youth culture to mainstream icons" .
+
+YOUTH:PerspectiveShift_8 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "Shift from misunderstood to celebrated for its style" .
+
+YOUTH:PerspectiveShift_9 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche hobby to mainstream sport" .
+
+YOUTH:Punks a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_5 ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_5 ;
+    YOUTH:hasParticipant YOUTH:Person_5 ;
+    YOUTH:hasRitual YOUTH:Ritual_5 ;
+    YOUTH:hasValue YOUTH:Value_5 ;
+    YOUTH:locatedIn YOUTH:Location_5 ;
+    YOUTH:originatesIn YOUTH:HistoricalPeriod_5 ;
+    YOUTH:triggersStereotype YOUTH:Stereotype_5 ;
+    YOUTH:viewdAs YOUTH:InternalViewpoint .
+
+YOUTH:Ritual_1 a YOUTH:Ritual ;
+    YOUTH:hasContent "Participating in music festivals, peace protests, communal living, engaging in spiritual practices" .
+
+YOUTH:Ritual_10 a YOUTH:Ritual ;
+    YOUTH:hasContent "Alt-music events, Attending concerts" .
+
+YOUTH:Ritual_11 a YOUTH:Ritual ;
+    YOUTH:hasContent "Alt-music events, Attending concerts" .
+
+YOUTH:Ritual_2 a YOUTH:Ritual ;
+    YOUTH:hasContent "Rallies, widing scooters" .
+
+YOUTH:Ritual_3 a YOUTH:Ritual ;
+    YOUTH:hasContent "Attending music events, dancehalls, engaging in street-level solidarity" .
+
+YOUTH:Ritual_4 a YOUTH:Ritual ;
+    YOUTH:hasContent "Breakdancing, Rapping, Freestyle Battles" .
+
+YOUTH:Ritual_5 a YOUTH:Ritual ;
+    YOUTH:hasContent "Attending concerts, protesting, DIY activities, riots" .
+
+YOUTH:Ritual_6 a YOUTH:Ritual ;
+    YOUTH:hasContent "Rock Concerts, Playing instruments" .
+
+YOUTH:Ritual_7 a YOUTH:Ritual ;
+    YOUTH:hasContent "Metal Concerts, Playing instruments" .
+
+YOUTH:Ritual_8 a YOUTH:Ritual ;
+    YOUTH:hasContent "Attending concerts, Alternative nightlife" .
+
+YOUTH:Ritual_9 a YOUTH:Ritual ;
+    YOUTH:hasContent "Skateboarding, Skate skills developing" .
+
+YOUTH:Rockers a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_6 ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_6 ;
+    YOUTH:hasParticipant YOUTH:Person_6 ;
+    YOUTH:hasRitual YOUTH:Ritual_6 ;
+    YOUTH:hasValue YOUTH:Value_6 ;
+    YOUTH:locatedIn YOUTH:Location_6 ;
+    YOUTH:originatesIn YOUTH:HistoricalPeriod_6 ;
+    YOUTH:triggersStereotype YOUTH:Stereotype_6 ;
+    YOUTH:viewdAs YOUTH:InternalViewpoint .
+
+YOUTH:Skaters a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_9 ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_9 ;
+    YOUTH:hasParticipant YOUTH:Person_9 ;
+    YOUTH:hasRitual YOUTH:Ritual_9 ;
+    YOUTH:hasValue YOUTH:Value_9 ;
+    YOUTH:locatedIn YOUTH:Location_9 ;
+    YOUTH:originatesIn YOUTH:HistoricalPeriod_9 ;
+    YOUTH:triggersStereotype YOUTH:Stereotype_9 ;
+    YOUTH:viewdAs YOUTH:InternalViewpoint .
+
+YOUTH:Skinheads a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_3 ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_3 ;
+    YOUTH:hasParticipant YOUTH:Person_3 ;
+    YOUTH:hasRitual YOUTH:Ritual_3 ;
+    YOUTH:hasValue YOUTH:Value_3 ;
+    YOUTH:locatedIn YOUTH:Location_3 ;
+    YOUTH:originatesIn YOUTH:HistoricalPeriod_3 ;
+    YOUTH:triggersStereotype YOUTH:Stereotype_3 ;
+    YOUTH:viewdAs YOUTH:InternalViewpoint .
+
+YOUTH: a YOUTH:NotParticipant,
+        YOUTH:Participant ;
+    YOUTH:belongsToGeneration "Baby Boomers",
+        "Generation Alpha",
+        "Generation X",
+        "Generation Z",
+        "Millennials",
+        "The Silent Generation" ;
+    YOUTH:hasAttitude YOUTH:PositiveAttitude ;
+    YOUTH:hasViewpoint YOUTH:ExternalViewpoint,
+        YOUTH:InternalViewpoint ;
+    YOUTH:hasname "Giovannina" ;
+    YOUTH:participatesIn YOUTH:Emo .
+
+YOUTH:Emo a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_10,
+        YOUTH:FashionStyle_11 ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_10,
+        YOUTH:MusicGenre_11 ;
+    YOUTH:hasParticipant YOUTH:,
+        YOUTH:Person_10 ;
+    YOUTH:hasRitual YOUTH:Ritual_10,
+        YOUTH:Ritual_11 ;
+    YOUTH:hasValue YOUTH:Value_10,
+        YOUTH:Value_11 ;
+    YOUTH:locatedIn YOUTH:Location_10,
+        YOUTH:Location_11 ;
+    YOUTH:originatesIn YOUTH:HistoricalPeriod_10,
+        YOUTH:HistoricalPeriod_11 ;
+    YOUTH:triggersStereotype YOUTH:Stereotype_10,
+        YOUTH:Stereotype_11 ;
+    YOUTH:viewdAs YOUTH:ExternalViewpoint,
+        YOUTH:InternalViewpoint .
+
+YOUTH:Person_1 a YOUTH:Participant ;
+    YOUTH:belongsToGeneration "The Silent Generation" ;
+    YOUTH:hasAttitude YOUTH:PositiveAttitude ;
+    YOUTH:hasViewpoint YOUTH:InternalViewpoint ;
+    YOUTH:participatesIn YOUTH:Hippies .
+
+YOUTH:Person_10 a YOUTH:Participant ;
+    YOUTH:belongsToGeneration "Millennials" ;
+    YOUTH:hasAttitude YOUTH:PositiveAttitude ;
+    YOUTH:hasViewpoint YOUTH:InternalViewpoint ;
+    YOUTH:participatesIn YOUTH:Emo .
+
+YOUTH:Person_2 a YOUTH:Participant ;
+    YOUTH:belongsToGeneration "Baby Boomers" ;
+    YOUTH:hasAttitude YOUTH:PositiveAttitude ;
+    YOUTH:hasViewpoint YOUTH:InternalViewpoint ;
+    YOUTH:participatesIn YOUTH:Mods .
+
+YOUTH:Person_3 a YOUTH:Participant ;
+    YOUTH:belongsToGeneration "Generation X" ;
+    YOUTH:hasAttitude YOUTH:PositiveAttitude ;
+    YOUTH:hasViewpoint YOUTH:InternalViewpoint ;
+    YOUTH:participatesIn YOUTH:Skinheads .
+
+YOUTH:Person_4 a YOUTH:Participant ;
+    YOUTH:belongsToGeneration "Millennials" ;
+    YOUTH:hasAttitude YOUTH:PositiveAttitude ;
+    YOUTH:hasViewpoint YOUTH:InternalViewpoint ;
+    YOUTH:participatesIn YOUTH:Hip-Hop .
+
+YOUTH:Person_5 a YOUTH:Participant ;
+    YOUTH:belongsToGeneration "Baby Boomers" ;
+    YOUTH:hasAttitude YOUTH:PositiveAttitude ;
+    YOUTH:hasViewpoint YOUTH:InternalViewpoint ;
+    YOUTH:participatesIn YOUTH:Punks .
+
+YOUTH:Person_6 a YOUTH:Participant ;
+    YOUTH:belongsToGeneration "Generation Z" ;
+    YOUTH:hasAttitude YOUTH:PositiveAttitude ;
+    YOUTH:hasViewpoint YOUTH:InternalViewpoint ;
+    YOUTH:participatesIn YOUTH:Rockers .
+
+YOUTH:Person_7 a YOUTH:Participant ;
+    YOUTH:belongsToGeneration "The Silent Generation" ;
+    YOUTH:hasAttitude YOUTH:PositiveAttitude ;
+    YOUTH:hasViewpoint YOUTH:InternalViewpoint ;
+    YOUTH:participatesIn YOUTH:Metalheads .
+
+YOUTH:Person_8 a YOUTH:Participant ;
+    YOUTH:belongsToGeneration "Generation Alpha" ;
+    YOUTH:hasAttitude YOUTH:PositiveAttitude ;
+    YOUTH:hasViewpoint YOUTH:InternalViewpoint ;
+    YOUTH:participatesIn YOUTH:Goths .
+
+YOUTH:Person_9 a YOUTH:Participant ;
+    YOUTH:belongsToGeneration "Generation Z" ;
+    YOUTH:hasAttitude YOUTH:PositiveAttitude ;
+    YOUTH:hasViewpoint YOUTH:InternalViewpoint ;
+    YOUTH:participatesIn YOUTH:Skaters .
+
+YOUTH:Stereotype_1 a YOUTH:Stereotype ;
+    YOUTH:hasContent "Idealistic, free-spirited, anti-establishment" ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Stereotype_10 a YOUTH:Stereotype ;
+    YOUTH:hasContent "Melancholic, introverted" ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Stereotype_11 a YOUTH:Stereotype ;
+    YOUTH:hasContent "Melancholic, introverted" ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Stereotype_2 a YOUTH:Stereotype ;
+    YOUTH:hasContent "Stylish, superficial, elitist" ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Stereotype_3 a YOUTH:Stereotype ;
+    YOUTH:hasContent "Tough, working-class, politically charged" ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Stereotype_4 a YOUTH:Stereotype ;
+    YOUTH:hasContent "criminal behavior violence, and rebellion" ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Stereotype_5 a YOUTH:Stereotype ;
+    YOUTH:hasContent "Troublemakers, violent, anti-social" ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Stereotype_6 a YOUTH:Stereotype ;
+    YOUTH:hasContent "Loud, wild, rebellious" ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Stereotype_7 a YOUTH:Stereotype ;
+    YOUTH:hasContent "Extreme, aggressive, unruly, extravagant" ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Stereotype_8 a YOUTH:Stereotype ;
+    YOUTH:hasContent "Depressed, morose, detached, brooding" ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Stereotype_9 a YOUTH:Stereotype ;
+    YOUTH:hasContent "Risk-taking, troublemakers, anti-establishment" ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Value_1 a YOUTH:Value ;
+    YOUTH:hasContent YOUTH:FashionStyle1 ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Value_10 a YOUTH:Value ;
+    YOUTH:hasContent YOUTH:FashionStyle10 ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Value_11 a YOUTH:Value ;
+    YOUTH:hasContent YOUTH:FashionStyle11 ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Value_2 a YOUTH:Value ;
+    YOUTH:hasContent YOUTH:FashionStyle2 ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Value_3 a YOUTH:Value ;
+    YOUTH:hasContent YOUTH:FashionStyle3 ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Value_4 a YOUTH:Value ;
+    YOUTH:hasContent YOUTH:FashionStyle4 ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Value_5 a YOUTH:Value ;
+    YOUTH:hasContent YOUTH:FashionStyle5 ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Value_6 a YOUTH:Value ;
+    YOUTH:hasContent YOUTH:FashionStyle6 ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Value_7 a YOUTH:Value ;
+    YOUTH:hasContent YOUTH:FashionStyle7 ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Value_8 a YOUTH:Value ;
+    YOUTH:hasContent YOUTH:FashionStyle8 ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:Value_9 a YOUTH:Value ;
+    YOUTH:hasContent YOUTH:FashionStyle9 ;
+    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+
+YOUTH:ExternalViewpoint a YOUTH:Viewpoint ;
+    YOUTH:characterisedBy YOUTH:PositiveAttitude ;
+    YOUTH:determinesShift YOUTH:PerspectiveShift_11 .
+
+YOUTH:InternalViewpoint a YOUTH:Viewpoint ;
+    YOUTH:characterisedBy YOUTH:PositiveAttitude ;
+    YOUTH:determinesShift YOUTH:PerspectiveShift_1,
+        YOUTH:PerspectiveShift_10,
+        YOUTH:PerspectiveShift_2,
+        YOUTH:PerspectiveShift_3,
+        YOUTH:PerspectiveShift_4,
+        YOUTH:PerspectiveShift_5,
+        YOUTH:PerspectiveShift_6,
+        YOUTH:PerspectiveShift_7,
+        YOUTH:PerspectiveShift_8,
+        YOUTH:PerspectiveShift_9 .
+
+YOUTH:PositiveAttitude a YOUTH:Attitude ;
+    YOUTH:expressedVia YOUTH:Stereotype_1,
+        YOUTH:Stereotype_10,
+        YOUTH:Stereotype_11,
+        YOUTH:Stereotype_2,
+        YOUTH:Stereotype_3,
+        YOUTH:Stereotype_4,
+        YOUTH:Stereotype_5,
+        YOUTH:Stereotype_6,
+        YOUTH:Stereotype_7,
+        YOUTH:Stereotype_8,
+        YOUTH:Stereotype_9,
+        YOUTH:Value_1,
+        YOUTH:Value_10,
+        YOUTH:Value_11,
+        YOUTH:Value_2,
+        YOUTH:Value_3,
+        YOUTH:Value_4,
+        YOUTH:Value_5,
+        YOUTH:Value_6,
+        YOUTH:Value_7,
+        YOUTH:Value_8,
+        YOUTH:Value_9 ;
+    YOUTH:influencedBy YOUTH:PerspectiveInfuece_1,
+        YOUTH:PerspectiveInfuece_10,
+        YOUTH:PerspectiveInfuece_11,
+        YOUTH:PerspectiveInfuece_2,
+        YOUTH:PerspectiveInfuece_3,
+        YOUTH:PerspectiveInfuece_4,
+        YOUTH:PerspectiveInfuece_5,
+        YOUTH:PerspectiveInfuece_6,
+        YOUTH:PerspectiveInfuece_7,
+        YOUTH:PerspectiveInfuece_8,
+        YOUTH:PerspectiveInfuece_9 ;
+    YOUTH:isAttitudeOf YOUTH:,
+        YOUTH:Person_1,
+        YOUTH:Person_10,
+        YOUTH:Person_2,
+        YOUTH:Person_3,
+        YOUTH:Person_4,
+        YOUTH:Person_5,
+        YOUTH:Person_6,
+        YOUTH:Person_7,
+        YOUTH:Person_8,
+        YOUTH:Person_9 .
 

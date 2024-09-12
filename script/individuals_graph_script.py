@@ -1,5 +1,5 @@
 import pandas as pd
-from rdflib import Graph, Namespace, URIRef, Literal, RDF, RDFS
+from rdflib import Graph, Namespace, Literal, RDF
 import os  
 
 # Determine the directory of the current script
@@ -18,38 +18,42 @@ OWL = Namespace("http://www.w3.org/2002/07/owl#")
 g = Graph()
 
 # Bind namespaces for easier usage
-g.bind("youth", YOUTH)
+g.bind("YOUTH", YOUTH)
 g.bind("OWL", OWL)
 
-# Define a function to add a person to the ontology
 def add_triple(df):
 
     for index , row in df.iterrows():
 
         for col_name, value in row.items():
-            if value!= "":
-                
+            
                 dir_uri = YOUTH[value]
                 con_uri = YOUTH[f"{col_name}_{index+1 }"]
                 
-                if col_name == "Person":
-                    g.add((dir_uri, RDF.type, YOUTH.Person))
-                    g.add((dir_uri, YOUTH.hasname, Literal("Mario")))
+                if col_name == "Participant" and row["Participant"]!="":
+                    g.add((dir_uri, RDF.type, YOUTH.Participant))
                     g.add((dir_uri, YOUTH.participatesIn, YOUTH[row['YouthSubculture']]))
                     g.add((dir_uri, YOUTH.belongsToGeneration, Literal(row['Generation'])))
                     g.add((dir_uri, YOUTH.hasViewpoint, YOUTH[row['Viewpoint']]))
                     g.add((dir_uri, YOUTH.hasAttitude, YOUTH[row['Attitude']]))
 
-                elif col_name == "YouthSubculture":
+                elif col_name == "NotParticipant"and row["NotParticipant"]!="":
+                    g.add((dir_uri, RDF.type, YOUTH.NotParticipant))
+                    g.add((dir_uri, YOUTH.hasname, Literal("Giovannina")))
+                    g.add((dir_uri, YOUTH.belongsToGeneration, Literal(row['Generation'])))
+                    g.add((dir_uri, YOUTH.hasViewpoint, YOUTH[row['Viewpoint']]))
+                    g.add((dir_uri, YOUTH.hasAttitude, YOUTH[row['Attitude']]))
+
+                elif col_name == "YouthSubculture" and row['Participant'] != "":
+                    g.add((dir_uri, YOUTH.hasParticipant, YOUTH[row['Participant']]))
                     g.add((dir_uri, RDF.type, YOUTH.YouthSubculture))
-                    g.add((dir_uri, YOUTH.hasParticipant, YOUTH[row['Person']]))
                     g.add((dir_uri, YOUTH.locatedIn, YOUTH[f"Location_{index+1}"])) 
                     g.add((dir_uri, YOUTH.hasFashionStyle, YOUTH[f"FashionStyle_{index+1}"])) 
                     g.add((dir_uri, YOUTH.hasMusicGenre , YOUTH[f"MusicGenre_{index+1}"])) 
                     g.add((dir_uri, YOUTH.hasRitual, YOUTH[f"Ritual_{index+1}"])) 
                     g.add((dir_uri, YOUTH.hasValue, YOUTH[f"Value_{index+1}"]))
                     g.add((dir_uri, YOUTH.originatesIn, YOUTH[f"HistoricalPeriod_{index+1}"])) 
-                    g.add((dir_uri, YOUTH.triggersStereotype, YOUTH[f"Steretype_{index+1}"])) 
+                    g.add((dir_uri, YOUTH.triggersStereotype, YOUTH[f"Stereotype_{index+1}"])) 
                     g.add((dir_uri, YOUTH.viewdAs, YOUTH[row['Viewpoint']])) #da sistemare
 
                 elif col_name == "Viewpoint": 
@@ -61,13 +65,20 @@ def add_triple(df):
                     g.add((con_uri, RDF.type, YOUTH.Location))
                     g.add((con_uri, YOUTH.hasContent, Literal(row["Location"])))
                     
-                elif col_name == "Attitude": 
+                elif col_name == "Attitude" and row['Participant'] != "": 
                     g.add((dir_uri, RDF.type, YOUTH.Attitude))
                     g.add((dir_uri, YOUTH.expressedVia, YOUTH[f"Stereotype_{index+1}"]))
                     g.add((dir_uri, YOUTH.expressedVia, YOUTH[f"Value_{index+1}"]))
                     g.add((dir_uri, YOUTH.influencedBy, YOUTH[f"PerspectiveInfuece_{index+1}"]))
-                    g.add((dir_uri, YOUTH.isAttitudeOf, YOUTH[row['Person']]))
+                    g.add((dir_uri, YOUTH.isAttitudeOf, YOUTH[row['Participant']]))
 
+                elif col_name == "Attitude" and row['NotParticipant'] != "": 
+                    g.add((dir_uri, RDF.type, YOUTH.Attitude))
+                    g.add((dir_uri, YOUTH.expressedVia, YOUTH[f"Stereotype_{index+1}"]))
+                    g.add((dir_uri, YOUTH.expressedVia, YOUTH[f"Value_{index+1}"]))
+                    g.add((dir_uri, YOUTH.influencedBy, YOUTH[f"PerspectiveInfuece_{index+1}"]))
+                    g.add((dir_uri, YOUTH.isAttitudeOf, YOUTH[row['NotParticipant']]))
+                    
                 elif col_name == "Value":
                     g.add((con_uri, RDF.type, YOUTH.Value))
                     g.add((con_uri, YOUTH.hasContent, YOUTH[f"FashionStyle{index+1}"])) 
@@ -103,7 +114,6 @@ def add_triple(df):
                     g.add((con_uri, RDF.type, YOUTH.PerspectiveShift))
                     g.add((con_uri, YOUTH.hasContent, Literal(row["PerspectiveShift"])))
 
-        
         g.add((YOUTH.contrasts, RDF.type, OWL.ObjectProperty))
         g.add((YOUTH.creates, RDF.type, OWL.ObjectProperty))
         g.add((YOUTH.determines, RDF.type, OWL.ObjectProperty))
@@ -136,11 +146,11 @@ def add_triple(df):
         g.add((YOUTH.toward, RDF.type, OWL.ObjectProperty))
         g.add((YOUTH.triggersStereotype, RDF.type, OWL.ObjectProperty))
             
-    add_triple(df)
+add_triple(df)
 
-    output_path = os.path.join(script_dir, "individuals_graph.ttl")
+output_path = os.path.join(script_dir, "individuals_graph.ttl")
         # Serialize the graph to a Turtle file
-    with open(output_path, "w", encoding="utf-8") as f:
+with open(output_path, "w", encoding="utf-8") as f:
                     f.write(g.serialize(format="turtle"))
 
 
