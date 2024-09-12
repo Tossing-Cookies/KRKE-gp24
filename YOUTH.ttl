@@ -429,12 +429,6 @@ youth:NeutralAttitude rdf:type owl:Class ;
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/NotParticipant
 youth:NotParticipant rdf:type owl:Class ;
                      rdfs:subClassOf <http://etna.istc.cnr.it/framester2/data/framestercore/People> ,
-                                     [ rdf:type owl:Class ;
-                                       owl:complementOf [ rdf:type owl:Restriction ;
-                                                          owl:onProperty youth:participatesIn ;
-                                                          owl:someValuesFrom youth:YouthSubculture
-                                                        ]
-                                     ] ,
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty youth:hasAttitude ;
                                        owl:someValuesFrom [ rdf:type owl:Class ;

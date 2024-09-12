@@ -2510,6 +2510,11 @@ youth:originatedIn a owl:FunctionalProperty,
     rdfs:domain youth:YouthSubculture ;
     rdfs:range youth:HistoricalPeriod .
 
+youth:participatesIn a owl:ObjectProperty ;
+    rdfs:comment "Links a Person to a YouthSubculture (indicating that the person belongs to that subculture)." ;
+    rdfs:domain youth:Participant ;
+    rdfs:range youth:YouthSubculture .
+
 youth:Emo a youth:YouthSubculture ;
     youth:hasFashionStyle youth:FashionStyle_10,
         youth:FashionStyle_52 ;
@@ -2544,16 +2549,12 @@ Moore, Ryan. "Alternative to What? Subcultural Capital and the Commercialization
 youth:NotParticipant a owl:Class ;
     rdfs:comment "Members outside youth subcultures." ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty youth:hasViewpoint ;
-            owl:someValuesFrom youth:ExternalViewpoint ],
-        [ a owl:Class ;
-            owl:complementOf [ a owl:Restriction ;
-                    owl:onProperty youth:participatesIn ;
-                    owl:someValuesFrom youth:YouthSubculture ] ],
-        [ a owl:Restriction ;
             owl:onProperty youth:hasAttitude ;
             owl:someValuesFrom [ a owl:Class ;
                     owl:unionOf ( youth:NegativeAttitude youth:NeutralAttitude youth:PositiveAttitude ) ] ],
+        [ a owl:Restriction ;
+            owl:onProperty youth:hasViewpoint ;
+            owl:someValuesFrom youth:ExternalViewpoint ],
         <http://etna.istc.cnr.it/framester2/data/framestercore/People> .
 
 youth:Style a owl:Class ;
@@ -2566,11 +2567,6 @@ youth:expressedVia a owl:ObjectProperty ;
             owl:unionOf ( youth:NegativeAttitude youth:NeutralAttitude youth:PositiveAttitude ) ] ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( youth:MoralValue youth:Stereotype ) ] .
-
-youth:participatesIn a owl:ObjectProperty ;
-    rdfs:comment "Links a Person to a YouthSubculture (indicating that the person belongs to that subculture)." ;
-    rdfs:domain youth:Participant ;
-    rdfs:range youth:YouthSubculture .
 
 youth:triggersStereotype a owl:ObjectProperty ;
     rdfs:comment "Links a stereotype to the subcultures that it affects or challenges. This property identifies how certain stereotypes are associated with subcultures and how these stereotypes may influence or be related to the subculture’s public image. It highlights the stereotypes that subcultures confront or embody." ;
