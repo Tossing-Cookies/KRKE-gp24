@@ -1,4 +1,3 @@
-@prefix : <http://www.semanticweb.org/ontologies/2024/YOUTH#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -240,7 +239,7 @@ youth:triggersStereotype rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/ontologies/2024/YOUTH#belongsToGeneration
+###  http://www.semanticweb.org/ontologies/2024/YOUTH/belongsToGeneration
 :belongsToGeneration rdf:type owl:DatatypeProperty ,
                               owl:FunctionalProperty ;
                      rdfs:domain youth:Participant ;
