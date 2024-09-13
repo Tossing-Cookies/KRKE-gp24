@@ -1,521 +1,20 @@
 @prefix OWL: <http://www.w3.org/2002/07/owl#> .
 @prefix YOUTH: <http://www.semanticweb.org/ontologies/2024/YOUTH/> .
 
-YOUTH:1960s a YOUTH:HistoricalPeriod .
-
-YOUTH:1960s-1980s a YOUTH:HistoricalPeriod .
-
-YOUTH:1970s a YOUTH:HistoricalPeriod .
-
-YOUTH:1970s-1980s a YOUTH:HistoricalPeriod .
-
-YOUTH:1970s-present a YOUTH:HistoricalPeriod .
-
-YOUTH:1980s a YOUTH:HistoricalPeriod .
-
-YOUTH:1980s-present a YOUTH:HistoricalPeriod .
-
-YOUTH:1990s a YOUTH:HistoricalPeriod .
-
-YOUTH:1990s-2000s a YOUTH:HistoricalPeriod .
-
-YOUTH:1990s-present a YOUTH:HistoricalPeriod .
-
-YOUTH:2000s a YOUTH:HistoricalPeriod .
-
-YOUTH:2000s-present a YOUTH:HistoricalPeriod .
-
-YOUTH:2010s a YOUTH:HistoricalPeriod .
-
-YOUTH:2010s-2020s a YOUTH:HistoricalPeriod .
-
-YOUTH:2010s-present a YOUTH:HistoricalPeriod .
-
-YOUTH:2020s-present a YOUTH:HistoricalPeriod .
-
-YOUTH:Activism a YOUTH:MoralValue .
-
-YOUTH:Adventurous a YOUTH:Stereotype .
-
-YOUTH:Aggressive a YOUTH:Stereotype .
-
-YOUTH:Anarchism a YOUTH:MoralValue .
-
-YOUTH:Anti-materialism a YOUTH:MoralValue .
-
-YOUTH:Artistic a YOUTH:Stereotype .
-
-YOUTH:Authenticity a YOUTH:MoralValue .
-
-YOUTH:Berlin a YOUTH:Location .
-
-YOUTH:Bold a YOUTH:Stereotype .
-
-YOUTH:Brooklyn a YOUTH:Location .
-
-YOUTH:California a YOUTH:Location .
-
-YOUTH:Charming a YOUTH:Stereotype .
-
-YOUTH:Chilled a YOUTH:Stereotype .
-
 YOUTH:ClassifiedBy a OWL:ObjectProperty .
-
-YOUTH:Community a YOUTH:MoralValue .
-
-YOUTH:Companionship a YOUTH:MoralValue .
-
-YOUTH:Competition a YOUTH:MoralValue .
-
-YOUTH:Creative a YOUTH:Stereotype .
-
-YOUTH:Creativity a YOUTH:MoralValue .
-
-YOUTH:Creativityself-expression a YOUTH:MoralValue .
-
-YOUTH:DIY_ethic a YOUTH:MoralValue .
-
-YOUTH:Dedicated a YOUTH:Stereotype .
-
-YOUTH:Dedication_to_K-Pop_artists a YOUTH:MoralValue .
-
-YOUTH:Depressed a YOUTH:Stereotype .
-
-YOUTH:Devoted a YOUTH:Stereotype .
-
-YOUTH:Early_2010s a YOUTH:HistoricalPeriod .
-
-YOUTH:Eco-friendly a YOUTH:Stereotype .
-
-YOUTH:Elaborate a YOUTH:Stereotype .
-
-YOUTH:Elegance a YOUTH:MoralValue .
-
-YOUTH:Embracing_ordinaryanti-fashion_aesthetics a YOUTH:MoralValue .
-
-YOUTH:Emotional_expression a YOUTH:MoralValue .
-
-YOUTH:Energetic a YOUTH:Stereotype .
-
-YOUTH:Engaging a YOUTH:Stereotype .
-
-YOUTH:Enthusiastic a YOUTH:Stereotype .
-
-YOUTH:Environmentalism a YOUTH:MoralValue .
-
-YOUTH:Equality a YOUTH:MoralValue .
-
-YOUTH:Escapism a YOUTH:MoralValue .
-
-YOUTH:Ethical_eating a YOUTH:MoralValue .
-
-YOUTH:Euphoria a YOUTH:MoralValue .
-
-YOUTH:Extreme a YOUTH:Stereotype .
-
-YOUTH:Fashion-forward a YOUTH:Stereotype .
 
 YOUTH:FashionStyle_51 a YOUTH:FashionStyle ;
     YOUTH:hasContent "Dark, Skinny Jeans" .
 
-YOUTH:Flexibility a YOUTH:MoralValue .
-
-YOUTH:Freedom a YOUTH:MoralValue .
-
-YOUTH:Geeky a YOUTH:Stereotype .
-
-YOUTH:Global a YOUTH:Location .
-
-YOUTH:Harmony a YOUTH:MoralValue .
-
-YOUTH:Health-conscious a YOUTH:Stereotype .
-
-YOUTH:Health-focused a YOUTH:Stereotype .
-
-YOUTH:Health_consciousness a YOUTH:MoralValue .
-
-YOUTH:Heroism a YOUTH:MoralValue .
-
-YOUTH:Historical_appreciation a YOUTH:MoralValue .
-
-YOUTH:Idealistic a YOUTH:Stereotype .
-
-YOUTH:Independence a YOUTH:MoralValue .
-
-YOUTH:Independent a YOUTH:Stereotype .
-
-YOUTH:Individualism a YOUTH:MoralValue .
-
-YOUTH:Individuality a YOUTH:MoralValue .
-
-YOUTH:Innovation a YOUTH:MoralValue .
-
-YOUTH:Innovative a YOUTH:Stereotype .
-
-YOUTH:Intellectualism a YOUTH:MoralValue .
-
-YOUTH:Introverted a YOUTH:Stereotype .
-
-YOUTH:Laid-back a YOUTH:Stereotype .
-
-YOUTH:Late_1960s a YOUTH:HistoricalPeriod .
-
-YOUTH:Late_2010s a YOUTH:HistoricalPeriod .
-
-YOUTH:Literary a YOUTH:Stereotype .
-
-YOUTH:London a YOUTH:Location .
-
-YOUTH:Los_Angeles a YOUTH:Location .
-
-YOUTH:Loud a YOUTH:Stereotype .
-
-YOUTH:Love a YOUTH:MoralValue .
-
-YOUTH:Melancholic a YOUTH:Stereotype .
-
 YOUTH:MusicGenre_51 a YOUTH:MusicGenre ;
     YOUTH:hasContent "Emo, Pop-Punk, Melodic Hardcore" .
-
-YOUTH:New_York a YOUTH:Location .
-
-YOUTH:Nostalgia a YOUTH:MoralValue .
-
-YOUTH:Nostalgic a YOUTH:Stereotype .
-
-YOUTH:Obsessive a YOUTH:Stereotype .
-
-YOUTH:Party-goers a YOUTH:Stereotype .
-
-YOUTH:Passion a YOUTH:MoralValue .
-
-YOUTH:Passionate a YOUTH:Stereotype .
-
-YOUTH:Peace a YOUTH:MoralValue .
-
-YOUTH:Personal_freedom a YOUTH:MoralValue .
-
-YOUTH:Personal_storytelling a YOUTH:MoralValue .
-
-YOUTH:Pretentiousoverly_concerned_with_trends a YOUTH:Stereotype .
-
-YOUTH:Quirky a YOUTH:Stereotype .
-
-YOUTH:Rebellion a YOUTH:MoralValue .
-
-YOUTH:Rebellious a YOUTH:Stereotype .
-
-YOUTH:Relaxation a YOUTH:MoralValue .
-
-YOUTH:Risk-taking a YOUTH:Stereotype .
-
-YOUTH:Ritual_1 a YOUTH:Ritual ;
-    YOUTH:hasContent "Participating in music festivals, peace protests, communal living, engaging in spiritual practices" .
-
-YOUTH:Ritual_10 a YOUTH:Ritual ;
-    YOUTH:hasContent "Alt-music events, Attending concerts" .
-
-YOUTH:Ritual_11 a YOUTH:Ritual ;
-    YOUTH:hasContent "Alt-music events, Attending concerts" .
-
-YOUTH:Ritual_12 a YOUTH:Ritual ;
-    YOUTH:hasContent "Rave Parties, Dancing, attending festivals" .
-
-YOUTH:Ritual_13 a YOUTH:Ritual ;
-    YOUTH:hasContent "Playing video games, gaming sessions, attending gaming or technology conventions" .
-
-YOUTH:Ritual_14 a YOUTH:Ritual ;
-    YOUTH:hasContent "Coffee Shop Hangouts, Art Shows, Exploring Vintage Shops" .
-
-YOUTH:Ritual_15 a YOUTH:Ritual ;
-    YOUTH:hasContent "Everyday activities with a focus on blending in rather than standing out" .
-
-YOUTH:Ritual_16 a YOUTH:Ritual ;
-    YOUTH:hasContent "Engaging in outdoor activities, displaying a rugged, artisanal lifestyle" .
-
-YOUTH:Ritual_17 a YOUTH:Ritual ;
-    YOUTH:hasContent "Socializing and creating content on platforms like TikTok, Instagram, and YouTube" .
-
-YOUTH:Ritual_18 a YOUTH:Ritual ;
-    YOUTH:hasContent "Attending concerts, participating in fan clubs, streaming music, engaging in fan activities online" .
-
-YOUTH:Ritual_19 a YOUTH:Ritual ;
-    YOUTH:hasContent "Sharing content on Instagram and TikTok, promoting eco-friendly products, engaging in casual, laid-back lifestyles" .
-
-YOUTH:Ritual_2 a YOUTH:Ritual ;
-    YOUTH:hasContent "Rallies, widing scooters" .
-
-YOUTH:Ritual_20 a YOUTH:Ritual ;
-    YOUTH:hasContent "Rave Parties, Dancing, attending festivals" .
-
-YOUTH:Ritual_21 a YOUTH:Ritual ;
-    YOUTH:hasContent "Attending conventions, participating in cosplay events" .
-
-YOUTH:Ritual_22 a YOUTH:Ritual ;
-    YOUTH:hasContent "Exploring local music scenes, attending indie music festivals" .
-
-YOUTH:Ritual_23 a YOUTH:Ritual ;
-    YOUTH:hasContent "Promoting minimalism through social media, engaging in decluttering activities" .
-
-YOUTH:Ritual_24 a YOUTH:Ritual ;
-    YOUTH:hasContent "Attending themed events, crafting outfits" .
-
-YOUTH:Ritual_25 a YOUTH:Ritual ;
-    YOUTH:hasContent "Attending sneaker conventions, participating in resale markets" .
-
-YOUTH:Ritual_26 a YOUTH:Ritual ;
-    YOUTH:hasContent "Listening to music online, studying, relaxing" .
-
-YOUTH:Ritual_27 a YOUTH:Ritual ;
-    YOUTH:hasContent "Participating in environmental activism, supporting sustainable brands" .
-
-YOUTH:Ritual_28 a YOUTH:Ritual ;
-    YOUTH:hasContent "Surfing, beach parties" .
-
-YOUTH:Ritual_29 a YOUTH:Ritual ;
-    YOUTH:hasContent "Engaging in tech meetups, showcasing new technology" .
-
-YOUTH:Ritual_3 a YOUTH:Ritual ;
-    YOUTH:hasContent "Attending music events, dancehalls, engaging in street-level solidarity" .
-
-YOUTH:Ritual_30 a YOUTH:Ritual ;
-    YOUTH:hasContent "Participating in crafting events, promoting handmade goods" .
-
-YOUTH:Ritual_31 a YOUTH:Ritual ;
-    YOUTH:hasContent "Participating in renaissance fairs, historical reenactments" .
-
-YOUTH:Ritual_32 a YOUTH:Ritual ;
-    YOUTH:hasContent "Participating in food activism, supporting cruelty-free brands" .
-
-YOUTH:Ritual_33 a YOUTH:Ritual ;
-    YOUTH:hasContent "Creating and sharing content on TikTok, engaging with trends" .
-
-YOUTH:Ritual_34 a YOUTH:Ritual ;
-    YOUTH:hasContent "Traveling, working remotely, participating in digital communities" .
-
-YOUTH:Ritual_35 a YOUTH:Ritual ;
-    YOUTH:hasContent "Attending rockabilly events, vintage car shows" .
-
-YOUTH:Ritual_36 a YOUTH:Ritual ;
-    YOUTH:hasContent "Participating in protests, advocating for social change" .
-
-YOUTH:Ritual_37 a YOUTH:Ritual ;
-    YOUTH:hasContent "Exploring and promoting new fashion trends, attending fashion events" .
-
-YOUTH:Ritual_38 a YOUTH:Ritual ;
-    YOUTH:hasContent "Playing and promoting classic video games" .
-
-YOUTH:Ritual_39 a YOUTH:Ritual ;
-    YOUTH:hasContent "Engaging in freelance work, participating in remote work communities" .
-
-YOUTH:Ritual_4 a YOUTH:Ritual ;
-    YOUTH:hasContent "Breakdancing, Rapping, Freestyle Battles" .
-
-YOUTH:Ritual_40 a YOUTH:Ritual ;
-    YOUTH:hasContent "Attending music festivals, camping, and engaging in festival culture" .
-
-YOUTH:Ritual_41 a YOUTH:Ritual ;
-    YOUTH:hasContent "Participating in vape culture events, creating vape tricks" .
-
-YOUTH:Ritual_42 a YOUTH:Ritual ;
-    YOUTH:hasContent "Attending superhero-themed events, engaging in fan communities" .
-
-YOUTH:Ritual_43 a YOUTH:Ritual ;
-    YOUTH:hasContent "Participating in wellness activities, attending health expos" .
-
-YOUTH:Ritual_44 a YOUTH:Ritual ;
-    YOUTH:hasContent "Sharing book reviews, participating in reading challenges" .
-
-YOUTH:Ritual_45 a YOUTH:Ritual ;
-    YOUTH:hasContent "Creating and sharing pet-related content on social media" .
-
-YOUTH:Ritual_46 a YOUTH:Ritual ;
-    YOUTH:hasContent "Exploring new destinations with a focus on minimalist packing" .
-
-YOUTH:Ritual_47 a YOUTH:Ritual ;
-    YOUTH:hasContent "Creating and sharing content on platforms like Instagram and TikTok" .
-
-YOUTH:Ritual_48 a YOUTH:Ritual ;
-    YOUTH:hasContent "Creating and sharing digital art on social media platforms" .
-
-YOUTH:Ritual_49 a YOUTH:Ritual ;
-    YOUTH:hasContent "Creating and sharing video blogs on platforms like YouTube" .
-
-YOUTH:Ritual_5 a YOUTH:Ritual ;
-    YOUTH:hasContent "Attending concerts, protesting, DIY activities, riots" .
-
-YOUTH:Ritual_50 a YOUTH:Ritual ;
-    YOUTH:hasContent "Engaging with AR experiences and technology" .
 
 YOUTH:Ritual_51 a YOUTH:Ritual ;
     YOUTH:hasContent "Alt-music events, Attending concerts" .
 
-YOUTH:Ritual_52 a YOUTH:Ritual ;
-    YOUTH:hasContent "Alt-music events, Attending concerts" .
-
-YOUTH:Ritual_6 a YOUTH:Ritual ;
-    YOUTH:hasContent "Rock Concerts, Playing instruments" .
-
-YOUTH:Ritual_7 a YOUTH:Ritual ;
-    YOUTH:hasContent "Metal Concerts, Playing instruments" .
-
-YOUTH:Ritual_8 a YOUTH:Ritual ;
-    YOUTH:hasContent "Attending concerts, Alternative nightlife" .
-
-YOUTH:Ritual_9 a YOUTH:Ritual ;
-    YOUTH:hasContent "Skateboarding, Skate skills developing" .
-
-YOUTH:Rugged a YOUTH:Stereotype .
-
-YOUTH:San_Francisco a YOUTH:Location .
-
-YOUTH:Simplicity a YOUTH:MoralValue .
-
-YOUTH:Simplistic a YOUTH:Stereotype .
-
-YOUTH:Solidarity a YOUTH:MoralValue .
-
-YOUTH:Status a YOUTH:MoralValue .
-
-YOUTH:Street-smartaggressive a YOUTH:Stereotype .
-
-YOUTH:Stylesophistication a YOUTH:MoralValue .
-
-YOUTH:Stylish a YOUTH:Stereotype .
-
-YOUTH:Tokyo a YOUTH:Location .
-
-YOUTH:Tough a YOUTH:Stereotype .
-
-YOUTH:Trend-setting a YOUTH:Stereotype .
-
-YOUTH:Troublemakers a YOUTH:Stereotype .
-
-YOUTH:UK a YOUTH:Location .
-
-YOUTH:USA a YOUTH:Location .
-
-YOUTH:Unremarkable a YOUTH:Stereotype .
-
-YOUTH:Vintage a YOUTH:Stereotype .
-
-YOUTH:Working-class_pride a YOUTH:MoralValue .
-
-YOUTH:a_connection_to_nature a YOUTH:MoralValue .
-
-YOUTH:a_fascination_with_historical_fashion a YOUTH:MoralValue .
-
-YOUTH:activism a YOUTH:MoralValue .
-
-YOUTH:adventure a YOUTH:MoralValue .
-
-YOUTH:adventurous a YOUTH:Stereotype .
-
-YOUTH:aesthetics a YOUTH:MoralValue .
-
-YOUTH:aggressive a YOUTH:Stereotype .
-
-YOUTH:alternative a YOUTH:Stereotype .
-
-YOUTH:anti-establishment a YOUTH:Stereotype .
-
-YOUTH:anti-fashion a YOUTH:Stereotype .
-
-YOUTH:anti-social a YOUTH:Stereotype .
-
-<http://www.semanticweb.org/ontologies/2024/YOUTH/appreciation_for_the_genre’s_musicchoreography> a YOUTH:MoralValue .
-
-YOUTH:artisanal a YOUTH:Stereotype .
-
-YOUTH:athletics a YOUTH:MoralValue .
-
-YOUTH:authenticity a YOUTH:MoralValue .
-
-YOUTH:bland a YOUTH:Stereotype .
-
-YOUTH:brooding a YOUTH:Stereotype .
-
-YOUTH:casual a YOUTH:Stereotype .
-
-YOUTH:community-focused a YOUTH:Stereotype .
-
-YOUTH:community-oriented a YOUTH:MoralValue .
-
-YOUTH:community_engagement a YOUTH:MoralValue .
-
-YOUTH:craftsmanship a YOUTH:MoralValue .
-
-YOUTH:creative_expression a YOUTH:MoralValue .
-
-YOUTH:creativity a YOUTH:MoralValue .
-
-YOUTH:cultural_appreciation a YOUTH:MoralValue .
-
-YOUTH:cultural_exploration a YOUTH:MoralValue .
-
-YOUTH:cultural_immersion a YOUTH:MoralValue .
-
-YOUTH:curiosity a YOUTH:MoralValue .
-
-YOUTH:detached a YOUTH:Stereotype .
-
 YOUTH:determines a OWL:ObjectProperty .
 
-YOUTH:digital_savvy a YOUTH:MoralValue .
-
-YOUTH:driven a YOUTH:Stereotype .
-
-YOUTH:drug_users a YOUTH:Stereotype .
-
-YOUTH:early_adoption a YOUTH:MoralValue .
-
-YOUTH:eco-consciousness a YOUTH:MoralValue .
-
-YOUTH:eco-friendly a YOUTH:Stereotype .
-
-YOUTH:elitist a YOUTH:Stereotype .
-
-YOUTH:engaging a YOUTH:Stereotype .
-
-YOUTH:enthusiastic a YOUTH:Stereotype .
-
-YOUTH:entrepreneurial_spirit a YOUTH:MoralValue .
-
-YOUTH:environmentalism a YOUTH:MoralValue .
-
-YOUTH:ethical a YOUTH:Stereotype .
-
-YOUTH:euphoria a YOUTH:MoralValue .
-
-YOUTH:exclusivity a YOUTH:MoralValue .
-
-YOUTH:experimental a YOUTH:Stereotype .
-
 YOUTH:expressedVia a OWL:ObjectProperty .
-
-YOUTH:extravagant a YOUTH:Stereotype .
-
-YOUTH:fandom a YOUTH:MoralValue .
-
-YOUTH:fantasy a YOUTH:MoralValue .
-
-YOUTH:flexibility a YOUTH:MoralValue .
-
-YOUTH:flexible a YOUTH:Stereotype .
-
-YOUTH:focus a YOUTH:MoralValue .
-
-YOUTH:forward-thinking a YOUTH:Stereotype .
-
-YOUTH:free-spirited a YOUTH:Stereotype .
-
-YOUTH:fun a YOUTH:MoralValue .
-
-YOUTH:gaming-focused a YOUTH:Stereotype .
-
-YOUTH:gaming_history a YOUTH:MoralValue .
-
-YOUTH:global_perspective a YOUTH:MoralValue .
 
 YOUTH:hasAttitude a OWL:ObjectProperty .
 
@@ -533,41 +32,9 @@ YOUTH:hasRitual a OWL:ObjectProperty .
 
 YOUTH:hasViewpoint a OWL:ObjectProperty .
 
-YOUTH:health-conscious a YOUTH:Stereotype .
-
-YOUTH:idealistic a YOUTH:Stereotype .
-
-YOUTH:imagination a YOUTH:MoralValue .
-
-YOUTH:imaginative a YOUTH:Stereotype .
-
-YOUTH:immersion a YOUTH:MoralValue .
-
-YOUTH:immersive_experiences a YOUTH:MoralValue .
-
-YOUTH:independence a YOUTH:MoralValue .
-
-YOUTH:influence a YOUTH:MoralValue .
-
 YOUTH:influencedBy a OWL:ObjectProperty .
 
 YOUTH:influences a OWL:ObjectProperty .
-
-YOUTH:influential a YOUTH:Stereotype .
-
-YOUTH:innovation a YOUTH:MoralValue .
-
-YOUTH:innovative a YOUTH:Stereotype .
-
-YOUTH:intentional a YOUTH:Stereotype .
-
-YOUTH:intentional_living a YOUTH:MoralValue .
-
-YOUTH:internet-obsessed a YOUTH:Stereotype .
-
-YOUTH:introspective a YOUTH:Stereotype .
-
-YOUTH:introverted a YOUTH:Stereotype .
 
 YOUTH:isAttitudeOf a OWL:ObjectProperty .
 
@@ -577,199 +44,122 @@ YOUTH:isExpressedVia a OWL:ObjectProperty .
 
 YOUTH:isViewpointOf a OWL:ObjectProperty .
 
-YOUTH:justice a YOUTH:MoralValue .
-
 YOUTH:locatedIn a OWL:ObjectProperty .
-
-YOUTH:masculinity a YOUTH:MoralValue .
-
-YOUTH:mindfulness a YOUTH:MoralValue .
-
-YOUTH:minimalist_aesthetic a YOUTH:MoralValue .
-
-YOUTH:morose a YOUTH:Stereotype .
-
-YOUTH:niche a YOUTH:Stereotype .
-
-YOUTH:nostalgic a YOUTH:Stereotype .
-
-YOUTH:obsessive a YOUTH:Stereotype .
-
-YOUTH:often_misunderstood a YOUTH:Stereotype .
-
-YOUTH:online_engagement a YOUTH:MoralValue .
-
-YOUTH:online_identity a YOUTH:MoralValue .
-
-YOUTH:online_presence a YOUTH:MoralValue .
 
 YOUTH:originatedIn a OWL:ObjectProperty .
 
-YOUTH:outdoorsy a YOUTH:Stereotype .
-
 YOUTH:participatesIn a OWL:ObjectProperty .
-
-YOUTH:passion_for_footwear a YOUTH:MoralValue .
-
-YOUTH:personal_expression a YOUTH:MoralValue .
-
-YOUTH:pet_care a YOUTH:MoralValue .
-
-YOUTH:politically_charged a YOUTH:Stereotype .
-
-YOUTH:rebellious a YOUTH:Stereotype .
-
-YOUTH:rejecting_trendspretension a YOUTH:MoralValue .
-
-YOUTH:relatable a YOUTH:Stereotype .
-
-YOUTH:relaxation a YOUTH:MoralValue .
-
-YOUTH:resourceful a YOUTH:Stereotype .
-
-YOUTH:responsibility a YOUTH:MoralValue .
-
-YOUTH:retro_aesthetics a YOUTH:MoralValue .
-
-YOUTH:self-care a YOUTH:MoralValue .
-
-YOUTH:self-expression a YOUTH:MoralValue .
-
-YOUTH:self-improvement a YOUTH:Stereotype .
-
-YOUTH:self-sufficiency a YOUTH:MoralValue .
-
-YOUTH:social_connection a YOUTH:MoralValue .
-
-YOUTH:socially_engaged a YOUTH:Stereotype .
-
-YOUTH:sometimes_excessive a YOUTH:Stereotype .
-
-YOUTH:sometimes_overly_obsessed a YOUTH:Stereotype .
-
-YOUTH:sometimes_seen_as_eccentric a YOUTH:Stereotype .
-
-YOUTH:sophistication a YOUTH:MoralValue .
-
-YOUTH:superficial a YOUTH:Stereotype .
-
-YOUTH:superficiality a YOUTH:Stereotype .
-
-YOUTH:tech-focused a YOUTH:Stereotype .
-
-YOUTH:tech-savvy a YOUTH:Stereotype .
-
-YOUTH:technology a YOUTH:MoralValue .
-
-YOUTH:theatrical a YOUTH:Stereotype .
-
-YOUTH:trend-conscious a YOUTH:Stereotype .
-
-YOUTH:trend-setting a YOUTH:MoralValue .
-
-YOUTH:trendy a YOUTH:Stereotype .
 
 YOUTH:triggersStereotype a OWL:ObjectProperty .
 
-YOUTH:troublemakers a YOUTH:Stereotype .
-
-YOUTH:unruly a YOUTH:Stereotype .
-
-YOUTH:violent a YOUTH:Stereotype .
-
-YOUTH:wild a YOUTH:Stereotype .
-
-YOUTH:working-class a YOUTH:Stereotype .
-
 YOUTH:Alternative_Fashion_Enthusiasts a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_37 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_37 ;
+    YOUTH:hasMoralValue YOUTH:Individuality,
+        YOUTH:_self-expression,
+        YOUTH:creativity ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_37 ;
-    YOUTH:hasParticipant YOUTH:Person_37 ;
-    YOUTH:hasRitual YOUTH:Ritual_Alternative_Fashion_Enthusiasts ;
-    YOUTH:locatedIn YOUTH:Location_37 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_37 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_37 .
+    YOUTH:hasRitual YOUTH:Ritual_37 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2020s-present ;
+    YOUTH:triggersStereotype YOUTH:Bold,
+        YOUTH:experimental .
 
 YOUTH:Augmented_Reality_Enthusiasts a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_50 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_50 ;
+    YOUTH:hasMoralValue YOUTH:Innovation,
+        YOUTH:_immersive_experiences,
+        YOUTH:technology ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_50 ;
-    YOUTH:hasParticipant YOUTH:Person_50 ;
-    YOUTH:hasRitual YOUTH:Ritual_Augmented_Reality_Enthusiasts ;
-    YOUTH:locatedIn YOUTH:Location_50 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_50 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_50 .
+    YOUTH:hasRitual YOUTH:Ritual_50 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2020s-present ;
+    YOUTH:triggersStereotype YOUTH:Innovative,
+        YOUTH:tech-focused .
 
 YOUTH:Bookstagrammers a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_44 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_44 ;
+    YOUTH:hasMoralValue YOUTH:Intellectualism,
+        YOUTH:_community_engagement,
+        YOUTH:creativity ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_44 ;
-    YOUTH:hasParticipant YOUTH:Person_44 ;
-    YOUTH:hasRitual YOUTH:Ritual_Bookstagrammers ;
-    YOUTH:locatedIn YOUTH:Location_44 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_44 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_44 .
+    YOUTH:hasRitual YOUTH:Ritual_44 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2020s-present ;
+    YOUTH:triggersStereotype YOUTH:Literary,
+        YOUTH:socially_engaged .
 
 YOUTH:Cosplay_Enthusiasts a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_21 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_21 ;
+    YOUTH:hasMoralValue YOUTH:Creativity,
+        YOUTH:_craftsmanship,
+        YOUTH:fom ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_21 ;
-    YOUTH:hasParticipant YOUTH:Person_21 ;
-    YOUTH:hasRitual YOUTH:Ritual_Cosplay_Enthusiasts ;
-    YOUTH:locatedIn YOUTH:Location_21 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_21 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_21 .
+    YOUTH:hasRitual YOUTH:Ritual_21 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2000s-present ;
+    YOUTH:triggersStereotype YOUTH:Dedicated,
+        YOUTH:imaginative,
+        YOUTH:sometimes_overly_obsessed .
 
 YOUTH:DIY_Crafters a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_30 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_30 ;
+    YOUTH:hasMoralValue YOUTH:Creativity,
+        YOUTH:_personal_expression,
+        YOUTH:self-sufficiency ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_30 ;
-    YOUTH:hasParticipant YOUTH:Person_30 ;
-    YOUTH:hasRitual YOUTH:Ritual_DIY_Crafters ;
-    YOUTH:locatedIn YOUTH:Location_30 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_30 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_30 .
+    YOUTH:hasRitual YOUTH:Ritual_30 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2020s-present ;
+    YOUTH:triggersStereotype YOUTH:Creative,
+        YOUTH:resourceful .
 
 YOUTH:Digital_Artists a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_48 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_48 ;
+    YOUTH:hasMoralValue YOUTH:Creativity,
+        YOUTH:_self-expression,
+        YOUTH:innovation ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_48 ;
-    YOUTH:hasParticipant YOUTH:Person_48 ;
-    YOUTH:hasRitual YOUTH:Ritual_Digital_Artists ;
-    YOUTH:locatedIn YOUTH:Location_48 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_48 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_48 .
+    YOUTH:hasRitual YOUTH:Ritual_48 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2010s-present ;
+    YOUTH:triggersStereotype YOUTH:Artistic,
+        YOUTH:tech-savvy .
 
 YOUTH:Digital_Nomads a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_34 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_34 ;
+    YOUTH:hasMoralValue YOUTH:Freedom,
+        YOUTH:_global_perspective,
+        YOUTH:flexibility ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_34 ;
-    YOUTH:hasParticipant YOUTH:Person_34 ;
-    YOUTH:hasRitual YOUTH:Ritual_Digital_Nomads ;
-    YOUTH:locatedIn YOUTH:Location_34 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_34 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_34 .
+    YOUTH:hasRitual YOUTH:Ritual_34 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2020s-present ;
+    YOUTH:triggersStereotype YOUTH:Adventurous,
+        YOUTH:flexible .
 
 <http://www.semanticweb.org/ontologies/2024/YOUTH/E-Boys/E-Girls> a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_17 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_17 ;
+    YOUTH:hasMoralValue YOUTH:Individuality,
+        YOUTH:aesthetics,
+        YOUTH:online_identity ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_17 ;
-    YOUTH:hasParticipant YOUTH:Person_17 ;
-    YOUTH:hasRitual <http://www.semanticweb.org/ontologies/2024/YOUTH/Ritual_E-Boys/E-Girls> ;
-    YOUTH:locatedIn YOUTH:Location_17 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_17 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_17 .
+    YOUTH:hasRitual YOUTH:Ritual_17 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:Late_2010s ;
+    YOUTH:triggersStereotype YOUTH:Fashion-forward,
+        YOUTH:internet-obsessed .
 
 YOUTH:Eco-Warriors a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_27 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_27 ;
+    YOUTH:hasMoralValue YOUTH:Environmentalism,
+        YOUTH:_responsibility,
+        YOUTH:activism ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_27 ;
-    YOUTH:hasParticipant YOUTH:Person_27 ;
-    YOUTH:hasRitual YOUTH:Ritual_Eco-Warriors ;
-    YOUTH:locatedIn YOUTH:Location_27 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_27 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_27 .
+    YOUTH:hasRitual YOUTH:Ritual_27 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2020s-present ;
+    YOUTH:triggersStereotype YOUTH:Passionate,
+        YOUTH:idealistic .
 
 YOUTH:ExternalViewpoint a YOUTH:Viewpoint ;
     YOUTH:determinesShift YOUTH:PerspectiveShift_51 ;
@@ -930,93 +320,116 @@ YOUTH:FashionStyle_9 a YOUTH:FashionStyle ;
 
 YOUTH:Freelancers a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_39 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_39 ;
+    YOUTH:hasMoralValue YOUTH:Flexibility,
+        YOUTH:_entrepreneurial_spirit,
+        YOUTH:independence ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_39 ;
-    YOUTH:hasParticipant YOUTH:Person_39 ;
-    YOUTH:hasRitual YOUTH:Ritual_Freelancers ;
-    YOUTH:locatedIn YOUTH:Location_39 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_39 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_39 .
+    YOUTH:hasRitual YOUTH:Ritual_39 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2020s-present ;
+    YOUTH:triggersStereotype YOUTH:Independent,
+        YOUTH:flexible .
 
 YOUTH:Gamers a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_13 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_13 ;
+    YOUTH:hasMoralValue YOUTH:Competition,
+        YOUTH:fun,
+        YOUTH:immersion,
+        YOUTH:relaxation ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_13 ;
-    YOUTH:hasParticipant YOUTH:Person_13 ;
-    YOUTH:hasRitual YOUTH:Ritual_Gamers ;
-    YOUTH:locatedIn YOUTH:Location_13 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_13 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_13 .
+    YOUTH:hasRitual YOUTH:Ritual_13 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2000s-present ;
+    YOUTH:triggersStereotype YOUTH:Introverted,
+        YOUTH:anti-social,
+        YOUTH:obsessive .
 
 YOUTH:Gothic_Lolita a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_24 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_24 ;
+    YOUTH:hasMoralValue YOUTH:Elegance,
+        YOUTH:_a_fascination_with_historical_fashion,
+        YOUTH:sophistication ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_24 ;
-    YOUTH:hasParticipant YOUTH:Person_24 ;
-    YOUTH:hasRitual YOUTH:Ritual_Gothic_Lolita ;
-    YOUTH:locatedIn YOUTH:Location_24 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_24 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_24 .
+    YOUTH:hasRitual YOUTH:Ritual_24 ;
+    YOUTH:locatedIn YOUTH:Tokyo ;
+    YOUTH:originatedIn YOUTH:1990s-present ;
+    YOUTH:triggersStereotype YOUTH:Elaborate,
+        YOUTH:niche,
+        YOUTH:sometimes_seen_as_eccentric .
 
 YOUTH:Goths a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_8 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_8 ;
+    YOUTH:hasMoralValue YOUTH:Individualism ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_8 ;
-    YOUTH:hasParticipant YOUTH:Person_8 ;
-    YOUTH:hasRitual YOUTH:Ritual_Goths ;
-    YOUTH:locatedIn YOUTH:Location_8 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_8 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_8 .
+    YOUTH:hasRitual YOUTH:Ritual_8 ;
+    YOUTH:locatedIn YOUTH:London ;
+    YOUTH:originatedIn YOUTH:1980s ;
+    YOUTH:triggersStereotype YOUTH:Depressed,
+        YOUTH:brooding,
+        YOUTH:detached,
+        YOUTH:morose .
 
 <http://www.semanticweb.org/ontologies/2024/YOUTH/Health_&_Wellness_Enthusiasts> a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_43 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_43 ;
+    YOUTH:hasMoralValue YOUTH:Health_consciousness,
+        YOUTH:_mindfulness,
+        YOUTH:self-care ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_43 ;
-    YOUTH:hasParticipant YOUTH:Person_43 ;
-    YOUTH:hasRitual <http://www.semanticweb.org/ontologies/2024/YOUTH/Ritual_Health_&_Wellness_Enthusiasts> ;
-    YOUTH:locatedIn YOUTH:Location_43 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_43 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_43 .
+    YOUTH:hasRitual YOUTH:Ritual_43 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2010s-present ;
+    YOUTH:triggersStereotype YOUTH:Health-focused,
+        YOUTH:self-improvement .
 
 YOUTH:Hip-Hop a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_4 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_4 ;
+    YOUTH:hasMoralValue YOUTH:Creativity__self-expression ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_4 ;
-    YOUTH:hasParticipant YOUTH:Person_4 ;
-    YOUTH:hasRitual YOUTH:Ritual_Hip-Hop ;
-    YOUTH:locatedIn YOUTH:Location_4 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_4 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_4 .
+    YOUTH:hasRitual YOUTH:Ritual_4 ;
+    YOUTH:locatedIn YOUTH:New_York ;
+    YOUTH:originatedIn YOUTH:1970s-present ;
+    YOUTH:triggersStereotype YOUTH:Street-smart__aggressive .
 
 YOUTH:Hippies a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_1 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_1 ;
+    YOUTH:hasMoralValue YOUTH:Anti-materialism,
+        YOUTH:Environmentalism,
+        YOUTH:Harmony,
+        YOUTH:Love,
+        YOUTH:Peace ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_1 ;
-    YOUTH:hasParticipant YOUTH:Person_1 ;
-    YOUTH:hasRitual YOUTH:Ritual_Hippies ;
-    YOUTH:locatedIn YOUTH:Location_1 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_1 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_1 .
+    YOUTH:hasRitual YOUTH:Ritual_1 ;
+    YOUTH:locatedIn YOUTH:San_Francisco_New_York ;
+    YOUTH:originatedIn YOUTH:1960s ;
+    YOUTH:triggersStereotype YOUTH:Idealistic,
+        YOUTH:anti-establishment,
+        YOUTH:free-spirited .
 
 YOUTH:Hipsters a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_14 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_14 ;
+    YOUTH:hasMoralValue YOUTH:Authenticity,
+        YOUTH:Creativity,
+        YOUTH:Individualism,
+        YOUTH:Nostalgia ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_14 ;
-    YOUTH:hasParticipant YOUTH:Person_14 ;
-    YOUTH:hasRitual YOUTH:Ritual_Hipsters ;
-    YOUTH:locatedIn YOUTH:Location_14 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_14 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_14 .
+    YOUTH:hasRitual YOUTH:Ritual_14 ;
+    YOUTH:locatedIn YOUTH:Brooklyn ;
+    YOUTH:originatedIn YOUTH:2000s ;
+    YOUTH:triggersStereotype YOUTH:Pretentious__overly_concerned_with_trends,
+        YOUTH:superficiality .
 
 YOUTH:Indie_Kids a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_22 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_22 ;
+    YOUTH:hasMoralValue YOUTH:Independence,
+        YOUTH:_creative_expression,
+        YOUTH:authenticity ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_22 ;
-    YOUTH:hasParticipant YOUTH:Person_22 ;
-    YOUTH:hasRitual YOUTH:Ritual_Indie_Kids ;
-    YOUTH:locatedIn YOUTH:Location_22 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_22 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_22 .
+    YOUTH:hasRitual YOUTH:Ritual_22 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2010s-present ;
+    YOUTH:triggersStereotype YOUTH:Quirky,
+        YOUTH:alternative,
+        YOUTH:often_misunderstood .
 
 YOUTH:Influence_1 a YOUTH:PerspectiveInfluence ;
     YOUTH:hasContent "Social and political movements of the 1960s, including reaction against mainstream consumer culture and political climate" ;
@@ -1228,73 +641,89 @@ YOUTH:Influence_9 a YOUTH:PerspectiveInfluence ;
 
 YOUTH:K-Pop_Stans a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_18 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_18 ;
+    YOUTH:hasMoralValue YOUTH:Dedication_to_K-Pop_artists,
+        <http://www.semanticweb.org/ontologies/2024/YOUTH/appreciation_for_the_genre’s_music__choreography>,
+        YOUTH:community_engagement ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_18 ;
-    YOUTH:hasParticipant YOUTH:Person_18 ;
-    YOUTH:hasRitual YOUTH:Ritual_K-Pop_Stans ;
-    YOUTH:locatedIn YOUTH:Location_18 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_18 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_18 .
+    YOUTH:hasRitual YOUTH:Ritual_18 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2010s-2020s ;
+    YOUTH:triggersStereotype YOUTH:Devoted,
+        YOUTH:enthusiastic,
+        YOUTH:sometimes_excessive .
 
 YOUTH:Lofi_Hip-Hop_Fans a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_26 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_26 ;
+    YOUTH:hasMoralValue YOUTH:Relaxation,
+        YOUTH:_creativity,
+        YOUTH:focus ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_26 ;
-    YOUTH:hasParticipant YOUTH:Person_26 ;
-    YOUTH:hasRitual YOUTH:Ritual_Lofi_Hip-Hop_Fans ;
-    YOUTH:locatedIn YOUTH:Location_26 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_26 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_26 .
+    YOUTH:hasRitual YOUTH:Ritual_26 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2020s-present ;
+    YOUTH:triggersStereotype YOUTH:Chilled,
+        YOUTH:introspective .
 
 YOUTH:Lumberjack a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_16 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_16 ;
+    YOUTH:hasMoralValue YOUTH:Authenticity,
+        YOUTH:_a_connection_to_nature,
+        YOUTH:masculinity ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_16 ;
-    YOUTH:hasParticipant YOUTH:Person_16 ;
-    YOUTH:hasRitual YOUTH:Ritual_Lumberjack ;
-    YOUTH:locatedIn YOUTH:Location_16 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_16 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_16 .
+    YOUTH:hasRitual YOUTH:Ritual_16 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2010s ;
+    YOUTH:triggersStereotype YOUTH:Rugged,
+        YOUTH:artisanal,
+        YOUTH:outdoorsy .
 
 YOUTH:Metalheads a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_7 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_7 ;
+    YOUTH:hasMoralValue YOUTH:Rebellion ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_7 ;
-    YOUTH:hasParticipant YOUTH:Person_7 ;
-    YOUTH:hasRitual YOUTH:Ritual_Metalheads ;
-    YOUTH:locatedIn YOUTH:Location_7 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_7 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_7 .
+    YOUTH:hasRitual YOUTH:Ritual_7 ;
+    YOUTH:locatedIn YOUTH:USA_UK ;
+    YOUTH:originatedIn YOUTH:1970s-1980s ;
+    YOUTH:triggersStereotype YOUTH:Extreme,
+        YOUTH:aggressive,
+        YOUTH:extravagant,
+        YOUTH:unruly .
 
 YOUTH:Minimalist_Travelers a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_46 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_46 ;
+    YOUTH:hasMoralValue YOUTH:Simplicity,
+        YOUTH:_cultural_exploration,
+        YOUTH:adventure ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_46 ;
-    YOUTH:hasParticipant YOUTH:Person_46 ;
-    YOUTH:hasRitual YOUTH:Ritual_Minimalist_Travelers ;
-    YOUTH:locatedIn YOUTH:Location_46 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_46 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_46 .
+    YOUTH:hasRitual YOUTH:Ritual_46 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2010s-present ;
+    YOUTH:triggersStereotype YOUTH:Adventurous,
+        YOUTH:resourceful .
 
 YOUTH:Minimalists a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_23 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_23 ;
+    YOUTH:hasMoralValue YOUTH:Simplicity,
+        YOUTH:eco-consciousness,
+        YOUTH:intentional_living ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_23 ;
-    YOUTH:hasParticipant YOUTH:Person_23 ;
-    YOUTH:hasRitual YOUTH:Ritual_Minimalists ;
-    YOUTH:locatedIn YOUTH:Location_23 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_23 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_23 .
+    YOUTH:hasRitual YOUTH:Ritual_23 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2020s-present ;
+    YOUTH:triggersStereotype YOUTH:Simplistic,
+        YOUTH:eco-friendly,
+        YOUTH:intentional .
 
 YOUTH:Mods a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_2 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_2 ;
+    YOUTH:hasMoralValue YOUTH:Style__sophistication ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_2 ;
-    YOUTH:hasParticipant YOUTH:Person_2 ;
-    YOUTH:hasRitual YOUTH:Ritual_Mods ;
-    YOUTH:locatedIn YOUTH:Location_2 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_2 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_2 .
+    YOUTH:hasRitual YOUTH:Ritual_2 ;
+    YOUTH:locatedIn YOUTH:London ;
+    YOUTH:originatedIn YOUTH:1960s ;
+    YOUTH:triggersStereotype YOUTH:Stylish,
+        YOUTH:elitist,
+        YOUTH:superficial .
 
 YOUTH:MusicGenre_1 a YOUTH:MusicGenre ;
     YOUTH:hasContent "Psychedelic Rock, Folk, Classic Rock" .
@@ -1451,386 +880,27 @@ YOUTH:MusicGenre_9 a YOUTH:MusicGenre ;
 
 YOUTH:Normcore a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_15 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_15 ;
+    YOUTH:hasMoralValue YOUTH:Embracing_ordinary__anti-fashion_aesthetics,
+        YOUTH:rejecting_trends__pretension ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_15 ;
-    YOUTH:hasParticipant YOUTH:Person_15 ;
-    YOUTH:hasRitual YOUTH:Ritual_Normcore ;
-    YOUTH:locatedIn YOUTH:Location_15 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_15 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_15 .
+    YOUTH:hasRitual YOUTH:Ritual_15 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:Early_2010s ;
+    YOUTH:triggersStereotype YOUTH:Unremarkable,
+        YOUTH:anti-fashion,
+        YOUTH:bl .
 
 YOUTH:Party_Goers a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_40 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_40 ;
+    YOUTH:hasMoralValue YOUTH:Community,
+        YOUTH:_cultural_immersion,
+        YOUTH:euphoria ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_40 ;
-    YOUTH:hasParticipant YOUTH:Person_40 ;
-    YOUTH:hasRitual YOUTH:Ritual_Party_Goers ;
-    YOUTH:locatedIn YOUTH:Location_40 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_40 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_40 .
-
-YOUTH:Person_51 a YOUTH:NotParticipant ;
-    YOUTH:belongsToGeneration "Baby Boomers" ;
-    YOUTH:hasAttitude YOUTH:PositiveAttitude ;
-    YOUTH:hasPerceptionOf YOUTH:Emo ;
-    YOUTH:hasViewpoint YOUTH:ExternalViewpoint ;
-    YOUTH:hasname "Giovannina" .
-
-YOUTH:PerspectiveShift_1 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From radical counterculture to a more widely accepted ethos of peace and environmentalism" .
-
-YOUTH:PerspectiveShift_10 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "Evolving from niche to influential in alternative music" .
-
-YOUTH:PerspectiveShift_11 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "Evolving from niche to influential in alternative music" .
-
-YOUTH:PerspectiveShift_12 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From underground to mainstream popularity" .
-
-YOUTH:PerspectiveShift_13 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche hobby to mainstream entertainment" .
-
-YOUTH:PerspectiveShift_14 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche to influential in fashion and culture" .
-
-YOUTH:PerspectiveShift_15 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From a niche reaction to a recognized cultural statement" .
-
-YOUTH:PerspectiveShift_16 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche trend to broader acceptance in lifestyle fashion" .
-
-YOUTH:PerspectiveShift_17 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From internet subculture to a broader cultural influence" .
-
-YOUTH:PerspectiveShift_18 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche interest to significant global cultural phenomenon" .
-
-YOUTH:PerspectiveShift_19 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From social media trend to a broader lifestyle movement" .
-
-YOUTH:PerspectiveShift_2 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From youth subculture to retro revival" .
-
-YOUTH:PerspectiveShift_20 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From underground to mainstream popularity" .
-
-YOUTH:PerspectiveShift_21 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche hobby to mainstream entertainment" .
-
-YOUTH:PerspectiveShift_22 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche subculture to mainstream influence" .
-
-YOUTH:PerspectiveShift_23 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From trend to broader lifestyle movement" .
-
-YOUTH:PerspectiveShift_24 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche fashion trend to global influence" .
-
-YOUTH:PerspectiveShift_25 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche collector interest to mainstream trend" .
-
-YOUTH:PerspectiveShift_26 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche genre to broad online culture" .
-
-YOUTH:PerspectiveShift_27 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche cause to mainstream movement" .
-
-YOUTH:PerspectiveShift_28 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche sport to mainstream lifestyle" .
-
-YOUTH:PerspectiveShift_29 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche interest to mainstream technology trend" .
-
-YOUTH:PerspectiveShift_3 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From working-class solidarity to broader associations" .
-
-YOUTH:PerspectiveShift_30 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche hobby to popular trend" .
-
-YOUTH:PerspectiveShift_31 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche interest to broad cultural events" .
-
-YOUTH:PerspectiveShift_32 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche dietary choice to mainstream lifestyle movement" .
-
-YOUTH:PerspectiveShift_33 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From emerging trend to dominant social media force" .
-
-YOUTH:PerspectiveShift_34 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche career choice to widespread trend" .
-
-YOUTH:PerspectiveShift_35 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche interest to popular retro trend" .
-
-YOUTH:PerspectiveShift_36 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche advocacy to broad societal impact" .
-
-YOUTH:PerspectiveShift_37 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche interest to influential fashion trend" .
-
-YOUTH:PerspectiveShift_38 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche interest to mainstream gaming trend" .
-
-YOUTH:PerspectiveShift_39 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From emerging trend to mainstream work style" .
-
-YOUTH:PerspectiveShift_4 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From street culture to global influence" .
-
-YOUTH:PerspectiveShift_40 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche interest to significant cultural trend" .
-
-YOUTH:PerspectiveShift_41 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche trend to broader lifestyle choice" .
-
-YOUTH:PerspectiveShift_42 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche interest to major cultural influence" .
-
-YOUTH:PerspectiveShift_43 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche interest to widespread health movement" .
-
-YOUTH:PerspectiveShift_44 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche hobby to influential online trend" .
-
-YOUTH:PerspectiveShift_45 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche trend to mainstream social media phenomenon" .
-
-YOUTH:PerspectiveShift_46 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche interest to broader travel trend" .
-
-YOUTH:PerspectiveShift_47 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From emerging trend to dominant cultural force" .
-
-YOUTH:PerspectiveShift_48 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche art form to influential creative field" .
-
-YOUTH:PerspectiveShift_49 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche content creation to mainstream media presence" .
-
-YOUTH:PerspectiveShift_5 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From fringe to influential in mainstream fashion" .
-
-YOUTH:PerspectiveShift_50 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche technology interest to broader technological trend" .
-
-YOUTH:PerspectiveShift_51 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "Evolving from niche to influential in alternative music" .
-
-YOUTH:PerspectiveShift_52 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "Evolving from esteemed to despised" .
-
-YOUTH:PerspectiveShift_6 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From rebellious youth culture to mainstream icons" .
-
-YOUTH:PerspectiveShift_7 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From rebellious youth culture to mainstream icons" .
-
-YOUTH:PerspectiveShift_8 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "Shift from misunderstood to celebrated for its style" .
-
-YOUTH:PerspectiveShift_9 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "From niche hobby to mainstream sport" .
-
-YOUTH:Pet_Influencers a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_45 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_45 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_45 ;
-    YOUTH:hasParticipant YOUTH:Person_45 ;
-    YOUTH:hasRitual YOUTH:Ritual_Pet_Influencers ;
-    YOUTH:locatedIn YOUTH:Location_45 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_45 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_45 .
-
-YOUTH:Punks a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_5 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_5 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_5 ;
-    YOUTH:hasParticipant YOUTH:Person_5 ;
-    YOUTH:hasRitual YOUTH:Ritual_Punks ;
-    YOUTH:locatedIn YOUTH:Location_5 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_5 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_5 .
-
-YOUTH:Renaissance_Fair_Enthusiasts a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_31 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_31 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_31 ;
-    YOUTH:hasParticipant YOUTH:Person_31 ;
-    YOUTH:hasRitual YOUTH:Ritual_Renaissance_Fair_Enthusiasts ;
-    YOUTH:locatedIn YOUTH:Location_31 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_31 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_31 .
-
-YOUTH:Retro_Gamers a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_38 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_38 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_38 ;
-    YOUTH:hasParticipant YOUTH:Person_38 ;
-    YOUTH:hasRitual YOUTH:Ritual_Retro_Gamers ;
-    YOUTH:locatedIn YOUTH:Location_38 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_38 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_38 .
-
-YOUTH:Rockabilly a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_35 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_35 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_35 ;
-    YOUTH:hasParticipant YOUTH:Person_35 ;
-    YOUTH:hasRitual YOUTH:Ritual_Rockabilly ;
-    YOUTH:locatedIn YOUTH:Location_35 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_35 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_35 .
-
-YOUTH:Screamo a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_11 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_11 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_11 ;
-    YOUTH:hasParticipant YOUTH:Person_11 ;
-    YOUTH:hasRitual YOUTH:Ritual_Screamo ;
-    YOUTH:locatedIn YOUTH:Location_11 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_11 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_11 .
-
-YOUTH:Skaters a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_9 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_9 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_9 ;
-    YOUTH:hasParticipant YOUTH:Person_9 ;
-    YOUTH:hasRitual YOUTH:Ritual_Skaters ;
-    YOUTH:locatedIn YOUTH:Location_9 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_9 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_9 .
-
-YOUTH:Skinheads a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_3 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_3 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_3 ;
-    YOUTH:hasParticipant YOUTH:Person_3 ;
-    YOUTH:hasRitual YOUTH:Ritual_Skinheads ;
-    YOUTH:locatedIn YOUTH:Location_3 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_3 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_3 .
-
-YOUTH:Sneakerheads a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_25 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_25 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_25 ;
-    YOUTH:hasParticipant YOUTH:Person_25 ;
-    YOUTH:hasRitual YOUTH:Ritual_Sneakerheads ;
-    YOUTH:locatedIn YOUTH:Location_25 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_25 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_25 .
-
-YOUTH:Social_Justice_Activists a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_36 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_36 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_36 ;
-    YOUTH:hasParticipant YOUTH:Person_36 ;
-    YOUTH:hasRitual YOUTH:Ritual_Social_Justice_Activists ;
-    YOUTH:locatedIn YOUTH:Location_36 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_36 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_36 .
-
-YOUTH:Social_Media_Influencers a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_47 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_47 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_47 ;
-    YOUTH:hasParticipant YOUTH:Person_47 ;
-    YOUTH:hasRitual YOUTH:Ritual_Social_Media_Influencers ;
-    YOUTH:locatedIn YOUTH:Location_47 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_47 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_47 .
-
-YOUTH:Superhero_Fans a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_42 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_42 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_42 ;
-    YOUTH:hasParticipant YOUTH:Person_42 ;
-    YOUTH:hasRitual YOUTH:Ritual_Superhero_Fans ;
-    YOUTH:locatedIn YOUTH:Location_42 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_42 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_42 .
-
-YOUTH:Surfers a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_28 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_28 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_28 ;
-    YOUTH:hasParticipant YOUTH:Person_28 ;
-    YOUTH:hasRitual YOUTH:Ritual_Surfers ;
-    YOUTH:locatedIn YOUTH:Location_28 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_28 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_28 .
-
-YOUTH:Tech_Enthusiasts a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_29 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_29 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_29 ;
-    YOUTH:hasParticipant YOUTH:Person_29 ;
-    YOUTH:hasRitual YOUTH:Ritual_Tech_Enthusiasts ;
-    YOUTH:locatedIn YOUTH:Location_29 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_29 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_29 .
-
-YOUTH:TikTokers a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_33 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_33 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_33 ;
-    YOUTH:hasParticipant YOUTH:Person_33 ;
-    YOUTH:hasRitual YOUTH:Ritual_TikTokers ;
-    YOUTH:locatedIn YOUTH:Location_33 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_33 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_33 .
-
-YOUTH:VSCO_Girls a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_19 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_19 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_19 ;
-    YOUTH:hasParticipant YOUTH:Person_19 ;
-    YOUTH:hasRitual YOUTH:Ritual_VSCO_Girls ;
-    YOUTH:locatedIn YOUTH:Location_19 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_19 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_19 .
-
-YOUTH:Vapers a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_41 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_41 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_41 ;
-    YOUTH:hasParticipant YOUTH:Person_41 ;
-    YOUTH:hasRitual YOUTH:Ritual_Vapers ;
-    YOUTH:locatedIn YOUTH:Location_41 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_41 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_41 .
-
-<http://www.semanticweb.org/ontologies/2024/YOUTH/Vegetarians/Vegans> a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_32 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_32 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_32 ;
-    YOUTH:hasParticipant YOUTH:Person_32 ;
-    YOUTH:hasRitual <http://www.semanticweb.org/ontologies/2024/YOUTH/Ritual_Vegetarians/Vegans> ;
-    YOUTH:locatedIn YOUTH:Location_32 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_32 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_32 .
-
-YOUTH:Vloggers a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_49 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_49 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_49 ;
-    YOUTH:hasParticipant YOUTH:Person_49 ;
-    YOUTH:hasRitual YOUTH:Ritual_Vloggers ;
-    YOUTH:locatedIn YOUTH:Location_49 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_49 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_49 .
-
-YOUTH:vRockers a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:FashionStyle_6 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_6 ;
-    YOUTH:hasMusicGenre YOUTH:MusicGenre_6 ;
-    YOUTH:hasParticipant YOUTH:Person_6 ;
-    YOUTH:hasRitual YOUTH:Ritual_vRockers ;
-    YOUTH:locatedIn YOUTH:Location_6 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_6 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_6 .
+    YOUTH:hasRitual YOUTH:Ritual_40 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2010s-present ;
+    YOUTH:triggersStereotype YOUTH:Energetic,
+        YOUTH:community-focused .
 
 YOUTH:Person_1 a YOUTH:Participant ;
     YOUTH:belongsToGeneration "The Silent Generation" ;
@@ -2108,6 +1178,13 @@ YOUTH:Person_50 a YOUTH:Participant ;
     YOUTH:hasViewpoint YOUTH:InternalViewpoint ;
     YOUTH:participatesIn YOUTH:Augmented_Reality_Enthusiasts .
 
+YOUTH:Person_51 a YOUTH:NotParticipant ;
+    YOUTH:belongsToGeneration "Baby Boomers" ;
+    YOUTH:hasAttitude YOUTH:PositiveAttitude ;
+    YOUTH:hasPerceptionOf YOUTH:Emo ;
+    YOUTH:hasViewpoint YOUTH:ExternalViewpoint ;
+    YOUTH:hasname "Giovannina" .
+
 YOUTH:Person_52 a YOUTH:Participant ;
     YOUTH:belongsToGeneration "Generation Z" ;
     YOUTH:hasAttitude YOUTH:NegativeAttitude ;
@@ -2138,43 +1215,588 @@ YOUTH:Person_9 a YOUTH:Participant ;
     YOUTH:hasViewpoint YOUTH:InternalViewpoint ;
     YOUTH:participatesIn YOUTH:Skaters .
 
+YOUTH:PerspectiveShift_1 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From radical counterculture to a more widely accepted ethos of peace and environmentalism" .
+
+YOUTH:PerspectiveShift_10 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "Evolving from niche to influential in alternative music" .
+
+YOUTH:PerspectiveShift_11 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "Evolving from niche to influential in alternative music" .
+
+YOUTH:PerspectiveShift_12 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From underground to mainstream popularity" .
+
+YOUTH:PerspectiveShift_13 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche hobby to mainstream entertainment" .
+
+YOUTH:PerspectiveShift_14 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche to influential in fashion and culture" .
+
+YOUTH:PerspectiveShift_15 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From a niche reaction to a recognized cultural statement" .
+
+YOUTH:PerspectiveShift_16 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche trend to broader acceptance in lifestyle fashion" .
+
+YOUTH:PerspectiveShift_17 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From internet subculture to a broader cultural influence" .
+
+YOUTH:PerspectiveShift_18 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche interest to significant global cultural phenomenon" .
+
+YOUTH:PerspectiveShift_19 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From social media trend to a broader lifestyle movement" .
+
+YOUTH:PerspectiveShift_2 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From youth subculture to retro revival" .
+
+YOUTH:PerspectiveShift_20 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From underground to mainstream popularity" .
+
+YOUTH:PerspectiveShift_21 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche hobby to mainstream entertainment" .
+
+YOUTH:PerspectiveShift_22 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche subculture to mainstream influence" .
+
+YOUTH:PerspectiveShift_23 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From trend to broader lifestyle movement" .
+
+YOUTH:PerspectiveShift_24 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche fashion trend to global influence" .
+
+YOUTH:PerspectiveShift_25 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche collector interest to mainstream trend" .
+
+YOUTH:PerspectiveShift_26 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche genre to broad online culture" .
+
+YOUTH:PerspectiveShift_27 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche cause to mainstream movement" .
+
+YOUTH:PerspectiveShift_28 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche sport to mainstream lifestyle" .
+
+YOUTH:PerspectiveShift_29 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche interest to mainstream technology trend" .
+
+YOUTH:PerspectiveShift_3 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From working-class solidarity to broader associations" .
+
+YOUTH:PerspectiveShift_30 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche hobby to popular trend" .
+
+YOUTH:PerspectiveShift_31 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche interest to broad cultural events" .
+
+YOUTH:PerspectiveShift_32 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche dietary choice to mainstream lifestyle movement" .
+
+YOUTH:PerspectiveShift_33 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From emerging trend to dominant social media force" .
+
+YOUTH:PerspectiveShift_34 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche career choice to widespread trend" .
+
+YOUTH:PerspectiveShift_35 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche interest to popular retro trend" .
+
+YOUTH:PerspectiveShift_36 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche advocacy to broad societal impact" .
+
+YOUTH:PerspectiveShift_37 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche interest to influential fashion trend" .
+
+YOUTH:PerspectiveShift_38 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche interest to mainstream gaming trend" .
+
+YOUTH:PerspectiveShift_39 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From emerging trend to mainstream work style" .
+
+YOUTH:PerspectiveShift_4 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From street culture to global influence" .
+
+YOUTH:PerspectiveShift_40 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche interest to significant cultural trend" .
+
+YOUTH:PerspectiveShift_41 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche trend to broader lifestyle choice" .
+
+YOUTH:PerspectiveShift_42 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche interest to major cultural influence" .
+
+YOUTH:PerspectiveShift_43 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche interest to widespread health movement" .
+
+YOUTH:PerspectiveShift_44 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche hobby to influential online trend" .
+
+YOUTH:PerspectiveShift_45 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche trend to mainstream social media phenomenon" .
+
+YOUTH:PerspectiveShift_46 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche interest to broader travel trend" .
+
+YOUTH:PerspectiveShift_47 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From emerging trend to dominant cultural force" .
+
+YOUTH:PerspectiveShift_48 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche art form to influential creative field" .
+
+YOUTH:PerspectiveShift_49 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche content creation to mainstream media presence" .
+
+YOUTH:PerspectiveShift_5 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From fringe to influential in mainstream fashion" .
+
+YOUTH:PerspectiveShift_50 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche technology interest to broader technological trend" .
+
+YOUTH:PerspectiveShift_51 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "Evolving from niche to influential in alternative music" .
+
+YOUTH:PerspectiveShift_52 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "Evolving from esteemed to despised" .
+
+YOUTH:PerspectiveShift_6 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From rebellious youth culture to mainstream icons" .
+
+YOUTH:PerspectiveShift_7 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From rebellious youth culture to mainstream icons" .
+
+YOUTH:PerspectiveShift_8 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "Shift from misunderstood to celebrated for its style" .
+
+YOUTH:PerspectiveShift_9 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From niche hobby to mainstream sport" .
+
+YOUTH:Pet_Influencers a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_45 ;
+    YOUTH:hasMoralValue YOUTH:Companionship,
+        YOUTH:_online_engagement,
+        YOUTH:pet_care ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_45 ;
+    YOUTH:hasRitual YOUTH:Ritual_45 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2020s-present ;
+    YOUTH:triggersStereotype YOUTH:Charming,
+        YOUTH:engaging .
+
+YOUTH:Punks a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_5 ;
+    YOUTH:hasMoralValue YOUTH:Activism,
+        YOUTH:Anarchism,
+        YOUTH:DIY_ethic,
+        YOUTH:Rebellion ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_5 ;
+    YOUTH:hasRitual YOUTH:Ritual_5 ;
+    YOUTH:locatedIn YOUTH:New_York ;
+    YOUTH:originatedIn YOUTH:1970s ;
+    YOUTH:triggersStereotype YOUTH:Troublemakers,
+        YOUTH:anti-social,
+        YOUTH:violent .
+
+YOUTH:Renaissance_Fair_Enthusiasts a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_31 ;
+    YOUTH:hasMoralValue YOUTH:Historical_appreciation,
+        YOUTH:_craftsmanship,
+        YOUTH:fantasy ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_31 ;
+    YOUTH:hasRitual YOUTH:Ritual_31 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:1990s-present ;
+    YOUTH:triggersStereotype YOUTH:Nostalgic,
+        YOUTH:theatrical .
+
+YOUTH:Retro_Gamers a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_38 ;
+    YOUTH:hasMoralValue YOUTH:Nostalgia,
+        YOUTH:gaming_history ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_38 ;
+    YOUTH:hasRitual YOUTH:Ritual_38 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2020s-present ;
+    YOUTH:triggersStereotype YOUTH:Nostalgic,
+        YOUTH:gaming-focused .
+
+YOUTH:Ritual_1 a YOUTH:Ritual ;
+    YOUTH:hasContent "Participating in music festivals, peace protests, communal living, engaging in spiritual practices" .
+
+YOUTH:Ritual_10 a YOUTH:Ritual ;
+    YOUTH:hasContent "Alt-music events, Attending concerts" .
+
+YOUTH:Ritual_11 a YOUTH:Ritual ;
+    YOUTH:hasContent "Alt-music events, Attending concerts" .
+
+YOUTH:Ritual_12 a YOUTH:Ritual ;
+    YOUTH:hasContent "Rave Parties, Dancing, attending festivals" .
+
+YOUTH:Ritual_13 a YOUTH:Ritual ;
+    YOUTH:hasContent "Playing video games, gaming sessions, attending gaming or technology conventions" .
+
+YOUTH:Ritual_14 a YOUTH:Ritual ;
+    YOUTH:hasContent "Coffee Shop Hangouts, Art Shows, Exploring Vintage Shops" .
+
+YOUTH:Ritual_15 a YOUTH:Ritual ;
+    YOUTH:hasContent "Everyday activities with a focus on blending in rather than standing out" .
+
+YOUTH:Ritual_16 a YOUTH:Ritual ;
+    YOUTH:hasContent "Engaging in outdoor activities, displaying a rugged, artisanal lifestyle" .
+
+YOUTH:Ritual_17 a YOUTH:Ritual ;
+    YOUTH:hasContent "Socializing and creating content on platforms like TikTok, Instagram, and YouTube" .
+
+YOUTH:Ritual_18 a YOUTH:Ritual ;
+    YOUTH:hasContent "Attending concerts, participating in fan clubs, streaming music, engaging in fan activities online" .
+
+YOUTH:Ritual_19 a YOUTH:Ritual ;
+    YOUTH:hasContent "Sharing content on Instagram and TikTok, promoting eco-friendly products, engaging in casual, laid-back lifestyles" .
+
+YOUTH:Ritual_2 a YOUTH:Ritual ;
+    YOUTH:hasContent "Rallies, widing scooters" .
+
+YOUTH:Ritual_20 a YOUTH:Ritual ;
+    YOUTH:hasContent "Rave Parties, Dancing, attending festivals" .
+
+YOUTH:Ritual_21 a YOUTH:Ritual ;
+    YOUTH:hasContent "Attending conventions, participating in cosplay events" .
+
+YOUTH:Ritual_22 a YOUTH:Ritual ;
+    YOUTH:hasContent "Exploring local music scenes, attending indie music festivals" .
+
+YOUTH:Ritual_23 a YOUTH:Ritual ;
+    YOUTH:hasContent "Promoting minimalism through social media, engaging in decluttering activities" .
+
+YOUTH:Ritual_24 a YOUTH:Ritual ;
+    YOUTH:hasContent "Attending themed events, crafting outfits" .
+
+YOUTH:Ritual_25 a YOUTH:Ritual ;
+    YOUTH:hasContent "Attending sneaker conventions, participating in resale markets" .
+
+YOUTH:Ritual_26 a YOUTH:Ritual ;
+    YOUTH:hasContent "Listening to music online, studying, relaxing" .
+
+YOUTH:Ritual_27 a YOUTH:Ritual ;
+    YOUTH:hasContent "Participating in environmental activism, supporting sustainable brands" .
+
+YOUTH:Ritual_28 a YOUTH:Ritual ;
+    YOUTH:hasContent "Surfing, beach parties" .
+
+YOUTH:Ritual_29 a YOUTH:Ritual ;
+    YOUTH:hasContent "Engaging in tech meetups, showcasing new technology" .
+
+YOUTH:Ritual_3 a YOUTH:Ritual ;
+    YOUTH:hasContent "Attending music events, dancehalls, engaging in street-level solidarity" .
+
+YOUTH:Ritual_30 a YOUTH:Ritual ;
+    YOUTH:hasContent "Participating in crafting events, promoting handmade goods" .
+
+YOUTH:Ritual_31 a YOUTH:Ritual ;
+    YOUTH:hasContent "Participating in renaissance fairs, historical reenactments" .
+
+YOUTH:Ritual_32 a YOUTH:Ritual ;
+    YOUTH:hasContent "Participating in food activism, supporting cruelty-free brands" .
+
+YOUTH:Ritual_33 a YOUTH:Ritual ;
+    YOUTH:hasContent "Creating and sharing content on TikTok, engaging with trends" .
+
+YOUTH:Ritual_34 a YOUTH:Ritual ;
+    YOUTH:hasContent "Traveling, working remotely, participating in digital communities" .
+
+YOUTH:Ritual_35 a YOUTH:Ritual ;
+    YOUTH:hasContent "Attending rockabilly events, vintage car shows" .
+
+YOUTH:Ritual_36 a YOUTH:Ritual ;
+    YOUTH:hasContent "Participating in protests, advocating for social change" .
+
+YOUTH:Ritual_37 a YOUTH:Ritual ;
+    YOUTH:hasContent "Exploring and promoting new fashion trends, attending fashion events" .
+
+YOUTH:Ritual_38 a YOUTH:Ritual ;
+    YOUTH:hasContent "Playing and promoting classic video games" .
+
+YOUTH:Ritual_39 a YOUTH:Ritual ;
+    YOUTH:hasContent "Engaging in freelance work, participating in remote work communities" .
+
+YOUTH:Ritual_4 a YOUTH:Ritual ;
+    YOUTH:hasContent "Breakdancing, Rapping, Freestyle Battles" .
+
+YOUTH:Ritual_40 a YOUTH:Ritual ;
+    YOUTH:hasContent "Attending music festivals, camping, and engaging in festival culture" .
+
+YOUTH:Ritual_41 a YOUTH:Ritual ;
+    YOUTH:hasContent "Participating in vape culture events, creating vape tricks" .
+
+YOUTH:Ritual_42 a YOUTH:Ritual ;
+    YOUTH:hasContent "Attending superhero-themed events, engaging in fan communities" .
+
+YOUTH:Ritual_43 a YOUTH:Ritual ;
+    YOUTH:hasContent "Participating in wellness activities, attending health expos" .
+
+YOUTH:Ritual_44 a YOUTH:Ritual ;
+    YOUTH:hasContent "Sharing book reviews, participating in reading challenges" .
+
+YOUTH:Ritual_45 a YOUTH:Ritual ;
+    YOUTH:hasContent "Creating and sharing pet-related content on social media" .
+
+YOUTH:Ritual_46 a YOUTH:Ritual ;
+    YOUTH:hasContent "Exploring new destinations with a focus on minimalist packing" .
+
+YOUTH:Ritual_47 a YOUTH:Ritual ;
+    YOUTH:hasContent "Creating and sharing content on platforms like Instagram and TikTok" .
+
+YOUTH:Ritual_48 a YOUTH:Ritual ;
+    YOUTH:hasContent "Creating and sharing digital art on social media platforms" .
+
+YOUTH:Ritual_49 a YOUTH:Ritual ;
+    YOUTH:hasContent "Creating and sharing video blogs on platforms like YouTube" .
+
+YOUTH:Ritual_5 a YOUTH:Ritual ;
+    YOUTH:hasContent "Attending concerts, protesting, DIY activities, riots" .
+
+YOUTH:Ritual_50 a YOUTH:Ritual ;
+    YOUTH:hasContent "Engaging with AR experiences and technology" .
+
+YOUTH:Ritual_52 a YOUTH:Ritual ;
+    YOUTH:hasContent "Alt-music events, Attending concerts" .
+
+YOUTH:Ritual_6 a YOUTH:Ritual ;
+    YOUTH:hasContent "Rock Concerts, Playing instruments" .
+
+YOUTH:Ritual_7 a YOUTH:Ritual ;
+    YOUTH:hasContent "Metal Concerts, Playing instruments" .
+
+YOUTH:Ritual_8 a YOUTH:Ritual ;
+    YOUTH:hasContent "Attending concerts, Alternative nightlife" .
+
+YOUTH:Ritual_9 a YOUTH:Ritual ;
+    YOUTH:hasContent "Skateboarding, Skate skills developing" .
+
+YOUTH:Rockabilly a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_35 ;
+    YOUTH:hasMoralValue YOUTH:Nostalgia,
+        YOUTH:_cultural_appreciation,
+        YOUTH:retro_aesthetics ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_35 ;
+    YOUTH:hasRitual YOUTH:Ritual_35 ;
+    YOUTH:locatedIn YOUTH:USA ;
+    YOUTH:originatedIn YOUTH:1990s-present ;
+    YOUTH:triggersStereotype YOUTH:Vintage,
+        YOUTH:nostalgic .
+
+YOUTH:Screamo a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_11 ;
+    YOUTH:hasMoralValue YOUTH:Emotional_expression ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_11 ;
+    YOUTH:hasRitual YOUTH:Ritual_11 ;
+    YOUTH:locatedIn YOUTH:USA ;
+    YOUTH:originatedIn YOUTH:2000s ;
+    YOUTH:triggersStereotype YOUTH:Aggressive,
+        YOUTH:introverted .
+
+YOUTH:Skaters a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_9 ;
+    YOUTH:hasMoralValue YOUTH:Freedom,
+        YOUTH:athletics,
+        YOUTH:community-oriented,
+        YOUTH:creativity ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_9 ;
+    YOUTH:hasRitual YOUTH:Ritual_9 ;
+    YOUTH:locatedIn YOUTH:California ;
+    YOUTH:originatedIn YOUTH:1990s ;
+    YOUTH:triggersStereotype YOUTH:Risk-taking,
+        YOUTH:anti-establishment,
+        YOUTH:troublemakers .
+
+YOUTH:Skinheads a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_3 ;
+    YOUTH:hasMoralValue YOUTH:Solidarity,
+        YOUTH:Working-class_pride ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_3 ;
+    YOUTH:hasRitual YOUTH:Ritual_3 ;
+    YOUTH:locatedIn YOUTH:London ;
+    YOUTH:originatedIn YOUTH:Late_1960s ;
+    YOUTH:triggersStereotype YOUTH:Tough,
+        YOUTH:politically_charged,
+        YOUTH:working-class .
+
+YOUTH:Sneakerheads a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_25 ;
+    YOUTH:hasMoralValue YOUTH:Status,
+        YOUTH:_passion_for_footwear,
+        YOUTH:exclusivity ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_25 ;
+    YOUTH:hasRitual YOUTH:Ritual_25 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:_2010s-present ;
+    YOUTH:triggersStereotype YOUTH:Obsessive,
+        YOUTH:trend-conscious .
+
+YOUTH:Social_Justice_Activists a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_36 ;
+    YOUTH:hasMoralValue YOUTH:Equality,
+        YOUTH:_activism,
+        YOUTH:justice ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_36 ;
+    YOUTH:hasRitual YOUTH:Ritual_36 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2010s-present ;
+    YOUTH:triggersStereotype YOUTH:Passionate,
+        YOUTH:driven .
+
+YOUTH:Social_Media_Influencers a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_47 ;
+    YOUTH:hasMoralValue YOUTH:Creativity,
+        YOUTH:_online_engagement,
+        YOUTH:influence ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_47 ;
+    YOUTH:hasRitual YOUTH:Ritual_47 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2020s-present ;
+    YOUTH:triggersStereotype YOUTH:Trend-setting,
+        YOUTH:influential .
+
+YOUTH:Superhero_Fans a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_42 ;
+    YOUTH:hasMoralValue YOUTH:Heroism,
+        YOUTH:_imagination,
+        YOUTH:justice ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_42 ;
+    YOUTH:hasRitual YOUTH:Ritual_42 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2020s-present ;
+    YOUTH:triggersStereotype YOUTH:Enthusiastic,
+        YOUTH:imaginative .
+
+YOUTH:Surfers a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_28 ;
+    YOUTH:hasMoralValue YOUTH:Relaxation,
+        YOUTH:_a_connection_to_nature,
+        YOUTH:adventure ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_28 ;
+    YOUTH:hasRitual YOUTH:Ritual_28 ;
+    YOUTH:locatedIn YOUTH:California ;
+    YOUTH:originatedIn YOUTH:1980s-present ;
+    YOUTH:triggersStereotype YOUTH:Laid-back,
+        YOUTH:adventurous .
+
+YOUTH:Tech_Enthusiasts a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_29 ;
+    YOUTH:hasMoralValue YOUTH:Innovation,
+        YOUTH:_early_adoption,
+        YOUTH:curiosity ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_29 ;
+    YOUTH:hasRitual YOUTH:Ritual_29 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2000s-present ;
+    YOUTH:triggersStereotype YOUTH:Geeky,
+        YOUTH:forward-thinking .
+
+YOUTH:TikTokers a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_33 ;
+    YOUTH:hasMoralValue YOUTH:Creativity,
+        YOUTH:_digital_savvy,
+        YOUTH:trend-setting ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_33 ;
+    YOUTH:hasRitual YOUTH:Ritual_33 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2020s-present ;
+    YOUTH:triggersStereotype YOUTH:Energetic,
+        YOUTH:innovative .
+
+YOUTH:VSCO_Girls a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_19 ;
+    YOUTH:hasMoralValue YOUTH:Environmentalism,
+        YOUTH:minimalist_aesthetic,
+        YOUTH:self-care ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_19 ;
+    YOUTH:hasRitual YOUTH:Ritual_19 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:Late_2010s ;
+    YOUTH:triggersStereotype YOUTH:Eco-friendly,
+        YOUTH:casual,
+        YOUTH:trendy .
+
+YOUTH:Vapers a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_41 ;
+    YOUTH:hasMoralValue YOUTH:Personal_freedom,
+        YOUTH:_social_connection,
+        YOUTH:relaxation ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_41 ;
+    YOUTH:hasRitual YOUTH:Ritual_41 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2010s-present ;
+    YOUTH:triggersStereotype YOUTH:Rebellious,
+        YOUTH:health-conscious .
+
+<http://www.semanticweb.org/ontologies/2024/YOUTH/Vegetarians/Vegans> a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_32 ;
+    YOUTH:hasMoralValue YOUTH:Ethical_eating,
+        YOUTH:environmentalism ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_32 ;
+    YOUTH:hasRitual YOUTH:Ritual_32 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2010s-present ;
+    YOUTH:triggersStereotype YOUTH:Health-conscious,
+        YOUTH:ethical .
+
+YOUTH:Vloggers a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_49 ;
+    YOUTH:hasMoralValue YOUTH:Personal_storytelling,
+        YOUTH:_online_presence,
+        YOUTH:creativity ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_49 ;
+    YOUTH:hasRitual YOUTH:Ritual_49 ;
+    YOUTH:locatedIn YOUTH:Global ;
+    YOUTH:originatedIn YOUTH:2020s-present ;
+    YOUTH:triggersStereotype YOUTH:Engaging,
+        YOUTH:relatable .
+
+YOUTH:vRockers a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:FashionStyle_6 ;
+    YOUTH:hasMoralValue YOUTH:Passion,
+        YOUTH:Rebellion ;
+    YOUTH:hasMusicGenre YOUTH:MusicGenre_6 ;
+    YOUTH:hasRitual YOUTH:Ritual_6 ;
+    YOUTH:locatedIn YOUTH:Los_Angeles ;
+    YOUTH:originatedIn YOUTH:1960s-1980s ;
+    YOUTH:triggersStereotype YOUTH:Loud,
+        YOUTH:rebellious,
+        YOUTH:wild .
+
 YOUTH:Ravers a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_12,
         YOUTH:FashionStyle_20 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_12,
-        YOUTH:MoralValue_20 ;
+    YOUTH:hasMoralValue YOUTH:Escapism,
+        YOUTH:Euphoria,
+        YOUTH:community-oriented ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_12,
         YOUTH:MusicGenre_20 ;
-    YOUTH:hasParticipant YOUTH:Person_12,
-        YOUTH:Person_20 ;
-    YOUTH:hasRitual YOUTH:Ritual_Ravers ;
-    YOUTH:locatedIn YOUTH:Location_12,
-        YOUTH:Location_20 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_12,
-        YOUTH:HistoricalPeriod_20 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_12,
-        YOUTH:Stereotype_20 .
+    YOUTH:hasRitual YOUTH:Ritual_12,
+        YOUTH:Ritual_20 ;
+    YOUTH:locatedIn YOUTH:Berlin ;
+    YOUTH:originatedIn YOUTH:1990s ;
+    YOUTH:triggersStereotype YOUTH:Party-goers,
+        YOUTH:drug_users .
 
 YOUTH:Emo a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:FashionStyle_10,
         YOUTH:FashionStyle_52 ;
-    YOUTH:hasMoralValue YOUTH:MoralValue_10,
-        YOUTH:MoralValue_52 ;
+    YOUTH:hasMoralValue YOUTH:Emotional_expression ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_10,
         YOUTH:MusicGenre_52 ;
-    YOUTH:hasParticipant YOUTH:Person_10,
-        YOUTH:Person_52 ;
-    YOUTH:hasRitual YOUTH:Ritual_Emo ;
-    YOUTH:locatedIn YOUTH:Location_10,
-        YOUTH:Location_52 ;
-    YOUTH:originatedIn YOUTH:HistoricalPeriod_10,
-        YOUTH:HistoricalPeriod_52 ;
-    YOUTH:triggersStereotype YOUTH:Stereotype_10,
-        YOUTH:Stereotype_52 .
+    YOUTH:hasRitual YOUTH:Ritual_10,
+        YOUTH:Ritual_52 ;
+    YOUTH:locatedIn YOUTH:USA ;
+    YOUTH:originatedIn YOUTH:1990s-2000s ;
+    YOUTH:triggersStereotype YOUTH:Melancholic,
+        YOUTH:introverted .
 
 YOUTH:NegativeAttitude a YOUTH:Attitude ;
-    YOUTH:expressedVia YOUTH:MoralValue_52,
-        YOUTH:Stereotype_52 ;
+    YOUTH:expressedVia YOUTH:Emotional_expression,
+        YOUTH:Melancholic,
+        YOUTH:introverted ;
     YOUTH:influencedBy YOUTH:Influence_52 ;
     YOUTH:isAttitudeOf YOUTH:Person_52 .
 
@@ -2234,108 +1856,217 @@ YOUTH:InternalViewpoint a YOUTH:Viewpoint ;
         YOUTH:PositiveAttitude .
 
 YOUTH:PositiveAttitude a YOUTH:Attitude ;
-    YOUTH:expressedVia YOUTH:MoralValue_1,
-        YOUTH:MoralValue_10,
-        YOUTH:MoralValue_11,
-        YOUTH:MoralValue_12,
-        YOUTH:MoralValue_13,
-        YOUTH:MoralValue_14,
-        YOUTH:MoralValue_15,
-        YOUTH:MoralValue_16,
-        YOUTH:MoralValue_17,
-        YOUTH:MoralValue_18,
-        YOUTH:MoralValue_19,
-        YOUTH:MoralValue_2,
-        YOUTH:MoralValue_20,
-        YOUTH:MoralValue_21,
-        YOUTH:MoralValue_22,
-        YOUTH:MoralValue_23,
-        YOUTH:MoralValue_24,
-        YOUTH:MoralValue_25,
-        YOUTH:MoralValue_26,
-        YOUTH:MoralValue_27,
-        YOUTH:MoralValue_28,
-        YOUTH:MoralValue_29,
-        YOUTH:MoralValue_3,
-        YOUTH:MoralValue_30,
-        YOUTH:MoralValue_31,
-        YOUTH:MoralValue_32,
-        YOUTH:MoralValue_33,
-        YOUTH:MoralValue_34,
-        YOUTH:MoralValue_35,
-        YOUTH:MoralValue_36,
-        YOUTH:MoralValue_37,
-        YOUTH:MoralValue_38,
-        YOUTH:MoralValue_39,
-        YOUTH:MoralValue_4,
-        YOUTH:MoralValue_40,
-        YOUTH:MoralValue_41,
-        YOUTH:MoralValue_42,
-        YOUTH:MoralValue_43,
-        YOUTH:MoralValue_44,
-        YOUTH:MoralValue_45,
-        YOUTH:MoralValue_46,
-        YOUTH:MoralValue_47,
-        YOUTH:MoralValue_48,
-        YOUTH:MoralValue_49,
-        YOUTH:MoralValue_5,
-        YOUTH:MoralValue_50,
-        YOUTH:MoralValue_51,
-        YOUTH:MoralValue_6,
-        YOUTH:MoralValue_7,
-        YOUTH:MoralValue_8,
-        YOUTH:MoralValue_9,
-        YOUTH:Stereotype_1,
-        YOUTH:Stereotype_10,
-        YOUTH:Stereotype_11,
-        YOUTH:Stereotype_12,
-        YOUTH:Stereotype_13,
-        YOUTH:Stereotype_14,
-        YOUTH:Stereotype_15,
-        YOUTH:Stereotype_16,
-        YOUTH:Stereotype_17,
-        YOUTH:Stereotype_18,
-        YOUTH:Stereotype_19,
-        YOUTH:Stereotype_2,
-        YOUTH:Stereotype_20,
-        YOUTH:Stereotype_21,
-        YOUTH:Stereotype_22,
-        YOUTH:Stereotype_23,
-        YOUTH:Stereotype_24,
-        YOUTH:Stereotype_25,
-        YOUTH:Stereotype_26,
-        YOUTH:Stereotype_27,
-        YOUTH:Stereotype_28,
-        YOUTH:Stereotype_29,
-        YOUTH:Stereotype_3,
-        YOUTH:Stereotype_30,
-        YOUTH:Stereotype_31,
-        YOUTH:Stereotype_32,
-        YOUTH:Stereotype_33,
-        YOUTH:Stereotype_34,
-        YOUTH:Stereotype_35,
-        YOUTH:Stereotype_36,
-        YOUTH:Stereotype_37,
-        YOUTH:Stereotype_38,
-        YOUTH:Stereotype_39,
-        YOUTH:Stereotype_4,
-        YOUTH:Stereotype_40,
-        YOUTH:Stereotype_41,
-        YOUTH:Stereotype_42,
-        YOUTH:Stereotype_43,
-        YOUTH:Stereotype_44,
-        YOUTH:Stereotype_45,
-        YOUTH:Stereotype_46,
-        YOUTH:Stereotype_47,
-        YOUTH:Stereotype_48,
-        YOUTH:Stereotype_49,
-        YOUTH:Stereotype_5,
-        YOUTH:Stereotype_50,
-        YOUTH:Stereotype_51,
-        YOUTH:Stereotype_6,
-        YOUTH:Stereotype_7,
-        YOUTH:Stereotype_8,
-        YOUTH:Stereotype_9 ;
+    YOUTH:expressedVia YOUTH:Activism,
+        YOUTH:Adventurous,
+        YOUTH:Aggressive,
+        YOUTH:Anarchism,
+        YOUTH:Anti-materialism,
+        YOUTH:Artistic,
+        YOUTH:Authenticity,
+        YOUTH:Bold,
+        YOUTH:Charming,
+        YOUTH:Chilled,
+        YOUTH:Community,
+        YOUTH:Companionship,
+        YOUTH:Competition,
+        YOUTH:Creative,
+        YOUTH:Creativity,
+        YOUTH:Creativity__self-expression,
+        YOUTH:DIY_ethic,
+        YOUTH:Dedicated,
+        YOUTH:Dedication_to_K-Pop_artists,
+        YOUTH:Depressed,
+        YOUTH:Devoted,
+        YOUTH:Eco-friendly,
+        YOUTH:Elaborate,
+        YOUTH:Elegance,
+        YOUTH:Embracing_ordinary__anti-fashion_aesthetics,
+        YOUTH:Emotional_expression,
+        YOUTH:Energetic,
+        YOUTH:Engaging,
+        YOUTH:Enthusiastic,
+        YOUTH:Environmentalism,
+        YOUTH:Equality,
+        YOUTH:Escapism,
+        YOUTH:Ethical_eating,
+        YOUTH:Euphoria,
+        YOUTH:Extreme,
+        YOUTH:Fashion-forward,
+        YOUTH:Flexibility,
+        YOUTH:Freedom,
+        YOUTH:Geeky,
+        YOUTH:Harmony,
+        YOUTH:Health-conscious,
+        YOUTH:Health-focused,
+        YOUTH:Health_consciousness,
+        YOUTH:Heroism,
+        YOUTH:Historical_appreciation,
+        YOUTH:Idealistic,
+        YOUTH:Independence,
+        YOUTH:Independent,
+        YOUTH:Individualism,
+        YOUTH:Individuality,
+        YOUTH:Innovation,
+        YOUTH:Innovative,
+        YOUTH:Intellectualism,
+        YOUTH:Introverted,
+        YOUTH:Laid-back,
+        YOUTH:Literary,
+        YOUTH:Loud,
+        YOUTH:Love,
+        YOUTH:Melancholic,
+        YOUTH:Nostalgia,
+        YOUTH:Nostalgic,
+        YOUTH:Obsessive,
+        YOUTH:Party-goers,
+        YOUTH:Passion,
+        YOUTH:Passionate,
+        YOUTH:Peace,
+        YOUTH:Personal_freedom,
+        YOUTH:Personal_storytelling,
+        YOUTH:Pretentious__overly_concerned_with_trends,
+        YOUTH:Quirky,
+        YOUTH:Rebellion,
+        YOUTH:Rebellious,
+        YOUTH:Relaxation,
+        YOUTH:Risk-taking,
+        YOUTH:Rugged,
+        YOUTH:Simplicity,
+        YOUTH:Simplistic,
+        YOUTH:Solidarity,
+        YOUTH:Status,
+        YOUTH:Street-smart__aggressive,
+        YOUTH:Style__sophistication,
+        YOUTH:Stylish,
+        YOUTH:Tough,
+        YOUTH:Trend-setting,
+        YOUTH:Troublemakers,
+        YOUTH:Unremarkable,
+        YOUTH:Vintage,
+        YOUTH:Working-class_pride,
+        YOUTH:_a_connection_to_nature,
+        YOUTH:_a_fascination_with_historical_fashion,
+        YOUTH:_activism,
+        YOUTH:_community_engagement,
+        YOUTH:_craftsmanship,
+        YOUTH:_creative_expression,
+        YOUTH:_creativity,
+        YOUTH:_cultural_appreciation,
+        YOUTH:_cultural_exploration,
+        YOUTH:_cultural_immersion,
+        YOUTH:_digital_savvy,
+        YOUTH:_early_adoption,
+        YOUTH:_entrepreneurial_spirit,
+        YOUTH:_global_perspective,
+        YOUTH:_imagination,
+        YOUTH:_immersive_experiences,
+        YOUTH:_mindfulness,
+        YOUTH:_online_engagement,
+        YOUTH:_online_presence,
+        YOUTH:_passion_for_footwear,
+        YOUTH:_personal_expression,
+        YOUTH:_responsibility,
+        YOUTH:_self-expression,
+        YOUTH:_social_connection,
+        YOUTH:activism,
+        YOUTH:adventure,
+        YOUTH:adventurous,
+        YOUTH:aesthetics,
+        YOUTH:aggressive,
+        YOUTH:alternative,
+        YOUTH:anti-establishment,
+        YOUTH:anti-fashion,
+        YOUTH:anti-social,
+        <http://www.semanticweb.org/ontologies/2024/YOUTH/appreciation_for_the_genre’s_music__choreography>,
+        YOUTH:artisanal,
+        YOUTH:athletics,
+        YOUTH:authenticity,
+        YOUTH:bl,
+        YOUTH:brooding,
+        YOUTH:casual,
+        YOUTH:community-focused,
+        YOUTH:community-oriented,
+        YOUTH:community_engagement,
+        YOUTH:creativity,
+        YOUTH:curiosity,
+        YOUTH:detached,
+        YOUTH:driven,
+        YOUTH:drug_users,
+        YOUTH:eco-consciousness,
+        YOUTH:eco-friendly,
+        YOUTH:elitist,
+        YOUTH:engaging,
+        YOUTH:enthusiastic,
+        YOUTH:environmentalism,
+        YOUTH:ethical,
+        YOUTH:euphoria,
+        YOUTH:exclusivity,
+        YOUTH:experimental,
+        YOUTH:extravagant,
+        YOUTH:fantasy,
+        YOUTH:flexibility,
+        YOUTH:flexible,
+        YOUTH:focus,
+        YOUTH:fom,
+        YOUTH:forward-thinking,
+        YOUTH:free-spirited,
+        YOUTH:fun,
+        YOUTH:gaming-focused,
+        YOUTH:gaming_history,
+        YOUTH:health-conscious,
+        YOUTH:idealistic,
+        YOUTH:imaginative,
+        YOUTH:immersion,
+        YOUTH:independence,
+        YOUTH:influence,
+        YOUTH:influential,
+        YOUTH:innovation,
+        YOUTH:innovative,
+        YOUTH:intentional,
+        YOUTH:intentional_living,
+        YOUTH:internet-obsessed,
+        YOUTH:introspective,
+        YOUTH:introverted,
+        YOUTH:justice,
+        YOUTH:masculinity,
+        YOUTH:minimalist_aesthetic,
+        YOUTH:morose,
+        YOUTH:niche,
+        YOUTH:nostalgic,
+        YOUTH:obsessive,
+        YOUTH:often_misunderstood,
+        YOUTH:online_identity,
+        YOUTH:outdoorsy,
+        YOUTH:pet_care,
+        YOUTH:politically_charged,
+        YOUTH:rebellious,
+        YOUTH:rejecting_trends__pretension,
+        YOUTH:relatable,
+        YOUTH:relaxation,
+        YOUTH:resourceful,
+        YOUTH:retro_aesthetics,
+        YOUTH:self-care,
+        YOUTH:self-improvement,
+        YOUTH:self-sufficiency,
+        YOUTH:socially_engaged,
+        YOUTH:sometimes_excessive,
+        YOUTH:sometimes_overly_obsessed,
+        YOUTH:sometimes_seen_as_eccentric,
+        YOUTH:sophistication,
+        YOUTH:superficial,
+        YOUTH:superficiality,
+        YOUTH:tech-focused,
+        YOUTH:tech-savvy,
+        YOUTH:technology,
+        YOUTH:theatrical,
+        YOUTH:trend-conscious,
+        YOUTH:trend-setting,
+        YOUTH:trendy,
+        YOUTH:troublemakers,
+        YOUTH:unruly,
+        YOUTH:violent,
+        YOUTH:wild,
+        YOUTH:working-class ;
     YOUTH:influencedBy YOUTH:Influence_1,
         YOUTH:Influence_10,
         YOUTH:Influence_11,
