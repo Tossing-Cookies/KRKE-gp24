@@ -43,6 +43,7 @@ Example query: \"Individuals over x years of age have a positive attitude toward
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/expressedVia
 youth:expressedVia rdf:type owl:ObjectProperty ;
+                   owl:inverseOf youth:isExpressedVia ;
                    rdfs:domain [ rdf:type owl:Class ;
                                  owl:unionOf ( youth:NegativeAttitude
                                                youth:NeutralAttitude
