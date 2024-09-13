@@ -855,8 +855,7 @@ youth:Ritual_8 a youth:Ritual ;
 youth:Ritual_9 a youth:Ritual ;
     youth:hasContent "Skateboarding, Skate skills developing" .
 
-youth:belongsToGeneration a owl:DatatypeProperty,
-        owl:FunctionalProperty ;
+youth:belongsToGeneration a owl:DatatypeProperty ;
     rdfs:domain youth:Participant ;
     rdfs:range rdfs:Literal .
 
@@ -2312,12 +2311,12 @@ Moore, Ryan. "Alternative to What? Subcultural Capital and the Commercialization
         persp:Background ;
     owl:disjointWith youth:PerspectiveShift .
 
-youth:MusicGenre a owl:Class ;
-    rdfs:comment "Represents the type of music associated with a subculture." ;
-    rdfs:subClassOf youth:Style .
-
 youth:Ritual a owl:Class ;
     rdfs:comment "Represents the activities that usually characterize a specific youth subculture." ;
+    rdfs:subClassOf youth:Style .
+
+youth:MusicGenre a owl:Class ;
+    rdfs:comment "Represents the type of music associated with a subculture." ;
     rdfs:subClassOf youth:Style .
 
 youth:Participant a owl:Class ;
@@ -2380,9 +2379,7 @@ youth:MoralValue a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty youth:isExpressedVia ;
             owl:someValuesFrom [ a owl:Class ;
-                    owl:unionOf ( youth:NegativeAttitude youth:NeutralAttitude youth:PositiveAttitude ) ] ] ;
-    owl:disjointWith youth:Ritual,
-        youth:Stereotype .
+                    owl:unionOf ( youth:NegativeAttitude youth:NeutralAttitude youth:PositiveAttitude ) ] ] .
 
 youth:PerspectiveShift a owl:Class ;
     rdfs:comment "Represents the interpretations or portrayals of a youth subculture following the evolution or transformation of perspectives. This class captures shifts in how subcultures are viewed, whether by the public or by their own members. It includes changes in societal attitudes, evolving stereotypes, or shifts in self-perception within the subculture, highlighting how perspectives can develop and alter across different historical or cultural contexts." ;

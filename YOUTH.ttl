@@ -247,8 +247,7 @@ youth:triggersStereotype rdf:type owl:ObjectProperty ;
 #################################################################
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/belongsToGeneration
-youth:belongsToGeneration rdf:type owl:DatatypeProperty ,
-                                   owl:FunctionalProperty ;
+youth:belongsToGeneration rdf:type owl:DatatypeProperty ;
                           rdfs:domain youth:Participant ;
                           rdfs:range rdfs:Literal .
 
@@ -387,8 +386,6 @@ youth:MoralValue rdf:type owl:Class ;
                                                                     )
                                                       ]
                                  ] ;
-                 owl:disjointWith youth:Ritual ,
-                                  youth:Stereotype ;
                  rdfs:comment "Represents the fundamental principles and beliefs that underpin a subculture, guiding the behavior, attitudes, and norms of its members." .
 
 
