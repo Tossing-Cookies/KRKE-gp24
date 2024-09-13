@@ -45,21 +45,22 @@ def split_and_create_uris(value, rdf_type):
 def add_triple(df):
     df = df.fillna("")
     for index, row in df.iterrows():
-        subculture_name = str(row['YouthSubculture']).replace(" ", "_")
+        subculture_name = normalize_text(str(row['YouthSubculture']).replace(" ", "_"))
         
         # Create URIs for Location, HistoricalPeriod, Stereotype, and MoralValue
         location_uri = create_uri(row['Location'])
         historical_period_uri = create_uri(row['HistoricalPeriod'])
         stereotype_uri = split_and_create_uris(row['Stereotype'], YOUTH.Stereotype)
         moral_value_uri = split_and_create_uris(row['MoralValue'], YOUTH.MoralValue)
+        participant_uri = YOUTH.Participant
         
         for col_name, value in row.items():
-            pie_uri = YOUTH[value.replace(" ", "_").replace(",", "").replace("and", "").strip()]
+            pie_uri = YOUTH[normalize_text(value).replace(" ", "_").replace(",", "").replace("and", "").strip()]
             dir_uri = create_uri(value)
             con_uri = YOUTH[f"{col_name}_{index+1 }"]
             
             if col_name == "Participant" and row["Participant"] != "":
-                g.add((dir_uri, RDF.type, YOUTH.Participant))
+                g.add((dir_uri, RDF.type, participant_uri))
                 g.add((dir_uri, YOUTH.participatesIn, YOUTH[subculture_name]))
                 g.add((dir_uri, YOUTH.belongsToGeneration, Literal(row['Generation'])))
                 g.add((pie_uri, YOUTH.hasViewpoint, YOUTH[row['Viewpoint']]))
@@ -75,6 +76,7 @@ def add_triple(df):
 
             elif col_name == "YouthSubculture" and row['Participant'] != "":
                 g.add((dir_uri, RDF.type, YOUTH.YouthSubculture))
+                g.add((dir_uri, YOUTH.hasParticipant, participant_uri))
                 g.add((dir_uri, YOUTH.locatedIn, location_uri)) 
                 g.add((pie_uri, YOUTH.hasFashionStyle, YOUTH[f"FashionStyle_{index+1}"])) 
                 g.add((pie_uri, YOUTH.hasMusicGenre, YOUTH[f"MusicGenre_{index+1}"])) 
