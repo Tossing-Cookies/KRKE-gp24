@@ -25,6 +25,8 @@ g.bind("OWL", OWL)
 def add_triple(df):
     df = df.fillna("")
     for index, row in df.iterrows():
+        # Use the name of the subculture to construct part of the URI
+        subculture_name = str(row['YouthSubculture']).replace(" ", "_")
         for col_name, value in row.items():
             
             # Convert multi-word strings into individual URIs
@@ -32,7 +34,7 @@ def add_triple(df):
                 values = [v.strip().replace(" and ", "").replace("and ", "").replace(" and", "") for v in value.split(",")]  # Remove "and" and trim whitespace
                 for val in values:
                     uri = YOUTH[val.replace(" ", "_")]  # Replace spaces with underscores for URI
-                    con_uri = YOUTH[f"{col_name}_{index+1}_{val.replace(' ', '_')}"]
+                    con_uri = YOUTH[f"{col_name}_{subculture_name}_{val.replace(' ', '_')}"]
                     
                     if col_name == "Location":
                         g.add((uri, RDF.type, YOUTH.Location))
