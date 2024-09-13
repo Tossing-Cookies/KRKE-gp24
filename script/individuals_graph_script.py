@@ -73,7 +73,6 @@ def add_triple(df):
                 g.add((pie_uri, YOUTH.hasAttitude, YOUTH[row['Attitude']]))
                 g.add((dir_uri, YOUTH.hasPerceptionOf, YOUTH[subculture_name]))
 
-
             elif col_name == "YouthSubculture" and row['Participant'] != "":
                 g.add((dir_uri, RDF.type, YOUTH.YouthSubculture))
                 g.add((dir_uri, YOUTH.locatedIn, location_uri)) 
@@ -88,24 +87,38 @@ def add_triple(df):
                     for st_uri in stereotype_uri:
                         g.add((dir_uri, YOUTH.triggersStereotype, st_uri))
 
-            elif col_name == "Viewpoint": 
-                g.add((dir_uri, RDF.type, YOUTH.Viewpoint))
-                g.add((pie_uri, YOUTH.isCharacterisedBy, YOUTH[row['Attitude']]))
-                g.add((pie_uri, YOUTH.determinesShift, YOUTH[f"PerspectiveShift_{index+1}"]))
+            elif col_name == "Viewpoint":
+                if row["Viewpoint"] == "InternalViewpoint":
+                    g.add((dir_uri, RDF.type, YOUTH.InternalViewpoint))
+                elif row["Viewpoint"] == "ExternalViewpoint":
+                    g.add((dir_uri, RDF.type, YOUTH.ExternalViewpoint))
+                g.add((pie_uri, YOUTH.isCharacterisedBy, YOUTH[f"PerspectiveShift_{index+1}"]))
+                g.add((pie_uri, YOUTH.determines, YOUTH[row['Attitude']]))
 
-            elif col_name == "Attitude" and row['Participant'] != "": 
-                g.add((dir_uri, RDF.type, YOUTH.Attitude))
-                if stereotype_uri:
-                    for st_uri in stereotype_uri:
-                        g.add((dir_uri, YOUTH.expressedVia, st_uri))
-                if moral_value_uri:
-                    for mv_uri in moral_value_uri:
-                        g.add((dir_uri, YOUTH.expressedVia, mv_uri))
-                g.add((pie_uri, YOUTH.influencedBy, YOUTH[f"Influence_{index+1}"]))
-                g.add((pie_uri, YOUTH.isAttitudeOf, YOUTH[row['Participant']]))
+            elif col_name == "Attitude":
+                if row['Participant']:
+                    if row['Attitude'] == "Positive":
+                        g.add((dir_uri, RDF.type, YOUTH.PositiveAttitude))
+                    elif row['Attitude'] == "Negative":
+                        g.add((dir_uri, RDF.type, YOUTH.NegativeAttitude))
+                    elif row['Attitude'] == "Neutral":
+                        g.add((dir_uri, RDF.type, YOUTH.NeutralAttitude))
+                    if stereotype_uri:
+                        for st_uri in stereotype_uri:
+                            g.add((dir_uri, YOUTH.expressedVia, st_uri))
+                    if moral_value_uri:
+                        for mv_uri in moral_value_uri:
+                            g.add((dir_uri, YOUTH.expressedVia, mv_uri))
+                    g.add((pie_uri, YOUTH.influencedBy, YOUTH[f"Influence_{index+1}"]))
+                    g.add((pie_uri, YOUTH.isAttitudeOf, YOUTH[row['Participant']]))
 
-            elif col_name == "Attitude" and row['NotParticipant'] != "": 
-                g.add((dir_uri, RDF.type, YOUTH.Attitude))
+            elif row['NotParticipant']:
+                if row['Attitude'] == "Positive":
+                    g.add((dir_uri, RDF.type, YOUTH.PositiveAttitude))
+                elif row['Attitude'] == "Negative":
+                    g.add((dir_uri, RDF.type, YOUTH.NegativeAttitude))
+                elif row['Attitude'] == "Neutral":
+                    g.add((dir_uri, RDF.type, YOUTH.NeutralAttitude))
                 if stereotype_uri:
                     for st_uri in stereotype_uri:
                         g.add((dir_uri, YOUTH.expressedVia, st_uri))

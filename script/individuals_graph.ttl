@@ -1,16 +1,44 @@
 @prefix OWL: <http://www.w3.org/2002/07/owl#> .
 @prefix YOUTH: <http://www.semanticweb.org/ontologies/2024/YOUTH/> .
 
+YOUTH: YOUTH:expressedVia YOUTH:emotional_expression,
+        YOUTH:introverted,
+        YOUTH:melancholic ;
+    YOUTH:influencedBy YOUTH:Influence_51 ;
+    YOUTH:isAttitudeOf YOUTH:Person_51 .
+
+YOUTH:Alt-music_events_Attending_concerts YOUTH:influencedBy YOUTH:Influence_51 ;
+    YOUTH:isAttitudeOf YOUTH:Person_51 .
+
+YOUTH:Baby_Boomers YOUTH:influencedBy YOUTH:Influence_51 ;
+    YOUTH:isAttitudeOf YOUTH:Person_51 .
+
 YOUTH:ClassifiedBy a OWL:ObjectProperty .
 
-YOUTH:FashionStyle_51 a YOUTH:FashionStyle ;
-    YOUTH:hasContent "Dark, Skinny Jeans" .
+YOUTH:Dark_Skinny_Jeans YOUTH:influencedBy YOUTH:Influence_51 ;
+    YOUTH:isAttitudeOf YOUTH:Person_51 .
 
-YOUTH:MusicGenre_51 a YOUTH:MusicGenre ;
-    YOUTH:hasContent "Emo, Pop-Punk, Melodic Hardcore" .
+YOUTH:Emo_Pop-Punk_Melodic_Hardcore YOUTH:influencedBy YOUTH:Influence_51 ;
+    YOUTH:isAttitudeOf YOUTH:Person_51 .
 
-YOUTH:Ritual_51 a YOUTH:Ritual ;
-    YOUTH:hasContent "Alt-music events, Attending concerts" .
+YOUTH:Emotional_expression YOUTH:influencedBy YOUTH:Influence_51 ;
+    YOUTH:isAttitudeOf YOUTH:Person_51 .
+
+YOUTH:Evolving_from_niche_to_influential_in_alternative_music YOUTH:influencedBy YOUTH:Influence_51 ;
+    YOUTH:isAttitudeOf YOUTH:Person_51 .
+
+YOUTH:Melancholic_introverted YOUTH:influencedBy YOUTH:Influence_51 ;
+    YOUTH:isAttitudeOf YOUTH:Person_51 .
+
+YOUTH:Music__Participantal_experiences YOUTH:influencedBy YOUTH:Influence_51 ;
+    YOUTH:isAttitudeOf YOUTH:Person_51 .
+
+YOUTH:USA YOUTH:influencedBy YOUTH:Influence_51 ;
+    YOUTH:isAttitudeOf YOUTH:Person_51 .
+
+YOUTH:alt-music_events_attending_concerts YOUTH:expressedVia YOUTH:emotional_expression,
+        YOUTH:introverted,
+        YOUTH:melancholic .
 
 YOUTH:alternative_fashion_enthusiasts a YOUTH:YouthSubculture ;
     YOUTH:hasMoralValue YOUTH:_self-expression,
@@ -30,6 +58,10 @@ YOUTH:augmented_reality_enthusiasts a YOUTH:YouthSubculture ;
     YOUTH:triggersStereotype YOUTH:innovative,
         YOUTH:tech-focused .
 
+YOUTH:baby_boomers YOUTH:expressedVia YOUTH:emotional_expression,
+        YOUTH:introverted,
+        YOUTH:melancholic .
+
 YOUTH:bookstagrammers a YOUTH:YouthSubculture ;
     YOUTH:hasMoralValue YOUTH:_community_engagement,
         YOUTH:creativity,
@@ -48,6 +80,10 @@ YOUTH:cosplay_enthusiasts a YOUTH:YouthSubculture ;
     YOUTH:triggersStereotype YOUTH:dedicated,
         YOUTH:imaginative,
         YOUTH:sometimes_overly_obsessed .
+
+YOUTH:dark_skinny_jeans YOUTH:expressedVia YOUTH:emotional_expression,
+        YOUTH:introverted,
+        YOUTH:melancholic .
 
 YOUTH:determines a OWL:ObjectProperty .
 
@@ -97,15 +133,26 @@ YOUTH:eco-warriors a YOUTH:YouthSubculture ;
         YOUTH:passionate .
 
 YOUTH:emo a YOUTH:YouthSubculture ;
+    YOUTH:expressedVia YOUTH:emotional_expression,
+        YOUTH:introverted,
+        YOUTH:melancholic ;
     YOUTH:hasMoralValue YOUTH:emotional_expression ;
     YOUTH:locatedIn YOUTH:usa ;
     YOUTH:originatedIn YOUTH:1990s-2000s ;
     YOUTH:triggersStereotype YOUTH:introverted,
         YOUTH:melancholic .
 
+YOUTH:emo_pop-punk_melodic_hardcore YOUTH:expressedVia YOUTH:emotional_expression,
+        YOUTH:introverted,
+        YOUTH:melancholic .
+
+YOUTH:evolving_from_niche_to_influential_in_alternative_music YOUTH:expressedVia YOUTH:emotional_expression,
+        YOUTH:introverted,
+        YOUTH:melancholic .
+
 YOUTH:expressedVia a OWL:ObjectProperty .
 
-YOUTH:externalviewpoint a YOUTH:Viewpoint .
+YOUTH:externalviewpoint a YOUTH:ExternalViewpoint .
 
 YOUTH:freelancers a YOUTH:YouthSubculture ;
     YOUTH:hasMoralValue YOUTH:_entrepreneurial_spirit,
@@ -213,7 +260,7 @@ YOUTH:influencedBy a OWL:ObjectProperty .
 
 YOUTH:influences a OWL:ObjectProperty .
 
-YOUTH:internalviewpoint a YOUTH:Viewpoint .
+YOUTH:internalviewpoint a YOUTH:InternalViewpoint .
 
 YOUTH:isAttitudeOf a OWL:ObjectProperty .
 
@@ -254,6 +301,10 @@ YOUTH:lumberjack a YOUTH:YouthSubculture ;
         YOUTH:outdoorsy,
         YOUTH:rugged .
 
+YOUTH:melancholic_introverted YOUTH:expressedVia YOUTH:emotional_expression,
+        YOUTH:introverted,
+        YOUTH:melancholic .
+
 YOUTH:metalheads a YOUTH:YouthSubculture ;
     YOUTH:hasMoralValue YOUTH:rebellion ;
     YOUTH:locatedIn YOUTH:usa_uk ;
@@ -290,8 +341,11 @@ YOUTH:mods a YOUTH:YouthSubculture ;
         YOUTH:stylish,
         YOUTH:superficial .
 
-YOUTH:negativeattitude a YOUTH:Attitude ;
-    YOUTH:expressedVia YOUTH:emotional_expression,
+YOUTH:music__participantal_experiences YOUTH:expressedVia YOUTH:emotional_expression,
+        YOUTH:introverted,
+        YOUTH:melancholic .
+
+YOUTH:negativeattitude YOUTH:expressedVia YOUTH:emotional_expression,
         YOUTH:introverted,
         YOUTH:melancholic .
 
@@ -535,8 +589,7 @@ YOUTH:pet_influencers a YOUTH:YouthSubculture ;
     YOUTH:triggersStereotype YOUTH:charming,
         YOUTH:engaging .
 
-YOUTH:positiveattitude a YOUTH:Attitude ;
-    YOUTH:expressedVia YOUTH:_activism,
+YOUTH:positiveattitude YOUTH:expressedVia YOUTH:_activism,
         YOUTH:_community_engagement,
         YOUTH:_connection_to_nature,
         YOUTH:_craftsmanship,
@@ -908,6 +961,12 @@ YOUTH:vsco_girls a YOUTH:YouthSubculture ;
         YOUTH:eco-friendly,
         YOUTH:trendy .
 
+YOUTH:1990s-2000s YOUTH:expressedVia YOUTH:emotional_expression,
+        YOUTH:introverted,
+        YOUTH:melancholic ;
+    YOUTH:influencedBy YOUTH:Influence_51 ;
+    YOUTH:isAttitudeOf YOUTH:Person_51 .
+
 YOUTH:Alternative_Fashion_Enthusiasts YOUTH:hasFashionStyle YOUTH:FashionStyle_37 ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_37 ;
     YOUTH:hasRitual YOUTH:Ritual_37 .
@@ -943,9 +1002,6 @@ YOUTH:Digital_Nomads YOUTH:hasFashionStyle YOUTH:FashionStyle_34 ;
 YOUTH:Eco-Warriors YOUTH:hasFashionStyle YOUTH:FashionStyle_27 ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_27 ;
     YOUTH:hasRitual YOUTH:Ritual_27 .
-
-YOUTH:ExternalViewpoint YOUTH:determinesShift YOUTH:PerspectiveShift_51 ;
-    YOUTH:isCharacterisedBy YOUTH:PositiveAttitude .
 
 YOUTH:FashionStyle_1 a YOUTH:FashionStyle ;
     YOUTH:hasContent "Colorful and eclectic clothing, including tie-dye shirts, bell-bottoms, and peace symbols. Accessories often include flower crowns, beads, and sandals." .
@@ -1320,10 +1376,6 @@ YOUTH:Influence_50 a YOUTH:Influence ;
     YOUTH:hasContent "Advances in AR technology and its applications" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
-YOUTH:Influence_51 a YOUTH:Influence ;
-    YOUTH:hasContent "Music and Participantal experiences" ;
-    YOUTH:influences YOUTH:PositiveAttitude .
-
 YOUTH:Influence_52 a YOUTH:Influence ;
     YOUTH:hasContent "Personal reasons" ;
     YOUTH:influences YOUTH:NegativeAttitude .
@@ -1671,9 +1723,6 @@ YOUTH:Person_5 YOUTH:hasAttitude YOUTH:PositiveAttitude ;
 YOUTH:Person_50 YOUTH:hasAttitude YOUTH:PositiveAttitude ;
     YOUTH:hasViewpoint YOUTH:InternalViewpoint .
 
-YOUTH:Person_51 YOUTH:hasAttitude YOUTH:PositiveAttitude ;
-    YOUTH:hasViewpoint YOUTH:ExternalViewpoint .
-
 YOUTH:Person_52 YOUTH:hasAttitude YOUTH:NegativeAttitude ;
     YOUTH:hasViewpoint YOUTH:InternalViewpoint .
 
@@ -1826,9 +1875,6 @@ YOUTH:PerspectiveShift_5 a YOUTH:PerspectiveShift ;
 
 YOUTH:PerspectiveShift_50 a YOUTH:PerspectiveShift ;
     YOUTH:hasContent "From niche technology interest to broader technological trend" .
-
-YOUTH:PerspectiveShift_51 a YOUTH:PerspectiveShift ;
-    YOUTH:hasContent "Evolving from niche to influential in alternative music" .
 
 YOUTH:PerspectiveShift_52 a YOUTH:PerspectiveShift ;
     YOUTH:hasContent "Evolving from esteemed to despised" .
@@ -2077,6 +2123,9 @@ YOUTH:Vloggers YOUTH:hasFashionStyle YOUTH:FashionStyle_49 ;
 YOUTH:vRockers YOUTH:hasFashionStyle YOUTH:FashionStyle_6 ;
     YOUTH:hasMusicGenre YOUTH:MusicGenre_6 ;
     YOUTH:hasRitual YOUTH:Ritual_6 .
+
+YOUTH:ExternalViewpoint YOUTH:determines YOUTH:PositiveAttitude ;
+    YOUTH:isCharacterisedBy YOUTH:PerspectiveShift_51 .
 
 YOUTH:Ravers YOUTH:hasFashionStyle YOUTH:FashionStyle_12,
         YOUTH:FashionStyle_20 ;
@@ -2374,7 +2423,9 @@ YOUTH:Emo YOUTH:hasFashionStyle YOUTH:FashionStyle_10,
     YOUTH:hasMusicGenre YOUTH:MusicGenre_10,
         YOUTH:MusicGenre_52 ;
     YOUTH:hasRitual YOUTH:Ritual_10,
-        YOUTH:Ritual_52 .
+        YOUTH:Ritual_52 ;
+    YOUTH:influencedBy YOUTH:Influence_51 ;
+    YOUTH:isAttitudeOf YOUTH:Person_51 .
 
 YOUTH:NegativeAttitude YOUTH:influencedBy YOUTH:Influence_52 ;
     YOUTH:isAttitudeOf YOUTH:Person_52 .
@@ -2431,8 +2482,6 @@ YOUTH:innovative a YOUTH:Stereotype .
 
 YOUTH:justice a YOUTH:MoralValue .
 
-YOUTH:melancholic a YOUTH:Stereotype .
-
 YOUTH:obsessive a YOUTH:Stereotype .
 
 YOUTH:passionate a YOUTH:Stereotype .
@@ -2450,11 +2499,13 @@ YOUTH:trend-setting a YOUTH:MoralValue,
 
 YOUTH:troublemakers a YOUTH:Stereotype .
 
+YOUTH:usa YOUTH:expressedVia YOUTH:emotional_expression,
+        YOUTH:introverted,
+        YOUTH:melancholic .
+
 YOUTH:adventurous a YOUTH:Stereotype .
 
 YOUTH:authenticity a YOUTH:MoralValue .
-
-YOUTH:emotional_expression a YOUTH:MoralValue .
 
 YOUTH:innovation a YOUTH:MoralValue .
 
@@ -2466,13 +2517,25 @@ YOUTH:rebellion a YOUTH:MoralValue .
 
 YOUTH:environmentalism a YOUTH:MoralValue .
 
-YOUTH:introverted a YOUTH:Stereotype .
-
 YOUTH:relaxation a YOUTH:MoralValue .
 
 YOUTH:creativity a YOUTH:MoralValue .
 
-YOUTH:InternalViewpoint YOUTH:determinesShift YOUTH:PerspectiveShift_1,
+YOUTH:Person_51 YOUTH:hasAttitude YOUTH:PositiveAttitude ;
+    YOUTH:hasViewpoint YOUTH:ExternalViewpoint .
+
+YOUTH:melancholic a YOUTH:Stereotype .
+
+YOUTH:emotional_expression a YOUTH:MoralValue ;
+    YOUTH:expressedVia YOUTH:emotional_expression,
+        YOUTH:introverted,
+        YOUTH:melancholic .
+
+YOUTH:introverted a YOUTH:Stereotype .
+
+YOUTH:InternalViewpoint YOUTH:determines YOUTH:NegativeAttitude,
+        YOUTH:PositiveAttitude ;
+    YOUTH:isCharacterisedBy YOUTH:PerspectiveShift_1,
         YOUTH:PerspectiveShift_10,
         YOUTH:PerspectiveShift_11,
         YOUTH:PerspectiveShift_12,
@@ -2522,9 +2585,7 @@ YOUTH:InternalViewpoint YOUTH:determinesShift YOUTH:PerspectiveShift_1,
         YOUTH:PerspectiveShift_6,
         YOUTH:PerspectiveShift_7,
         YOUTH:PerspectiveShift_8,
-        YOUTH:PerspectiveShift_9 ;
-    YOUTH:isCharacterisedBy YOUTH:NegativeAttitude,
-        YOUTH:PositiveAttitude .
+        YOUTH:PerspectiveShift_9 .
 
 YOUTH:PositiveAttitude YOUTH:influencedBy YOUTH:Influence_1,
         YOUTH:Influence_10,
@@ -2572,7 +2633,6 @@ YOUTH:PositiveAttitude YOUTH:influencedBy YOUTH:Influence_1,
         YOUTH:Influence_49,
         YOUTH:Influence_5,
         YOUTH:Influence_50,
-        YOUTH:Influence_51,
         YOUTH:Influence_6,
         YOUTH:Influence_7,
         YOUTH:Influence_8,
@@ -2623,7 +2683,6 @@ YOUTH:PositiveAttitude YOUTH:influencedBy YOUTH:Influence_1,
         YOUTH:Person_49,
         YOUTH:Person_5,
         YOUTH:Person_50,
-        YOUTH:Person_51,
         YOUTH:Person_6,
         YOUTH:Person_7,
         YOUTH:Person_8,

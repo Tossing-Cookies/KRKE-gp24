@@ -16,16 +16,44 @@ It is part of the end-of-course project of Knowledge Representation and Knowledg
     rdfs:seeAlso "https://krke24.gitbook.io/krke-project-2023-2024" ;
     owl:imports <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl> .
 
+youth: youth:expressedVia youth:emotional_expression,
+        youth:introverted,
+        youth:melancholic ;
+    youth:influencedBy youth:Influence_51 ;
+    youth:isAttitudeOf youth:Person_51 .
+
+youth:Alt-music_events_Attending_concerts youth:influencedBy youth:Influence_51 ;
+    youth:isAttitudeOf youth:Person_51 .
+
+youth:Baby_Boomers youth:influencedBy youth:Influence_51 ;
+    youth:isAttitudeOf youth:Person_51 .
+
 youth:ClassifiedBy a owl:ObjectProperty .
 
-youth:FashionStyle_51 a youth:FashionStyle ;
-    youth:hasContent "Dark, Skinny Jeans" .
+youth:Dark_Skinny_Jeans youth:influencedBy youth:Influence_51 ;
+    youth:isAttitudeOf youth:Person_51 .
 
-youth:MusicGenre_51 a youth:MusicGenre ;
-    youth:hasContent "Emo, Pop-Punk, Melodic Hardcore" .
+youth:Emo_Pop-Punk_Melodic_Hardcore youth:influencedBy youth:Influence_51 ;
+    youth:isAttitudeOf youth:Person_51 .
 
-youth:Ritual_51 a youth:Ritual ;
-    youth:hasContent "Alt-music events, Attending concerts" .
+youth:Emotional_expression youth:influencedBy youth:Influence_51 ;
+    youth:isAttitudeOf youth:Person_51 .
+
+youth:Evolving_from_niche_to_influential_in_alternative_music youth:influencedBy youth:Influence_51 ;
+    youth:isAttitudeOf youth:Person_51 .
+
+youth:Melancholic_introverted youth:influencedBy youth:Influence_51 ;
+    youth:isAttitudeOf youth:Person_51 .
+
+youth:Music__Participantal_experiences youth:influencedBy youth:Influence_51 ;
+    youth:isAttitudeOf youth:Person_51 .
+
+youth:USA youth:influencedBy youth:Influence_51 ;
+    youth:isAttitudeOf youth:Person_51 .
+
+youth:alt-music_events_attending_concerts youth:expressedVia youth:emotional_expression,
+        youth:introverted,
+        youth:melancholic .
 
 youth:alternative_fashion_enthusiasts a youth:YouthSubculture ;
     youth:hasMoralValue youth:_self-expression,
@@ -44,6 +72,10 @@ youth:augmented_reality_enthusiasts a youth:YouthSubculture ;
     youth:originatedIn youth:2020s-present ;
     youth:triggersStereotype youth:innovative,
         youth:tech-focused .
+
+youth:baby_boomers youth:expressedVia youth:emotional_expression,
+        youth:introverted,
+        youth:melancholic .
 
 youth:belongsToGeneration a owl:DatatypeProperty,
         owl:FunctionalProperty ;
@@ -68,6 +100,10 @@ youth:cosplay_enthusiasts a youth:YouthSubculture ;
     youth:triggersStereotype youth:dedicated,
         youth:imaginative,
         youth:sometimes_overly_obsessed .
+
+youth:dark_skinny_jeans youth:expressedVia youth:emotional_expression,
+        youth:introverted,
+        youth:melancholic .
 
 youth:digital_artists a youth:YouthSubculture ;
     youth:hasMoralValue youth:_self-expression,
@@ -115,13 +151,24 @@ youth:eco-warriors a youth:YouthSubculture ;
         youth:passionate .
 
 youth:emo a youth:YouthSubculture ;
+    youth:expressedVia youth:emotional_expression,
+        youth:introverted,
+        youth:melancholic ;
     youth:hasMoralValue youth:emotional_expression ;
     youth:locatedIn youth:usa ;
     youth:originatedIn youth:1990s-2000s ;
     youth:triggersStereotype youth:introverted,
         youth:melancholic .
 
-youth:externalviewpoint a youth:Viewpoint .
+youth:emo_pop-punk_melodic_hardcore youth:expressedVia youth:emotional_expression,
+        youth:introverted,
+        youth:melancholic .
+
+youth:evolving_from_niche_to_influential_in_alternative_music youth:expressedVia youth:emotional_expression,
+        youth:introverted,
+        youth:melancholic .
+
+youth:externalviewpoint a youth:ExternalViewpoint .
 
 youth:freelancers a youth:YouthSubculture ;
     youth:hasMoralValue youth:_entrepreneurial_spirit,
@@ -233,7 +280,7 @@ youth:influencedBy a owl:ObjectProperty ;
     rdfs:range youth:Influence ;
     owl:inverseOf youth:influences .
 
-youth:internalviewpoint a youth:Viewpoint .
+youth:internalviewpoint a youth:InternalViewpoint .
 
 youth:k-pop_stans a youth:YouthSubculture ;
     youth:hasMoralValue <http://www.semanticweb.org/ontologies/2024/YOUTH/appreciation_for_the_genre’s_music__choreography>,
@@ -263,6 +310,10 @@ youth:lumberjack a youth:YouthSubculture ;
     youth:triggersStereotype youth:artisanal,
         youth:outdoorsy,
         youth:rugged .
+
+youth:melancholic_introverted youth:expressedVia youth:emotional_expression,
+        youth:introverted,
+        youth:melancholic .
 
 youth:metalheads a youth:YouthSubculture ;
     youth:hasMoralValue youth:rebellion ;
@@ -300,8 +351,11 @@ youth:mods a youth:YouthSubculture ;
         youth:stylish,
         youth:superficial .
 
-youth:negativeattitude a youth:Attitude ;
-    youth:expressedVia youth:emotional_expression,
+youth:music__participantal_experiences youth:expressedVia youth:emotional_expression,
+        youth:introverted,
+        youth:melancholic .
+
+youth:negativeattitude youth:expressedVia youth:emotional_expression,
         youth:introverted,
         youth:melancholic .
 
@@ -541,8 +595,7 @@ youth:pet_influencers a youth:YouthSubculture ;
     youth:triggersStereotype youth:charming,
         youth:engaging .
 
-youth:positiveattitude a youth:Attitude ;
-    youth:expressedVia youth:_activism,
+youth:positiveattitude youth:expressedVia youth:_activism,
         youth:_community_engagement,
         youth:_connection_to_nature,
         youth:_craftsmanship,
@@ -926,6 +979,12 @@ https://krke24.gitbook.io/krke-project-2023-2024""" ;
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> a owl:Class ;
     rdfs:comment "Any Region in a dimensional space that aims at representing time." ;
     rdfs:isDefinedBy "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl" .
+
+youth:1990s-2000s youth:expressedVia youth:emotional_expression,
+        youth:introverted,
+        youth:melancholic ;
+    youth:influencedBy youth:Influence_51 ;
+    youth:isAttitudeOf youth:Person_51 .
 
 youth:Alternative_Fashion_Enthusiasts youth:hasFashionStyle youth:FashionStyle_37 ;
     youth:hasMusicGenre youth:MusicGenre_37 ;
@@ -1336,10 +1395,6 @@ youth:Influence_50 a youth:Influence ;
     youth:hasContent "Advances in AR technology and its applications" ;
     youth:influences youth:PositiveAttitude .
 
-youth:Influence_51 a youth:Influence ;
-    youth:hasContent "Music and Participantal experiences" ;
-    youth:influences youth:PositiveAttitude .
-
 youth:Influence_52 a youth:Influence ;
     youth:hasContent "Personal reasons" ;
     youth:influences youth:NegativeAttitude .
@@ -1687,9 +1742,6 @@ youth:Person_5 youth:hasAttitude youth:PositiveAttitude ;
 youth:Person_50 youth:hasAttitude youth:PositiveAttitude ;
     youth:hasViewpoint youth:InternalViewpoint .
 
-youth:Person_51 youth:hasAttitude youth:PositiveAttitude ;
-    youth:hasViewpoint youth:ExternalViewpoint .
-
 youth:Person_52 youth:hasAttitude youth:NegativeAttitude ;
     youth:hasViewpoint youth:InternalViewpoint .
 
@@ -1842,9 +1894,6 @@ youth:PerspectiveShift_5 a youth:PerspectiveShift ;
 
 youth:PerspectiveShift_50 a youth:PerspectiveShift ;
     youth:hasContent "From niche technology interest to broader technological trend" .
-
-youth:PerspectiveShift_51 a youth:PerspectiveShift ;
-    youth:hasContent "Evolving from niche to influential in alternative music" .
 
 youth:PerspectiveShift_52 a youth:PerspectiveShift ;
     youth:hasContent "Evolving from esteemed to despised" .
@@ -2491,7 +2540,9 @@ youth:Emo youth:hasFashionStyle youth:FashionStyle_10,
     youth:hasMusicGenre youth:MusicGenre_10,
         youth:MusicGenre_52 ;
     youth:hasRitual youth:Ritual_10,
-        youth:Ritual_52 .
+        youth:Ritual_52 ;
+    youth:influencedBy youth:Influence_51 ;
+    youth:isAttitudeOf youth:Person_51 .
 
 youth:Location a owl:Class ;
     rdfs:comment "This class defines the geographic context or physical setting where a subculture originates, encompassing specific regions, cities, or areas integral to its identity and activities. In the context of our project, \"location\" primarily refers to the geographical place (such as a city or state) where youth subcultures historically emerged. This meaning could be broadened to include more nuanced relationships, highlighting areas where these subcultures actively thrive or are predominantly practiced." .
@@ -2559,8 +2610,6 @@ youth:innovative a youth:Stereotype .
 
 youth:justice a youth:MoralValue .
 
-youth:melancholic a youth:Stereotype .
-
 youth:obsessive a youth:Stereotype .
 
 youth:passionate a youth:Stereotype .
@@ -2583,6 +2632,10 @@ youth:triggersStereotype a owl:ObjectProperty ;
 
 youth:troublemakers a youth:Stereotype .
 
+youth:usa youth:expressedVia youth:emotional_expression,
+        youth:introverted,
+        youth:melancholic .
+
 youth:NotParticipant a owl:Class ;
     rdfs:comment "Members outside youth subcultures." ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -2597,8 +2650,6 @@ youth:NotParticipant a owl:Class ;
 youth:adventurous a youth:Stereotype .
 
 youth:authenticity a youth:MoralValue .
-
-youth:emotional_expression a youth:MoralValue .
 
 youth:innovation a youth:MoralValue .
 
@@ -2617,14 +2668,12 @@ youth:rebellion a youth:MoralValue .
 
 youth:environmentalism a youth:MoralValue .
 
-youth:introverted a youth:Stereotype .
-
 youth:relaxation a youth:MoralValue .
 
 youth:ExternalViewpoint a owl:Class,
         owl:NamedIndividual ;
-    youth:determinesShift youth:PerspectiveShift_51 ;
-    youth:isCharacterisedBy youth:PositiveAttitude ;
+    youth:determines youth:PositiveAttitude ;
+    youth:isCharacterisedBy youth:PerspectiveShift_51 ;
     rdfs:comment "Represents the way in which subcultures are viewed from an external viewpoint. This is influenced by the general public's impressions, stereotypes, and media portrayals that shape the external image of a subculture." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty youth:determines ;
@@ -2638,6 +2687,9 @@ youth:ExternalViewpoint a owl:Class,
 
 youth:creativity a youth:MoralValue .
 
+youth:Person_51 youth:hasAttitude youth:PositiveAttitude ;
+    youth:hasViewpoint youth:ExternalViewpoint .
+
 youth:NeutralAttitude a youth:NeutralAttitude,
         owl:Class,
         owl:NamedIndividual ;
@@ -2650,6 +2702,15 @@ youth:NeutralAttitude a youth:NeutralAttitude,
     owl:equivalentClass [ a owl:Restriction ;
             owl:hasValue youth:NeutralAttitude ;
             owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> ] .
+
+youth:melancholic a youth:Stereotype .
+
+youth:emotional_expression a youth:MoralValue ;
+    youth:expressedVia youth:emotional_expression,
+        youth:introverted,
+        youth:melancholic .
+
+youth:introverted a youth:Stereotype .
 
 youth:NegativeAttitude a youth:NegativeAttitude,
         owl:Class,
@@ -2715,7 +2776,9 @@ youth:Participant a owl:Class ;
 
 youth:InternalViewpoint a owl:Class,
         owl:NamedIndividual ;
-    youth:determinesShift youth:PerspectiveShift_1,
+    youth:determines youth:NegativeAttitude,
+        youth:PositiveAttitude ;
+    youth:isCharacterisedBy youth:PerspectiveShift_1,
         youth:PerspectiveShift_10,
         youth:PerspectiveShift_11,
         youth:PerspectiveShift_12,
@@ -2766,8 +2829,6 @@ youth:InternalViewpoint a owl:Class,
         youth:PerspectiveShift_7,
         youth:PerspectiveShift_8,
         youth:PerspectiveShift_9 ;
-    youth:isCharacterisedBy youth:NegativeAttitude,
-        youth:PositiveAttitude ;
     rdfs:comment "Represents the self-perception and self-definition of members within a subculture. This includes how individuals within the subculture view themselves and their own identity, as well as how they interpret their place within the subculture. It reflects the internal self-concept and personal narratives that members use to describe their experiences and values." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty youth:determines ;
@@ -2877,7 +2938,6 @@ youth:PositiveAttitude a youth:PositiveAttitude,
         youth:Influence_49,
         youth:Influence_5,
         youth:Influence_50,
-        youth:Influence_51,
         youth:Influence_6,
         youth:Influence_7,
         youth:Influence_8,
@@ -2928,7 +2988,6 @@ youth:PositiveAttitude a youth:PositiveAttitude,
         youth:Person_49,
         youth:Person_5,
         youth:Person_50,
-        youth:Person_51,
         youth:Person_6,
         youth:Person_7,
         youth:Person_8,
