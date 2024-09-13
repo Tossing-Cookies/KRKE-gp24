@@ -22,17 +22,24 @@ g = Graph()
 g.bind("YOUTH", YOUTH)
 g.bind("OWL", OWL)
 
+def normalize_text(value):
+    """Normalize the text by converting it to lowercase and removing unnecessary characters."""
+    return value.strip().lower().replace(",", "").replace("and", "").replace(" and", "").replace("and ", "").replace(" and ", "").replace(" ", "_")
+
 def create_uri(value):
     """Create a URI from the string of a cell-value, ensuring it is a valid RDF URI."""
-    return YOUTH[value.replace(" ", "_").replace(",", "").replace("and", "").strip()]
+    return YOUTH[normalize_text(value)]
 
-def split_and_create_uris(value):
-    """Split a comma-separated value into individual URIs."""
+def split_and_create_uris(value, rdf_type):
+    """Split a comma-separated value into individual URIs and assign the correct type."""
     uris = []
     if value:
-        items = [item.strip() for item in value.split(",") if item.strip()]
+        items = [normalize_text(item) for item in value.split(",") if item.strip()]
         for item in items:
-            uris.append(create_uri(f"{item}"))
+            uri = create_uri(f"{item}")
+            # Assign the RDF type to the URI
+            g.add((uri, RDF.type, rdf_type))
+            uris.append(uri)
     return uris
 
 def add_triple(df):
@@ -43,8 +50,8 @@ def add_triple(df):
         # Create URIs for Location, HistoricalPeriod, Stereotype, and MoralValue
         location_uri = create_uri(row['Location'])
         historical_period_uri = create_uri(row['HistoricalPeriod'])
-        stereotype_uri = split_and_create_uris(row['Stereotype'])
-        moral_value_uri = split_and_create_uris(row['MoralValue'])
+        stereotype_uri = split_and_create_uris(row['Stereotype'], YOUTH.Stereotype)
+        moral_value_uri = split_and_create_uris(row['MoralValue'], YOUTH.MoralValue)
         
         for col_name, value in row.items():
             pie_uri = YOUTH[value.replace(" ", "_").replace(",", "").replace("and", "").strip()]
@@ -121,7 +128,7 @@ def add_triple(df):
                 g.add((con_uri, YOUTH.hasContent, Literal(row["Ritual"])))
 
             elif col_name == "Influence": 
-                g.add((con_uri, RDF.type, YOUTH.PerspectiveInfluence))
+                g.add((con_uri, RDF.type, YOUTH.Influence))
                 g.add((con_uri, YOUTH.hasContent, Literal(row["Influence"])))
                 g.add((con_uri, YOUTH.influences, YOUTH[row["Attitude"]]))
 
