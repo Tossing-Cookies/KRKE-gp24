@@ -89,10 +89,16 @@ def add_triple(df):
                     g.add((subculture_uri, YOUTH.hasMoralValue, mv_uri))
 
             elif col_name == "Viewpoint":
-                viewpoint_uri = get_or_create_uri(value, YOUTH.InternalViewpoint if row["Viewpoint"] == "InternalViewpoint" else YOUTH.ExternalViewpoint)
-                g.add((viewpoint_uri, YOUTH.isCharacterisedBy, get_or_create_uri(f"PerspectiveShift_{index+1}", YOUTH.PerspectiveShift)))
-                g.add((viewpoint_uri, YOUTH.determines, get_or_create_uri(row['Attitude'])))
+                viewpoint_uri = None
+                if row["Viewpoint"] == "InternalViewpoint":
+                    viewpoint_uri = URIRef(YOUTH.InternalViewpoint)
+                elif row["Viewpoint"] == "ExternalViewpoint":
+                    viewpoint_uri = URIRef(YOUTH.ExternalViewpoint)
                 
+                if viewpoint_uri:
+                    g.add((get_or_create_uri(value), YOUTH.isCharacterisedBy, get_or_create_uri(f"PerspectiveShift_{index+1}", YOUTH.PerspectiveShift)))
+                    g.add((get_or_create_uri(value), YOUTH.determines, get_or_create_uri(row['Attitude'])))
+
             elif col_name == "Attitude":
                 attitude_type = {
                     "Positive": YOUTH.PositiveAttitude,
@@ -110,7 +116,7 @@ def add_triple(df):
                     for mv_uri in moral_value_uris:
                         g.add((attitude_uri, YOUTH.expressedVia, mv_uri))
                     g.add((get_or_create_uri(f"Influence_{index+1}"), YOUTH.influencedBy, attitude_uri))
-                    
+
             elif col_name in ["FashionStyle", "MusicGenre", "Ritual", "PerspectiveShift", "Influence"]:
                 rdf_type = getattr(YOUTH, col_name)
                 content_uri = URIRef(YOUTH[f"{col_name}_{index + 1}"])

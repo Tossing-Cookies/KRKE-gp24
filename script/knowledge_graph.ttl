@@ -860,8 +860,7 @@ youth:belongsToGeneration a owl:DatatypeProperty,
     rdfs:domain youth:Participant ;
     rdfs:range rdfs:Literal .
 
-youth:externalviewpoint a youth:ExternalViewpoint ;
-    youth:determines youth:positiveattitude ;
+youth:externalviewpoint youth:determines youth:positiveattitude ;
     youth:isCharacterisedBy youth:perspectiveshift_51 .
 
 youth:hasContent a owl:DatatypeProperty ;
@@ -888,8 +887,7 @@ youth:influencedBy a owl:ObjectProperty ;
     rdfs:range youth:Influence ;
     owl:inverseOf youth:influences .
 
-youth:internalviewpoint a youth:InternalViewpoint ;
-    youth:determines youth:negativeattitude,
+youth:internalviewpoint youth:determines youth:negativeattitude,
         youth:positiveattitude ;
     youth:isCharacterisedBy youth:perspectiveshift_1,
         youth:perspectiveshift_10,

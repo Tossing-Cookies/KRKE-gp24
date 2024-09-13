@@ -839,12 +839,10 @@ YOUTH:Ritual_8 a YOUTH:Ritual ;
 YOUTH:Ritual_9 a YOUTH:Ritual ;
     YOUTH:hasContent "Skateboarding, Skate skills developing" .
 
-YOUTH:externalviewpoint a YOUTH:ExternalViewpoint ;
-    YOUTH:determines YOUTH:positiveattitude ;
+YOUTH:externalviewpoint YOUTH:determines YOUTH:positiveattitude ;
     YOUTH:isCharacterisedBy YOUTH:perspectiveshift_51 .
 
-YOUTH:internalviewpoint a YOUTH:InternalViewpoint ;
-    YOUTH:determines YOUTH:negativeattitude,
+YOUTH:internalviewpoint YOUTH:determines YOUTH:negativeattitude,
         YOUTH:positiveattitude ;
     YOUTH:isCharacterisedBy YOUTH:perspectiveshift_1,
         YOUTH:perspectiveshift_10,
