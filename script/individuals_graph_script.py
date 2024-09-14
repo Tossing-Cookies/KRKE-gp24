@@ -37,6 +37,8 @@ g.add((YOUTH.originatedIn, RDF.type, OWL.ObjectProperty))
 g.add((YOUTH.triggersStereotype, RDF.type, OWL.ObjectProperty))
 g.add((YOUTH.hasMoralValue, RDF.type, OWL.ObjectProperty))
 g.add((YOUTH.hasViewpoint, RDF.type, OWL.ObjectProperty))
+g.add((YOUTH.hasInfluencingFators, RDF.type, OWL.ObjectProperty))
+g.add((YOUTH.hasPerspectiveShift, RDF.type, OWL.ObjectProperty))
 
 
 def normalize_text(value):
@@ -127,6 +129,8 @@ def add_triple(df):
                             if rdf_type == YOUTH.Participant:
                                 g.add((person_uri, YOUTH.participatesIn, subculture_uri))
 
+                            g.add((subculture_uri, YOUTH.hasInfluencingFactors, influence_uri))
+
             elif col_name in ["FashionStyle", "MusicGenre", "Ritual", "PerspectiveShift"]:
                 rdf_type = getattr(YOUTH, col_name)
                 content_uri = get_or_create_uri(f"{col_name}_{index + 1}", rdf_type)
@@ -141,6 +145,12 @@ def add_triple(df):
                             g.add((subculture_uri, YOUTH.hasMusicGenre, content_uri))
                         elif col_name == "Ritual":
                             g.add((subculture_uri, YOUTH.hasRitual, content_uri))
+
+                        elif col_name == "PerspectiveShift":
+                            g.add((subculture_uri, YOUTH.hasPerspectiveShift, content_uri))
+                            # Add the inverse relationship: PerspectiveShift -> YouthSubculture
+                            g.add((content_uri, YOUTH.isPerspectiveShiftOf, subculture_uri))
+
                     if row["YouthSubculture"] and not row["NotParticipant"]:
                         subculture_uri = get_or_create_uri(row["YouthSubculture"], YOUTH.YouthSubculture)
                         g.add((subculture_uri, getattr(YOUTH, f"has{col_name}"), content_uri))

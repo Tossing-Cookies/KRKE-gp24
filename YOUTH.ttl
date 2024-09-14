@@ -129,6 +129,13 @@ youth:hasPerceptionOf rdf:type owl:ObjectProperty ;
                       rdfs:range youth:YouthSubculture .
 
 
+###  http://www.semanticweb.org/ontologies/2024/YOUTH/hasPerspectiveShift
+youth:hasPerspectiveShift rdf:type owl:ObjectProperty ;
+                          owl:inverseOf youth:isPerspectiveShiftOf ;
+                          rdfs:domain youth:YouthSubculture ;
+                          rdfs:range youth:PerspectiveShift .
+
+
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/hasRitual
 youth:hasRitual rdf:type owl:ObjectProperty ;
                 rdfs:domain youth:YouthSubculture ;
@@ -195,6 +202,12 @@ youth:isCharacterisedBy rdf:type owl:ObjectProperty ;
                                     ] ;
                         rdfs:range youth:PerspectiveShift ;
                         rdfs:comment "This property links a specific external or internal viewpoint to the perspective shift. It captures how the views of subcultures, both internally (self-perception) and externally (public perception), are affected by shifts in perspective." .
+
+
+###  http://www.semanticweb.org/ontologies/2024/YOUTH/isPerspectiveShiftOf
+youth:isPerspectiveShiftOf rdf:type owl:ObjectProperty ;
+                           rdfs:domain youth:PerspectiveShift ;
+                           rdfs:range youth:YouthSubculture .
 
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/isViewpointOf
