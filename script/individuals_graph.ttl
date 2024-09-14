@@ -68,211 +68,211 @@ YOUTH:ExternalViewpoint YOUTH:determines YOUTH:PositiveAttitude ;
     YOUTH:isViewpointOf YOUTH:person_51 .
 
 YOUTH:Influence_1 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_1" ;
+    YOUTH:hasContent "Social and political movements of the 1960s, including reaction against mainstream consumer culture and political climate" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_10 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_10" ;
+    YOUTH:hasContent "Music and personal experiences, including emergence from post-hardcore and punk influences" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_11 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_11" ;
+    YOUTH:hasContent "Music and personal experiences, including screamo's rise in the early 2000s" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_12 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_12" ;
+    YOUTH:hasContent "Electronic music and drug culture, including the rise of electronic dance music and rave culture" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_13 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_13" ;
+    YOUTH:hasContent "Gaming culture and technology, growth of online gaming and eSports" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_14 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_14" ;
+    YOUTH:hasContent "Urban culture and social media, including the rise of indie culture and alternative lifestyle" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_15 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_15" ;
+    YOUTH:hasContent "Reaction to fashion industry trends, including a deliberate embrace of ordinary aesthetics" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_16 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_16" ;
+    YOUTH:hasContent "Urban-rural aesthetic blend, including a growing trend toward combining rugged and artisanal styles with mainstream fashion" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_17 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_17" ;
+    YOUTH:hasContent "Social media trends and internet culture, including the rise of internet-based subcultures and aesthetics" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_18 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_18" ;
+    YOUTH:hasContent "K-Pop industry and global fan culture, including the rise of Korean pop music and international fan communities" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_19 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_19" ;
+    YOUTH:hasContent "Social media trends and environmentalism, including the influence of the VSCO app and its aesthetic" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_2 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_2" ;
+    YOUTH:hasContent "Post-WWII British pop culture and music" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_20 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_20" ;
+    YOUTH:hasContent "Electronic music and drug culture, including the rise of electronic dance music and rave culture" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_21 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_21" ;
+    YOUTH:hasContent "Growth of fan conventions and media influence" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_22 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_22" ;
+    YOUTH:hasContent "Rise of DIY music and indie culture through social media" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_23 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_23" ;
+    YOUTH:hasContent "Influence of minimalism trends and social media advocacy" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_24 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_24" ;
+    YOUTH:hasContent "Influence of Japanese fashion and subculture" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_25 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_25" ;
+    YOUTH:hasContent "Rise of sneaker culture and the influence of fashion and streetwear" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_26 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_26" ;
+    YOUTH:hasContent "Growth of lo-fi music on streaming platforms and social media" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_27 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_27" ;
+    YOUTH:hasContent "Influence of climate change awareness and social media activism" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_28 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_28" ;
+    YOUTH:hasContent "Surf culture influence and beach lifestyle" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_29 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_29" ;
+    YOUTH:hasContent "Growth of technology and digital culture" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_3 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_3" ;
+    YOUTH:hasContent "Social and economic conditions of the late 1960s, including emergence from working-class and Mod influences" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_30 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_30" ;
+    YOUTH:hasContent "Rise of DIY culture through social media platforms" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_31 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_31" ;
+    YOUTH:hasContent "Interest in historical reenactment and fantasy" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_32 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_32" ;
+    YOUTH:hasContent "Rise of plant-based diets and animal rights advocacy" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_33 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_33" ;
+    YOUTH:hasContent "Influence of short-form video content and social media trends" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_34 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_34" ;
+    YOUTH:hasContent "Growth of remote work and digital lifestyles" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_35 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_35" ;
+    YOUTH:hasContent "Revival of 1950s American culture and music" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_36 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_36" ;
+    YOUTH:hasContent "Rise of social justice movements and advocacy" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_37 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_37" ;
+    YOUTH:hasContent "Influence of alternative fashion on mainstream trends" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_38 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_38" ;
+    YOUTH:hasContent "Revival of classic gaming and retro culture" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_39 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_39" ;
+    YOUTH:hasContent "Growth of the gig economy and freelance culture" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_4 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_4" ;
+    YOUTH:hasContent "Urban environment and social issues" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_40 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_40" ;
+    YOUTH:hasContent "Growth of music festivals and communal experiences" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_41 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_41" ;
+    YOUTH:hasContent "Rise of vaping culture and its mainstream acceptance" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_42 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_42" ;
+    YOUTH:hasContent "Influence of superhero media and pop culture" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_43 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_43" ;
+    YOUTH:hasContent "Growth of wellness culture and its integration into mainstream lifestyle" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_44 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_44" ;
+    YOUTH:hasContent "Rise of book-related social media culture" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_45 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_45" ;
+    YOUTH:hasContent "Growth of pet content on social media and its influence" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_46 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_46" ;
+    YOUTH:hasContent "Influence of minimalist lifestyle and travel trends" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_47 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_47" ;
+    YOUTH:hasContent "Impact of social media on lifestyle and culture" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_48 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_48" ;
+    YOUTH:hasContent "Rise of digital art and its integration into mainstream media" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_49 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_49" ;
+    YOUTH:hasContent "Growth of vlogging culture and its influence on media" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_5 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_5" ;
+    YOUTH:hasContent "Cultural rebellion and anti-authoritarianism, including political and social rebellion" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_50 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_50" ;
+    YOUTH:hasContent "Advances in AR technology and its applications" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_51 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_51" ;
+    YOUTH:hasContent "Influence of extreme sports culture" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_52 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_52" ;
+    YOUTH:hasContent "Personal reasons" ;
     YOUTH:influences YOUTH:NegativeAttitude .
 
 YOUTH:Influence_6 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_6" ;
+    YOUTH:hasContent "Rock music history and legends, including the evolution of classic rock and roll" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_7 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_7" ;
+    YOUTH:hasContent "Rock music history and legends, including the rise of heavy metal in the 70s and 80s" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_8 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_8" ;
+    YOUTH:hasContent "Post-punk era, media portrayals of dark aesthetics" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:Influence_9 a YOUTH:Influence ;
-    YOUTH:hasContent "Person_9" ;
+    YOUTH:hasContent "Influence of extreme sports culture, including the growth of skate culture" ;
     YOUTH:influences YOUTH:PositiveAttitude .
 
 YOUTH:NotParticipant rdfs:subClassOf FRAME:People .

@@ -96,7 +96,7 @@ def add_triple(df):
                             influence_uri = URIRef(YOUTH[f"Influence_{index + 1}"])
                             g.add((attitude_uri, YOUTH.influencedBy, influence_uri))
                             g.add((influence_uri, RDF.type, YOUTH.Influence))
-                            g.add((influence_uri, YOUTH.hasContent, Literal(value)))
+                            g.add((influence_uri, YOUTH.hasContent, Literal(', '.join([row["Influence"]]))))
                             # Add triple to link influence with attitude
                             g.add((influence_uri, YOUTH.influences, attitude_uri))
                             # Link attitude to stereotype or moral value
