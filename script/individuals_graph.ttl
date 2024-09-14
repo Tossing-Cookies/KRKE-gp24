@@ -9,6 +9,8 @@ YOUTH:determines a OWL:ObjectProperty .
 
 YOUTH:expressedVia a OWL:ObjectProperty .
 
+YOUTH:expresses a OWL:ObjectProperty .
+
 YOUTH:hasContent a OWL:DatatypeProperty .
 
 YOUTH:hasFashionStyle a OWL:ObjectProperty .
@@ -32,8 +34,6 @@ YOUTH:influencedBy a OWL:ObjectProperty .
 YOUTH:influences a OWL:ObjectProperty .
 
 YOUTH:isCharacterisedBy a OWL:ObjectProperty .
-
-YOUTH:isExpressedVia a OWL:ObjectProperty .
 
 YOUTH:isViewpointOf a OWL:ObjectProperty .
 
@@ -62,10 +62,6 @@ YOUTH:1990s-2000s a YOUTH:HistoricalPeriod .
 YOUTH:2010s a YOUTH:HistoricalPeriod .
 
 YOUTH:2010s-2020s a YOUTH:HistoricalPeriod .
-
-YOUTH:ExternalViewpoint YOUTH:determines YOUTH:PositiveAttitude ;
-    YOUTH:isCharacterisedBy YOUTH:perspectiveshift_51 ;
-    YOUTH:isViewpointOf YOUTH:person_51 .
 
 YOUTH:Influence_1 a YOUTH:Influence ;
     YOUTH:hasContent "Social and political movements of the 1960s, including reaction against mainstream consumer culture and political climate" ;
@@ -259,6 +255,10 @@ YOUTH:Influence_52 a YOUTH:Influence ;
     YOUTH:hasContent "Personal reasons" ;
     YOUTH:influences YOUTH:NegativeAttitude .
 
+YOUTH:Influence_53 a YOUTH:Influence ;
+    YOUTH:hasContent "Cultural rebellion, anti-authoritarianism" ;
+    YOUTH:influences YOUTH:NegativeAttitude .
+
 YOUTH:Influence_6 a YOUTH:Influence ;
     YOUTH:hasContent "Rock music history and legends, including the evolution of classic rock and roll" ;
     YOUTH:influences YOUTH:PositiveAttitude .
@@ -274,8 +274,6 @@ YOUTH:Influence_8 a YOUTH:Influence ;
 YOUTH:Influence_9 a YOUTH:Influence ;
     YOUTH:hasContent "Influence of extreme sports culture, including the growth of skate culture" ;
     YOUTH:influences YOUTH:PositiveAttitude .
-
-YOUTH:NotParticipant rdfs:subClassOf FRAME:People .
 
 YOUTH:alternative_fashion_enthusiasts a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:fashionstyle_37 ;
@@ -565,6 +563,9 @@ YOUTH:fashionstyle_51 a YOUTH:FashionStyle ;
 
 YOUTH:fashionstyle_52 a YOUTH:FashionStyle ;
     YOUTH:hasContent "Casual, Baggy" .
+
+YOUTH:fashionstyle_53 a YOUTH:FashionStyle ;
+    YOUTH:hasContent "Ripped, Leather" .
 
 YOUTH:fashionstyle_6 a YOUTH:FashionStyle ;
     YOUTH:hasContent "Leather, Denim" .
@@ -957,6 +958,9 @@ YOUTH:musicgenre_51 a YOUTH:MusicGenre ;
 YOUTH:musicgenre_52 a YOUTH:MusicGenre ;
     YOUTH:hasContent "Punk Rock, Hip-Hop" .
 
+YOUTH:musicgenre_53 a YOUTH:MusicGenre ;
+    YOUTH:hasContent "Punk Rock" .
+
 YOUTH:musicgenre_6 a YOUTH:MusicGenre ;
     YOUTH:hasContent "Rock" .
 
@@ -968,6 +972,8 @@ YOUTH:musicgenre_8 a YOUTH:MusicGenre ;
 
 YOUTH:musicgenre_9 a YOUTH:MusicGenre ;
     YOUTH:hasContent "Punk Rock, Hip-Hop" .
+
+YOUTH:new_york a YOUTH:Location .
 
 YOUTH:normcore a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:fashionstyle_15 ;
@@ -1004,8 +1010,18 @@ YOUTH:person_51 a YOUTH:NotParticipant ;
     YOUTH:hasPerceptionOf YOUTH:skaters ;
     YOUTH:hasViewpoint YOUTH:ExternalViewpoint .
 
+YOUTH:person_53 a YOUTH:NotParticipant ;
+    YOUTH:belongsToGeneration "Baby Boomers" ;
+    YOUTH:hasAttitude YOUTH:NegativeAttitude ;
+    YOUTH:hasName "John Doe" ;
+    YOUTH:hasPerceptionOf YOUTH:punks ;
+    YOUTH:hasViewpoint YOUTH:ExternalViewpoint .
+
 YOUTH:perspectiveshift_51 a YOUTH:PerspectiveShift ;
     YOUTH:hasContent "From niche hobby to mainstream sport" .
+
+YOUTH:perspectiveshift_53 a YOUTH:PerspectiveShift ;
+    YOUTH:hasContent "From a cultural movement to a source of potential problems and unruliness" .
 
 YOUTH:pet_influencers a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:fashionstyle_45 ;
@@ -1020,22 +1036,6 @@ YOUTH:pet_influencers a YOUTH:YouthSubculture ;
     YOUTH:originatedIn YOUTH:2020s-present ;
     YOUTH:triggersStereotype YOUTH:charming,
         YOUTH:engaging .
-
-YOUTH:punks a YOUTH:YouthSubculture ;
-    YOUTH:hasFashionStyle YOUTH:fashionstyle_5 ;
-    YOUTH:hasMoralValue YOUTH:activism,
-        YOUTH:anarchism,
-        YOUTH:diy_ethic,
-        YOUTH:rebellion ;
-    YOUTH:hasMusicGenre YOUTH:musicgenre_5 ;
-    YOUTH:hasParticipant YOUTH:person_5 ;
-    YOUTH:hasPerspectiveShift YOUTH:perspectiveshift_5 ;
-    YOUTH:hasRitual YOUTH:ritual_5 ;
-    YOUTH:locatedIn YOUTH:new_york ;
-    YOUTH:originatedIn YOUTH:1970s ;
-    YOUTH:triggersStereotype YOUTH:anti-social,
-        YOUTH:troublemakers,
-        YOUTH:violent .
 
 YOUTH:renaissance_fair_enthusiasts a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:fashionstyle_31 ;
@@ -1207,6 +1207,9 @@ YOUTH:ritual_51 a YOUTH:Ritual ;
 
 YOUTH:ritual_52 a YOUTH:Ritual ;
     YOUTH:hasContent "Skateboarding, Skate skills developing" .
+
+YOUTH:ritual_53 a YOUTH:Ritual ;
+    YOUTH:hasContent "Attending concerts, protesting, DIY activities, riots" .
 
 YOUTH:ritual_6 a YOUTH:Ritual ;
     YOUTH:hasContent "Rock Concerts, Playing instruments" .
@@ -1440,317 +1443,318 @@ YOUTH:1990s a YOUTH:HistoricalPeriod .
 
 YOUTH:2000s a YOUTH:HistoricalPeriod .
 
+YOUTH:ExternalViewpoint YOUTH:determines YOUTH:NegativeAttitude,
+        YOUTH:PositiveAttitude ;
+    YOUTH:isCharacterisedBy YOUTH:perspectiveshift_51,
+        YOUTH:perspectiveshift_53 ;
+    YOUTH:isViewpointOf YOUTH:person_51,
+        YOUTH:person_53 .
+
+YOUTH:NotParticipant rdfs:subClassOf FRAME:People .
+
 YOUTH:_activism a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_community_engagement a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_creative_expression a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_creativity a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_cultural_appreciation a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_cultural_exploration a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_cultural_immersion a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_digital_savvy a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_early_adoption a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_entrepreneurial_spirit a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_fascination_with_historical_fashion a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_global_perspective a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_imagination a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_immersive_experiences a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_mindfulness a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_online_presence a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_passion_for_footwear a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_personal_expression a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_responsibility a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_social_connection a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:aesthetics a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:alternative a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
-
-YOUTH:anarchism a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:anti-fashion a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:anti-materialism a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 <http://www.semanticweb.org/ontologies/2024/YOUTH/appreciation_for_the_genre’s_music__choreography> a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:artisanal a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:artistic a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:bl a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:bold a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:brooding a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:california a YOUTH:Location .
 
 YOUTH:casual a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:charming a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:chilled a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:community a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:community-focused a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:community_engagement a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:companionship a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:competition a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:creative a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:creativity__self-expression a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:curiosity a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:dedicated a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:dedication_to_k-pop_artists a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:depressed a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:detached a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:devoted a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
-
-YOUTH:diy_ethic a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:driven a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:drug_users a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:eco-consciousness a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:elaborate a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:elegance a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:elitist a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:embracing_ordinary__anti-fashion_aesthetics a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:equality a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:escapism a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:ethical a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:ethical_eating a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:exclusivity a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:experimental a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:extravagant a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:extreme a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:fantasy a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:fashion-forward a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:focus a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:fom a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:forward-thinking a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:free-spirited a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:fun a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:gaming-focused a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:gaming_history a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:geeky a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:harmony a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:health-focused a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:health_consciousness a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:heroism a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:historical_appreciation a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:immersion a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:independent a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:influence a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:influential a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:intellectualism a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:intentional a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:intentional_living a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:internet-obsessed a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:introspective a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:laid-back a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:late_2010s a YOUTH:HistoricalPeriod .
 
 YOUTH:literary a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:loud a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:love a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:masculinity a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:melancholic a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:minimalist_aesthetic a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:morose a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
-
-YOUTH:new_york a YOUTH:Location .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:niche a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:often_misunderstood a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:online_identity a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:outdoorsy a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:party-goers a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:passion a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:peace a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:person_1 a YOUTH:Participant ;
     YOUTH:belongsToGeneration "The Silent Generation" ;
@@ -2059,10 +2063,10 @@ YOUTH:person_9 a YOUTH:Participant ;
     YOUTH:participatesIn YOUTH:skaters .
 
 YOUTH:personal_freedom a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:personal_storytelling a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:perspectiveshift_1 a YOUTH:PerspectiveShift ;
     YOUTH:hasContent "From radical counterculture to a more widely accepted ethos of peace and environmentalism" .
@@ -2218,16 +2222,35 @@ YOUTH:perspectiveshift_9 a YOUTH:PerspectiveShift ;
     YOUTH:hasContent "From niche hobby to mainstream sport" .
 
 YOUTH:pet_care a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:politically_charged a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:pretentious__overly_concerned_with_trends a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
+
+YOUTH:punks a YOUTH:YouthSubculture ;
+    YOUTH:hasFashionStyle YOUTH:fashionstyle_5,
+        YOUTH:fashionstyle_53 ;
+    YOUTH:hasMoralValue YOUTH:activism,
+        YOUTH:anarchism,
+        YOUTH:diy_ethic,
+        YOUTH:rebellion ;
+    YOUTH:hasMusicGenre YOUTH:musicgenre_5,
+        YOUTH:musicgenre_53 ;
+    YOUTH:hasParticipant YOUTH:person_5 ;
+    YOUTH:hasPerspectiveShift YOUTH:perspectiveshift_5 ;
+    YOUTH:hasRitual YOUTH:ritual_5,
+        YOUTH:ritual_53 ;
+    YOUTH:locatedIn YOUTH:london ;
+    YOUTH:originatedIn YOUTH:1970s ;
+    YOUTH:triggersStereotype YOUTH:anti-social,
+        YOUTH:troublemakers,
+        YOUTH:violent .
 
 YOUTH:quirky a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:ravers a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:fashionstyle_12,
@@ -2249,207 +2272,204 @@ YOUTH:ravers a YOUTH:YouthSubculture ;
         YOUTH:party-goers .
 
 YOUTH:rejecting_trends__pretension a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:relatable a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:retro_aesthetics a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:rugged a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:self-improvement a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:self-sufficiency a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:simplistic a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:socially_engaged a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:solidarity a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:sometimes_excessive a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:sometimes_overly_obsessed a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:sometimes_seen_as_eccentric a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:sophistication a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:status a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:street-smart__aggressive a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:style__sophistication a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:stylish a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:superficial a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:superficiality a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:tech-focused a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:tech-savvy a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:technology a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:theatrical a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:tough a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:trend-conscious a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:trendy a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:unremarkable a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:unruly a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:vintage a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
-
-YOUTH:violent a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:wild a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:working-class a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:working-class_pride a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:1990s-present a YOUTH:HistoricalPeriod .
 
 YOUTH:2000s-present a YOUTH:HistoricalPeriod .
 
 YOUTH:_connection_to_nature a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_craftsmanship a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_online_engagement a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:_self-expression a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
-
-YOUTH:activism a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:adventure a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:aggressive a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
-YOUTH:anti-social a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+YOUTH:anarchism a YOUTH:MoralValue ;
+    YOUTH:expresses YOUTH:NegativeAttitude,
+        YOUTH:PositiveAttitude .
 
 YOUTH:athletics a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:NegativeAttitude,
+    YOUTH:expresses YOUTH:NegativeAttitude,
+        YOUTH:PositiveAttitude .
+
+YOUTH:diy_ethic a YOUTH:MoralValue ;
+    YOUTH:expresses YOUTH:NegativeAttitude,
         YOUTH:PositiveAttitude .
 
 YOUTH:eco-friendly a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:emotional_expression a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:energetic a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:engaging a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:enthusiastic a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:euphoria a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:flexibility a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:flexible a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:health-conscious a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:idealistic a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:imaginative a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:independence a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:individualism a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:individuality a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:innovative a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:justice a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
-
-YOUTH:london a YOUTH:Location .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:obsessive a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:passionate a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:rebellious a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:resourceful a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:risk-taking a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:NegativeAttitude,
+    YOUTH:expresses YOUTH:NegativeAttitude,
         YOUTH:PositiveAttitude .
 
 YOUTH:self-care a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:simplicity a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:skaters a YOUTH:YouthSubculture ;
     YOUTH:hasFashionStyle YOUTH:fashionstyle_51,
@@ -2477,69 +2497,91 @@ YOUTH:skaters a YOUTH:YouthSubculture ;
 
 YOUTH:trend-setting a YOUTH:MoralValue,
         YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:usa a YOUTH:Location .
 
+YOUTH:violent a YOUTH:Stereotype ;
+    YOUTH:expresses YOUTH:NegativeAttitude,
+        YOUTH:PositiveAttitude .
+
+YOUTH:activism a YOUTH:MoralValue ;
+    YOUTH:expresses YOUTH:NegativeAttitude,
+        YOUTH:PositiveAttitude .
+
 YOUTH:adventurous a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:anti-establishment a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:NegativeAttitude,
+    YOUTH:expresses YOUTH:NegativeAttitude,
+        YOUTH:PositiveAttitude .
+
+YOUTH:anti-social a YOUTH:Stereotype ;
+    YOUTH:expresses YOUTH:NegativeAttitude,
         YOUTH:PositiveAttitude .
 
 YOUTH:authenticity a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:community-oriented a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:NegativeAttitude,
+    YOUTH:expresses YOUTH:NegativeAttitude,
         YOUTH:PositiveAttitude .
 
 YOUTH:freedom a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:NegativeAttitude,
+    YOUTH:expresses YOUTH:NegativeAttitude,
         YOUTH:PositiveAttitude .
 
 YOUTH:innovation a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:introverted a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
+
+YOUTH:london a YOUTH:Location .
 
 YOUTH:nostalgia a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:nostalgic a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
-
-YOUTH:rebellion a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:troublemakers a YOUTH:Stereotype ;
-    YOUTH:isExpressedVia YOUTH:NegativeAttitude,
+    YOUTH:expresses YOUTH:NegativeAttitude,
         YOUTH:PositiveAttitude .
 
 YOUTH:environmentalism a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
+
+YOUTH:rebellion a YOUTH:MoralValue ;
+    YOUTH:expresses YOUTH:NegativeAttitude,
+        YOUTH:PositiveAttitude .
 
 YOUTH:relaxation a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:PositiveAttitude .
+    YOUTH:expresses YOUTH:PositiveAttitude .
 
 YOUTH:2010s-present a YOUTH:HistoricalPeriod .
 
-YOUTH:NegativeAttitude YOUTH:expressedVia YOUTH:anti-establishment,
-        YOUTH:athletics,
-        YOUTH:community-oriented,
-        YOUTH:creativity,
-        YOUTH:freedom,
-        YOUTH:risk-taking,
-        YOUTH:troublemakers ;
-    YOUTH:influencedBy YOUTH:Influence_52 .
-
 YOUTH:creativity a YOUTH:MoralValue ;
-    YOUTH:isExpressedVia YOUTH:NegativeAttitude,
+    YOUTH:expresses YOUTH:NegativeAttitude,
         YOUTH:PositiveAttitude .
 
 YOUTH:2020s-present a YOUTH:HistoricalPeriod .
+
+YOUTH:NegativeAttitude YOUTH:expressedVia YOUTH:activism,
+        YOUTH:anarchism,
+        YOUTH:anti-establishment,
+        YOUTH:anti-social,
+        YOUTH:athletics,
+        YOUTH:community-oriented,
+        YOUTH:creativity,
+        YOUTH:diy_ethic,
+        YOUTH:freedom,
+        YOUTH:rebellion,
+        YOUTH:risk-taking,
+        YOUTH:troublemakers,
+        YOUTH:violent ;
+    YOUTH:influencedBy YOUTH:Influence_52,
+        YOUTH:Influence_53 .
 
 YOUTH:global a YOUTH:Location .
 

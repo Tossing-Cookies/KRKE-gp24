@@ -78,211 +78,215 @@ youth:2010s a youth:HistoricalPeriod .
 youth:2010s-2020s a youth:HistoricalPeriod .
 
 youth:Influence_1 a youth:Influence ;
-    youth:hasContent "Person_1" ;
+    youth:hasContent "Social and political movements of the 1960s, including reaction against mainstream consumer culture and political climate" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_10 a youth:Influence ;
-    youth:hasContent "Person_10" ;
+    youth:hasContent "Music and personal experiences, including emergence from post-hardcore and punk influences" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_11 a youth:Influence ;
-    youth:hasContent "Person_11" ;
+    youth:hasContent "Music and personal experiences, including screamo's rise in the early 2000s" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_12 a youth:Influence ;
-    youth:hasContent "Person_12" ;
+    youth:hasContent "Electronic music and drug culture, including the rise of electronic dance music and rave culture" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_13 a youth:Influence ;
-    youth:hasContent "Person_13" ;
+    youth:hasContent "Gaming culture and technology, growth of online gaming and eSports" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_14 a youth:Influence ;
-    youth:hasContent "Person_14" ;
+    youth:hasContent "Urban culture and social media, including the rise of indie culture and alternative lifestyle" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_15 a youth:Influence ;
-    youth:hasContent "Person_15" ;
+    youth:hasContent "Reaction to fashion industry trends, including a deliberate embrace of ordinary aesthetics" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_16 a youth:Influence ;
-    youth:hasContent "Person_16" ;
+    youth:hasContent "Urban-rural aesthetic blend, including a growing trend toward combining rugged and artisanal styles with mainstream fashion" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_17 a youth:Influence ;
-    youth:hasContent "Person_17" ;
+    youth:hasContent "Social media trends and internet culture, including the rise of internet-based subcultures and aesthetics" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_18 a youth:Influence ;
-    youth:hasContent "Person_18" ;
+    youth:hasContent "K-Pop industry and global fan culture, including the rise of Korean pop music and international fan communities" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_19 a youth:Influence ;
-    youth:hasContent "Person_19" ;
+    youth:hasContent "Social media trends and environmentalism, including the influence of the VSCO app and its aesthetic" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_2 a youth:Influence ;
-    youth:hasContent "Person_2" ;
+    youth:hasContent "Post-WWII British pop culture and music" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_20 a youth:Influence ;
-    youth:hasContent "Person_20" ;
+    youth:hasContent "Electronic music and drug culture, including the rise of electronic dance music and rave culture" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_21 a youth:Influence ;
-    youth:hasContent "Person_21" ;
+    youth:hasContent "Growth of fan conventions and media influence" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_22 a youth:Influence ;
-    youth:hasContent "Person_22" ;
+    youth:hasContent "Rise of DIY music and indie culture through social media" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_23 a youth:Influence ;
-    youth:hasContent "Person_23" ;
+    youth:hasContent "Influence of minimalism trends and social media advocacy" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_24 a youth:Influence ;
-    youth:hasContent "Person_24" ;
+    youth:hasContent "Influence of Japanese fashion and subculture" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_25 a youth:Influence ;
-    youth:hasContent "Person_25" ;
+    youth:hasContent "Rise of sneaker culture and the influence of fashion and streetwear" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_26 a youth:Influence ;
-    youth:hasContent "Person_26" ;
+    youth:hasContent "Growth of lo-fi music on streaming platforms and social media" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_27 a youth:Influence ;
-    youth:hasContent "Person_27" ;
+    youth:hasContent "Influence of climate change awareness and social media activism" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_28 a youth:Influence ;
-    youth:hasContent "Person_28" ;
+    youth:hasContent "Surf culture influence and beach lifestyle" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_29 a youth:Influence ;
-    youth:hasContent "Person_29" ;
+    youth:hasContent "Growth of technology and digital culture" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_3 a youth:Influence ;
-    youth:hasContent "Person_3" ;
+    youth:hasContent "Social and economic conditions of the late 1960s, including emergence from working-class and Mod influences" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_30 a youth:Influence ;
-    youth:hasContent "Person_30" ;
+    youth:hasContent "Rise of DIY culture through social media platforms" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_31 a youth:Influence ;
-    youth:hasContent "Person_31" ;
+    youth:hasContent "Interest in historical reenactment and fantasy" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_32 a youth:Influence ;
-    youth:hasContent "Person_32" ;
+    youth:hasContent "Rise of plant-based diets and animal rights advocacy" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_33 a youth:Influence ;
-    youth:hasContent "Person_33" ;
+    youth:hasContent "Influence of short-form video content and social media trends" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_34 a youth:Influence ;
-    youth:hasContent "Person_34" ;
+    youth:hasContent "Growth of remote work and digital lifestyles" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_35 a youth:Influence ;
-    youth:hasContent "Person_35" ;
+    youth:hasContent "Revival of 1950s American culture and music" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_36 a youth:Influence ;
-    youth:hasContent "Person_36" ;
+    youth:hasContent "Rise of social justice movements and advocacy" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_37 a youth:Influence ;
-    youth:hasContent "Person_37" ;
+    youth:hasContent "Influence of alternative fashion on mainstream trends" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_38 a youth:Influence ;
-    youth:hasContent "Person_38" ;
+    youth:hasContent "Revival of classic gaming and retro culture" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_39 a youth:Influence ;
-    youth:hasContent "Person_39" ;
+    youth:hasContent "Growth of the gig economy and freelance culture" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_4 a youth:Influence ;
-    youth:hasContent "Person_4" ;
+    youth:hasContent "Urban environment and social issues" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_40 a youth:Influence ;
-    youth:hasContent "Person_40" ;
+    youth:hasContent "Growth of music festivals and communal experiences" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_41 a youth:Influence ;
-    youth:hasContent "Person_41" ;
+    youth:hasContent "Rise of vaping culture and its mainstream acceptance" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_42 a youth:Influence ;
-    youth:hasContent "Person_42" ;
+    youth:hasContent "Influence of superhero media and pop culture" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_43 a youth:Influence ;
-    youth:hasContent "Person_43" ;
+    youth:hasContent "Growth of wellness culture and its integration into mainstream lifestyle" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_44 a youth:Influence ;
-    youth:hasContent "Person_44" ;
+    youth:hasContent "Rise of book-related social media culture" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_45 a youth:Influence ;
-    youth:hasContent "Person_45" ;
+    youth:hasContent "Growth of pet content on social media and its influence" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_46 a youth:Influence ;
-    youth:hasContent "Person_46" ;
+    youth:hasContent "Influence of minimalist lifestyle and travel trends" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_47 a youth:Influence ;
-    youth:hasContent "Person_47" ;
+    youth:hasContent "Impact of social media on lifestyle and culture" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_48 a youth:Influence ;
-    youth:hasContent "Person_48" ;
+    youth:hasContent "Rise of digital art and its integration into mainstream media" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_49 a youth:Influence ;
-    youth:hasContent "Person_49" ;
+    youth:hasContent "Growth of vlogging culture and its influence on media" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_5 a youth:Influence ;
-    youth:hasContent "Person_5" ;
+    youth:hasContent "Cultural rebellion and anti-authoritarianism, including political and social rebellion" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_50 a youth:Influence ;
-    youth:hasContent "Person_50" ;
+    youth:hasContent "Advances in AR technology and its applications" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_51 a youth:Influence ;
-    youth:hasContent "Person_51" ;
+    youth:hasContent "Influence of extreme sports culture" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_52 a youth:Influence ;
-    youth:hasContent "Person_52" ;
+    youth:hasContent "Personal reasons" ;
+    youth:influences youth:NegativeAttitude .
+
+youth:Influence_53 a youth:Influence ;
+    youth:hasContent "Cultural rebellion, anti-authoritarianism" ;
     youth:influences youth:NegativeAttitude .
 
 youth:Influence_6 a youth:Influence ;
-    youth:hasContent "Person_6" ;
+    youth:hasContent "Rock music history and legends, including the evolution of classic rock and roll" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_7 a youth:Influence ;
-    youth:hasContent "Person_7" ;
+    youth:hasContent "Rock music history and legends, including the rise of heavy metal in the 70s and 80s" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_8 a youth:Influence ;
-    youth:hasContent "Person_8" ;
+    youth:hasContent "Post-punk era, media portrayals of dark aesthetics" ;
     youth:influences youth:PositiveAttitude .
 
 youth:Influence_9 a youth:Influence ;
-    youth:hasContent "Person_9" ;
+    youth:hasContent "Influence of extreme sports culture, including the growth of skate culture" ;
     youth:influences youth:PositiveAttitude .
 
 youth:alternative_fashion_enthusiasts a youth:YouthSubculture ;
@@ -573,6 +577,9 @@ youth:fashionstyle_51 a youth:FashionStyle ;
 
 youth:fashionstyle_52 a youth:FashionStyle ;
     youth:hasContent "Casual, Baggy" .
+
+youth:fashionstyle_53 a youth:FashionStyle ;
+    youth:hasContent "Ripped, Leather" .
 
 youth:fashionstyle_6 a youth:FashionStyle ;
     youth:hasContent "Leather, Denim" .
@@ -1013,6 +1020,9 @@ youth:musicgenre_51 a youth:MusicGenre ;
 youth:musicgenre_52 a youth:MusicGenre ;
     youth:hasContent "Punk Rock, Hip-Hop" .
 
+youth:musicgenre_53 a youth:MusicGenre ;
+    youth:hasContent "Punk Rock" .
+
 youth:musicgenre_6 a youth:MusicGenre ;
     youth:hasContent "Rock" .
 
@@ -1024,6 +1034,8 @@ youth:musicgenre_8 a youth:MusicGenre ;
 
 youth:musicgenre_9 a youth:MusicGenre ;
     youth:hasContent "Punk Rock, Hip-Hop" .
+
+youth:new_york a youth:Location .
 
 youth:normcore a youth:YouthSubculture ;
     youth:hasFashionStyle youth:fashionstyle_15 ;
@@ -1060,8 +1072,18 @@ youth:person_51 a youth:NotParticipant ;
     youth:hasPerceptionOf youth:skaters ;
     youth:hasViewpoint youth:ExternalViewpoint .
 
+youth:person_53 a youth:NotParticipant ;
+    youth:belongsToGeneration "Baby Boomers" ;
+    youth:hasAttitude youth:NegativeAttitude ;
+    youth:hasName "John Doe" ;
+    youth:hasPerceptionOf youth:punks ;
+    youth:hasViewpoint youth:ExternalViewpoint .
+
 youth:perspectiveshift_51 a youth:PerspectiveShift ;
     youth:hasContent "From niche hobby to mainstream sport" .
+
+youth:perspectiveshift_53 a youth:PerspectiveShift ;
+    youth:hasContent "From a cultural movement to a source of potential problems and unruliness" .
 
 youth:pet_influencers a youth:YouthSubculture ;
     youth:hasFashionStyle youth:fashionstyle_45 ;
@@ -1076,22 +1098,6 @@ youth:pet_influencers a youth:YouthSubculture ;
     youth:originatedIn youth:2020s-present ;
     youth:triggersStereotype youth:charming,
         youth:engaging .
-
-youth:punks a youth:YouthSubculture ;
-    youth:hasFashionStyle youth:fashionstyle_5 ;
-    youth:hasMoralValue youth:activism,
-        youth:anarchism,
-        youth:diy_ethic,
-        youth:rebellion ;
-    youth:hasMusicGenre youth:musicgenre_5 ;
-    youth:hasParticipant youth:person_5 ;
-    youth:hasPerspectiveShift youth:perspectiveshift_5 ;
-    youth:hasRitual youth:ritual_5 ;
-    youth:locatedIn youth:new_york ;
-    youth:originatedIn youth:1970s ;
-    youth:triggersStereotype youth:anti-social,
-        youth:troublemakers,
-        youth:violent .
 
 youth:renaissance_fair_enthusiasts a youth:YouthSubculture ;
     youth:hasFashionStyle youth:fashionstyle_31 ;
@@ -1263,6 +1269,9 @@ youth:ritual_51 a youth:Ritual ;
 
 youth:ritual_52 a youth:Ritual ;
     youth:hasContent "Skateboarding, Skate skills developing" .
+
+youth:ritual_53 a youth:Ritual ;
+    youth:hasContent "Attending concerts, protesting, DIY activities, riots" .
 
 youth:ritual_6 a youth:Ritual ;
     youth:hasContent "Rock Concerts, Playing instruments" .
@@ -1497,144 +1506,141 @@ youth:1990s a youth:HistoricalPeriod .
 youth:2000s a youth:HistoricalPeriod .
 
 youth:_activism a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_community_engagement a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_creative_expression a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_creativity a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_cultural_appreciation a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_cultural_exploration a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_cultural_immersion a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_digital_savvy a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_early_adoption a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_entrepreneurial_spirit a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_fascination_with_historical_fashion a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_global_perspective a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_imagination a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_immersive_experiences a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_mindfulness a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_online_presence a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_passion_for_footwear a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_personal_expression a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_responsibility a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_social_connection a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:aesthetics a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:alternative a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:anarchism a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:anti-fashion a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:anti-materialism a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 <http://www.semanticweb.org/ontologies/2024/YOUTH/appreciation_for_the_genre’s_music__choreography> a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:artisanal a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:artistic a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:bl a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:bold a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:brooding a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:california a youth:Location .
 
 youth:casual a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:charming a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:chilled a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:community a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:community-focused a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:community_engagement a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:companionship a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:competition a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:creative a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:creativity__self-expression a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:curiosity a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:dedicated a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:dedication_to_k-pop_artists a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:depressed a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:detached a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:determines a owl:ObjectProperty ;
     rdfs:comment """This property captures the potential neutral, positive or negative attitude an individual with an external or internal viewpoint has towards a youth subculture.\r
@@ -1647,88 +1653,85 @@ Example query: "Individuals over x years of age have a positive attitude towards
     rdfs:subPropertyOf owl:topObjectProperty .
 
 youth:devoted a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:diy_ethic a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:driven a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:drug_users a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:eco-consciousness a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:elaborate a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:elegance a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:elitist a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:embracing_ordinary__anti-fashion_aesthetics a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:equality a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:escapism a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:ethical a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:ethical_eating a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:exclusivity a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:experimental a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:extravagant a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:extreme a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:fantasy a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:fashion-forward a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:focus a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:fom a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:forward-thinking a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:free-spirited a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:fun a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:gaming-focused a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:gaming_history a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:geeky a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:harmony a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:hasAttitude a owl:ObjectProperty ;
     rdfs:domain <http://etna.istc.cnr.it/framester2/data/framestercore/People> ;
@@ -1744,25 +1747,25 @@ youth:hasViewpoint a owl:ObjectProperty ;
     owl:inverseOf youth:isViewpointOf .
 
 youth:health-focused a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:health_consciousness a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:heroism a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:historical_appreciation a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:immersion a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:independent a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:influence a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:influences a owl:ObjectProperty ;
     rdfs:domain youth:Influence ;
@@ -1770,59 +1773,57 @@ youth:influences a owl:ObjectProperty ;
             owl:unionOf ( youth:NegativeAttitude youth:NeutralAttitude youth:PositiveAttitude ) ] .
 
 youth:influential a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:intellectualism a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:intentional a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:intentional_living a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:internet-obsessed a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:introspective a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:laid-back a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:late_2010s a youth:HistoricalPeriod .
 
 youth:literary a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:loud a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:love a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:masculinity a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:melancholic a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:minimalist_aesthetic a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:morose a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:new_york a youth:Location .
+    youth:expresses youth:PositiveAttitude .
 
 youth:niche a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:often_misunderstood a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:online_identity a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:originatedIn a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -1831,7 +1832,7 @@ youth:originatedIn a owl:FunctionalProperty,
     rdfs:range youth:HistoricalPeriod .
 
 youth:outdoorsy a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:participatesIn a owl:ObjectProperty ;
     rdfs:comment "Links a Person to a YouthSubculture (indicating that the person belongs to that subculture)." ;
@@ -1839,13 +1840,13 @@ youth:participatesIn a owl:ObjectProperty ;
     rdfs:range youth:YouthSubculture .
 
 youth:party-goers a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:passion a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:peace a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:person_1 a youth:Participant ;
     youth:belongsToGeneration "The Silent Generation" ;
@@ -2154,10 +2155,10 @@ youth:person_9 a youth:Participant ;
     youth:participatesIn youth:skaters .
 
 youth:personal_freedom a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:personal_storytelling a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:perspectiveshift_1 a youth:PerspectiveShift ;
     youth:hasContent "From radical counterculture to a more widely accepted ethos of peace and environmentalism" .
@@ -2313,16 +2314,35 @@ youth:perspectiveshift_9 a youth:PerspectiveShift ;
     youth:hasContent "From niche hobby to mainstream sport" .
 
 youth:pet_care a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:politically_charged a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:pretentious__overly_concerned_with_trends a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
+
+youth:punks a youth:YouthSubculture ;
+    youth:hasFashionStyle youth:fashionstyle_5,
+        youth:fashionstyle_53 ;
+    youth:hasMoralValue youth:activism,
+        youth:anarchism,
+        youth:diy_ethic,
+        youth:rebellion ;
+    youth:hasMusicGenre youth:musicgenre_5,
+        youth:musicgenre_53 ;
+    youth:hasParticipant youth:person_5 ;
+    youth:hasPerspectiveShift youth:perspectiveshift_5 ;
+    youth:hasRitual youth:ritual_5,
+        youth:ritual_53 ;
+    youth:locatedIn youth:london ;
+    youth:originatedIn youth:1970s ;
+    youth:triggersStereotype youth:anti-social,
+        youth:troublemakers,
+        youth:violent .
 
 youth:quirky a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:ravers a youth:YouthSubculture ;
     youth:hasFashionStyle youth:fashionstyle_12,
@@ -2344,103 +2364,100 @@ youth:ravers a youth:YouthSubculture ;
         youth:party-goers .
 
 youth:rejecting_trends__pretension a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:relatable a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:retro_aesthetics a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:rugged a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:self-improvement a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:self-sufficiency a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:simplistic a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:socially_engaged a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:solidarity a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:sometimes_excessive a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:sometimes_overly_obsessed a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:sometimes_seen_as_eccentric a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:sophistication a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:status a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:street-smart__aggressive a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:style__sophistication a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:stylish a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:superficial a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:superficiality a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:tech-focused a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:tech-savvy a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:technology a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:theatrical a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:tough a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:trend-conscious a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:trendy a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:unremarkable a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:unruly a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:vintage a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:violent a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:wild a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:working-class a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:working-class_pride a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:1990s-present a youth:HistoricalPeriod .
 
@@ -2451,50 +2468,52 @@ youth:Style a owl:Class ;
     owl:disjointWith youth:YouthSubculture .
 
 youth:_connection_to_nature a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_craftsmanship a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_online_engagement a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:_self-expression a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:activism a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:adventure a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:aggressive a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
-youth:anti-social a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+youth:anarchism a youth:MoralValue ;
+    youth:expresses youth:NegativeAttitude,
+        youth:PositiveAttitude .
 
 youth:athletics a youth:MoralValue ;
-    youth:isExpressedVia youth:NegativeAttitude,
+    youth:expresses youth:NegativeAttitude,
+        youth:PositiveAttitude .
+
+youth:diy_ethic a youth:MoralValue ;
+    youth:expresses youth:NegativeAttitude,
         youth:PositiveAttitude .
 
 youth:eco-friendly a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:emotional_expression a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:energetic a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:engaging a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:enthusiastic a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:euphoria a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:expressedVia a owl:ObjectProperty ;
     rdfs:comment "Links the classes Stereotype and Value to the classes PositiveAttitude, NegativeAttitude, and NeutralAttitude. It indicates that attitudes (positive, negative, or neutral) towards a subculture are shaped by the stereotypes associated with it and the values it upholds." ;
@@ -2502,68 +2521,66 @@ youth:expressedVia a owl:ObjectProperty ;
             owl:unionOf ( youth:NegativeAttitude youth:NeutralAttitude youth:PositiveAttitude ) ] ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( youth:MoralValue youth:Stereotype ) ] ;
-    owl:inverseOf youth:isExpressedVia .
+    owl:inverseOf youth:expresses .
 
-youth:flexibility a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:flexible a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:health-conscious a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:idealistic a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:imaginative a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:independence a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:individualism a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:individuality a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:innovative a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:isExpressedVia a owl:ObjectProperty ;
+youth:expresses a owl:ObjectProperty ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( youth:MoralValue youth:Stereotype ) ] ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( youth:NegativeAttitude youth:NeutralAttitude youth:PositiveAttitude ) ] ;
     rdfs:subPropertyOf owl:topObjectProperty .
 
-youth:justice a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+youth:flexibility a youth:MoralValue ;
+    youth:expresses youth:PositiveAttitude .
 
-youth:london a youth:Location .
+youth:flexible a youth:Stereotype ;
+    youth:expresses youth:PositiveAttitude .
+
+youth:health-conscious a youth:Stereotype ;
+    youth:expresses youth:PositiveAttitude .
+
+youth:idealistic a youth:Stereotype ;
+    youth:expresses youth:PositiveAttitude .
+
+youth:imaginative a youth:Stereotype ;
+    youth:expresses youth:PositiveAttitude .
+
+youth:independence a youth:MoralValue ;
+    youth:expresses youth:PositiveAttitude .
+
+youth:individualism a youth:MoralValue ;
+    youth:expresses youth:PositiveAttitude .
+
+youth:individuality a youth:MoralValue ;
+    youth:expresses youth:PositiveAttitude .
+
+youth:innovative a youth:Stereotype ;
+    youth:expresses youth:PositiveAttitude .
+
+youth:justice a youth:MoralValue ;
+    youth:expresses youth:PositiveAttitude .
 
 youth:obsessive a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:passionate a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:rebellious a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:resourceful a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:risk-taking a youth:Stereotype ;
-    youth:isExpressedVia youth:NegativeAttitude,
+    youth:expresses youth:NegativeAttitude,
         youth:PositiveAttitude .
 
 youth:self-care a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:simplicity a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:skaters a youth:YouthSubculture ;
     youth:hasFashionStyle youth:fashionstyle_51,
@@ -2591,7 +2608,7 @@ youth:skaters a youth:YouthSubculture ;
 
 youth:trend-setting a youth:MoralValue,
         youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
 
 youth:triggersStereotype a owl:ObjectProperty ;
     rdfs:comment "Links a stereotype to the subcultures that it affects or challenges. This property identifies how certain stereotypes are associated with subcultures and how these stereotypes may influence or be related to the subculture’s public image. It highlights the stereotypes that subcultures confront or embody." ;
@@ -2599,6 +2616,61 @@ youth:triggersStereotype a owl:ObjectProperty ;
     rdfs:range youth:Stereotype .
 
 youth:usa a youth:Location .
+
+youth:violent a youth:Stereotype ;
+    youth:expresses youth:NegativeAttitude,
+        youth:PositiveAttitude .
+
+youth:activism a youth:MoralValue ;
+    youth:expresses youth:NegativeAttitude,
+        youth:PositiveAttitude .
+
+youth:adventurous a youth:Stereotype ;
+    youth:expresses youth:PositiveAttitude .
+
+youth:anti-establishment a youth:Stereotype ;
+    youth:expresses youth:NegativeAttitude,
+        youth:PositiveAttitude .
+
+youth:anti-social a youth:Stereotype ;
+    youth:expresses youth:NegativeAttitude,
+        youth:PositiveAttitude .
+
+youth:authenticity a youth:MoralValue ;
+    youth:expresses youth:PositiveAttitude .
+
+youth:community-oriented a youth:MoralValue ;
+    youth:expresses youth:NegativeAttitude,
+        youth:PositiveAttitude .
+
+youth:freedom a youth:MoralValue ;
+    youth:expresses youth:NegativeAttitude,
+        youth:PositiveAttitude .
+
+youth:innovation a youth:MoralValue ;
+    youth:expresses youth:PositiveAttitude .
+
+youth:introverted a youth:Stereotype ;
+    youth:expresses youth:PositiveAttitude .
+
+youth:london a youth:Location .
+
+youth:nostalgia a youth:MoralValue ;
+    youth:expresses youth:PositiveAttitude .
+
+youth:nostalgic a youth:Stereotype ;
+    youth:expresses youth:PositiveAttitude .
+
+youth:troublemakers a youth:Stereotype ;
+    youth:expresses youth:NegativeAttitude,
+        youth:PositiveAttitude .
+
+<http://etna.istc.cnr.it/framester2/data/framestercore/People> a owl:Class ;
+    rdfs:comment "http://etna.istc.cnr.it/framester2/data/framestercore/" ;
+    rdfs:isDefinedBy "This pattern is applied to model the involvement of people within subcultures, distinguishing between participants and non-participants." ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue persp:Conceptualiser ;
+            owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> ] .
 
 youth:NotParticipant a owl:Class ;
     rdfs:comment "Members outside youth subcultures." ;
@@ -2611,61 +2683,26 @@ youth:NotParticipant a owl:Class ;
             owl:someValuesFrom youth:ExternalViewpoint ],
         <http://etna.istc.cnr.it/framester2/data/framestercore/People> .
 
-youth:adventurous a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:anti-establishment a youth:Stereotype ;
-    youth:isExpressedVia youth:NegativeAttitude,
-        youth:PositiveAttitude .
-
-youth:authenticity a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:community-oriented a youth:MoralValue ;
-    youth:isExpressedVia youth:NegativeAttitude,
-        youth:PositiveAttitude .
-
-youth:freedom a youth:MoralValue ;
-    youth:isExpressedVia youth:NegativeAttitude,
-        youth:PositiveAttitude .
-
-youth:innovation a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:introverted a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:nostalgia a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:nostalgic a youth:Stereotype ;
-    youth:isExpressedVia youth:PositiveAttitude .
+youth:environmentalism a youth:MoralValue ;
+    youth:expresses youth:PositiveAttitude .
 
 youth:rebellion a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
-youth:troublemakers a youth:Stereotype ;
-    youth:isExpressedVia youth:NegativeAttitude,
+    youth:expresses youth:NegativeAttitude,
         youth:PositiveAttitude .
 
-<http://etna.istc.cnr.it/framester2/data/framestercore/People> a owl:Class ;
-    rdfs:comment "http://etna.istc.cnr.it/framester2/data/framestercore/" ;
-    rdfs:isDefinedBy "This pattern is applied to model the involvement of people within subcultures, distinguishing between participants and non-participants." ;
-    owl:equivalentClass [ a owl:Restriction ;
-            owl:hasValue persp:Conceptualiser ;
-            owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> ] .
-
-youth:environmentalism a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
-
 youth:relaxation a youth:MoralValue ;
-    youth:isExpressedVia youth:PositiveAttitude .
+    youth:expresses youth:PositiveAttitude .
+
+youth:2010s-present a youth:HistoricalPeriod .
 
 youth:ExternalViewpoint a owl:Class,
         owl:NamedIndividual ;
-    youth:determines youth:PositiveAttitude ;
-    youth:isCharacterisedBy youth:perspectiveshift_51 ;
-    youth:isViewpointOf youth:person_51 ;
+    youth:determines youth:NegativeAttitude,
+        youth:PositiveAttitude ;
+    youth:isCharacterisedBy youth:perspectiveshift_51,
+        youth:perspectiveshift_53 ;
+    youth:isViewpointOf youth:person_51,
+        youth:person_53 ;
     rdfs:comment "Represents the way in which subcultures are viewed from an external viewpoint. This is influenced by the general public's impressions, stereotypes, and media portrayals that shape the external image of a subculture." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty youth:determines ;
@@ -2677,10 +2714,8 @@ youth:ExternalViewpoint a owl:Class,
             owl:hasValue youth:ExternalViewpoint ;
             owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> ] .
 
-youth:2010s-present a youth:HistoricalPeriod .
-
 youth:creativity a youth:MoralValue ;
-    youth:isExpressedVia youth:NegativeAttitude,
+    youth:expresses youth:NegativeAttitude,
         youth:PositiveAttitude .
 
 youth:Location a owl:Class ;
@@ -2708,17 +2743,26 @@ ODP: http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval""" ;
     rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> ;
     owl:disjointWith youth:Location .
 
+youth:global a youth:Location .
+
 youth:NegativeAttitude a youth:NegativeAttitude,
         owl:Class,
         owl:NamedIndividual ;
-    youth:expressedVia youth:anti-establishment,
+    youth:expressedVia youth:activism,
+        youth:anarchism,
+        youth:anti-establishment,
+        youth:anti-social,
         youth:athletics,
         youth:community-oriented,
         youth:creativity,
+        youth:diy_ethic,
         youth:freedom,
+        youth:rebellion,
         youth:risk-taking,
-        youth:troublemakers ;
-    youth:influencedBy youth:Influence_52 ;
+        youth:troublemakers,
+        youth:violent ;
+    youth:influencedBy youth:Influence_52,
+        youth:Influence_53 ;
     rdfs:comment "Attitude in this context refers to the evaluative stance or disposition that is held toward a youth subculture, whether by its members or by outsiders. Depending on whether a particular attitude aligns more closely with the values or stereotypes associated with a subculture, it will take on a positive, negative, or neutral connotation." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty youth:expressedVia ;
@@ -2727,8 +2771,6 @@ youth:NegativeAttitude a youth:NegativeAttitude,
     owl:equivalentClass [ a owl:Restriction ;
             owl:hasValue youth:NegativeAttitude ;
             owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/description.owl#satisfies> ] .
-
-youth:global a youth:Location .
 
 youth:FashionStyle a owl:Class ;
     rdfs:comment "Represents the style of clothing and aesthetics associated with a subculture." ;
@@ -2931,14 +2973,14 @@ youth:Stereotype a owl:Class ;
 See also:\r
 Cardwell, Mike, Dictionary of Psychology, Chicago Fitzroy Dearborn, 1999: 292.""" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty youth:isExpressedVia ;
+            owl:onProperty youth:expresses ;
             owl:someValuesFrom [ a owl:Class ;
                     owl:unionOf ( youth:NegativeAttitude youth:NeutralAttitude youth:PositiveAttitude ) ] ] .
 
 youth:MoralValue a owl:Class ;
     rdfs:comment "Represents the fundamental principles and beliefs that underpin a subculture, guiding the behavior, attitudes, and norms of its members." ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty youth:isExpressedVia ;
+            owl:onProperty youth:expresses ;
             owl:someValuesFrom [ a owl:Class ;
                     owl:unionOf ( youth:NegativeAttitude youth:NeutralAttitude youth:PositiveAttitude ) ] ] .
 

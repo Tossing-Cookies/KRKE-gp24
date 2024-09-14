@@ -43,7 +43,7 @@ Example query: \"Individuals over x years of age have a positive attitude toward
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/expressedVia
 youth:expressedVia rdf:type owl:ObjectProperty ;
-                   owl:inverseOf youth:isExpressedVia ;
+                   owl:inverseOf youth:expresses ;
                    rdfs:domain [ rdf:type owl:Class ;
                                  owl:unionOf ( youth:NegativeAttitude
                                                youth:NeutralAttitude
@@ -56,6 +56,22 @@ youth:expressedVia rdf:type owl:ObjectProperty ;
                                             )
                               ] ;
                    rdfs:comment "Links the classes Stereotype and Value to the classes PositiveAttitude, NegativeAttitude, and NeutralAttitude. It indicates that attitudes (positive, negative, or neutral) towards a subculture are shaped by the stereotypes associated with it and the values it upholds." .
+
+
+###  http://www.semanticweb.org/ontologies/2024/YOUTH/expresses
+youth:expresses rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( youth:MoralValue
+                                            youth:Stereotype
+                                          )
+                            ] ;
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:unionOf ( youth:NegativeAttitude
+                                           youth:NeutralAttitude
+                                           youth:PositiveAttitude
+                                         )
+                           ] .
 
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/hasAttitude
@@ -179,22 +195,6 @@ youth:isCharacterisedBy rdf:type owl:ObjectProperty ;
                                     ] ;
                         rdfs:range youth:PerspectiveShift ;
                         rdfs:comment "This property links a specific external or internal viewpoint to the perspective shift. It captures how the views of subcultures, both internally (self-perception) and externally (public perception), are affected by shifts in perspective." .
-
-
-###  http://www.semanticweb.org/ontologies/2024/YOUTH/isExpressedVia
-youth:isExpressedVia rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf owl:topObjectProperty ;
-                     rdfs:domain [ rdf:type owl:Class ;
-                                   owl:unionOf ( youth:MoralValue
-                                                 youth:Stereotype
-                                               )
-                                 ] ;
-                     rdfs:range [ rdf:type owl:Class ;
-                                  owl:unionOf ( youth:NegativeAttitude
-                                                youth:NeutralAttitude
-                                                youth:PositiveAttitude
-                                              )
-                                ] .
 
 
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/isViewpointOf
@@ -379,7 +379,7 @@ youth:Location rdf:type owl:Class ;
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/MoralValue
 youth:MoralValue rdf:type owl:Class ;
                  rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                   owl:onProperty youth:isExpressedVia ;
+                                   owl:onProperty youth:expresses ;
                                    owl:someValuesFrom [ rdf:type owl:Class ;
                                                         owl:unionOf ( youth:NegativeAttitude
                                                                       youth:NeutralAttitude
@@ -504,7 +504,7 @@ youth:Ritual rdf:type owl:Class ;
 ###  http://www.semanticweb.org/ontologies/2024/YOUTH/Stereotype
 youth:Stereotype rdf:type owl:Class ;
                  rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                   owl:onProperty youth:isExpressedVia ;
+                                   owl:onProperty youth:expresses ;
                                    owl:someValuesFrom [ rdf:type owl:Class ;
                                                         owl:unionOf ( youth:NegativeAttitude
                                                                       youth:NeutralAttitude

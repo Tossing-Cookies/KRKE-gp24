@@ -22,7 +22,7 @@ g.add((YOUTH.locatedIn, RDF.type, OWL.ObjectProperty))
 g.add((YOUTH.determines, RDF.type, OWL.ObjectProperty))
 g.add((YOUTH.influencedBy, RDF.type, OWL.ObjectProperty))
 g.add((YOUTH.expressedVia, RDF.type, OWL.ObjectProperty))
-g.add((YOUTH.isExpressedVia, RDF.type, OWL.ObjectProperty))
+g.add((YOUTH.expresses, RDF.type, OWL.ObjectProperty))
 g.add((YOUTH.isCharacterisedBy, RDF.type, OWL.ObjectProperty))
 g.add((YOUTH.influences, RDF.type, OWL.ObjectProperty))
 g.add((YOUTH.isViewpointOf, RDF.type, OWL.ObjectProperty))
@@ -102,10 +102,10 @@ def add_triple(df):
                             # Link attitude to stereotype or moral value
                             for st_uri in stereotype_uris:
                                 g.add((attitude_uri, YOUTH.expressedVia, st_uri))
-                                g.add((st_uri, YOUTH.isExpressedVia, attitude_uri))
+                                g.add((st_uri, YOUTH.expresses, attitude_uri))
                             for mv_uri in moral_value_uris:
                                 g.add((attitude_uri, YOUTH.expressedVia, mv_uri))
-                                g.add((mv_uri, YOUTH.isExpressedVia, attitude_uri))
+                                g.add((mv_uri, YOUTH.expresses, attitude_uri))
                         g.add((person_uri, YOUTH.belongsToGeneration, Literal(row['Generation'])))
 
                         # Handle YouthSubculture only if NotParticipant column is empty
