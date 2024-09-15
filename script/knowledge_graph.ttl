@@ -2820,7 +2820,7 @@ youth:ExternalViewpoint a owl:Class,
         youth:perspectiveshift_53 ;
     youth:isViewpointOf youth:person_51,
         youth:person_53 ;
-    rdfs:comment "Represents the way in which subcultures are viewed from an external viewpoint. This is influenced by the general public's impressions, stereotypes, and media portrayals that shape the external image of a subculture." ;
+    rdfs:comment "Represents the perspective of individuals who are not participants within a youth subculture. It determines the type of attitude that a non-participant holds towards the subculture." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty youth:determines ;
             owl:someValuesFrom [ a owl:Class ;
@@ -2895,7 +2895,7 @@ youth:FashionStyle a owl:Class ;
     owl:disjointWith youth:MusicGenre .
 
 youth:Influence a owl:Class ;
-    rdfs:comment """Represents the factors that shape and affect both external and internal viewpoint. This can include a variety of influences such as media portrayals, social institutions - like family, work, school, home -, personal experiences, education level, and cultural trends, all of which contribute to the evolving perceptions of subcultures by both insiders and outsiders. Hall’s Encoding/Decoding theory is integrated into this analysis, allowing us to deconstruct the role of television as a primary source of information on the subject.\r
+    rdfs:comment """Represents the factors that shape and affect the interpretation of a youth subculture and how it is perceived from both external and internal viewpoints. This can include a variety of influences such as media portrayals, social institutions - like family, work, school, home -, personal experiences, education level, and cultural trends, all of which contribute to the evolving perceptions of subcultures by both insiders and outsiders. Hall’s Encoding/Decoding theory is integrated into this analysis, allowing us to deconstruct the role of television as a primary source of information on the subject.\r
 \r
 See bibliography:\r
 Hall, Stuart. "Encoding/Decoding in the Television Discourse." University of Birmingham: Centre for Contemporary Cultural Studies, 1973.\r
@@ -3043,7 +3043,7 @@ youth:InternalViewpoint a owl:Class,
         youth:person_7,
         youth:person_8,
         youth:person_9 ;
-    rdfs:comment "Represents the self-perception and self-definition of members within a subculture. This includes how individuals within the subculture view themselves and their own identity, as well as how they interpret their place within the subculture. It reflects the internal self-concept and personal narratives that members use to describe their experiences and values." ;
+    rdfs:comment "Represents the self-perception and self-definition of members within a subculture. This includes how individuals within the subculture view themselves and their own identity, as well as how they interpret their place within the subculture." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty youth:determines ;
             owl:someValuesFrom [ a owl:Class ;
