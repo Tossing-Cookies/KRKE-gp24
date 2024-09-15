@@ -360,7 +360,7 @@ youth:Influence rdf:type owl:Class ;
                                               )
                                 ] ;
                 owl:disjointWith youth:PerspectiveShift ;
-                rdfs:comment """Represents the factors that shape and affect both external and internal viewpoint. This can include a variety of influences such as media portrayals, social institutions - like family, work, school, home -, personal experiences, education level, and cultural trends, all of which contribute to the evolving perceptions of subcultures by both insiders and outsiders. Hall’s Encoding/Decoding theory is integrated into this analysis, allowing us to deconstruct the role of television as a primary source of information on the subject.
+                rdfs:comment """Represents the factors that shape and affect the interpretation of a youth subculture and how it is perceived from both external and internal viewpoints. This can include a variety of influences such as media portrayals, social institutions - like family, work, school, home -, personal experiences, education level, and cultural trends, all of which contribute to the evolving perceptions of subcultures by both insiders and outsiders. Hall’s Encoding/Decoding theory is integrated into this analysis, allowing us to deconstruct the role of television as a primary source of information on the subject.
 
 See bibliography:
 Hall, Stuart. \"Encoding/Decoding in the Television Discourse.\" University of Birmingham: Centre for Contemporary Cultural Studies, 1973.
@@ -612,10 +612,10 @@ youth:PositiveAttitude rdf:type owl:NamedIndividual ,
 #    Annotations
 #################################################################
 
-youth:ExternalViewpoint rdfs:comment "Represents the way in which subcultures are viewed from an external viewpoint. This is influenced by the general public's impressions, stereotypes, and media portrayals that shape the external image of a subculture." .
+youth:ExternalViewpoint rdfs:comment "Represents the perspective of individuals who are not participants within a youth subculture. It determines the type of attitude that a non-participant holds towards the subculture." .
 
 
-youth:InternalViewpoint rdfs:comment "Represents the self-perception and self-definition of members within a subculture. This includes how individuals within the subculture view themselves and their own identity, as well as how they interpret their place within the subculture. It reflects the internal self-concept and personal narratives that members use to describe their experiences and values." .
+youth:InternalViewpoint rdfs:comment "Represents the self-perception and self-definition of members within a subculture. This includes how individuals within the subculture view themselves and their own identity, as well as how they interpret their place within the subculture." .
 
 
 youth:NegativeAttitude rdfs:comment "Attitude in this context refers to the evaluative stance or disposition that is held toward a youth subculture, whether by its members or by outsiders. Depending on whether a particular attitude aligns more closely with the values or stereotypes associated with a subculture, it will take on a positive, negative, or neutral connotation." .
