@@ -2133,7 +2133,7 @@ youth:perspectiveshift_51 a youth:PerspectiveShift ;
     youth:isPerspectiveShiftOf youth:skaters .
 
 youth:perspectiveshift_52 a youth:PerspectiveShift ;
-    youth:hasContent "From niche hobby to mainstream sport" ;
+    youth:hasContent "From a hobby to toxic and competitive environment" ;
     youth:isPerspectiveShiftOf youth:skaters .
 
 youth:perspectiveshift_53 a youth:PerspectiveShift ;
